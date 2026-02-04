@@ -1,0 +1,31 @@
+{
+  "nome_completo": "Dr. Felipe Gargioni Barreto",
+  "especialidade": "Neurocirurgia e Cirurgia da Coluna",
+  "crm": "CREMESP 202824",
+  "rqe": "RQE 84400",
+  "endereco": {
+    "rua": "Rua Domingos de Morais, 2187",
+    "complemento": "sl. 202",
+    "bairro": "Vila Mariana",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "04035-000"
+  },
+  "contato": {
+    "telefone": "(11) 2362-6051",
+    "whatsapp": "(11) 93250-7466",
+    "email": "gargionibarreto@gmail.com",
+    "instagram": "@dr.felipebarreto",
+    "site": "felipebarretoneuro.com.br"
+  },
+  "cores": {
+    "verde": "#8BC34A",
+    "azul_marinho": "#0D47A1"
+  },
+  "assets": {
+    "logo_completo": "/root/.clawdbot/media/inbound/8ba9fe63-7445-4604-9754-1232c4ad6380.jpg",
+    "logo_simbolo": "/root/clawd/assets/logo_simbolo.jpg",
+    "assinatura": "/root/clawd/assets/assinatura_dr_felipe.jpeg"
+  },
+  "template_oficial": "/root/clawd/Template_Oficial_DrFelipeBarreto.docx"
+}
