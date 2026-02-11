@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese - Dr. Felipe Barreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jsPDF for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <div class="logo-text">
+                    <h1>Dr. Felipe Barreto</h1>
+                    <p>Neurocirurgia de Coluna | Medicina Funcional</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">
+                <span id="currentStep">1</span> de <span id="totalSteps">8</span>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <form id="anamneseForm" class="form-container">
+            
+            <!-- Step 1: Identificação -->
+            <div class="form-step active" data-step="1">
+                <h2 class="step-title">📋 Identificação</h2>
+                <p class="step-description">Vamos começar com seus dados básicos</p>
+                
+                <div class="form-group">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de nascimento *</label>
+                        <input type="date" id="dataNascimento" name="dataNascimento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo biológico *</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="profissao">Profissão/Ocupação</label>
+                    <input type="text" id="profissao" name="profissao" placeholder="Sua profissão atual">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone (WhatsApp) *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                </div>
+            </div>
+
+            <!-- Step 2: Queixa Principal -->
+            <div class="form-step" data-step="2">
+                <h2 class="step-title">🎯 Queixa Principal</h2>
+                <p class="step-description">Conte-nos o motivo da sua consulta</p>
+                
+                <div class="form-group">
+                    <label for="queixaPrincipal">Qual o principal motivo da sua consulta? *</label>
+                    <textarea id="queixaPrincipal" name="queixaPrincipal" required rows="4" placeholder="Descreva com suas palavras o que está sentindo..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tempoProblema">Há quanto tempo esse problema começou? *</label>
+                    <select id="tempoProblema" name="tempoProblema" required>
+                        <option value="">Selecione</option>
+                        <option value="menos_1_semana">Menos de 1 semana</option>
+                        <option value="1_4_semanas">1 a 4 semanas</option>
+                        <option value="1_3_meses">1 a 3 meses</option>
+                        <option value="3_6_meses">3 a 6 meses</option>
+                        <option value="6_12_meses">6 a 12 meses</option>
+                        <option value="mais_1_ano">Mais de 1 ano</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventoDesencadeante">Houve algum evento específico que desencadeou os sintomas?</label>
+                    <textarea id="eventoDesencadeante" name="eventoDesencadeante" rows="3" placeholder="Ex: queda, esforço físico, estresse, etc."></textarea>
+                </div>
+            </div>
+
+            <!-- Step 3: Investigação da Dor -->
+            <div class="form-step" data-step="3">
+                <h2 class="step-title">💢 Investigação da Dor</h2>
+                <p class="step-description">Informações detalhadas sobre sua dor</p>
+                
+                <div class="form-group">
+                    <label>Onde você sente dor? (marque todas que se aplicam)</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="sem_dor" id="semDor">
+                            <span>Não sinto dor</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="cervical">
+                            <span>Pescoço/Cervical</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="toracica">
+                            <span>Região torácica (meio das costas)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="lombar">
+                            <span>Lombar</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="gluteo">
+                            <span>Glúteo/Quadril</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="perna">
+                            <span>Perna</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="braco">
+                            <span>Braço</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group dor-dependente">
+                    <label for="dorIntensidade">Intensidade da dor (média do dia): <span id="dorValor">5</span>/10</label>
+                    <input type="range" id="dorIntensidade" name="dorIntensidade" min="0" max="10" value="5" class="slider">
+                    <div class="slider-labels">
+                        <span>Sem dor</span>
+                        <span>Pior dor</span>
+                    </div>
+                </div>
+                
+                <div class="form-group dor-dependente">
+                    <label for="dorTipo">Como você descreveria sua dor?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="queimacao">
+                            <span>Queimação/Ardência</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="pontada">
+                            <span>Pontada/Facada</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="peso">
+                            <span>Peso/Pressão</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="choque">
+                            <span>Choque/Fisgada</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="formigamento">
+                            <span>Formigamento/Dormência</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorTipo" value="latejante">
+                            <span>Latejante</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group dor-dependente">
+                    <label for="dorDuracao">Há quanto tempo sente essa dor?</label>
+                    <select id="dorDuracao" name="dorDuracao">
+                        <option value="">Selecione</option>
+                        <option value="aguda">Menos de 6 semanas (aguda)</option>
+                        <option value="subaguda">6 a 12 semanas (subaguda)</option>
+                        <option value="cronica">Mais de 3 meses (crônica)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group dor-dependente">
+                    <label for="dorIrradiacao">A dor se espalha para outras regiões?</label>
+                    <select id="dorIrradiacao" name="dorIrradiacao">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não, fica só no local</option>
+                        <option value="perna">Sim, desce para a perna</option>
+                        <option value="braco">Sim, desce para o braço</option>
+                        <option value="outro">Sim, outro local</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Step 4: Sinais de Alerta -->
+            <div class="form-step" data-step="4">
+                <h2 class="step-title">⚠️ Sintomas Importantes</h2>
+                <p class="step-description">Marque se apresenta algum desses sintomas</p>
+                
+                <div class="alert-box">
+                    <p>🔴 Estes sintomas são importantes para avaliação. Seja honesto nas respostas.</p>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-group red-flags">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="redFlags" value="nenhum" id="nenhumRedFlag">
+                            <span>✅ Nenhum dos sintomas abaixo</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="fraqueza_pernas">
+                            <span>Fraqueza nas pernas para andar</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="fraqueza_bracos">
+                            <span>Fraqueza nas mãos/braços</span>
+                        </label>
+                        <label class="checkbox-item danger">
+                            <input type="checkbox" name="redFlags" value="dificuldade_urina">
+                            <span>Dificuldade para segurar urina</span>
+                        </label>
+                        <label class="checkbox-item danger">
+                            <input type="checkbox" name="redFlags" value="dificuldade_fezes">
+                            <span>Dificuldade para segurar fezes</span>
+                        </label>
+                        <label class="checkbox-item danger">
+                            <input type="checkbox" name="redFlags" value="anestesia_sela">
+                            <span>Dormência na região genital</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="perda_equilibrio">
+                            <span>Perda de equilíbrio ao caminhar</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="dor_noturna">
+                            <span>Dor que acorda durante a noite</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="febre">
+                            <span>Febre associada à dor</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="redFlags" value="perda_peso">
+                            <span>Perda de peso inexplicada</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Sono e Estresse -->
+            <div class="form-step" data-step="5">
+                <h2 class="step-title">😴 Sono e Estresse</h2>
+                <p class="step-description">Avaliação do seu padrão de sono e nível de estresse</p>
+                
+                <div class="form-group">
+                    <label for="sonoQualidade">Como se sente ao acordar? *</label>
+                    <select id="sonoQualidade" name="sonoQualidade" required>
+                        <option value="">Selecione</option>
+                        <option value="descansado">Descansado e com energia</option>
+                        <option value="pouco_cansado">Um pouco cansado, mas ok</option>
+                        <option value="cansado">Cansado como se não tivesse dormido</option>
+                        <option value="exausto">Exausto</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sonoDespertares">Quantas vezes acorda durante a noite?</label>
+                    <select id="sonoDespertares" name="sonoDespertares">
+                        <option value="">Selecione</option>
+                        <option value="nenhuma">Nenhuma (sono direto)</option>
+                        <option value="1_2">1 a 2 vezes</option>
+                        <option value="3_4">3 a 4 vezes</option>
+                        <option value="mais_4">Mais de 4 vezes</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="horaDeitar">Hora de deitar</label>
+                        <input type="time" id="horaDeitar" name="horaDeitar">
+                    </div>
+                    <div class="form-group">
+                        <label for="horaAcordar">Hora de acordar</label>
+                        <input type="time" id="horaAcordar" name="horaAcordar">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estresseNivel">Nível de estresse atual: <span id="estresseValor">5</span>/10</label>
+                    <input type="range" id="estresseNivel" name="estresseNivel" min="0" max="10" value="5" class="slider">
+                    <div class="slider-labels">
+                        <span>Nenhum</span>
+                        <span>Máximo</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estresseFator">Principal fator estressante atual</label>
+                    <textarea id="estresseFator" name="estresseFator" rows="2" placeholder="Trabalho, família, saúde, financeiro, etc."></textarea>
+                </div>
+            </div>
+
+            <!-- Step 6: Histórico Médico -->
+            <div class="form-step" data-step="6">
+                <h2 class="step-title">🏥 Histórico Médico</h2>
+                <p class="step-description">Suas condições de saúde e medicamentos</p>
+                
+                <div class="form-group">
+                    <label>Possui alguma dessas condições?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="nenhuma" id="nenhumaCondicao">
+                            <span>Nenhuma</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="diabetes">
+                            <span>Diabetes</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="hipertensao">
+                            <span>Hipertensão</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="colesterol">
+                            <span>Colesterol alto</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="cardiopatia">
+                            <span>Doenças cardíacas</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="depressao_ansiedade">
+                            <span>Depressão/Ansiedade</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="tireoide">
+                            <span>Problemas de tireoide</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="hernia">
+                            <span>Hérnia de disco</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="condicoes" value="osteoporose">
+                            <span>Osteoporose</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="outrasCondicoes">Outras condições médicas</label>
+                    <textarea id="outrasCondicoes" name="outrasCondicoes" rows="2" placeholder="Liste outras doenças ou condições..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="usaMedicamentos">Usa algum medicamento atualmente? *</label>
+                    <select id="usaMedicamentos" name="usaMedicamentos" required>
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                
+                <div class="form-group medicamentos-dependente" style="display: none;">
+                    <label for="medicamentosLista">Liste seus medicamentos (nome e dose)</label>
+                    <textarea id="medicamentosLista" name="medicamentosLista" rows="4" placeholder="Ex: Losartana 50mg 1x/dia, Omeprazol 20mg em jejum..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alergias">Alergias a medicamentos</label>
+                    <input type="text" id="alergias" name="alergias" placeholder="Liste suas alergias ou escreva 'Nenhuma'">
+                </div>
+                
+                <div class="form-group">
+                    <label for="cirurgiasAnteriores">Cirurgias anteriores</label>
+                    <textarea id="cirurgiasAnteriores" name="cirurgiasAnteriores" rows="2" placeholder="Liste cirurgias que já fez e quando..."></textarea>
+                </div>
+            </div>
+
+            <!-- Step 7: Tratamentos e Hábitos -->
+            <div class="form-step" data-step="7">
+                <h2 class="step-title">💪 Tratamentos e Hábitos</h2>
+                <p class="step-description">Tratamentos anteriores e estilo de vida</p>
+                
+                <div class="form-group">
+                    <label>Já fez algum tratamento para esse problema?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="nenhum" id="nenhumTratamento">
+                            <span>Nenhum</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="medicacoes">
+                            <span>Medicações</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="fisioterapia">
+                            <span>Fisioterapia</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="acupuntura">
+                            <span>Acupuntura</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="infiltracao">
+                            <span>Infiltração/Bloqueio</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="cirurgia">
+                            <span>Cirurgia</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="tratamentos" value="pilates_rpg">
+                            <span>Pilates/RPG</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="resultadoTratamentos">Como foi o resultado dos tratamentos?</label>
+                    <select id="resultadoTratamentos" name="resultadoTratamentos">
+                        <option value="">Selecione</option>
+                        <option value="nao_fiz">Não fiz tratamentos</option>
+                        <option value="melhorou_total">Melhorou completamente</option>
+                        <option value="melhorou_parcial">Melhorou parcialmente</option>
+                        <option value="nao_mudou">Não mudou nada</option>
+                        <option value="piorou">Piorou</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="atividadeFisica">Pratica atividade física?</label>
+                    <select id="atividadeFisica" name="atividadeFisica">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="1_2x">1-2x por semana</option>
+                        <option value="3_4x">3-4x por semana</option>
+                        <option value="5_mais">5+ vezes por semana</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipoAtividade">Qual tipo de atividade?</label>
+                    <input type="text" id="tipoAtividade" name="tipoAtividade" placeholder="Ex: musculação, caminhada, natação...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tabagismo">Tabagismo</label>
+                    <select id="tabagismo" name="tabagismo">
+                        <option value="">Selecione</option>
+                        <option value="nunca">Nunca fumei</option>
+                        <option value="ex_fumante">Ex-fumante</option>
+                        <option value="fumante">Fumante atual</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alcool">Consumo de álcool</label>
+                    <select id="alcool" name="alcool">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não bebo</option>
+                        <option value="ocasional">Ocasionalmente (eventos)</option>
+                        <option value="semanal">Semanalmente</option>
+                        <option value="diario">Diariamente</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Step 8: Expectativas -->
+            <div class="form-step" data-step="8">
+                <h2 class="step-title">🎯 Expectativas</h2>
+                <p class="step-description">O que você espera desta consulta</p>
+                
+                <div class="form-group">
+                    <label for="expectativas">O que você espera desta consulta? *</label>
+                    <textarea id="expectativas" name="expectativas" required rows="4" placeholder="Descreva suas expectativas e objetivos..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="objetivoSaude">Qual seu principal objetivo de saúde?</label>
+                    <textarea id="objetivoSaude" name="objetivoSaude" rows="3" placeholder="Ex: voltar a praticar esportes, ter menos dor, dormir melhor..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="observacoes">Algo mais que gostaria de mencionar?</label>
+                    <textarea id="observacoes" name="observacoes" rows="3" placeholder="Informações adicionais que considera importantes..."></textarea>
+                </div>
+                
+                <div class="consent-box">
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="consentimento" name="consentimento" required>
+                        <span>Declaro que as informações acima são verdadeiras e autorizo o uso para fins de atendimento médico.</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="form-navigation">
+                <button type="button" class="btn btn-secondary" id="btnAnterior" style="display: none;">
+                    ← Anterior
+                </button>
+                <button type="button" class="btn btn-primary" id="btnProximo">
+                    Próximo →
+                </button>
+                <button type="submit" class="btn btn-success" id="btnEnviar" style="display: none;">
+                    ✓ Finalizar e Gerar PDF
+                </button>
+            </div>
+        </form>
+
+        <!-- Success Message -->
+        <div class="success-container" id="successContainer" style="display: none;">
+            <div class="success-icon">✅</div>
+            <h2>Anamnese Enviada!</h2>
+            <p>Obrigado por preencher o questionário.</p>
+            <p>O Dr. Felipe irá revisar suas respostas antes da consulta.</p>
+            <div class="pdf-actions">
+                <button class="btn btn-primary" id="btnDownloadPDF">
+                    📄 Baixar PDF
+                </button>
+            </div>
+            <p class="small-text">Nos vemos em breve! 🗓️</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Dr. Felipe Barreto - CRM/SP XXXXX</p>
+            <p>Neurocirurgia de Coluna | Medicina Funcional Integrativa</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

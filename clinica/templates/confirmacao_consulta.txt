@@ -1,0 +1,22 @@
+Olá, {nome}! 👋
+
+Passando para confirmar sua consulta:
+
+📅 *Data:* {data}
+🕐 *Horário:* {horario}
+👨‍⚕️ *Dr. Felipe Barreto* - Neurocirurgião
+📍 {local}
+
+💳 *Dados para pagamento:*
+Banco Inter (077)
+Ag: 0001 | Conta: 40685411
+PIX: 34.986.990/0001-09
+Valor: *R$ 500,00*
+
+Por favor, confirme respondendo:
+✅ *1* - Confirmo presença
+❌ *2* - Preciso reagendar
+
+Qualquer dúvida, estamos à disposição!
+
+_Clínica da Coluna Dr. Felipe Barreto_

@@ -1,0 +1,1004 @@
+================================================================================
+RACIONAL DE ANAMNESE - MEDICINA FUNCIONAL INTEGRATIVA
+================================================================================
+Baseado no Protocolo Clínico da ABMFI
+Adaptado para uso em bot de pré-consulta
+================================================================================
+
+OBJETIVO: Coletar informações estruturadas ANTES da consulta presencial,
+permitindo ao médico confirmar dados e focar no exame físico e conduta.
+
+================================================================================
+SEQUÊNCIA LÓGICA DE INVESTIGAÇÃO
+================================================================================
+
+1º - EIXO HPA E RITMO CIRCADIANO (Prioridade máxima)
+2º - INVESTIGAÇÃO DA DOR (Adicionado - foco neurocirurgia)
+3º - FUNÇÃO GASTROINTESTINAL
+4º - AVALIAÇÃO TIREOIDIANA/METABÓLICA
+5º - HISTÓRICO E MEDICAMENTOS
+
+================================================================================
+BLOCO 1: IDENTIFICAÇÃO E QUEIXA PRINCIPAL
+================================================================================
+
+1.1 DADOS BÁSICOS
+-----------------
+- Nome completo
+- Data de nascimento
+- Sexo biológico
+- Profissão/ocupação
+- Estado civil
+
+1.2 QUEIXA PRINCIPAL
+--------------------
+"Qual o principal motivo da sua consulta hoje?"
+(Resposta livre)
+
+"Há quanto tempo esse problema começou?"
+[ ] Menos de 1 semana
+[ ] 1-4 semanas
+[ ] 1-3 meses
+[ ] 3-6 meses
+[ ] 6-12 meses
+[ ] Mais de 1 ano
+
+"Houve algum evento específico que desencadeou seus sintomas?"
+(Resposta livre - buscar "gota d'água")
+
+================================================================================
+BLOCO 2: INVESTIGAÇÃO DA DOR (NEUROCIRURGIA DE COLUNA)
+================================================================================
+
+2.1 CARACTERÍSTICAS DA DOR
+--------------------------
+"Você sente dor? Se sim, onde?"
+[ ] Não sinto dor
+[ ] Pescoço/cervical
+[ ] Região torácica (meio das costas)
+[ ] Lombar (lombalgia)
+[ ] Glúteo/quadril
+[ ] Perna (direita/esquerda/ambas)
+[ ] Braço (direito/esquerdo/ambos)
+[ ] Outro: _______
+
+"Como você descreveria sua dor?" (pode marcar mais de uma)
+[ ] Queimação/ardência
+[ ] Pontada/facada
+[ ] Peso/pressão
+[ ] Choque/fisgada
+[ ] Latejante/pulsátil
+[ ] Formigamento/dormência
+[ ] Cãibra
+[ ] Dor surda/contínua
+
+"Em uma escala de 0 a 10, qual a intensidade da sua dor?"
+- No pior momento: ___
+- Na média do dia: ___
+- No melhor momento: ___
+
+2.2 PADRÃO TEMPORAL DA DOR
+--------------------------
+"Quando a dor é pior?"
+[ ] Pela manhã ao acordar
+[ ] Ao longo do dia (piora progressiva)
+[ ] À noite
+[ ] Durante a madrugada
+[ ] Não tem padrão definido
+[ ] Constante o tempo todo
+
+"A dor é:"
+[ ] Contínua (presente o tempo todo)
+[ ] Intermitente (vai e volta)
+[ ] Em crises (episódios intensos separados)
+
+"Há quanto tempo sente essa dor?"
+[ ] Menos de 6 semanas (aguda)
+[ ] 6-12 semanas (subaguda)
+[ ] Mais de 3 meses (crônica)
+
+2.3 FATORES DE PIORA E MELHORA
+------------------------------
+"O que PIORA sua dor?" (marque todos que se aplicam)
+[ ] Ficar em pé parado
+[ ] Caminhar
+[ ] Sentar
+[ ] Deitar
+[ ] Movimentar a coluna
+[ ] Abaixar/agachar
+[ ] Carregar peso
+[ ] Tossir/espirrar
+[ ] Esforço físico
+[ ] Estresse emocional
+[ ] Nada específico piora
+
+"O que MELHORA sua dor?" (marque todos que se aplicam)
+[ ] Repouso/deitar
+[ ] Caminhar um pouco
+[ ] Calor local
+[ ] Gelo
+[ ] Medicação (qual: _______)
+[ ] Alongamento
+[ ] Mudar de posição
+[ ] Nada melhora
+
+2.4 IRRADIAÇÃO E SINTOMAS NEUROLÓGICOS
+--------------------------------------
+"A dor se espalha/irradia para outras regiões?"
+[ ] Não, fica só no local
+[ ] Sim, desce para a perna (qual lado: ___)
+[ ] Sim, desce para o braço (qual lado: ___)
+[ ] Sim, vai para outro lugar: _______
+
+"Se a dor irradia para perna/braço, até onde vai?"
+[ ] Coxa/braço (parte de cima)
+[ ] Joelho/cotovelo
+[ ] Panturrilha/antebraço
+[ ] Pé/mão
+[ ] Dedos
+
+"Você sente algum desses sintomas?" (SINAIS DE ALERTA)
+[ ] Fraqueza nas pernas para andar
+[ ] Fraqueza nas mãos/braços
+[ ] Dificuldade para segurar urina
+[ ] Dificuldade para segurar fezes
+[ ] Dormência na região genital/períneo ("sela")
+[ ] Perda de equilíbrio ao caminhar
+[ ] Dor que acorda durante a noite
+[ ] Febre associada à dor
+[ ] Perda de peso inexplicada
+
+2.5 TRATAMENTOS ANTERIORES PARA DOR
+-----------------------------------
+"Já fez algum tratamento para essa dor?"
+[ ] Medicações orais - quais: _______
+[ ] Fisioterapia - quanto tempo: _______
+[ ] Acupuntura
+[ ] Infiltração/bloqueio
+[ ] Cirurgia - qual/quando: _______
+[ ] RPG/Pilates
+[ ] Outros: _______
+
+"Se fez tratamentos, qual foi o resultado?"
+[ ] Melhorou completamente
+[ ] Melhorou parcialmente
+[ ] Não mudou nada
+[ ] Piorou
+
+================================================================================
+BLOCO 2A: ODI - OSWESTRY DISABILITY INDEX (DOR LOMBAR)
+================================================================================
+>>> APLICAR SE: Dor lombar, glúteo/quadril ou perna <<<
+
+Instruções: Para cada seção, marque a alternativa que melhor descreve
+sua situação HOJE. Cada resposta vale de 0 a 5 pontos.
+
+SEÇÃO 1 - INTENSIDADE DA DOR
+----------------------------
+[ ] (0) Não sinto dor no momento
+[ ] (1) A dor é muito leve no momento
+[ ] (2) A dor é moderada no momento
+[ ] (3) A dor é razoavelmente intensa no momento
+[ ] (4) A dor é muito intensa no momento
+[ ] (5) A dor é a pior que se pode imaginar no momento
+
+SEÇÃO 2 - CUIDADOS PESSOAIS (lavar-se, vestir-se)
+-------------------------------------------------
+[ ] (0) Posso cuidar de mim sem provocar dor extra
+[ ] (1) Posso cuidar de mim, mas isso provoca dor extra
+[ ] (2) É doloroso cuidar de mim e sou lento e cuidadoso
+[ ] (3) Preciso de alguma ajuda, mas dou conta da maior parte
+[ ] (4) Preciso de ajuda todos os dias na maioria dos cuidados
+[ ] (5) Não consigo me vestir, lavo-me com dificuldade e fico na cama
+
+SEÇÃO 3 - LEVANTAR OBJETOS
+--------------------------
+[ ] (0) Posso levantar objetos pesados sem dor extra
+[ ] (1) Posso levantar objetos pesados, mas provoca dor extra
+[ ] (2) A dor me impede de levantar objetos pesados, mas consigo se bem posicionados
+[ ] (3) A dor me impede de levantar objetos pesados, mas consigo leves/médios se bem posicionados
+[ ] (4) Posso levantar apenas objetos muito leves
+[ ] (5) Não consigo levantar ou carregar nada
+
+SEÇÃO 4 - CAMINHAR
+------------------
+[ ] (0) A dor não me impede de caminhar qualquer distância
+[ ] (1) A dor me impede de caminhar mais de 1,5 km
+[ ] (2) A dor me impede de caminhar mais de 800 metros
+[ ] (3) A dor me impede de caminhar mais de 400 metros
+[ ] (4) Só consigo caminhar com bengala ou muletas
+[ ] (5) Fico na cama a maior parte do tempo
+
+SEÇÃO 5 - SENTAR
+----------------
+[ ] (0) Posso sentar em qualquer cadeira pelo tempo que quiser
+[ ] (1) Posso sentar na minha cadeira favorita pelo tempo que quiser
+[ ] (2) A dor me impede de sentar mais de 1 hora
+[ ] (3) A dor me impede de sentar mais de 30 minutos
+[ ] (4) A dor me impede de sentar mais de 10 minutos
+[ ] (5) A dor me impede de sentar
+
+SEÇÃO 6 - FICAR EM PÉ
+---------------------
+[ ] (0) Posso ficar em pé o tempo que quiser sem dor extra
+[ ] (1) Posso ficar em pé o tempo que quiser, mas provoca dor extra
+[ ] (2) A dor me impede de ficar em pé mais de 1 hora
+[ ] (3) A dor me impede de ficar em pé mais de 30 minutos
+[ ] (4) A dor me impede de ficar em pé mais de 10 minutos
+[ ] (5) A dor me impede de ficar em pé
+
+SEÇÃO 7 - DORMIR
+----------------
+[ ] (0) Meu sono nunca é perturbado pela dor
+[ ] (1) Meu sono é ocasionalmente perturbado pela dor
+[ ] (2) Por causa da dor, durmo menos de 6 horas
+[ ] (3) Por causa da dor, durmo menos de 4 horas
+[ ] (4) Por causa da dor, durmo menos de 2 horas
+[ ] (5) A dor me impede de dormir
+
+SEÇÃO 8 - VIDA SEXUAL (se aplicável)
+------------------------------------
+[ ] (0) Minha vida sexual é normal e não provoca dor extra
+[ ] (1) Minha vida sexual é normal, mas provoca alguma dor extra
+[ ] (2) Minha vida sexual é quase normal, mas provoca muita dor
+[ ] (3) Minha vida sexual é muito limitada pela dor
+[ ] (4) Minha vida sexual é praticamente inexistente pela dor
+[ ] (5) A dor me impede de ter vida sexual
+[ ] N/A - Não se aplica
+
+SEÇÃO 9 - VIDA SOCIAL
+---------------------
+[ ] (0) Minha vida social é normal e não provoca dor extra
+[ ] (1) Minha vida social é normal, mas aumenta o grau de dor
+[ ] (2) A dor não afeta muito minha vida social, exceto atividades intensas
+[ ] (3) A dor restringiu minha vida social e não saio tanto
+[ ] (4) A dor restringiu minha vida social à minha casa
+[ ] (5) Não tenho vida social por causa da dor
+
+SEÇÃO 10 - VIAJAR
+-----------------
+[ ] (0) Posso viajar para qualquer lugar sem dor
+[ ] (1) Posso viajar para qualquer lugar, mas provoca dor extra
+[ ] (2) A dor é intensa, mas consigo viagens de mais de 2 horas
+[ ] (3) A dor me restringe a viagens de menos de 1 hora
+[ ] (4) A dor me restringe a viagens curtas e necessárias, menos de 30 min
+[ ] (5) A dor me impede de viajar, exceto para tratamento
+
+--------------------------------------------------------------------------------
+CÁLCULO DO ODI:
+Score = (Soma dos pontos / Máximo possível) x 100
+
+Se respondeu todas as 10 seções: Máximo = 50
+Se pulou a seção 8 (vida sexual): Máximo = 45
+
+INTERPRETAÇÃO:
+0-20%    = Incapacidade mínima
+21-40%   = Incapacidade moderada
+41-60%   = Incapacidade severa
+61-80%   = Incapacitado
+81-100%  = Acamado ou exagero dos sintomas
+--------------------------------------------------------------------------------
+
+================================================================================
+BLOCO 2B: NDI - NECK DISABILITY INDEX (DOR CERVICAL)
+================================================================================
+>>> APLICAR SE: Dor cervical ou irradiação para braço <<<
+
+Instruções: Para cada seção, marque a alternativa que melhor descreve
+sua situação HOJE. Cada resposta vale de 0 a 5 pontos.
+
+SEÇÃO 1 - INTENSIDADE DA DOR
+----------------------------
+[ ] (0) Não sinto dor no momento
+[ ] (1) A dor é muito leve no momento
+[ ] (2) A dor é moderada no momento
+[ ] (3) A dor é razoavelmente intensa no momento
+[ ] (4) A dor é muito intensa no momento
+[ ] (5) A dor é a pior que se pode imaginar no momento
+
+SEÇÃO 2 - CUIDADOS PESSOAIS (lavar-se, vestir-se)
+-------------------------------------------------
+[ ] (0) Posso cuidar de mim sem provocar dor extra
+[ ] (1) Posso cuidar de mim, mas isso provoca dor extra
+[ ] (2) É doloroso cuidar de mim e sou lento e cuidadoso
+[ ] (3) Preciso de alguma ajuda, mas dou conta da maior parte
+[ ] (4) Preciso de ajuda todos os dias na maioria dos cuidados
+[ ] (5) Não consigo me vestir, lavo-me com dificuldade e fico na cama
+
+SEÇÃO 3 - LEVANTAR OBJETOS
+--------------------------
+[ ] (0) Posso levantar objetos pesados sem dor no pescoço
+[ ] (1) Posso levantar objetos pesados, mas provoca dor extra
+[ ] (2) A dor me impede de levantar objetos pesados, mas consigo médios se bem posicionados
+[ ] (3) Posso levantar apenas objetos leves
+[ ] (4) Posso levantar apenas objetos muito leves
+[ ] (5) Não consigo levantar ou carregar nada
+
+SEÇÃO 4 - LEITURA
+-----------------
+[ ] (0) Posso ler o quanto quiser sem dor no pescoço
+[ ] (1) Posso ler o quanto quiser com dor leve no pescoço
+[ ] (2) Posso ler o quanto quiser com dor moderada no pescoço
+[ ] (3) Não consigo ler o quanto quero por causa de dor moderada
+[ ] (4) Quase não consigo ler por causa de dor intensa
+[ ] (5) Não consigo ler nada
+
+SEÇÃO 5 - DOR DE CABEÇA
+-----------------------
+[ ] (0) Não tenho dores de cabeça
+[ ] (1) Tenho dores de cabeça leves e pouco frequentes
+[ ] (2) Tenho dores de cabeça moderadas e pouco frequentes
+[ ] (3) Tenho dores de cabeça moderadas e frequentes
+[ ] (4) Tenho dores de cabeça intensas e frequentes
+[ ] (5) Tenho dores de cabeça quase o tempo todo
+
+SEÇÃO 6 - CONCENTRAÇÃO
+----------------------
+[ ] (0) Posso me concentrar totalmente quando quero, sem dificuldade
+[ ] (1) Posso me concentrar totalmente com leve dificuldade
+[ ] (2) Tenho dificuldade moderada para me concentrar
+[ ] (3) Tenho muita dificuldade para me concentrar
+[ ] (4) Tenho extrema dificuldade para me concentrar
+[ ] (5) Não consigo me concentrar de forma alguma
+
+SEÇÃO 7 - TRABALHO
+------------------
+[ ] (0) Posso trabalhar o quanto quiser
+[ ] (1) Só consigo fazer meu trabalho habitual, nada mais
+[ ] (2) Consigo fazer a maior parte do meu trabalho, nada mais
+[ ] (3) Não consigo fazer meu trabalho habitual
+[ ] (4) Quase não consigo fazer nenhum trabalho
+[ ] (5) Não consigo fazer nenhum trabalho
+
+SEÇÃO 8 - DIRIGIR
+-----------------
+[ ] (0) Posso dirigir sem nenhuma dor no pescoço
+[ ] (1) Posso dirigir o quanto quiser com leve dor no pescoço
+[ ] (2) Posso dirigir o quanto quiser com dor moderada
+[ ] (3) Não consigo dirigir o quanto quiser por causa da dor
+[ ] (4) Quase não consigo dirigir por causa da dor intensa
+[ ] (5) Não consigo dirigir de forma alguma
+[ ] N/A - Não dirijo
+
+SEÇÃO 9 - DORMIR
+----------------
+[ ] (0) Não tenho problemas para dormir
+[ ] (1) Meu sono é levemente perturbado (menos de 1h sem dormir)
+[ ] (2) Meu sono é moderadamente perturbado (1-2h sem dormir)
+[ ] (3) Meu sono é moderadamente perturbado (2-3h sem dormir)
+[ ] (4) Meu sono é muito perturbado (3-5h sem dormir)
+[ ] (5) Meu sono é completamente perturbado (5-7h sem dormir)
+
+SEÇÃO 10 - LAZER/RECREAÇÃO
+--------------------------
+[ ] (0) Posso fazer todas as atividades de lazer sem dor
+[ ] (1) Posso fazer todas as atividades de lazer com alguma dor
+[ ] (2) Consigo fazer a maioria, mas não todas as atividades
+[ ] (3) Consigo fazer apenas algumas atividades de lazer
+[ ] (4) Quase não consigo fazer nenhuma atividade de lazer
+[ ] (5) Não consigo fazer nenhuma atividade de lazer
+
+--------------------------------------------------------------------------------
+CÁLCULO DO NDI:
+Score = (Soma dos pontos / Máximo possível) x 100
+
+Se respondeu todas as 10 seções: Máximo = 50
+Se pulou a seção 8 (dirigir): Máximo = 45
+
+INTERPRETAÇÃO:
+0-4 pontos (0-8%)     = Sem incapacidade
+5-14 pontos (10-28%)  = Incapacidade leve
+15-24 pontos (30-48%) = Incapacidade moderada
+25-34 pontos (50-68%) = Incapacidade severa
+35-50 pontos (70-100%)= Incapacidade completa
+--------------------------------------------------------------------------------
+
+================================================================================
+BLOCO 3: EIXO HPA - RITMO CIRCADIANO E ESTRESSE
+================================================================================
+
+3.1 PADRÃO DE SONO
+------------------
+"A que horas você costuma ir para a cama nos dias de semana?"
+(Horário)
+
+"Quanto tempo demora para adormecer após deitar?"
+[ ] Menos de 15 minutos
+[ ] 15-30 minutos
+[ ] 30-60 minutos
+[ ] Mais de 1 hora
+
+"Quantas vezes acorda durante a noite?"
+[ ] Nenhuma (sono direto)
+[ ] 1-2 vezes
+[ ] 3-4 vezes
+[ ] Mais de 4 vezes
+
+"A que horas acorda naturalmente (sem despertador)?"
+(Horário)
+
+"Como se sente ao acordar?"
+[ ] Descansado e com energia
+[ ] Um pouco cansado, mas ok
+[ ] Cansado como se não tivesse dormido
+[ ] Exausto
+
+"Precisa de café ou estimulantes para 'funcionar' pela manhã?"
+[ ] Não
+[ ] Às vezes
+[ ] Sempre
+
+3.2 QUALIDADE DO SONO
+---------------------
+"Seu sono é reparador ou você acorda como se não tivesse dormido?"
+[ ] Reparador
+[ ] Às vezes não reparador
+[ ] Quase nunca reparador
+
+"Tem sonhos vívidos ou pesadelos frequentes?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Ronca ou alguém já observou paradas respiratórias?"
+[ ] Não
+[ ] Ronco leve
+[ ] Ronco intenso
+[ ] Já observaram pausas respiratórias
+
+"Acorda com dor de cabeça ou boca seca?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+3.3 RITMO CIRCADIANO
+--------------------
+"Você se considera uma pessoa matutina ou noturna?"
+[ ] Matutina (mais energia de manhã)
+[ ] Noturna (mais energia à noite)
+[ ] Indiferente
+
+"Em que horário do dia se sente mais disposto?"
+[ ] Manhã (6h-12h)
+[ ] Início da tarde (12h-15h)
+[ ] Final da tarde (15h-18h)
+[ ] Noite (após 18h)
+
+"Tem exposição à luz solar pela manhã (primeiros 30 minutos após acordar)?"
+[ ] Sim, diariamente
+[ ] Às vezes
+[ ] Raramente/nunca
+
+"Usa dispositivos eletrônicos nas 2 horas antes de dormir?"
+[ ] Não
+[ ] Às vezes
+[ ] Sempre
+
+3.4 AVALIAÇÃO DO ESTRESSE
+-------------------------
+"Em uma escala de 0-10, qual seu nível de estresse atual?"
+(0 = nenhum estresse, 10 = estresse máximo)
+___
+
+"Há quanto tempo sua vida está mais estressante?"
+[ ] Não está estressante
+[ ] Menos de 1 mês
+[ ] 1-6 meses
+[ ] 6-12 meses
+[ ] Mais de 1 ano
+
+"Consegue identificar o principal fator estressante atual?"
+(Resposta livre)
+
+"Como seu corpo reage ao estresse?" (marque todos)
+[ ] Tensão muscular
+[ ] Dor de cabeça
+[ ] Aperto no peito
+[ ] Problemas digestivos
+[ ] Alteração do sono
+[ ] Irritabilidade
+[ ] Ansiedade
+[ ] Não percebo sintomas físicos
+
+3.5 GATILHOS E CAPACIDADE DE RECUPERAÇÃO
+----------------------------------------
+"Houve algum evento específico que 'disparou' seus sintomas?"
+[ ] Não
+[ ] Sim - qual: _______
+
+"Teve alguma perda significativa, mudança ou trauma recente?"
+[ ] Não
+[ ] Sim - qual: _______
+
+"Consegue relaxar verdadeiramente ou está sempre 'ligado'?"
+[ ] Consigo relaxar facilmente
+[ ] Tenho dificuldade mas consigo
+[ ] Estou sempre ligado/ansioso
+
+"Pratica alguma técnica de relaxamento ou meditação?"
+[ ] Sim, regularmente
+[ ] Às vezes
+[ ] Não
+
+3.6 SINTOMAS DE DISFUNÇÃO DO EIXO HPA
+-------------------------------------
+"Como se sente nos primeiros 30 minutos após acordar?"
+[ ] Bem e com energia
+[ ] Lento mas melhoro
+[ ] Muito difícil despertar
+[ ] Tontura ou fraqueza ao levantar
+
+"Sente um 'segundo fôlego' no final da tarde/noite?"
+[ ] Não
+[ ] Às vezes
+[ ] Sim, fico mais desperto à noite
+
+"Acorda entre 2-4h da manhã com dificuldade para voltar a dormir?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Sente fadiga que NÃO melhora com repouso?"
+[ ] Não
+[ ] Às vezes
+[ ] Sim, sempre cansado
+
+"Tem 'crashes' de energia durante o dia?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Precisa de açúcar/cafeína para manter energia?"
+[ ] Não
+[ ] Às vezes
+[ ] Sim, constantemente
+
+================================================================================
+BLOCO 4: FUNÇÃO GASTROINTESTINAL
+================================================================================
+
+4.1 HÁBITO INTESTINAL
+---------------------
+"Quantas vezes evacua por semana?"
+[ ] Menos de 3 vezes
+[ ] 3-7 vezes (1x/dia ou menos)
+[ ] 7-14 vezes (1-2x/dia)
+[ ] Mais de 14 vezes (mais de 2x/dia)
+
+"Como são suas fezes geralmente?" (Escala de Bristol)
+[ ] Tipo 1-2: Duras, em bolinhas ou formato de salsicha com rachaduras
+[ ] Tipo 3-4: Formato de salsicha lisa ou banana
+[ ] Tipo 5-6: Pedaços moles ou pastosas
+[ ] Tipo 7: Líquidas
+
+"Precisa fazer força para evacuar?"
+[ ] Não
+[ ] Às vezes
+[ ] Sempre
+
+"Sente que não esvaziou completamente?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Há presença de muco, sangue ou alimentos não digeridos?"
+[ ] Não
+[ ] Muco
+[ ] Sangue
+[ ] Alimentos não digeridos
+
+"Há alternância entre diarreia e constipação?"
+[ ] Não
+[ ] Sim
+
+4.2 SINTOMAS DE SIBO/IMO (FERMENTAÇÃO)
+--------------------------------------
+"Sente barriga inchada, principalmente após as refeições?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+[ ] Sempre
+
+"A distensão piora ao longo do dia?"
+[ ] Não
+[ ] Sim
+
+"Elimina muitos gases (flatulência)?"
+[ ] Normal
+[ ] Aumentado
+[ ] Muito aumentado
+
+"Os gases têm odor muito forte?"
+[ ] Não
+[ ] Sim
+
+"Carboidratos (pães, massas) pioram os sintomas?"
+[ ] Não
+[ ] Sim
+
+"Fibras aumentam o desconforto?"
+[ ] Não
+[ ] Sim
+
+"Jejum melhora os sintomas abdominais?"
+[ ] Não
+[ ] Sim
+
+4.3 SINTOMAS PÓS-PRANDIAIS
+--------------------------
+"Sente fadiga após as refeições?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Tem 'névoa mental' relacionada à alimentação?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Dores articulares sem causa aparente?"
+[ ] Não
+[ ] Sim
+
+"Alterações do humor após comer?"
+[ ] Não
+[ ] Sim
+
+4.4 PERMEABILIDADE INTESTINAL (LEAKY GUT)
+-----------------------------------------
+"Desenvolveu intolerâncias alimentares recentemente?"
+[ ] Não
+[ ] Sim - quais: _______
+
+"Alimentos que antes tolerava agora causam sintomas?"
+[ ] Não
+[ ] Sim
+
+"Tem reações a múltiplos alimentos diferentes?"
+[ ] Não
+[ ] Sim
+
+"Tem infecções recorrentes (sinusite, cistite, candidíase)?"
+[ ] Não
+[ ] Sim - quais: _______
+
+4.5 SINTOMAS HISTAMÍNICOS
+-------------------------
+"Tem coceira na pele sem lesões aparentes?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Sente calor ou rubor facial após comer?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Tem congestão nasal frequente?"
+[ ] Não
+[ ] Sim
+
+"Sente palpitações após refeições?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+
+"Tem dores de cabeça relacionadas a alimentos?"
+[ ] Não
+[ ] Sim
+
+"Piora com vinhos, queijos envelhecidos, embutidos?"
+[ ] Não sei
+[ ] Não
+[ ] Sim
+
+================================================================================
+BLOCO 5: SINTOMAS GERAIS E METABÓLICOS
+================================================================================
+
+5.1 ENERGIA E DISPOSIÇÃO
+------------------------
+"Como está seu nível de energia?"
+[ ] Normal/bom
+[ ] Levemente reduzido
+[ ] Moderadamente reduzido
+[ ] Muito baixo
+[ ] Exausto constantemente
+
+"A fadiga melhora com repouso?"
+[ ] Sim
+[ ] Parcialmente
+[ ] Não melhora
+
+5.2 FUNÇÃO COGNITIVA
+--------------------
+"Tem dificuldade de concentração?"
+[ ] Não
+[ ] Leve
+[ ] Moderada
+[ ] Intensa
+
+"Tem dificuldade de memória?"
+[ ] Não
+[ ] Leve
+[ ] Moderada
+[ ] Intensa
+
+"Sente 'névoa mental' (brain fog)?"
+[ ] Não
+[ ] Às vezes
+[ ] Frequentemente
+[ ] Constantemente
+
+5.3 HUMOR
+---------
+"Como está seu humor geral?"
+[ ] Bom/estável
+[ ] Oscilante
+[ ] Tendência a tristeza
+[ ] Tendência a ansiedade
+[ ] Irritabilidade frequente
+
+"Sente ansiedade?"
+[ ] Não
+[ ] Ocasional
+[ ] Frequente
+[ ] Constante
+
+"Sente desânimo ou tristeza?"
+[ ] Não
+[ ] Ocasional
+[ ] Frequente
+[ ] Constante
+
+5.4 PESO E METABOLISMO
+----------------------
+"Houve alteração de peso nos últimos 6 meses?"
+[ ] Manteve-se estável
+[ ] Ganhou peso - quanto: ___ kg
+[ ] Perdeu peso - quanto: ___ kg
+
+"A alteração de peso foi intencional?"
+[ ] Sim
+[ ] Não
+[ ] Não houve alteração
+
+"Sente frio com facilidade?"
+[ ] Não
+[ ] Às vezes
+[ ] Sempre (mãos e pés frios)
+
+"Tem queda de cabelo?"
+[ ] Não
+[ ] Leve
+[ ] Moderada
+[ ] Intensa
+
+"Tem pele seca?"
+[ ] Não
+[ ] Leve
+[ ] Moderada
+[ ] Intensa
+
+"Tem unhas quebradiças?"
+[ ] Não
+[ ] Sim
+
+5.5 SINTOMAS TIREOIDIANOS ESPECÍFICOS
+-------------------------------------
+"Já teve diagnóstico de problemas na tireoide?"
+[ ] Não
+[ ] Hipotireoidismo
+[ ] Hipertireoidismo
+[ ] Hashimoto
+[ ] Nódulos
+[ ] Outro: _______
+
+"Usa medicação para tireoide?"
+[ ] Não
+[ ] Sim - qual e dose: _______
+
+"Há histórico familiar de doenças da tireoide?"
+[ ] Não
+[ ] Sim - quem: _______
+
+================================================================================
+BLOCO 6: HISTÓRICO MÉDICO E MEDICAMENTOS
+================================================================================
+
+6.1 DOENÇAS PRÉ-EXISTENTES
+--------------------------
+"Possui alguma dessas condições?" (marque todas)
+[ ] Diabetes
+[ ] Hipertensão
+[ ] Colesterol alto
+[ ] Doenças cardíacas
+[ ] Doenças autoimunes - qual: _______
+[ ] Depressão/ansiedade
+[ ] Fibromialgia
+[ ] Artrite/artrose
+[ ] Hérnias de disco
+[ ] Osteoporose
+[ ] Câncer - qual/quando: _______
+[ ] Outras: _______
+
+6.2 MEDICAMENTOS EM USO
+-----------------------
+"Liste todos os medicamentos que usa atualmente:"
+(Nome, dose, frequência)
+_______
+
+6.3 INVESTIGAÇÃO DE MEDICAMENTOS ESPECÍFICOS
+--------------------------------------------
+(IMPORTANTE - Podem causar sintomas que mimetizam outras condições)
+
+"Usa anticoncepcional?" (PARA MULHERES)
+[ ] Não
+[ ] Sim - qual: _______
+[ ] Há quanto tempo: _______
+[ ] Trocou recentemente: [ ] Sim [ ] Não
+
+"Usa antidepressivos?"
+[ ] Não
+[ ] Sim - qual: _______
+
+"Usa medicamentos para queda de cabelo?"
+[ ] Não
+[ ] Finasterida
+[ ] Dutasterida
+[ ] Minoxidil
+[ ] Há quanto tempo: _______
+
+"Usa medicamentos para dormir?"
+[ ] Não
+[ ] Sim - qual: _______
+
+"Usa inibidores de bomba de prótons (omeprazol, pantoprazol)?"
+[ ] Não
+[ ] Sim - qual e há quanto tempo: _______
+
+6.4 SUPLEMENTOS
+---------------
+"Usa algum suplemento vitamínico ou mineral?"
+[ ] Não
+[ ] Sim - quais: _______
+
+6.5 PROCEDIMENTOS ESTÉTICOS
+---------------------------
+"Possui implantes ou preenchimentos?"
+[ ] Não
+[ ] Silicone
+[ ] PMMA
+[ ] Ácido hialurônico
+[ ] Bioplastia
+[ ] Outros: _______
+
+6.6 CIRURGIAS ANTERIORES
+------------------------
+"Já fez alguma cirurgia?"
+[ ] Não
+[ ] Sim - quais e quando: _______
+
+6.7 ALERGIAS
+------------
+"Tem alergia a algum medicamento?"
+[ ] Não
+[ ] Sim - quais: _______
+
+================================================================================
+BLOCO 7: HÁBITOS DE VIDA
+================================================================================
+
+7.1 ALIMENTAÇÃO
+---------------
+"Como você descreveria sua alimentação?"
+[ ] Saudável e equilibrada
+[ ] Razoável, poderia melhorar
+[ ] Irregular/desorganizada
+[ ] Muito ruim
+
+"Segue alguma dieta específica?"
+[ ] Não
+[ ] Low carb/cetogênica
+[ ] Vegetariana/vegana
+[ ] Sem glúten
+[ ] Sem lactose
+[ ] Outra: _______
+
+"Consome álcool?"
+[ ] Não
+[ ] Ocasionalmente (eventos sociais)
+[ ] Semanalmente
+[ ] Diariamente
+
+"Quantos litros de água bebe por dia?"
+[ ] Menos de 1 litro
+[ ] 1-2 litros
+[ ] Mais de 2 litros
+
+7.2 ATIVIDADE FÍSICA
+--------------------
+"Pratica atividade física?"
+[ ] Não
+[ ] 1-2x por semana
+[ ] 3-4x por semana
+[ ] 5+ vezes por semana
+
+"Que tipo de atividade?"
+(Resposta livre)
+
+7.3 TABAGISMO
+-------------
+"Fuma ou já fumou?"
+[ ] Nunca fumei
+[ ] Ex-fumante - parou há: _______
+[ ] Fumante atual - quantidade/dia: _______
+
+================================================================================
+BLOCO 8: EXPECTATIVAS E OBJETIVOS
+================================================================================
+
+"O que você espera desta consulta?"
+(Resposta livre)
+
+"Qual seu principal objetivo de saúde neste momento?"
+(Resposta livre)
+
+"Há algo específico que gostaria de abordar na consulta?"
+(Resposta livre)
+
+================================================================================
+RESUMO PARA O MÉDICO - SINAIS DE ALERTA
+================================================================================
+
+ATENÇÃO IMEDIATA (RED FLAGS NEUROLÓGICOS):
+- Fraqueza progressiva em membros
+- Alteração de esfíncteres
+- Anestesia em sela
+- Febre + dor de coluna
+- Perda de peso inexplicada + dor
+
+ATENÇÃO PARA DISFUNÇÃO DO EIXO HPA:
+- Latência do sono > 30 minutos
+- Despertares noturnos > 2 vezes
+- Não se sente descansado ao acordar
+- Estresse crônico > 6 meses
+- Fadiga que não melhora com repouso
+- Segundo fôlego noturno
+
+ATENÇÃO PARA DISFUNÇÃO GI:
+- Distensão abdominal pós-prandial
+- Flatulência excessiva e malodorosa
+- Fadiga pós-prandial
+- Intolerância a fibras e FODMAPs
+- Múltiplas sensibilidades alimentares recentes
+- Sintomas histamínicos
+
+ATENÇÃO PARA MEDICAMENTOS:
+- Anticoncepcional (correlação temporal com sintomas)
+- Finasterida/Dutasterida (sintomas neuropsiquiátricos)
+- PMMA/implantes (risco com vitamina D)
+- IBPs de uso crônico
+
+================================================================================
+SCORES FUNCIONAIS - RESUMO
+================================================================================
+
+ODI (Oswestry Disability Index) - DOR LOMBAR:
+- Aplicar se: dor lombar, glúteo/quadril ou perna
+- Score = (Soma / 50) x 100  [ou /45 se pular vida sexual]
+- 0-20% mínima | 21-40% moderada | 41-60% severa | 61-80% incapacitado | >80% acamado
+
+NDI (Neck Disability Index) - DOR CERVICAL:
+- Aplicar se: dor cervical ou irradiação para braço
+- Score = (Soma / 50) x 100  [ou /45 se pular dirigir]
+- 0-8% sem | 10-28% leve | 30-48% moderada | 50-68% severa | >70% completa
+
+================================================================================
+FIM DO QUESTIONÁRIO
+================================================================================
+
+Versão: 1.1
+Data: Fevereiro 2026
+Baseado em: Protocolo ABMFI - Abordagem Funcional Integrativa do Hipotireoidismo
+Adaptações: Investigação da dor + ODI/NDI para neurocirurgia de coluna

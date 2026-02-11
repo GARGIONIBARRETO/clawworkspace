@@ -1,0 +1,24 @@
+{
+  "clinica": {
+    "nome": "Clínica da Coluna Dr. Felipe Barreto",
+    "email": "clinicadacolunadrfelipebarreto@gmail.com",
+    "whatsapp": "5511930488315"
+  },
+  "confirmacao": {
+    "horasAntes": 24,
+    "horarioEnvio": "09:00"
+  },
+  "pagamento": {
+    "banco": "077",
+    "bancoNome": "Banco Inter",
+    "agencia": "0001",
+    "conta": "40685411",
+    "cnpj": "34.986.990/0001-09",
+    "pix": "34.986.990/0001-09",
+    "valorConsulta": 500.00
+  },
+  "googleCalendar": {
+    "email": "clinicadacolunadrfelipebarreto@gmail.com",
+    "calendarId": "primary"
+  }
+}

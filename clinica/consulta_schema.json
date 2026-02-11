@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Consulta",
+  "type": "object",
+  "required": ["id", "pacienteId", "data", "tipo"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID único da consulta"
+    },
+    "pacienteId": {
+      "type": "string",
+      "description": "ID do paciente"
+    },
+    "data": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora da consulta"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": ["primeira_consulta", "retorno", "emergencia", "procedimento", "teleconsulta"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["agendada", "confirmada", "em_andamento", "concluida", "cancelada", "faltou"],
+      "default": "agendada"
+    },
+    "confirmacaoWhatsApp": {
+      "type": "object",
+      "properties": {
+        "enviada": { "type": "boolean" },
+        "dataEnvio": { "type": "string", "format": "date-time" },
+        "resposta": { "type": "string" },
+        "dataResposta": { "type": "string", "format": "date-time" }
+      }
+    },
+    "anamnese": {
+      "type": "object",
+      "properties": {
+        "queixaPrincipal": { "type": "string" },
+        "historiaDoencaAtual": { "type": "string" },
+        "duracaoSintomas": { "type": "string" },
+        "fatoresAgravantes": { "type": "string" },
+        "fatoresAlívio": { "type": "string" },
+        "tratamentosAnteriores": { "type": "string" },
+        "escalasDor": {
+          "type": "object",
+          "properties": {
+            "eva": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "localizacao": { "type": "string" },
+            "irradiacao": { "type": "string" }
+          }
+        }
+      }
+    },
+    "exameFisico": {
+      "type": "object",
+      "properties": {
+        "inspecao": { "type": "string" },
+        "palpacao": { "type": "string" },
+        "amplitudeMovimento": { "type": "string" },
+        "testesEspeciais": { "type": "string" },
+        "exameNeurologico": {
+          "type": "object",
+          "properties": {
+            "forca": { "type": "string" },
+            "sensibilidade": { "type": "string" },
+            "reflexos": { "type": "string" }
+          }
+        }
+      }
+    },
+    "hipotesesDiagnosticas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cid10": { "type": "string" },
+          "descricao": { "type": "string" }
+        }
+      }
+    },
+    "examesSolicitados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipo": { "type": "string" },
+          "descricao": { "type": "string" },
+          "dataSolicitacao": { "type": "string", "format": "date" },
+          "status": { "type": "string", "enum": ["solicitado", "realizado", "laudado"] }
+        }
+      }
+    },
+    "conduta": {
+      "type": "object",
+      "properties": {
+        "orientacoes": { "type": "string" },
+        "prescricoes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "medicamento": { "type": "string" },
+              "dose": { "type": "string" },
+              "frequencia": { "type": "string" },
+              "duracao": { "type": "string" },
+              "observacoes": { "type": "string" }
+            }
+          }
+        },
+        "encaminhamentos": { "type": "array", "items": { "type": "string" } },
+        "retorno": { "type": "string" }
+      }
+    },
+    "observacoes": {
+      "type": "string"
+    },
+    "arquivos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipo": { "type": "string" },
+          "nome": { "type": "string" },
+          "caminho": { "type": "string" },
+          "dataUpload": { "type": "string", "format": "date-time" }
+        }
+      }
+    }
+  }
+}

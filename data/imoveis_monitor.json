@@ -1,0 +1,14 @@
+{
+  "ativo": true,
+  "criterios": {
+    "regioes": ["Vila Nova Conceição", "Moema", "Itaim Bibi"],
+    "tipos": ["apartamento", "casa"],
+    "preco_max": 3000000,
+    "area_max": 200,
+    "preco_m2_alvo": 15000,
+    "preco_m2_pechincha": 12000
+  },
+  "ultima_verificacao": "2026-02-05T09:44:00-03:00",
+  "nota": "Sites usam JavaScript para carregar listagens - scraping automático limitado",
+  "alertas_enviados": []
+}

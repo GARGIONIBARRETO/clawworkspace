@@ -1,0 +1,133 @@
+================================================================================
+                    BACKUP CONFIGURAÇÕES - MAX (CLAWDBOT)
+                         Atualizado: 2026-02-10 07:10
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 IDENTIDADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Nome:       Max
+Criado em:  02/02/2026
+Criador:    Felipe G (@FelipeG_Nx)
+Emoji:      ⚡
+Vibe:       Direto, prático, leve. Sem enrolação, com personalidade.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 USUÁRIO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Nome:       Felipe G
+Telegram:   @FelipeG_Nx
+Timezone:   America/Sao_Paulo (GMT-3)
+Profissão:  Médico - Neurocirurgião (coluna) + Medicina Funcional Integrativa
+
+Especialidades:
+  • Neurocirurgia de Coluna (foco principal)
+  • Medicina Funcional Integrativa
+  • Medicina Regenerativa (em estudo)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📧 EMAIL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Conta:        clinicadacolunadrfelipebarreto@gmail.com
+Credenciais:  /root/.secrets/email_credentials.json
+Status:       ✅ Configurado
+
+Scripts:
+  • Checar inbox:  python3 /root/clawd/scripts/email_checker.py check [limit]
+  • Buscar email:  python3 /root/clawd/scripts/email_checker.py get <id> [path]
+  • Enviar email:  python3 /root/clawd/scripts/email_sender.py <to> <subj> <body>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔍 BRAVE SEARCH API
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+API Key:      BSAje0yvRaPVyZ926CYb5KZLNRBfZgT
+Plano:        Gratuito (2000 buscas/mês)
+Rate limit:   1 requisição/segundo
+Status:       ✅ Configurado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 BROWSER (CHROMIUM)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Modo:         Headless
+Config:       browser.enabled = true, headless = true, noSandbox = true
+Status:       ✅ Configurado
+Nota:         Buscadores bloqueiam automação com CAPTCHA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 CÓDIGOS TUSS - REFERÊNCIAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Manual:       referencias/Manual_Codificacao_Coluna_SBC_SBOT_SBN.txt
+Códigos:      referencias/codigos_tuss.md
+
+Códigos Validados:
+  Infecção Pós-Artrodese:
+    • 3.07.15.21-0 – Osteomielite de coluna
+    • 3.01.01.28-0 – Desbridamento cirúrgico
+    • 3.07.30.03-1 – Desbridamento feridas/extremidades
+    • 3.01.01.78-6 – Sutura extensos ferimentos
+    • 3.01.01.23-9 – Curativo especial (VAC)
+
+  Escoliose (por cirurgia):
+    • 3.07.15.10-5 – Escoliose tratamento cirúrgico (1x)
+    • 3.07.15.01-6 – Artrodese c/ instrumentação (por segmento)
+    • 3.07.32.02-6 – Enxerto ósseo (1x)
+    • 4.08.11.02-6 – Radioscopia (por hora)
+    • 2.02.02.09-1 – Monitorização neurofisiológica
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏠 MONITOR DE IMÓVEIS (PAUSADO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Regiões:      Vila Nova Conceição, Moema, Itaim Bibi
+Preço máx:    R$ 3.000.000
+Área máx:     200m²
+Objetivo:     Pechinchas < R$ 15.000/m²
+Status:       ⏸️ Pausado (sem tarefa ativa no HEARTBEAT)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💾 BACKUP GITHUB (NOVO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Script:       /root/clawd/scripts/backup_github.sh
+Git user:     Max (Clawdbot)
+Git email:    clinicadacolunadrfelipebarreto@gmail.com
+Remote:       ⚠️ Pendente configuração (ver instruções abaixo)
+
+Para completar configuração:
+  1. Criar repositório no GitHub (privado recomendado)
+  2. Gerar token: github.com/settings/tokens (scope: repo)
+  3. Adicionar remote:
+     git remote add origin https://TOKEN@github.com/USUARIO/REPO.git
+  4. Primeiro push:
+     git push -u origin master
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 ESTRUTURA DO WORKSPACE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/root/clawd/
+├── AGENTS.md           # Instruções de comportamento
+├── SOUL.md             # Personalidade
+├── USER.md             # Info do Felipe
+├── IDENTITY.md         # Quem sou eu (Max)
+├── TOOLS.md            # Ferramentas configuradas
+├── HEARTBEAT.md        # Tarefas periódicas
+├── memory/             # Notas diárias
+│   ├── 2026-02-04.md
+│   ├── 2026-02-05.md
+│   └── 2026-02-06.md
+├── referencias/        # Manuais e códigos TUSS
+├── documentos/         # Pedidos cirúrgicos, cadastros
+├── scripts/            # Scripts Python e Bash
+│   ├── email_checker.py
+│   ├── email_sender.py
+│   └── backup_github.sh  (NOVO)
+└── assets/             # Imagens, assinaturas
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ PENDÊNCIAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• OpenAI API quota estourada (busca semântica offline)
+• GitHub remote não configurado
+• MEMORY.md ainda não criado (memória de longo prazo)
+
+================================================================================
+                              FIM DO BACKUP
+================================================================================

@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Paciente",
+  "type": "object",
+  "required": ["id", "nome", "telefone", "dataCadastro"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "UUID único do paciente"
+    },
+    "nome": {
+      "type": "string",
+      "description": "Nome completo"
+    },
+    "dataNascimento": {
+      "type": "string",
+      "format": "date",
+      "description": "Data de nascimento (YYYY-MM-DD)"
+    },
+    "cpf": {
+      "type": "string",
+      "description": "CPF (apenas números)"
+    },
+    "telefone": {
+      "type": "string",
+      "description": "Telefone com DDD (para WhatsApp)"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "endereco": {
+      "type": "object",
+      "properties": {
+        "rua": { "type": "string" },
+        "numero": { "type": "string" },
+        "complemento": { "type": "string" },
+        "bairro": { "type": "string" },
+        "cidade": { "type": "string" },
+        "estado": { "type": "string" },
+        "cep": { "type": "string" }
+      }
+    },
+    "convenio": {
+      "type": "object",
+      "properties": {
+        "nome": { "type": "string" },
+        "numero": { "type": "string" },
+        "validade": { "type": "string", "format": "date" }
+      }
+    },
+    "contatoEmergencia": {
+      "type": "object",
+      "properties": {
+        "nome": { "type": "string" },
+        "telefone": { "type": "string" },
+        "parentesco": { "type": "string" }
+      }
+    },
+    "historico": {
+      "type": "object",
+      "properties": {
+        "alergias": { "type": "array", "items": { "type": "string" } },
+        "medicamentosUso": { "type": "array", "items": { "type": "string" } },
+        "cirurgiasPrevias": { "type": "array", "items": { "type": "string" } },
+        "doencasCronicas": { "type": "array", "items": { "type": "string" } },
+        "historicoFamiliar": { "type": "string" }
+      }
+    },
+    "queixaPrincipal": {
+      "type": "string",
+      "description": "Motivo principal da procura"
+    },
+    "observacoes": {
+      "type": "string"
+    },
+    "dataCadastro": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ultimaConsulta": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "proximaConsulta": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ativo", "inativo", "alta"]
+    }
+  }
+}
