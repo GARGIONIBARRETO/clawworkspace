@@ -137,7 +137,20 @@
                             <input type="checkbox" name="dorLocal" value="braco">
                             <span>Braço</span>
                         </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="cabeca">
+                            <span>Cabeça (cefaleia)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="dorLocal" value="outro">
+                            <span>Outro local</span>
+                        </label>
                     </div>
+                </div>
+                
+                <div class="form-group" id="dorOutroContainer" style="display: none;">
+                    <label for="dorOutroLocal">Especifique o outro local da dor:</label>
+                    <input type="text" id="dorOutroLocal" name="dorOutroLocal" placeholder="Descreva o local...">
                 </div>
                 
                 <div class="form-group dor-dependente">
@@ -283,15 +296,17 @@
                     </select>
                 </div>
                 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="horaDeitar">Hora de deitar</label>
-                        <input type="time" id="horaDeitar" name="horaDeitar">
-                    </div>
-                    <div class="form-group">
-                        <label for="horaAcordar">Hora de acordar</label>
-                        <input type="time" id="horaAcordar" name="horaAcordar">
-                    </div>
+                <div class="form-group">
+                    <label for="horasDormidas">Quantas horas dorme por noite (em média)?</label>
+                    <select id="horasDormidas" name="horasDormidas">
+                        <option value="">Selecione</option>
+                        <option value="menos_4">Menos de 4 horas</option>
+                        <option value="4_5">4 a 5 horas</option>
+                        <option value="5_6">5 a 6 horas</option>
+                        <option value="6_7">6 a 7 horas</option>
+                        <option value="7_8">7 a 8 horas</option>
+                        <option value="mais_8">Mais de 8 horas</option>
+                    </select>
                 </div>
                 
                 <div class="form-group">
@@ -309,8 +324,271 @@
                 </div>
             </div>
 
-            <!-- Step 6: Histórico Médico -->
+            <!-- Step 6: Saúde Gastrointestinal (Disbiose/SIBO) -->
             <div class="form-step" data-step="6">
+                <h2 class="step-title">🦠 Função Gastrointestinal</h2>
+                <p class="step-description">Avaliação detalhada do sistema digestivo (Disbiose/SIBO)</p>
+                
+                <!-- 4.1 HÁBITO INTESTINAL -->
+                <h3 class="subsection-title">Hábito Intestinal</h3>
+                
+                <div class="form-group">
+                    <label for="frequenciaEvacuacao">Quantas vezes evacua por semana?</label>
+                    <select id="frequenciaEvacuacao" name="frequenciaEvacuacao">
+                        <option value="">Selecione</option>
+                        <option value="menos_3">Menos de 3 vezes</option>
+                        <option value="3_7">3-7 vezes (até 1x/dia)</option>
+                        <option value="7_14">7-14 vezes (1-2x/dia)</option>
+                        <option value="mais_14">Mais de 14 vezes (mais de 2x/dia)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="escalaBristol">Como são suas fezes geralmente? (Escala de Bristol)</label>
+                    <select id="escalaBristol" name="escalaBristol">
+                        <option value="">Selecione</option>
+                        <option value="tipo_1_2">Tipo 1-2: Duras, em bolinhas ou com rachaduras</option>
+                        <option value="tipo_3_4">Tipo 3-4: Formato de salsicha lisa ou banana (ideal)</option>
+                        <option value="tipo_5_6">Tipo 5-6: Pedaços moles ou pastosas</option>
+                        <option value="tipo_7">Tipo 7: Líquidas</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="esforcoEvacuar">Precisa fazer força para evacuar?</label>
+                        <select id="esforcoEvacuar" name="esforcoEvacuar">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="as_vezes">Às vezes</option>
+                            <option value="sempre">Sempre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="evacuacaoIncompleta">Sente que não esvaziou completamente?</label>
+                        <select id="evacuacaoIncompleta" name="evacuacaoIncompleta">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="as_vezes">Às vezes</option>
+                            <option value="frequente">Frequentemente</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Há presença de muco, sangue ou alimentos não digeridos nas fezes?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fezesAnormais" value="nenhum" id="fezesNormal">
+                            <span>Não, fezes normais</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fezesAnormais" value="muco">
+                            <span>Muco</span>
+                        </label>
+                        <label class="checkbox-item warning">
+                            <input type="checkbox" name="fezesAnormais" value="sangue">
+                            <span>Sangue</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="fezesAnormais" value="alimentos">
+                            <span>Alimentos não digeridos</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- 4.2 SINTOMAS DE SIBO/IMO -->
+                <h3 class="subsection-title">Sintomas de SIBO/Fermentação</h3>
+                
+                <div class="form-group">
+                    <label for="distensaoAbdominal">Sente barriga inchada, principalmente após as refeições?</label>
+                    <select id="distensaoAbdominal" name="distensaoAbdominal">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="as_vezes">Às vezes</option>
+                        <option value="frequente">Frequentemente</option>
+                        <option value="sempre">Sempre</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="distensaoPiora">A distensão piora ao longo do dia?</label>
+                        <select id="distensaoPiora" name="distensaoPiora">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="sim">Sim</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="flatulencia">Elimina muitos gases (flatulência)?</label>
+                        <select id="flatulencia" name="flatulencia">
+                            <option value="">Selecione</option>
+                            <option value="normal">Normal</option>
+                            <option value="aumentado">Aumentado</option>
+                            <option value="muito_aumentado">Muito aumentado</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gasesOdor">Os gases têm odor muito forte?</label>
+                    <select id="gasesOdor" name="gasesOdor">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Quais alimentos/situações pioram ou melhoram seus sintomas?</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="siboTriggers" value="carbo_piora">
+                            <span>Carboidratos (pães, massas) PIORAM</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="siboTriggers" value="fibra_piora">
+                            <span>Fibras PIORAM (aumentam desconforto)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="siboTriggers" value="jejum_melhora">
+                            <span>Jejum MELHORA os sintomas</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="siboTriggers" value="lactose_piora">
+                            <span>Leite/derivados PIORAM</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="siboTriggers" value="fodmap_piora">
+                            <span>Feijão, cebola, alho PIORAM</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- 4.3 SINTOMAS PÓS-PRANDIAIS -->
+                <h3 class="subsection-title">Sintomas Pós-Refeição</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fadigaPosPrandial">Sente fadiga após as refeições?</label>
+                        <select id="fadigaPosPrandial" name="fadigaPosPrandial">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="as_vezes">Às vezes</option>
+                            <option value="frequente">Frequentemente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nevoaMentalAlimento">Tem "névoa mental" após comer?</label>
+                        <select id="nevoaMentalAlimento" name="nevoaMentalAlimento">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="as_vezes">Às vezes</option>
+                            <option value="frequente">Frequentemente</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Outros sintomas relacionados à alimentação:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="sintomasPosPrandiais" value="nenhum" id="nenhumPosPrandial">
+                            <span>Nenhum</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="sintomasPosPrandiais" value="dor_articular">
+                            <span>Dores articulares sem causa aparente</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="sintomasPosPrandiais" value="alteracao_humor">
+                            <span>Alterações de humor após comer</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="sintomasPosPrandiais" value="palpitacao">
+                            <span>Palpitações após refeições</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- 4.4 PERMEABILIDADE INTESTINAL -->
+                <h3 class="subsection-title">Intolerâncias e Sensibilidades</h3>
+                
+                <div class="form-group">
+                    <label for="intoleranciasRecentes">Desenvolveu intolerâncias alimentares recentemente?</label>
+                    <select id="intoleranciasRecentes" name="intoleranciasRecentes">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="intoleranciasQuaisContainer" style="display: none;">
+                    <label for="intoleranciasQuais">Quais intolerâncias desenvolveu?</label>
+                    <input type="text" id="intoleranciasQuais" name="intoleranciasQuais" placeholder="Ex: glúten, lactose, ovo...">
+                </div>
+                
+                <div class="form-group">
+                    <label>Sinais de permeabilidade intestinal alterada:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="leakyGut" value="nenhum" id="nenhumLeaky">
+                            <span>Nenhum</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="leakyGut" value="alimentos_antes_ok">
+                            <span>Alimentos que antes tolerava agora causam sintomas</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="leakyGut" value="multiplas_reacoes">
+                            <span>Reações a múltiplos alimentos diferentes</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="leakyGut" value="infeccoes_recorrentes">
+                            <span>Infecções recorrentes (sinusite, cistite, candidíase)</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- USO DE ANTIBIÓTICOS/PROBIÓTICOS -->
+                <h3 class="subsection-title">Histórico</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="usoAntibiotico">Uso de antibióticos (últimos 6 meses)?</label>
+                        <select id="usoAntibiotico" name="usoAntibiotico">
+                            <option value="">Selecione</option>
+                            <option value="nao">Não</option>
+                            <option value="1_vez">1 vez</option>
+                            <option value="2_3_vezes">2-3 vezes</option>
+                            <option value="mais_3">Mais de 3 vezes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="usoProbiotico">Usa ou já usou probióticos?</label>
+                        <select id="usoProbiotico" name="usoProbiotico">
+                            <option value="">Selecione</option>
+                            <option value="nunca">Nunca</option>
+                            <option value="uso_atual">Uso atualmente</option>
+                            <option value="ja_usei">Já usei, parei</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="usoIBP">Usa omeprazol, pantoprazol ou similar?</label>
+                    <select id="usoIBP" name="usoIBP">
+                        <option value="">Selecione</option>
+                        <option value="nao">Não</option>
+                        <option value="eventual">Eventualmente</option>
+                        <option value="continuo">Uso contínuo</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Step 7: Histórico Médico -->
+            <div class="form-step" data-step="7">
                 <h2 class="step-title">🏥 Histórico Médico</h2>
                 <p class="step-description">Suas condições de saúde e medicamentos</p>
                 
@@ -386,8 +664,8 @@
                 </div>
             </div>
 
-            <!-- Step 7: Tratamentos e Hábitos -->
-            <div class="form-step" data-step="7">
+            <!-- Step 8: Tratamentos e Hábitos -->
+            <div class="form-step" data-step="8">
                 <h2 class="step-title">💪 Tratamentos e Hábitos</h2>
                 <p class="step-description">Tratamentos anteriores e estilo de vida</p>
                 
@@ -475,8 +753,290 @@
                 </div>
             </div>
 
-            <!-- Step 8: Expectativas -->
-            <div class="form-step" data-step="8">
+            <!-- Step 9: NDI - Neck Disability Index (condicional - dor cervical) -->
+            <div class="form-step conditional-step" data-step="9" data-condition="cervical" style="display: none;">
+                <h2 class="step-title">📊 Índice de Incapacidade Cervical (NDI)</h2>
+                <p class="step-description">Questionário padronizado para avaliar impacto da dor no pescoço</p>
+                
+                <div class="form-group">
+                    <label>1. Intensidade da dor no pescoço</label>
+                    <select name="ndi_1" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Não tenho dor neste momento</option>
+                        <option value="1">A dor é muito leve neste momento</option>
+                        <option value="2">A dor é moderada neste momento</option>
+                        <option value="3">A dor é razoavelmente forte neste momento</option>
+                        <option value="4">A dor é muito forte neste momento</option>
+                        <option value="5">A dor é a pior que se possa imaginar</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>2. Cuidados pessoais (lavar-se, vestir-se)</label>
+                    <select name="ndi_2" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso cuidar de mim sem causar dor extra</option>
+                        <option value="1">Posso cuidar de mim, mas isso causa dor extra</option>
+                        <option value="2">É doloroso cuidar de mim e sou lento e cuidadoso</option>
+                        <option value="3">Preciso de ajuda, mas dou conta da maior parte</option>
+                        <option value="4">Preciso de ajuda diária na maioria dos cuidados</option>
+                        <option value="5">Não consigo me vestir, lavo-me com dificuldade</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>3. Levantar coisas</label>
+                    <select name="ndi_3" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso levantar objetos pesados sem dor extra</option>
+                        <option value="1">Posso levantar objetos pesados, mas causa dor extra</option>
+                        <option value="2">A dor me impede de levantar objetos pesados, mas posso se bem posicionados</option>
+                        <option value="3">Posso levantar apenas objetos leves a moderados</option>
+                        <option value="4">Posso levantar apenas objetos muito leves</option>
+                        <option value="5">Não consigo levantar nem carregar nada</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>4. Leitura</label>
+                    <select name="ndi_4" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso ler o quanto quiser sem dor no pescoço</option>
+                        <option value="1">Posso ler o quanto quiser com dor leve no pescoço</option>
+                        <option value="2">Posso ler o quanto quiser com dor moderada</option>
+                        <option value="3">Não posso ler o quanto quiser por causa da dor moderada</option>
+                        <option value="4">Mal posso ler por causa da dor forte</option>
+                        <option value="5">Não consigo ler nada</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>5. Dores de cabeça</label>
+                    <select name="ndi_5" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Não tenho dor de cabeça</option>
+                        <option value="1">Tenho dores de cabeça leves e pouco frequentes</option>
+                        <option value="2">Tenho dores de cabeça moderadas e pouco frequentes</option>
+                        <option value="3">Tenho dores de cabeça moderadas e frequentes</option>
+                        <option value="4">Tenho dores de cabeça fortes e frequentes</option>
+                        <option value="5">Tenho dores de cabeça quase o tempo todo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>6. Concentração</label>
+                    <select name="ndi_6" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso me concentrar totalmente quando quero</option>
+                        <option value="1">Posso me concentrar com dificuldade leve</option>
+                        <option value="2">Tenho dificuldade razoável para me concentrar</option>
+                        <option value="3">Tenho muita dificuldade para me concentrar</option>
+                        <option value="4">Tenho imensa dificuldade para me concentrar</option>
+                        <option value="5">Não consigo me concentrar de forma alguma</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>7. Trabalho</label>
+                    <select name="ndi_7" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso trabalhar o quanto quiser</option>
+                        <option value="1">Só consigo fazer meu trabalho habitual, nada mais</option>
+                        <option value="2">Consigo fazer a maior parte do meu trabalho, nada mais</option>
+                        <option value="3">Não consigo fazer meu trabalho habitual</option>
+                        <option value="4">Mal consigo fazer qualquer trabalho</option>
+                        <option value="5">Não consigo fazer nenhum trabalho</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>8. Dirigir</label>
+                    <select name="ndi_8" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso dirigir sem dor no pescoço</option>
+                        <option value="1">Posso dirigir o quanto quiser com dor leve</option>
+                        <option value="2">Posso dirigir o quanto quiser com dor moderada</option>
+                        <option value="3">Não posso dirigir o quanto quiser por causa da dor</option>
+                        <option value="4">Mal posso dirigir por causa da dor forte</option>
+                        <option value="5">Não posso dirigir devido à dor no pescoço</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>9. Sono</label>
+                    <select name="ndi_9" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Não tenho problemas para dormir</option>
+                        <option value="1">Meu sono é levemente perturbado (menos de 1h sem dormir)</option>
+                        <option value="2">Meu sono é um pouco perturbado (1-2h sem dormir)</option>
+                        <option value="3">Meu sono é moderadamente perturbado (2-3h sem dormir)</option>
+                        <option value="4">Meu sono é muito perturbado (3-5h sem dormir)</option>
+                        <option value="5">Meu sono é completamente perturbado (5-7h sem dormir)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>10. Recreação/Lazer</label>
+                    <select name="ndi_10" class="ndi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso fazer todas as atividades sem dor</option>
+                        <option value="1">Posso fazer todas as atividades com alguma dor</option>
+                        <option value="2">Posso fazer a maioria das atividades, mas não todas</option>
+                        <option value="3">Posso fazer poucas atividades de lazer</option>
+                        <option value="4">Mal posso fazer atividades de lazer</option>
+                        <option value="5">Não posso fazer nenhuma atividade de lazer</option>
+                    </select>
+                </div>
+                
+                <div class="score-display" id="ndiScore" style="display: none;">
+                    <strong>Pontuação NDI: <span id="ndiScoreValue">0</span>/50</strong>
+                    <p id="ndiInterpretation"></p>
+                </div>
+            </div>
+
+            <!-- Step 10: ODI - Oswestry Disability Index (condicional - dor lombar) -->
+            <div class="form-step conditional-step" data-step="10" data-condition="lombar" style="display: none;">
+                <h2 class="step-title">📊 Índice de Incapacidade Lombar (ODI)</h2>
+                <p class="step-description">Questionário padronizado para avaliar impacto da dor nas costas</p>
+                
+                <div class="form-group">
+                    <label>1. Intensidade da dor</label>
+                    <select name="odi_1" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso tolerar a dor sem precisar de analgésicos</option>
+                        <option value="1">A dor é forte, mas consigo sem analgésicos</option>
+                        <option value="2">Analgésicos aliviam completamente a dor</option>
+                        <option value="3">Analgésicos aliviam moderadamente a dor</option>
+                        <option value="4">Analgésicos aliviam pouco a dor</option>
+                        <option value="5">Analgésicos não fazem efeito e não os uso</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>2. Cuidados pessoais (lavar-se, vestir-se)</label>
+                    <select name="odi_2" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso cuidar de mim normalmente sem causar dor extra</option>
+                        <option value="1">Posso cuidar de mim normalmente, mas isso causa dor extra</option>
+                        <option value="2">É doloroso cuidar de mim, sou lento e cuidadoso</option>
+                        <option value="3">Preciso de alguma ajuda, mas dou conta da maior parte</option>
+                        <option value="4">Preciso de ajuda diária na maioria dos aspectos</option>
+                        <option value="5">Não consigo me vestir, lavo-me com dificuldade, fico na cama</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>3. Levantar objetos</label>
+                    <select name="odi_3" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso levantar objetos pesados sem dor extra</option>
+                        <option value="1">Posso levantar objetos pesados, mas isso causa dor extra</option>
+                        <option value="2">A dor me impede de levantar objetos pesados do chão</option>
+                        <option value="3">A dor me impede de levantar objetos pesados, mas posso se bem posicionados</option>
+                        <option value="4">Posso levantar apenas objetos muito leves</option>
+                        <option value="5">Não posso levantar nem carregar absolutamente nada</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>4. Andar</label>
+                    <select name="odi_4" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">A dor não me impede de andar qualquer distância</option>
+                        <option value="1">A dor me impede de andar mais de 1,5 km</option>
+                        <option value="2">A dor me impede de andar mais de 800 metros</option>
+                        <option value="3">A dor me impede de andar mais de 400 metros</option>
+                        <option value="4">Só posso andar com bengala ou muletas</option>
+                        <option value="5">Fico na cama a maior parte do tempo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>5. Sentar</label>
+                    <select name="odi_5" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso sentar em qualquer cadeira pelo tempo que quiser</option>
+                        <option value="1">Posso sentar na minha cadeira favorita pelo tempo que quiser</option>
+                        <option value="2">A dor me impede de sentar mais de 1 hora</option>
+                        <option value="3">A dor me impede de sentar mais de 30 minutos</option>
+                        <option value="4">A dor me impede de sentar mais de 10 minutos</option>
+                        <option value="5">A dor me impede de sentar</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>6. Ficar em pé</label>
+                    <select name="odi_6" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso ficar em pé o tempo que quiser sem dor extra</option>
+                        <option value="1">Posso ficar em pé o tempo que quiser, mas com dor extra</option>
+                        <option value="2">A dor me impede de ficar em pé mais de 1 hora</option>
+                        <option value="3">A dor me impede de ficar em pé mais de 30 minutos</option>
+                        <option value="4">A dor me impede de ficar em pé mais de 10 minutos</option>
+                        <option value="5">A dor me impede de ficar em pé</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>7. Sono</label>
+                    <select name="odi_7" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Meu sono não é perturbado pela dor</option>
+                        <option value="1">Meu sono é ocasionalmente perturbado pela dor</option>
+                        <option value="2">Por causa da dor durmo menos de 6 horas</option>
+                        <option value="3">Por causa da dor durmo menos de 4 horas</option>
+                        <option value="4">Por causa da dor durmo menos de 2 horas</option>
+                        <option value="5">A dor me impede de dormir</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>8. Vida sexual (se aplicável)</label>
+                    <select name="odi_8" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Minha vida sexual é normal e não causa dor extra</option>
+                        <option value="1">Minha vida sexual é normal, mas causa alguma dor extra</option>
+                        <option value="2">Minha vida sexual é quase normal, mas muito dolorosa</option>
+                        <option value="3">Minha vida sexual é muito restringida pela dor</option>
+                        <option value="4">Minha vida sexual é quase inexistente por causa da dor</option>
+                        <option value="5">A dor me impede de ter qualquer vida sexual</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>9. Vida social</label>
+                    <select name="odi_9" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Minha vida social é normal e não causa dor extra</option>
+                        <option value="1">Minha vida social é normal, mas aumenta o grau de dor</option>
+                        <option value="2">A dor não altera minha vida social, exceto atividades físicas</option>
+                        <option value="3">A dor restringiu minha vida social, não saio muito</option>
+                        <option value="4">A dor restringiu minha vida social à minha casa</option>
+                        <option value="5">Não tenho vida social por causa da dor</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>10. Viajar</label>
+                    <select name="odi_10" class="odi-question">
+                        <option value="">Selecione</option>
+                        <option value="0">Posso viajar para qualquer lugar sem dor</option>
+                        <option value="1">Posso viajar para qualquer lugar, mas com dor extra</option>
+                        <option value="2">A dor é forte, mas consigo viagens de mais de 2 horas</option>
+                        <option value="3">A dor me restringe a viagens de menos de 1 hora</option>
+                        <option value="4">A dor me restringe a viagens curtas de menos de 30 minutos</option>
+                        <option value="5">A dor me impede de viajar, exceto para tratamento</option>
+                    </select>
+                </div>
+                
+                <div class="score-display" id="odiScore" style="display: none;">
+                    <strong>Pontuação ODI: <span id="odiScoreValue">0</span>/50</strong>
+                    <p id="odiInterpretation"></p>
+                </div>
+            </div>
+
+            <!-- Step 11: Expectativas -->
+            <div class="form-step" data-step="11">
                 <h2 class="step-title">🎯 Expectativas</h2>
                 <p class="step-description">O que você espera desta consulta</p>
                 

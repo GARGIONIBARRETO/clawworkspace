@@ -510,3 +510,55 @@ select {
         display: none;
     }
 }
+
+/* ============================================
+   NDI/ODI SCORE DISPLAY
+   ============================================ */
+
+.score-display {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+}
+
+.score-display strong {
+    font-size: 1.2rem;
+    color: var(--primary-dark);
+}
+
+.score-display p {
+    margin-top: 0.5rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Conditional steps indicator */
+.conditional-step {
+    border-left: 4px solid var(--warning);
+}
+
+.conditional-step .step-title::before {
+    content: '📋 ';
+}
+
+/* GI symptoms section */
+.form-step[data-step="6"] .checkbox-group {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Subsection titles */
+.subsection-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 1.5rem 0 0.75rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.subsection-title:first-of-type {
+    margin-top: 0;
+}
