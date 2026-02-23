@@ -1,0 +1,67 @@
+{
+  "source": "whatsapp",
+  "phone": "185431052308623@lid",
+  "timestamp": "2026-02-21T10:25:16.118Z",
+  "data": {
+    "nome": "Joao pereira pelado",
+    "dataNascimento": "12091987",
+    "sexo": "masculino",
+    "profissao": null,
+    "queixaPrincipal": "Dornlombar",
+    "tempoProblema": "1_3_meses",
+    "eventoDesencadeante": "Nao",
+    "temDor": "sim",
+    "dorLocal": [
+      "cervical"
+    ],
+    "dorIntensidade": "7",
+    "dorTipo": [
+      "peso"
+    ],
+    "redFlags": [
+      "dif_urina"
+    ],
+    "sonoQualidade": "cansado",
+    "horasDormidas": "7_8",
+    "estresseNivel": "7",
+    "frequenciaEvacuacao": "mais_14",
+    "escalaBristol": "tipo_5_6",
+    "esforcoEvacuar": "as_vezes",
+    "distensaoAbdominal": "nao",
+    "flatulencia": "aumentado",
+    "siboTriggers": [
+      "nenhum"
+    ],
+    "usoAntibiotico": "nao",
+    "usoIBP": "nao",
+    "condicoes": [
+      "nenhuma"
+    ],
+    "medicamentos": "Na9",
+    "alergias": "Nao",
+    "cirurgias": "Nao",
+    "tratamentos": [
+      "fisio"
+    ],
+    "atividadeFisica": "3_4x",
+    "tabagismo": "nunca",
+    "alcool": "ocasional",
+    "ndi_intro": "ok",
+    "ndi_1": "3",
+    "ndi_2": "4",
+    "ndi_3": "3",
+    "ndi_4": "3",
+    "ndi_5": "3",
+    "ndi_6": "3",
+    "ndi_7": "3",
+    "ndi_8": "3",
+    "ndi_9": "1",
+    "ndi_10": "1",
+    "expectativas": "Melhorar da dor",
+    "ndi_score": {
+      "total": 27,
+      "pct": 54,
+      "interp": "Incapacidade severa"
+    }
+  }
+}

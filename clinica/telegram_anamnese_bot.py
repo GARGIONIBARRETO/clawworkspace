@@ -61,12 +61,22 @@ logger = logging.getLogger(__name__)
     QUEIXA_PRINCIPAL, TEMPO_PROBLEMA, EVENTO_DESENCADEANTE,
     DOR_LOCAL, DOR_INTENSIDADE, DOR_TIPO, DOR_DURACAO, DOR_IRRADIACAO,
     RED_FLAGS,
+    # NDI - Neck Disability Index (se dor cervical)
+    NDI_INTENSIDADE, NDI_CUIDADOS, NDI_LEVANTAR, NDI_LEITURA, NDI_CEFALEIA,
+    NDI_CONCENTRACAO, NDI_TRABALHO, NDI_DIRIGIR, NDI_SONO, NDI_LAZER,
+    # ODI - Oswestry Disability Index (se dor lombar)
+    ODI_INTENSIDADE, ODI_CUIDADOS, ODI_LEVANTAR, ODI_CAMINHAR, ODI_SENTAR,
+    ODI_FICAR_PE, ODI_SONO, ODI_VIDA_SEXUAL, ODI_VIDA_SOCIAL, ODI_VIAJAR,
+    # Função Gastrointestinal (SIBO/Disbiose)
+    GI_FREQUENCIA, GI_BRISTOL, GI_DISTENSAO, GI_FLATULENCIA,
+    GI_SIBO_TRIGGERS, GI_FADIGA_POS, GI_HISTAMINA, GI_ANTIBIOTICOS,
+    # Sono e Estresse
     SONO_QUALIDADE, SONO_DESPERTARES, ESTRESSE_NIVEL, ESTRESSE_FATOR,
     CONDICOES, USA_MEDICAMENTOS, MEDICAMENTOS_LISTA, ALERGIAS, CIRURGIAS,
     TRATAMENTOS, RESULTADO_TRATAMENTOS, ATIVIDADE_FISICA, TABAGISMO, ALCOOL,
     EXPECTATIVAS, OBJETIVO_SAUDE, OBSERVACOES,
     CONFIRMAR
-) = range(32)
+) = range(60)
 
 # ============================================
 # HELPER FUNCTIONS
@@ -315,6 +325,392 @@ async def show_red_flags(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 async def red_flags(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data['red_flags'] = update.message.text.strip()
+    
+    # Verificar se tem dor cervical ou lombar para aplicar NDI/ODI
+    dor_local = context.user_data.get('dor_local', '').lower()
+    
+    if 'cervical' in dor_local or 'pescoço' in dor_local:
+        # Aplicar NDI
+        await update.message.reply_text(
+            "📊 *ÍNDICE DE INCAPACIDADE CERVICAL (NDI)*\n\n"
+            "Vou fazer 10 perguntas rápidas sobre como a dor no pescoço afeta suas atividades.\n"
+            "Responda com o número da opção (0-5).",
+            parse_mode='Markdown'
+        )
+        keyboard = get_keyboard(['0-Sem dor', '1-Leve', '2-Moderada', '3-Forte', '4-Muito forte', '5-Pior possível'], columns=3)
+        await update.message.reply_text(
+            "*1/10 - Intensidade da dor no pescoço agora:*",
+            parse_mode='Markdown',
+            reply_markup=keyboard
+        )
+        return NDI_INTENSIDADE
+    
+    elif 'lombar' in dor_local or 'lombalgia' in dor_local or 'perna' in dor_local or 'glúteo' in dor_local:
+        # Aplicar ODI
+        await update.message.reply_text(
+            "📊 *ÍNDICE DE INCAPACIDADE LOMBAR (ODI)*\n\n"
+            "Vou fazer 10 perguntas rápidas sobre como a dor nas costas afeta suas atividades.\n"
+            "Responda com o número da opção (0-5).",
+            parse_mode='Markdown'
+        )
+        keyboard = get_keyboard(['0-Sem dor', '1-Leve', '2-Moderada', '3-Forte', '4-Muito forte', '5-Pior possível'], columns=3)
+        await update.message.reply_text(
+            "*1/10 - Intensidade da dor agora:*",
+            parse_mode='Markdown',
+            reply_markup=keyboard
+        )
+        return ODI_INTENSIDADE
+    
+    else:
+        # Ir direto para GI
+        return await go_to_gi(update, context)
+
+async def go_to_gi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Ir para seção de função gastrointestinal"""
+    keyboard = get_keyboard([
+        'Menos de 3x/semana',
+        '3-7x (até 1x/dia)',
+        '7-14x (1-2x/dia)',
+        'Mais de 14x/semana'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "🦠 *FUNÇÃO GASTROINTESTINAL*\n\n"
+        "*Quantas vezes você evacua por semana?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_FREQUENCIA
+
+# ============================================
+# NDI - NECK DISABILITY INDEX
+# ============================================
+
+NDI_OPTIONS = ['0', '1', '2', '3', '4', '5']
+
+async def ndi_intensidade(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_1'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Com dor', '2-Lento', '3-Preciso ajuda', '4-Ajuda diária', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*2/10 - Cuidados pessoais (vestir-se, banho):*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_CUIDADOS
+
+async def ndi_cuidados(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_2'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Pesados OK', '1-Com dor', '2-Médios OK', '3-Leves', '4-Muito leves', '5-Nada'], columns=2)
+    await update.message.reply_text("*3/10 - Levantar objetos:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_LEVANTAR
+
+async def ndi_levantar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_3'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem dor', '1-Dor leve', '2-Dor moderada', '3-Limitado', '4-Quase não', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*4/10 - Leitura:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_LEITURA
+
+async def ndi_leitura(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_4'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem cefaleia', '1-Leve rara', '2-Moderada rara', '3-Moderada freq', '4-Forte freq', '5-Sempre'], columns=2)
+    await update.message.reply_text("*5/10 - Dores de cabeça:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_CEFALEIA
+
+async def ndi_cefaleia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_5'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Leve dific', '2-Moderada', '3-Muita dific', '4-Extrema', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*6/10 - Concentração:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_CONCENTRACAO
+
+async def ndi_concentracao(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_6'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Só habitual', '2-Maior parte', '3-Não consigo', '4-Quase nada', '5-Nenhum'], columns=2)
+    await update.message.reply_text("*7/10 - Trabalho:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_TRABALHO
+
+async def ndi_trabalho(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_7'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem dor', '1-Dor leve', '2-Dor moderada', '3-Limitado', '4-Quase não', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*8/10 - Dirigir:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_DIRIGIR
+
+async def ndi_dirigir(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_8'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Leve perturb', '2-1-2h sem dormir', '3-2-3h', '4-3-5h', '5-5-7h'], columns=2)
+    await update.message.reply_text("*9/10 - Sono:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_SONO
+
+async def ndi_sono(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_9'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Com dor', '2-Maioria', '3-Algumas', '4-Quase nada', '5-Nenhuma'], columns=2)
+    await update.message.reply_text("*10/10 - Lazer/recreação:*", parse_mode='Markdown', reply_markup=keyboard)
+    return NDI_LAZER
+
+async def ndi_lazer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['ndi_10'] = update.message.text[0] if update.message.text else '0'
+    
+    # Calcular score NDI
+    ndi_total = sum(int(context.user_data.get(f'ndi_{i}', '0')[0]) for i in range(1, 11))
+    ndi_percent = (ndi_total / 50) * 100
+    
+    if ndi_percent <= 8:
+        ndi_class = "Sem incapacidade"
+    elif ndi_percent <= 28:
+        ndi_class = "Incapacidade leve"
+    elif ndi_percent <= 48:
+        ndi_class = "Incapacidade moderada"
+    elif ndi_percent <= 68:
+        ndi_class = "Incapacidade severa"
+    else:
+        ndi_class = "Incapacidade completa"
+    
+    context.user_data['ndi_score'] = ndi_total
+    context.user_data['ndi_percent'] = ndi_percent
+    context.user_data['ndi_class'] = ndi_class
+    
+    await update.message.reply_text(
+        f"📊 *Resultado NDI:* {ndi_total}/50 ({ndi_percent:.0f}%)\n"
+        f"*Classificação:* {ndi_class}",
+        parse_mode='Markdown'
+    )
+    
+    # Verificar se também tem dor lombar
+    dor_local = context.user_data.get('dor_local', '').lower()
+    if 'lombar' in dor_local or 'perna' in dor_local or 'glúteo' in dor_local:
+        await update.message.reply_text(
+            "📊 *ÍNDICE DE INCAPACIDADE LOMBAR (ODI)*\n\n"
+            "Agora vou avaliar a dor lombar.",
+            parse_mode='Markdown'
+        )
+        keyboard = get_keyboard(['0-Sem dor', '1-Leve', '2-Moderada', '3-Forte', '4-Muito forte', '5-Pior possível'], columns=3)
+        await update.message.reply_text("*1/10 - Intensidade da dor:*", parse_mode='Markdown', reply_markup=keyboard)
+        return ODI_INTENSIDADE
+    
+    return await go_to_gi(update, context)
+
+# ============================================
+# ODI - OSWESTRY DISABILITY INDEX
+# ============================================
+
+async def odi_intensidade(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_1'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Com dor', '2-Lento', '3-Preciso ajuda', '4-Ajuda diária', '5-Acamado'], columns=2)
+    await update.message.reply_text("*2/10 - Cuidados pessoais:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_CUIDADOS
+
+async def odi_cuidados(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_2'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Pesados OK', '1-Com dor', '2-Médios OK', '3-Leves', '4-Muito leves', '5-Nada'], columns=2)
+    await update.message.reply_text("*3/10 - Levantar objetos:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_LEVANTAR
+
+async def odi_levantar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_3'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Qualquer dist', '1-Até 1.5km', '2-Até 800m', '3-Até 400m', '4-Com bengala', '5-Acamado'], columns=2)
+    await update.message.reply_text("*4/10 - Caminhar:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_CAMINHAR
+
+async def odi_caminhar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_4'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem limite', '1-Favorita OK', '2-Até 1h', '3-Até 30min', '4-Até 10min', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*5/10 - Sentar:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_SENTAR
+
+async def odi_sentar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_5'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem limite', '1-Com dor', '2-Até 1h', '3-Até 30min', '4-Até 10min', '5-Não consigo'], columns=2)
+    await update.message.reply_text("*6/10 - Ficar em pé:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_FICAR_PE
+
+async def odi_ficar_pe(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_6'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Ocasional', '2-<6h', '3-<4h', '4-<2h', '5-Não durmo'], columns=2)
+    await update.message.reply_text("*7/10 - Sono:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_SONO
+
+async def odi_sono(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_7'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Normal', '1-Com dor', '2-Muito dolorosa', '3-Limitada', '4-Quase nula', '5-Impossível', 'N/A'], columns=2)
+    await update.message.reply_text("*8/10 - Vida sexual (se aplicável):*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_VIDA_SEXUAL
+
+async def odi_vida_sexual(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    resp = update.message.text.strip()
+    context.user_data['odi_8'] = resp[0] if resp and resp[0].isdigit() else 'NA'
+    keyboard = get_keyboard(['0-Normal', '1-Com dor', '2-Sem intensas', '3-Restrita', '4-Só em casa', '5-Nenhuma'], columns=2)
+    await update.message.reply_text("*9/10 - Vida social:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_VIDA_SOCIAL
+
+async def odi_vida_social(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_9'] = update.message.text[0] if update.message.text else '0'
+    keyboard = get_keyboard(['0-Sem dor', '1-Com dor', '2->2h OK', '3-<1h', '4-<30min', '5-Só tratamento'], columns=2)
+    await update.message.reply_text("*10/10 - Viajar:*", parse_mode='Markdown', reply_markup=keyboard)
+    return ODI_VIAJAR
+
+async def odi_viajar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['odi_10'] = update.message.text[0] if update.message.text else '0'
+    
+    # Calcular score ODI
+    odi_values = []
+    max_score = 50
+    for i in range(1, 11):
+        val = context.user_data.get(f'odi_{i}', '0')
+        if val == 'NA' or not val[0].isdigit():
+            max_score -= 5  # Ajustar se N/A
+        else:
+            odi_values.append(int(val[0]))
+    
+    odi_total = sum(odi_values)
+    odi_percent = (odi_total / max_score) * 100 if max_score > 0 else 0
+    
+    if odi_percent <= 20:
+        odi_class = "Incapacidade mínima"
+    elif odi_percent <= 40:
+        odi_class = "Incapacidade moderada"
+    elif odi_percent <= 60:
+        odi_class = "Incapacidade severa"
+    elif odi_percent <= 80:
+        odi_class = "Incapacitado"
+    else:
+        odi_class = "Acamado"
+    
+    context.user_data['odi_score'] = odi_total
+    context.user_data['odi_percent'] = odi_percent
+    context.user_data['odi_class'] = odi_class
+    
+    await update.message.reply_text(
+        f"📊 *Resultado ODI:* {odi_total}/{max_score} ({odi_percent:.0f}%)\n"
+        f"*Classificação:* {odi_class}",
+        parse_mode='Markdown'
+    )
+    
+    return await go_to_gi(update, context)
+
+# ============================================
+# FUNÇÃO GASTROINTESTINAL (SIBO/DISBIOSE)
+# ============================================
+
+async def gi_frequencia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_frequencia'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Tipo 1-2 (duras)',
+        'Tipo 3-4 (ideal)',
+        'Tipo 5-6 (moles)',
+        'Tipo 7 (líquidas)'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*Como são suas fezes geralmente?* (Escala de Bristol)",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_BRISTOL
+
+async def gi_bristol(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_bristol'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Não',
+        'Às vezes',
+        'Frequentemente',
+        'Sempre'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*Sente barriga inchada (distensão), principalmente após refeições?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_DISTENSAO
+
+async def gi_distensao(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_distensao'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Normal',
+        'Aumentado',
+        'Muito aumentado',
+        'Gases com odor forte'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*Elimina muitos gases (flatulência)?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_FLATULENCIA
+
+async def gi_flatulencia(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_flatulencia'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Nenhum',
+        'Carboidratos pioram',
+        'Fibras pioram',
+        'Jejum melhora',
+        'Leite/derivados pioram',
+        'Feijão/cebola pioram'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*O que piora ou melhora seus sintomas digestivos?*\n"
+        "(Selecione o mais relevante)",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_SIBO_TRIGGERS
+
+async def gi_sibo_triggers(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_sibo_triggers'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Não',
+        'Às vezes',
+        'Frequentemente'
+    ], columns=3)
+    
+    await update.message.reply_text(
+        "*Sente fadiga ou 'névoa mental' após as refeições?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_FADIGA_POS
+
+async def gi_fadiga_pos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_fadiga_pos'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Nenhum',
+        'Coceira na pele',
+        'Rubor facial ao comer',
+        'Congestão nasal',
+        'Cefaleia por alimentos',
+        'Vários desses'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*Apresenta algum desses sintomas histamínicos?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_HISTAMINA
+
+async def gi_histamina(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_histamina'] = update.message.text.strip()
+    
+    keyboard = get_keyboard([
+        'Não',
+        '1 vez',
+        '2-3 vezes',
+        'Mais de 3 vezes'
+    ], columns=2)
+    
+    await update.message.reply_text(
+        "*Usou antibióticos nos últimos 6 meses?*",
+        parse_mode='Markdown',
+        reply_markup=keyboard
+    )
+    return GI_ANTIBIOTICOS
+
+async def gi_antibioticos(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    context.user_data['gi_antibioticos'] = update.message.text.strip()
     
     keyboard = get_keyboard([
         'Descansado',
@@ -760,6 +1156,29 @@ def generate_pdf(data: Dict[str, Any]) -> str:
     else:
         story.append(Paragraph(f"<b>ATENÇÃO:</b> <font color='red'>{red_flags}</font>", value_style))
     
+    # NDI - se aplicável
+    if data.get('ndi_score'):
+        story.append(Paragraph("📊 NDI - ÍNDICE INCAPACIDADE CERVICAL", section_style))
+        add_field("Pontuação", f"{data.get('ndi_score')}/50 ({data.get('ndi_percent', 0):.0f}%)")
+        add_field("Classificação", data.get('ndi_class'))
+    
+    # ODI - se aplicável
+    if data.get('odi_score'):
+        story.append(Paragraph("📊 ODI - ÍNDICE INCAPACIDADE LOMBAR", section_style))
+        add_field("Pontuação", f"{data.get('odi_score')}/50 ({data.get('odi_percent', 0):.0f}%)")
+        add_field("Classificação", data.get('odi_class'))
+    
+    # Função Gastrointestinal (SIBO/Disbiose)
+    story.append(Paragraph("🦠 FUNÇÃO GASTROINTESTINAL", section_style))
+    add_field("Frequência evacuação", data.get('gi_frequencia'))
+    add_field("Escala Bristol", data.get('gi_bristol'))
+    add_field("Distensão abdominal", data.get('gi_distensao'))
+    add_field("Flatulência", data.get('gi_flatulencia'))
+    add_field("Triggers SIBO", data.get('gi_sibo_triggers'))
+    add_field("Fadiga pós-refeição", data.get('gi_fadiga_pos'))
+    add_field("Sintomas histamínicos", data.get('gi_histamina'))
+    add_field("Antibióticos recentes", data.get('gi_antibioticos'))
+    
     # Sono e Estresse
     story.append(Paragraph("😴 SONO E ESTRESSE", section_style))
     add_field("Qualidade do sono", data.get('sono_qualidade'))
@@ -828,6 +1247,38 @@ def main():
             DOR_DURACAO: [MessageHandler(filters.TEXT & ~filters.COMMAND, dor_duracao)],
             DOR_IRRADIACAO: [MessageHandler(filters.TEXT & ~filters.COMMAND, dor_irradiacao)],
             RED_FLAGS: [MessageHandler(filters.TEXT & ~filters.COMMAND, red_flags)],
+            # NDI - Neck Disability Index
+            NDI_INTENSIDADE: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_intensidade)],
+            NDI_CUIDADOS: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_cuidados)],
+            NDI_LEVANTAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_levantar)],
+            NDI_LEITURA: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_leitura)],
+            NDI_CEFALEIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_cefaleia)],
+            NDI_CONCENTRACAO: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_concentracao)],
+            NDI_TRABALHO: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_trabalho)],
+            NDI_DIRIGIR: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_dirigir)],
+            NDI_SONO: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_sono)],
+            NDI_LAZER: [MessageHandler(filters.TEXT & ~filters.COMMAND, ndi_lazer)],
+            # ODI - Oswestry Disability Index
+            ODI_INTENSIDADE: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_intensidade)],
+            ODI_CUIDADOS: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_cuidados)],
+            ODI_LEVANTAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_levantar)],
+            ODI_CAMINHAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_caminhar)],
+            ODI_SENTAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_sentar)],
+            ODI_FICAR_PE: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_ficar_pe)],
+            ODI_SONO: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_sono)],
+            ODI_VIDA_SEXUAL: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_vida_sexual)],
+            ODI_VIDA_SOCIAL: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_vida_social)],
+            ODI_VIAJAR: [MessageHandler(filters.TEXT & ~filters.COMMAND, odi_viajar)],
+            # Função Gastrointestinal
+            GI_FREQUENCIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_frequencia)],
+            GI_BRISTOL: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_bristol)],
+            GI_DISTENSAO: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_distensao)],
+            GI_FLATULENCIA: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_flatulencia)],
+            GI_SIBO_TRIGGERS: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_sibo_triggers)],
+            GI_FADIGA_POS: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_fadiga_pos)],
+            GI_HISTAMINA: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_histamina)],
+            GI_ANTIBIOTICOS: [MessageHandler(filters.TEXT & ~filters.COMMAND, gi_antibioticos)],
+            # Sono e Estresse
             SONO_QUALIDADE: [MessageHandler(filters.TEXT & ~filters.COMMAND, sono_qualidade)],
             SONO_DESPERTARES: [MessageHandler(filters.TEXT & ~filters.COMMAND, sono_despertares)],
             ESTRESSE_NIVEL: [MessageHandler(filters.TEXT & ~filters.COMMAND, estresse_nivel)],

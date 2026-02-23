@@ -1,0 +1,37 @@
+{
+  "source": "whatsapp",
+  "phone": "254876462379028@lid",
+  "timestamp": "2026-02-21T00:50:49.734Z",
+  "data": {
+    "nome": "Juliama flores",
+    "dataNascimento": "18091977",
+    "sexo": "feminino",
+    "profissao": "Junior",
+    "queixaPrincipal": "Dornlombar",
+    "tempoProblema": "mais_1_ano",
+    "eventoDesencadeante": "Nao",
+    "temDor": "sim",
+    "dorLocal": [
+      "lombar"
+    ],
+    "dorIntensidade": "9",
+    "dorTipo": [],
+    "redFlags": [
+      "dif_fezes"
+    ],
+    "sonoQualidade": "exausto",
+    "horasDormidas": "7_8",
+    "estresseNivel": "9",
+    "distensaoAbdominal": "frequente",
+    "condicoes": [
+      "nenhuma"
+    ],
+    "medicamentos": "Vitamima d",
+    "alergias": "Nao",
+    "tratamentosAnteriores": [
+      "acupuntura"
+    ],
+    "atividadeFisica": "1_2x",
+    "expectativas": "Melhora"
+  }
+}

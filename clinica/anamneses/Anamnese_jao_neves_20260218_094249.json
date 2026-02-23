@@ -1,0 +1,51 @@
+{
+  "nome": "jao neves",
+  "dataNascimento": "1999-01-01",
+  "sexo": "masculino",
+  "profissao": "junio",
+  "telefone": "1189123204",
+  "queixaPrincipal": "dor de cabeça e nos ombros",
+  "tempoProblema": "3_6_meses",
+  "eventoDesencadeante": "nao",
+  "dorIntensidade": "5",
+  "dorDuracao": "subaguda",
+  "dorIrradiacao": "braco",
+  "sonoQualidade": "cansado",
+  "sonoDespertares": "3_4",
+  "horaDeitar": "01:01",
+  "horaAcordar": "09:19",
+  "estresseNivel": "8",
+  "estresseFator": "dor",
+  "outrasCondicoes": "nadegas",
+  "usaMedicamentos": "sim",
+  "medicamentosLista": "lamotrigina",
+  "alergias": "nano",
+  "cirurgiasAnteriores": "artordese",
+  "resultadoTratamentos": "melhorou_parcial",
+  "atividadeFisica": "3_4x",
+  "tipoAtividade": "musculacao",
+  "tabagismo": "fumante",
+  "alcool": "ocasional",
+  "expectativas": "melhiorar",
+  "objetivoSaude": "desempenho",
+  "observacoes": "dor nas costas",
+  "dorLocal": [
+    "cervical"
+  ],
+  "dorTipo": [
+    "queimacao"
+  ],
+  "redFlags": [
+    "anestesia_sela"
+  ],
+  "condicoes": [
+    "colesterol"
+  ],
+  "tratamentos": [
+    "acupuntura"
+  ],
+  "consentimento": [
+    "on"
+  ],
+  "dataPreenchimento": "18/02/2026, 09:42:48"
+}
