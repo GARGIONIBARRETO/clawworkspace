@@ -618,6 +618,136 @@ def agenda():
         flash(f'Erro ao carregar agenda: {str(e)}')
         return redirect(url_for('index'))
 
+
+@app.route('/paciente/<int:paciente_id>/novo_episodio')
+def novo_episodio(paciente_id):
+    """Formulário para novo episódio clínico"""
+    try:
+        db = clinica_app.get_db()
+        db.cursor.execute("""
+        SELECT id, nome, cpf, data_nascimento FROM pacientes WHERE id = %s
+        """, (paciente_id,))
+        paciente = db.cursor.fetchone()
+        
+        if not paciente:
+            flash('Paciente não encontrado!')
+            return redirect(url_for('pacientes'))
+        
+        # Calcular idade
+        idade = None
+        if paciente[3]:
+            from datetime import date
+            hoje = date.today()
+            nascimento = paciente[3]
+            idade = hoje.year - nascimento.year - ((hoje.month, hoje.day) < (nascimento.month, nascimento.day))
+        
+        return render_template('novo_episodio.html', paciente=paciente, idade=idade)
+    except Exception as e:
+        flash(f'Erro: {str(e)}')
+        return redirect(url_for('pacientes'))
+
+@app.route('/paciente/<int:paciente_id>/salvar_episodio', methods=['POST'])
+def salvar_episodio(paciente_id):
+    """Salva novo episódio clínico"""
+    try:
+        db = clinica_app.get_db()
+        action = request.form.get('action', 'save')
+        
+        # Coletar todos os dados do formulário
+        data_episodio = request.form.get('data_episodio')
+        tipo_atendimento = request.form.get('tipo_atendimento')
+        medico = request.form.get('medico')
+        
+        # Anamnese
+        queixa_principal = request.form.get('queixa_principal')
+        historia_doenca_atual = request.form.get('historia_doenca_atual')
+        revisao_sistemas = request.form.get('revisao_sistemas')
+        
+        # Sinais vitais
+        sinais_vitais = json.dumps({
+            'pa': request.form.get('pa'),
+            'fc': request.form.get('fc'),
+            'fr': request.form.get('fr'),
+            'temp': request.form.get('temp'),
+            'sat': request.form.get('sat'),
+            'peso': request.form.get('peso')
+        })
+        
+        # Exame físico
+        exame_geral = request.form.get('exame_geral')
+        exame_neurologico = request.form.get('exame_neurologico')
+        exame_coluna = request.form.get('exame_coluna')
+        
+        # Diagnóstico
+        hipoteses_diagnosticas = request.form.get('hipoteses_diagnosticas')
+        cid10 = request.form.get('cid10')
+        
+        # Conduta
+        condutas = request.form.get('condutas')
+        prescricoes = request.form.get('prescricoes')
+        exames_solicitados = request.form.get('exames_solicitados')
+        orientacoes = request.form.get('orientacoes')
+        retorno = request.form.get('retorno')
+        
+        # Inserir episódio
+        db.cursor.execute("""
+        INSERT INTO episodios_clinicos (
+            paciente_id, data_episodio, tipo_atendimento, medico,
+            queixa_principal, historia_doenca_atual, revisao_sistemas,
+            sinais_vitais, exame_geral, exame_neurologico, exame_coluna,
+            hipoteses_diagnosticas, cid10,
+            condutas, prescricoes, exames_solicitados, orientacoes, retorno
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        RETURNING id
+        """, (
+            paciente_id, data_episodio, tipo_atendimento, medico,
+            queixa_principal, historia_doenca_atual, revisao_sistemas,
+            sinais_vitais, exame_geral, exame_neurologico, exame_coluna,
+            hipoteses_diagnosticas, cid10,
+            condutas, prescricoes, exames_solicitados, orientacoes, retorno
+        ))
+        
+        episodio_id = db.cursor.fetchone()[0]
+        
+        # Também criar registro simplificado na tabela consultas para compatibilidade
+        db.cursor.execute("""
+        INSERT INTO consultas (paciente_id, data_consulta, medico, motivo, observacoes)
+        VALUES (%s, %s, %s, %s, %s)
+        """, (
+            paciente_id, data_episodio, medico, queixa_principal,
+            f"HDA: {historia_doenca_atual or 'N/A'}\n\n" +
+            f"Exame: {exame_geral or ''} {exame_neurologico or ''} {exame_coluna or ''}\n\n" +
+            f"HD: {hipoteses_diagnosticas or 'N/A'}\n\n" +
+            f"Conduta: {condutas or 'N/A'}"
+        ))
+        
+        db.connection.commit()
+        
+        flash('Episódio clínico salvo com sucesso!', 'success')
+        
+        if action == 'save_print':
+            return redirect(url_for('imprimir_episodio', episodio_id=episodio_id))
+        else:
+            return redirect(url_for('paciente_detalhes', paciente_id=paciente_id))
+        
+    except Exception as e:
+        db.connection.rollback()
+        flash(f'Erro ao salvar episódio: {str(e)}', 'danger')
+        return redirect(url_for('novo_episodio', paciente_id=paciente_id))
+
+@app.route('/paciente/<int:paciente_id>/salvar_rascunho', methods=['POST'])
+def salvar_rascunho(paciente_id):
+    """Salva rascunho do episódio (auto-save)"""
+    # TODO: Implementar salvamento temporário em Redis/arquivo
+    return jsonify({'status': 'ok'})
+
+@app.route('/episodio/<int:episodio_id>/imprimir')
+def imprimir_episodio(episodio_id):
+    """Gera versão para impressão do episódio"""
+    # TODO: Implementar geração de PDF
+    flash('Função de impressão será implementada em breve!', 'info')
+    return redirect(url_for('index'))
+
 @app.route('/download/<int:paciente_id>/<arquivo>')
 def download_anexo(paciente_id, arquivo):
     """Download de anexos do paciente"""
