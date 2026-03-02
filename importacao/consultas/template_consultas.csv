@@ -1,0 +1,4 @@
+cpf_paciente,data_consulta,medico,motivo,observacoes
+123.456.789-00,2023-01-15,Dr. Felipe,Dor lombar,"Paciente relata dor na região lombar há 2 semanas, irradiando para perna direita. Piora ao sentar."
+987.654.321-00,2023-01-20,Dr. Felipe,Retorno pós-cirúrgico,"Evolução satisfatória após discectomia. Redução significativa da dor. Paciente consegue caminhar sem limitações."
+456.789.123-00,2023-02-01,Dr. Felipe,Primeira consulta,"Paciente jovem com dor cervical crônica. Trabalha muito tempo no computador. Sem irradiação para membros."

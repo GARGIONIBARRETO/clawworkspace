@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block title %}Importar Dados - Clínica Dr. Felipe{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1><i class="fas fa-upload"></i> Importar Dados</h1>
+        <p class="text-muted">Importe seus dados do prontuário antigo</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-file-csv"></i> Upload de Arquivo CSV</h5>
+            </div>
+            <div class="card-body">
+                <form action="/upload_csv" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label">Tipo de Importação</label>
+                        <select class="form-select" id="tipo" name="tipo" required onchange="updateFileInput()">
+                            <option value="pacientes">📋 Pacientes</option>
+                            <option value="consultas">🩺 Consultas</option>
+                            <option value="episodios">🏥 Episódios Clínicos</option>
+                            <option value="bioimpedancia">⚖️ Bioimpedância</option>
+                            <option value="exames_laboratoriais">🔬 Exames de Sangue</option>
+                            <option value="anexos">📎 Anexos (Imagens)</option>
+                        </select>
+                        <div class="form-text">Escolha o tipo de dados que você está importando.</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Arquivo</label>
+                        <input class="form-control" type="file" id="file" name="file" required>
+                        <div class="form-text">
+                            <span id="file-help">
+                                CSV para dados tabulares ou Imagens/PDF para anexos (JPG, PNG, PDF).
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-upload"></i> Importar Arquivo
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> Formatos Suportados</h5>
+            </div>
+            <div class="card-body">
+                <h6>📋 Pacientes (CSV)</h6>
+                <p class="small text-muted">
+                    Colunas: nome, cpf, rg, telefone, email, endereco, data_nascimento, convenio
+                </p>
+                
+                <h6>🩺 Consultas (CSV)</h6>
+                <p class="small text-muted">
+                    Colunas: cpf_paciente, data_consulta, medico, motivo, observacoes
+                </p>
+                
+                <h6>🏥 Episódios (CSV)</h6>
+                <p class="small text-muted">
+                    Colunas: cpf_paciente, data_episodio, tipo_episodio, descricao, diagnostico, tratamento
+                </p>
+                
+                <h6>⚖️ Bioimpedância (CSV)</h6>
+                <p class="small text-muted">
+                    Colunas: cpf_paciente, data_medicao, peso, altura, imc, gordura_corporal, massa_muscular, agua_corporal
+                </p>
+                
+                <h6>🔬 Exames Sangue (CSV)</h6>
+                <p class="small text-muted">
+                    Colunas: cpf_paciente, data_exame, tipo_exame, laboratorio, parametros_json, observacoes
+                </p>
+                
+                <h6>📎 Anexos (ZIP/Imagens)</h6>
+                <p class="small text-muted">
+                    Organize por CPF: 12345678900_ressonancia.jpg, 98765432100_raio_x.pdf
+                </p>
+                
+                <hr>
+                
+                <div class="d-grid gap-2">
+                    <a href="/templates/pacientes_template.csv" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-download"></i> Template Pacientes
+                    </a>
+                    <a href="/templates/consultas_template.csv" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-download"></i> Template Consultas
+                    </a>
+                    <a href="/templates/bioimpedancia_template_cpf.csv" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-download"></i> Template Bioimpedância
+                    </a>
+                    <a href="/templates/exames_laboratoriais_template.csv" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-download"></i> Template Exames
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-exclamation-triangle"></i> Importante</h5>
+            </div>
+            <div class="card-body">
+                <ul class="small">
+                    <li>Importe <strong>pacientes primeiro</strong></li>
+                    <li>Depois importe consultas e episódios</li>
+                    <li>Use CPF como chave única</li>
+                    <li>Arquivos são processados imediatamente</li>
+                    <li>Dados duplicados são ignorados</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateFileInput() {
+    const tipo = document.getElementById('tipo').value;
+    const fileInput = document.getElementById('file');
+    const fileHelp = document.getElementById('file-help');
+    
+    if (tipo === 'anexos') {
+        fileInput.setAttribute('accept', '.jpg,.jpeg,.png,.pdf,.zip');
+        fileHelp.textContent = 'Selecione imagens (JPG, PNG), PDFs ou arquivo ZIP. Nome: CPF_tipo_exame.extensao';
+    } else {
+        fileInput.setAttribute('accept', '.csv');
+        fileHelp.textContent = 'Selecione o arquivo CSV com os dados para importação.';
+    }
+}
+
+// Inicializar na carga da página
+document.addEventListener('DOMContentLoaded', updateFileInput);
+</script>
+{% endblock %}

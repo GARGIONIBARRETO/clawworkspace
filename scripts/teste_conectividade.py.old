@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""
+Teste de Conectividade - Supabase
+Script simples para testar se a conexão está funcionando
+"""
+
+import psycopg2
+import json
+import socket
+from datetime import datetime
+
+def testar_dns():
+    """Testa resolução DNS"""
+    print("🔍 Testando resolução DNS...")
+    try:
+        import socket
+        result = socket.gethostbyname("db.rgtgckemtpeobhfdpwmk.supabase.co")
+        print(f"✅ DNS OK - IP: {result}")
+        return True
+    except Exception as e:
+        print(f"❌ Erro DNS: {e}")
+        return False
+
+def testar_porta():
+    """Testa conectividade na porta"""
+    print("🔍 Testando conectividade na porta 5432...")
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(10)
+        result = sock.connect_ex(("db.rgtgckemtpeobhfdpwmk.supabase.co", 5432))
+        sock.close()
+        
+        if result == 0:
+            print("✅ Porta acessível")
+            return True
+        else:
+            print(f"❌ Porta inacessível - código: {result}")
+            return False
+    except Exception as e:
+        print(f"❌ Erro porta: {e}")
+        return False
+
+def testar_conexao_db():
+    """Testa conexão completa com o banco"""
+    print("🔍 Testando conexão com banco...")
+    try:
+        with open('/root/.secrets/supabase_credentials.json', 'r') as f:
+            creds = json.load(f)
+        
+        conn = psycopg2.connect(
+            host=creds['host'],
+            port=creds['port'],
+            database=creds['database'],
+            user=creds['username'],
+            password=creds['password'],
+            connect_timeout=10
+        )
+        
+        cursor = conn.cursor()
+        cursor.execute("SELECT version();")
+        version = cursor.fetchone()[0]
+        cursor.close()
+        conn.close()
+        
+        print(f"✅ Conexão com banco OK!")
+        print(f"📊 PostgreSQL: {version}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Erro na conexão: {e}")
+        return False
+
+def main():
+    """Função principal"""
+    print("🏥 TESTE DE CONECTIVIDADE - SISTEMA DE PACIENTES")
+    print("=" * 60)
+    print(f"⏰ Teste iniciado em: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}")
+    print()
+    
+    # Testes sequenciais
+    dns_ok = testar_dns()
+    porta_ok = testar_porta() if dns_ok else False
+    db_ok = testar_conexao_db() if porta_ok else False
+    
+    print("\n" + "=" * 60)
+    print("📋 RESUMO DOS TESTES:")
+    print(f"DNS: {'✅ OK' if dns_ok else '❌ FALHOU'}")
+    print(f"Porta: {'✅ OK' if porta_ok else '❌ FALHOU'}")  
+    print(f"Banco: {'✅ OK' if db_ok else '❌ FALHOU'}")
+    
+    if db_ok:
+        print("\n🎉 SISTEMA PRONTO PARA USO!")
+        print("Execute: python3 scripts/clinica_manager.py")
+    else:
+        print("\n⚠️ SISTEMA AGUARDANDO CONECTIVIDADE")
+        print("Possíveis causas:")
+        print("- Firewall bloqueando VPS")
+        print("- Problema temporário do Supabase")
+        print("- Configuração de rede")
+        print("\nTente novamente em alguns minutos.")
+
+if __name__ == "__main__":
+    main()

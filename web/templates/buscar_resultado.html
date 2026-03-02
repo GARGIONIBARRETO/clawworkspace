@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}Busca: {{ termo }} - Sistema de Pacientes{% endblock %}
+
+{% block page_title %}Resultados da Busca{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="{{ url_for('listar_pacientes') }}">Pacientes</a></li>
+                <li class="breadcrumb-item active">Busca: "{{ termo }}"</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="col-md-4">
+        <!-- Nova busca -->
+        <form action="{{ url_for('buscar') }}" method="GET">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" 
+                       placeholder="Nova busca..." value="{{ termo }}">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span>
+            <i class="fas fa-search"></i> 
+            Resultados para: <strong>"{{ termo }}"</strong>
+        </span>
+        <span class="badge bg-primary">{{ pacientes|length }} encontrado(s)</span>
+    </div>
+    <div class="card-body">
+        {% if pacientes %}
+        <div class="row">
+            {% for paciente in pacientes %}
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="flex-grow-1">
+                                <h5 class="card-title mb-1">
+                                    <i class="fas fa-user"></i>
+                                    {{ paciente.nome }}
+                                </h5>
+                                
+                                <div class="mb-2">
+                                    {% if paciente.cpf %}
+                                    <small class="text-muted">
+                                        <i class="fas fa-id-card"></i>
+                                        CPF: <code>{{ paciente.cpf }}</code>
+                                    </small><br>
+                                    {% endif %}
+                                    
+                                    {% if paciente.telefone %}
+                                    <small class="text-muted">
+                                        <i class="fas fa-phone"></i>
+                                        {{ paciente.telefone }}
+                                    </small><br>
+                                    {% endif %}
+                                    
+                                    {% if paciente.email %}
+                                    <small class="text-muted">
+                                        <i class="fas fa-envelope"></i>
+                                        {{ paciente.email }}
+                                    </small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-outline-secondary btn-sm dropdown-toggle" 
+                                        type="button" data-bs-toggle="dropdown">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="{{ url_for('detalhes_paciente', paciente_id=paciente.id) }}">
+                                            <i class="fas fa-eye"></i> Ver Detalhes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-edit"></i> Editar
+                                        </a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-flask"></i> Novo Exame
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-chart-line"></i> Bioimpedância
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-file-pdf"></i> Relatório
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3">
+                            <a href="{{ url_for('detalhes_paciente', paciente_id=paciente.id) }}" 
+                               class="btn btn-primary btn-sm">
+                                <i class="fas fa-arrow-right"></i> Acessar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        {% else %}
+        <!-- Nenhum resultado -->
+        <div class="text-center py-5">
+            <i class="fas fa-search fa-4x text-muted mb-3"></i>
+            <h5 class="text-muted">Nenhum paciente encontrado</h5>
+            <p class="text-muted mb-4">
+                Não foram encontrados pacientes para o termo "{{ termo }}".
+            </p>
+            
+            <div class="alert alert-info">
+                <h6><i class="fas fa-lightbulb"></i> Dicas de busca:</h6>
+                <ul class="text-left mb-0">
+                    <li>Verifique se o nome está correto</li>
+                    <li>Tente buscar apenas pelo primeiro nome</li>
+                    <li>Para CPF, digite apenas números</li>
+                    <li>A busca não diferencia maiúsculas de minúsculas</li>
+                </ul>
+            </div>
+            
+            <div class="mt-4">
+                <a href="{{ url_for('listar_pacientes') }}" class="btn btn-outline-primary me-2">
+                    <i class="fas fa-list"></i> Ver Todos os Pacientes
+                </a>
+                <button class="btn btn-primary" onclick="document.querySelector('input[name=q]').focus()">
+                    <i class="fas fa-search"></i> Nova Busca
+                </button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Busca avançada -->
+<div class="card mt-4">
+    <div class="card-header">
+        <i class="fas fa-filter"></i> Busca Avançada
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" placeholder="Nome completo ou parcial">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">CPF</label>
+                    <input type="text" class="form-control" placeholder="000.000.000-00">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Telefone</label>
+                    <input type="text" class="form-control" placeholder="(11) 99999-9999">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label class="form-label">Data de cadastro</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="date" class="form-control" placeholder="De">
+                        </div>
+                        <div class="col-6">
+                            <input type="date" class="form-control" placeholder="Até">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-end">
+                    <div class="d-grid gap-2 d-md-flex w-100">
+                        <button type="submit" class="btn btn-primary flex-fill">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                        <button type="reset" class="btn btn-outline-secondary">
+                            <i class="fas fa-times"></i> Limpar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Auto-focus no campo de busca
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('input[name="q"]');
+    if (searchInput && !searchInput.value) {
+        searchInput.focus();
+    }
+});
+
+// Busca em tempo real
+let searchTimeout;
+document.querySelector('input[name="q"]').addEventListener('input', function(e) {
+    clearTimeout(searchTimeout);
+    
+    if (e.target.value.length >= 2) {
+        searchTimeout = setTimeout(() => {
+            // Implementar busca dinâmica se necessário
+            console.log('Busca dinâmica para:', e.target.value);
+        }, 500);
+    }
+});
+</script>
+{% endblock %}

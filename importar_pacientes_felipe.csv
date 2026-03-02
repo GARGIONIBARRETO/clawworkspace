@@ -1,0 +1,5 @@
+nome,data_nascimento,sexo,telefone,email,cpf,endereco,cidade,estado,cep,historico_medico,medicacoes_atuais,alergias,observacoes
+João Silva,1980-05-15,M,(11) 98765-4321,joao@email.com,,Rua A 123,São Paulo,SP,01234-567,"Hérnia de disco L4-L5, cirurgia em 2023",Pregabalina 75mg 2x/dia,,Paciente em acompanhamento pós-operatório
+Maria Santos,1975-03-22,F,(11) 91234-5678,,,Av B 456,São Paulo,SP,02345-678,"Estenose canal lombar, dor crônica há 2 anos","Gabapentina 300mg 3x/dia, Tramadol 50mg SOS",Dipirona,Candidata a descompressão
+Pedro Costa,1990-12-10,M,(11) 95555-1234,pedro@gmail.com,,,,,,Cervicalgia crônica,,,Primeira consulta - avaliar necessidade de RNM
+Ana Oliveira,1968-07-30,F,(11) 92222-3333,,,Rua C 789,São Paulo,SP,03456-789,"Espondilolistese L5-S1 grau I",,"Codeína",Tratamento conservador há 6 meses

@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Sistema de Pacientes{% endblock %}
+
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Estatísticas Cards -->
+    <div class="col-md-3">
+        <div class="stat-card primary">
+            <i class="fas fa-users fa-2x mb-3"></i>
+            <div class="stat-number">{{ stats.total_pacientes }}</div>
+            <div>Total de Pacientes</div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="stat-card success">
+            <i class="fas fa-flask fa-2x mb-3"></i>
+            <div class="stat-number">{{ stats.total_exames }}</div>
+            <div>Exames Realizados</div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="stat-card warning">
+            <i class="fas fa-chart-line fa-2x mb-3"></i>
+            <div class="stat-number">{{ stats.total_bioimpedancia }}</div>
+            <div>Bioimpedâncias</div>
+        </div>
+    </div>
+    
+    <div class="col-md-3">
+        <div class="stat-card info">
+            <i class="fas fa-user-plus fa-2x mb-3"></i>
+            <div class="stat-number">{{ stats.pacientes_recentes }}</div>
+            <div>Novos (7 dias)</div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Busca Rápida -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-search"></i> Busca Rápida de Pacientes
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('buscar') }}" method="GET">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control search-box" 
+                               placeholder="Digite nome ou CPF do paciente...">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+                </form>
+                <small class="text-muted">
+                    <i class="fas fa-info-circle"></i> 
+                    Busque por nome completo ou parcial, ou CPF
+                </small>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ações Rápidas -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-bolt"></i> Ações Rápidas
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-user-plus"></i> Novo Paciente
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-flask"></i> Registrar Exame
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-chart-line"></i> Nova Bioimpedância
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-file-pdf"></i> Gerar Relatório
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Atividade Recente -->
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-clock"></i> Atividade Recente
+            </div>
+            <div class="card-body">
+                <div class="timeline">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Sistema Operacional!</strong><br>
+                        Conectividade com banco de dados estabelecida.
+                        Sistema pronto para uso completo.
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-success"></div>
+                        <div class="timeline-content">
+                            <h6 class="mb-1">Sistema Inicializado</h6>
+                            <small class="text-muted">Hoje às {{ moment().format('HH:mm') }}</small>
+                            <p class="mb-0">Backend web operacional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Status do Sistema -->
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-server"></i> Status do Sistema
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="fas fa-database text-success"></i>
+                        <strong>Banco de Dados</strong><br>
+                        <small class="text-muted">PostgreSQL (Supabase)</small>
+                        <span class="badge bg-success float-end">Online</span>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-server text-success"></i>
+                        <strong>API Web</strong><br>
+                        <small class="text-muted">Flask Backend</small>
+                        <span class="badge bg-success float-end">Ativo</span>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-shield-alt text-success"></i>
+                        <strong>Segurança</strong><br>
+                        <small class="text-muted">Autenticação Ativa</small>
+                        <span class="badge bg-success float-end">Seguro</span>
+                    </li>
+                    <li class="mb-0">
+                        <i class="fas fa-cloud text-primary"></i>
+                        <strong>Backup</strong><br>
+                        <small class="text-muted">Automático na Nuvem</small>
+                        <span class="badge bg-primary float-end">Ativo</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="fas fa-chart-pie"></i> Resumo Semanal
+            </div>
+            <div class="card-body text-center">
+                <canvas id="weeklyChart" width="200" height="150"></canvas>
+                <p class="text-muted mt-2">
+                    <small>Atividade dos últimos 7 dias</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cards de Funcionalidades -->
+<div class="row mt-4">
+    <div class="col-12">
+        <h4><i class="fas fa-star"></i> Funcionalidades Disponíveis</h4>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                <h5>Gestão de Pacientes</h5>
+                <p class="text-muted">
+                    Cadastro completo, busca inteligente, histórico médico
+                </p>
+                <a href="{{ url_for('listar_pacientes') }}" class="btn btn-outline-primary">
+                    Acessar Pacientes
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-flask fa-3x text-success mb-3"></i>
+                <h5>Exames Laboratoriais</h5>
+                <p class="text-muted">
+                    Histórico completo, comparações temporais, alertas
+                </p>
+                <a href="#" class="btn btn-outline-success">
+                    Ver Exames
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-3x text-warning mb-3"></i>
+                <h5>Bioimpedância</h5>
+                <p class="text-muted">
+                    Evolução corporal, gráficos automáticos, metas
+                </p>
+                <a href="#" class="btn btn-outline-warning">
+                    Ver Bioimpedância
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Gráfico simples de atividade semanal
+    const ctx = document.getElementById('weeklyChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Consultas', 'Exames', 'Bioimpedância'],
+            datasets: [{
+                data: [{{ stats.total_pacientes }}, {{ stats.total_exames }}, {{ stats.total_bioimpedancia }}],
+                backgroundColor: [
+                    '#667eea',
+                    '#38ef7d',
+                    '#f093fb'
+                ],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

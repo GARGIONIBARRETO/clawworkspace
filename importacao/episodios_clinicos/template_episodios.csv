@@ -1,0 +1,4 @@
+cpf_paciente,data_episodio,tipo_episodio,descricao,diagnostico,tratamento
+123.456.789-00,2023-01-15,Cirurgia,"Paciente submetido a discectomia percutânea L4-L5. Procedimento realizado sob anestesia local com sedação. Sem intercorrências.","Hérnia de disco L4-L5 com compressão radicular","Discectomia percutânea + fisioterapia"
+987.654.321-00,2023-02-10,Emergência,"Paciente deu entrada no pronto-socorro com dor lombar súbita e intensa (10/10), sem conseguir se movimentar.","Lombalgia aguda - possível hérnia discal","Bloqueio anestésico + anti-inflamatório EV"
+456.789.123-00,2023-03-05,Internação,"Paciente internado para investigação de dor cervical progressiva com sinais neurológicos. Realizados exames complementares.","Mielopatia cervical por estenose de canal","Laminectomia cervical C5-C6"

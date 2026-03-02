@@ -1,0 +1,325 @@
+#!/usr/bin/env python3
+"""
+Sistema Completo de Gestão de Pacientes - Dr. Felipe
+Exames Laboratoriais + Bioimpedância + Relatórios
+"""
+
+import psycopg2
+import json
+import os
+import pandas as pd
+from datetime import datetime, date
+from typing import List, Dict, Optional, Tuple
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+class PacientesManager:
+    def __init__(self):
+        self.connection = None
+        self.cursor = None
+        self._connect()
+    
+    def _connect(self):
+        """Conecta ao banco usando credenciais seguras"""
+        try:
+            with open('/root/.secrets/supabase_credentials.json', 'r') as f:
+                creds = json.load(f)
+            
+            self.connection = psycopg2.connect(
+                host=creds['host'],
+                port=creds['port'],
+                database=creds['database'],
+                user=creds['username'],
+                password=creds['password']
+            )
+            self.cursor = self.connection.cursor()
+            
+        except Exception as e:
+            print(f"❌ Erro na conexão: {e}")
+            raise
+    
+    # ========== PACIENTES ==========
+    
+    def adicionar_paciente(self, nome: str, cpf: str = None, data_nascimento: date = None, 
+                          telefone: str = None, email: str = None, endereco: str = None, 
+                          observacoes: str = None) -> int:
+        """Adiciona novo paciente e retorna o ID"""
+        
+        sql = """
+        INSERT INTO pacientes (nome, cpf, data_nascimento, telefone, email, endereco, observacoes)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        RETURNING id;
+        """
+        
+        try:
+            self.cursor.execute(sql, (nome, cpf, data_nascimento, telefone, email, endereco, observacoes))
+            paciente_id = self.cursor.fetchone()[0]
+            self.connection.commit()
+            print(f"✅ Paciente {nome} adicionado com ID: {paciente_id}")
+            return paciente_id
+            
+        except Exception as e:
+            print(f"❌ Erro ao adicionar paciente: {e}")
+            self.connection.rollback()
+            return None
+    
+    def buscar_paciente(self, termo: str) -> List[Dict]:
+        """Busca paciente por nome ou CPF"""
+        
+        sql = """
+        SELECT * FROM pacientes 
+        WHERE nome ILIKE %s OR cpf ILIKE %s
+        ORDER BY nome;
+        """
+        
+        try:
+            self.cursor.execute(sql, (f'%{termo}%', f'%{termo}%'))
+            results = self.cursor.fetchall()
+            
+            pacientes = []
+            for row in results:
+                pacientes.append({
+                    'id': row[0],
+                    'nome': row[1],
+                    'cpf': row[2],
+                    'data_nascimento': row[3],
+                    'telefone': row[4],
+                    'email': row[5],
+                    'endereco': row[6],
+                    'observacoes': row[7]
+                })
+            
+            return pacientes
+            
+        except Exception as e:
+            print(f"❌ Erro na busca: {e}")
+            return []
+    
+    # ========== EXAMES LABORATORIAIS ==========
+    
+    def adicionar_exame_laboratorial(self, paciente_id: int, data_exame: date, 
+                                   laboratorio: str, tipo_exame: str, 
+                                   parametros: Dict, arquivo_pdf: str = None, 
+                                   observacoes: str = None) -> int:
+        """Adiciona exame laboratorial"""
+        
+        sql = """
+        INSERT INTO exames_laboratoriais 
+        (paciente_id, data_exame, laboratorio, tipo_exame, parametros, arquivo_pdf, observacoes)
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+        RETURNING id;
+        """
+        
+        try:
+            self.cursor.execute(sql, (paciente_id, data_exame, laboratorio, tipo_exame, 
+                                    json.dumps(parametros), arquivo_pdf, observacoes))
+            exame_id = self.cursor.fetchone()[0]
+            self.connection.commit()
+            print(f"✅ Exame laboratorial adicionado com ID: {exame_id}")
+            return exame_id
+            
+        except Exception as e:
+            print(f"❌ Erro ao adicionar exame: {e}")
+            self.connection.rollback()
+            return None
+    
+    def buscar_exames_paciente(self, paciente_id: int, tipo_exame: str = None) -> List[Dict]:
+        """Busca exames de um paciente específico"""
+        
+        if tipo_exame:
+            sql = """
+            SELECT * FROM exames_laboratoriais 
+            WHERE paciente_id = %s AND tipo_exame = %s
+            ORDER BY data_exame DESC;
+            """
+            params = (paciente_id, tipo_exame)
+        else:
+            sql = """
+            SELECT * FROM exames_laboratoriais 
+            WHERE paciente_id = %s
+            ORDER BY data_exame DESC;
+            """
+            params = (paciente_id,)
+        
+        try:
+            self.cursor.execute(sql, params)
+            results = self.cursor.fetchall()
+            
+            exames = []
+            for row in results:
+                exames.append({
+                    'id': row[0],
+                    'data_exame': row[2],
+                    'laboratorio': row[3],
+                    'tipo_exame': row[4],
+                    'parametros': row[5],
+                    'arquivo_pdf': row[6],
+                    'observacoes': row[7]
+                })
+            
+            return exames
+            
+        except Exception as e:
+            print(f"❌ Erro na busca de exames: {e}")
+            return []
+    
+    # ========== BIOIMPEDÂNCIA ==========
+    
+    def adicionar_bioimpedancia(self, paciente_id: int, data_medicao: date,
+                               peso: float = None, altura: float = None, imc: float = None,
+                               gordura_corporal: float = None, massa_muscular: float = None,
+                               massa_ossea: float = None, agua_corporal: float = None,
+                               metabolismo_basal: int = None, gordura_visceral: int = None,
+                               observacoes: str = None) -> int:
+        """Adiciona medição de bioimpedância"""
+        
+        sql = """
+        INSERT INTO bioimpedancia 
+        (paciente_id, data_medicao, peso, altura, imc, gordura_corporal, massa_muscular,
+         massa_ossea, agua_corporal, metabolismo_basal, gordura_visceral, observacoes)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        RETURNING id;
+        """
+        
+        try:
+            self.cursor.execute(sql, (paciente_id, data_medicao, peso, altura, imc,
+                                    gordura_corporal, massa_muscular, massa_ossea,
+                                    agua_corporal, metabolismo_basal, gordura_visceral,
+                                    observacoes))
+            bio_id = self.cursor.fetchone()[0]
+            self.connection.commit()
+            print(f"✅ Bioimpedância adicionada com ID: {bio_id}")
+            return bio_id
+            
+        except Exception as e:
+            print(f"❌ Erro ao adicionar bioimpedância: {e}")
+            self.connection.rollback()
+            return None
+    
+    def buscar_bioimpedancia_paciente(self, paciente_id: int, limite: int = 10) -> List[Dict]:
+        """Busca bioimpedâncias de um paciente"""
+        
+        sql = """
+        SELECT * FROM bioimpedancia 
+        WHERE paciente_id = %s
+        ORDER BY data_medicao DESC
+        LIMIT %s;
+        """
+        
+        try:
+            self.cursor.execute(sql, (paciente_id, limite))
+            results = self.cursor.fetchall()
+            
+            medicoes = []
+            for row in results:
+                medicoes.append({
+                    'id': row[0],
+                    'data_medicao': row[2],
+                    'peso': row[3],
+                    'altura': row[4],
+                    'imc': row[5],
+                    'gordura_corporal': row[6],
+                    'massa_muscular': row[7],
+                    'massa_ossea': row[8],
+                    'agua_corporal': row[9],
+                    'metabolismo_basal': row[10],
+                    'gordura_visceral': row[11],
+                    'observacoes': row[12]
+                })
+            
+            return medicoes
+            
+        except Exception as e:
+            print(f"❌ Erro na busca de bioimpedância: {e}")
+            return []
+    
+    # ========== RELATÓRIOS COMPARATIVOS ==========
+    
+    def gerar_relatorio_evolucao(self, paciente_id: int, parametros: List[str] = None) -> Dict:
+        """Gera relatório de evolução de um paciente"""
+        
+        # Busca dados do paciente
+        paciente_sql = "SELECT nome FROM pacientes WHERE id = %s;"
+        self.cursor.execute(paciente_sql, (paciente_id,))
+        paciente_nome = self.cursor.fetchone()[0]
+        
+        relatorio = {
+            'paciente': paciente_nome,
+            'data_relatorio': datetime.now(),
+            'bioimpedancia': [],
+            'exames_recentes': []
+        }
+        
+        # Bioimpedância
+        bio_data = self.buscar_bioimpedancia_paciente(paciente_id)
+        relatorio['bioimpedancia'] = bio_data
+        
+        # Exames recentes
+        exames_data = self.buscar_exames_paciente(paciente_id)
+        relatorio['exames_recentes'] = exames_data[:5]  # Últimos 5
+        
+        return relatorio
+    
+    def close(self):
+        """Fecha conexão"""
+        if self.cursor:
+            self.cursor.close()
+        if self.connection:
+            self.connection.close()
+
+# ========== EXEMPLO DE USO ==========
+
+def exemplo_uso():
+    """Demonstra como usar o sistema"""
+    
+    try:
+        # Conecta
+        manager = PacientesManager()
+        
+        # Adiciona paciente
+        paciente_id = manager.adicionar_paciente(
+            nome="João Silva",
+            cpf="12345678901",
+            telefone="(11) 99999-9999",
+            email="joao@email.com"
+        )
+        
+        # Adiciona bioimpedância
+        manager.adicionar_bioimpedancia(
+            paciente_id=paciente_id,
+            data_medicao=date.today(),
+            peso=75.5,
+            altura=175,
+            imc=24.6,
+            gordura_corporal=15.2,
+            massa_muscular=35.8
+        )
+        
+        # Adiciona exame laboratorial
+        exame_parametros = {
+            "colesterol_total": 180,
+            "hdl": 45,
+            "ldl": 120,
+            "triglicerideos": 150,
+            "glicemia": 90
+        }
+        
+        manager.adicionar_exame_laboratorial(
+            paciente_id=paciente_id,
+            data_exame=date.today(),
+            laboratorio="Lab Central",
+            tipo_exame="Perfil Lipídico",
+            parametros=exame_parametros
+        )
+        
+        # Gera relatório
+        relatorio = manager.gerar_relatorio_evolucao(paciente_id)
+        print("📊 Relatório gerado com sucesso!")
+        
+        manager.close()
+        
+    except Exception as e:
+        print(f"❌ Erro no exemplo: {e}")
+
+if __name__ == "__main__":
+    exemplo_uso()

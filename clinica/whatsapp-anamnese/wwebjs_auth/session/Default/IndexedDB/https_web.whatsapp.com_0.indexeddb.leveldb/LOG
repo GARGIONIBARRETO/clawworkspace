@@ -1,2 +1,8 @@
 2026/02/23-17:39:43.208 126413 Creating DB /root/clawd/clinica/whatsapp-anamnese/wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
 2026/02/23-17:39:43.213 126413 Reusing MANIFEST /root/clawd/clinica/whatsapp-anamnese/wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/23-19:07:40.624 126415 Level-0 table #5: started
+2026/02/23-19:07:40.645 126415 Level-0 table #5: 1169050 bytes OK
+2026/02/23-19:07:40.647 126415 Delete type=0 #3
+2026/02/23-20:10:52.145 126415 Level-0 table #7: started
+2026/02/23-20:10:52.157 126415 Level-0 table #7: 995702 bytes OK
+2026/02/23-20:10:52.160 126415 Delete type=0 #4

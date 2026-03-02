@@ -1,0 +1,7 @@
+paciente_id,data_exame,laboratorio,tipo_exame,parametros,arquivo_pdf,observacoes
+1,2026-01-15,Lab Central,Perfil Lipídico,"{""colesterol_total"": 180, ""hdl"": 45, ""ldl"": 120, ""triglicerideos"": 150, ""colesterol_nao_hdl"": 135}",perfil_lipidico_joao_jan26.pdf,Colesterol limítrofe - orientar dieta
+1,2026-02-15,Lab Central,Hemograma Completo,"{""hemoglobina"": 14.2, ""hematocrito"": 42, ""leucocitos"": 7200, ""plaquetas"": 285000, ""vhs"": 12}",,Hemograma normal
+1,2026-03-01,Lab Central,Perfil Metabólico,"{""glicemia_jejum"": 85, ""insulina"": 8.5, ""homa_ir"": 1.8, ""creatinina"": 0.9, ""ureia"": 35}",perfil_metabolico_joao_mar26.pdf,Resistência insulínica leve
+2,2026-01-18,Fleury,Glicemia e HbA1c,"{""glicemia_jejum"": 95, ""hba1c"": 5.8, ""frutosamina"": 245}",glicemia_maria_jan26.pdf,Pré-diabetes - atenção
+2,2026-02-18,Fleury,Vitamina D,"{""vitamina_d"": 28, ""pth"": 45, ""calcio"": 9.8, ""fosforo"": 3.2}",,Vitamina D insuficiente
+3,2026-01-22,Delboni,Check-up Executivo,"{""colesterol_total"": 160, ""hdl"": 55, ""triglicerideos"": 80, ""glicemia"": 82, ""creatinina"": 0.8}",,Exames excelentes

@@ -1,4 +1,13 @@
-# MEMORY.md - Memória de Longo Prazo
+# MEMORY.md
+
+## Sistema de Gestão de Pacientes
+
+### 02/03/2026 - Migração Completa para PostgreSQL Local
+- **Problema:** Sistema tentava conectar no Supabase que estava inacessível
+- **Solução:** Migrado 100% para PostgreSQL local
+- **Scripts atualizados:** db_manager.py, pacientes_manager.py
+- **Backup:** Configurado backup diário local
+- **Status:** Sistema 100% operacional com 654 pacientes e 1480 consultas - Memória de Longo Prazo
 
 ## Sistema de Anamnese da Clínica
 

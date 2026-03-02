@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+
+{% block title %}{{ paciente.nome }} - Detalhes do Paciente{% endblock %}
+
+{% block page_title %}{{ paciente.nome }}{% endblock %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col-md-8">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="{{ url_for('listar_pacientes') }}">Pacientes</a></li>
+                <li class="breadcrumb-item active">{{ paciente.nome }}</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="col-md-4 text-end">
+        <div class="btn-group" role="group">
+            <button class="btn btn-outline-primary">
+                <i class="fas fa-edit"></i> Editar
+            </button>
+            <button class="btn btn-outline-success">
+                <i class="fas fa-file-pdf"></i> Relatório
+            </button>
+            <button class="btn btn-outline-info">
+                <i class="fas fa-print"></i> Imprimir
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Informações Básicas -->
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-user"></i> Informações Pessoais
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Nome Completo:</strong><br>{{ paciente.nome }}</p>
+                <p><strong>CPF:</strong><br>
+                    {% if paciente.cpf %}
+                        <code>{{ paciente.cpf }}</code>
+                    {% else %}
+                        <span class="text-muted">Não informado</span>
+                    {% endif %}
+                </p>
+                <p><strong>Data de Nascimento:</strong><br>
+                    {% if paciente.data_nascimento %}
+                        {{ paciente.data_nascimento.strftime('%d/%m/%Y') }}
+                        <small class="text-muted">({{ (datetime.now().date() - paciente.data_nascimento).days // 365 }} anos)</small>
+                    {% else %}
+                        <span class="text-muted">Não informado</span>
+                    {% endif %}
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Telefone:</strong><br>
+                    {% if paciente.telefone %}
+                        <i class="fas fa-phone"></i> {{ paciente.telefone }}
+                    {% else %}
+                        <span class="text-muted">Não informado</span>
+                    {% endif %}
+                </p>
+                <p><strong>Email:</strong><br>
+                    {% if paciente.email %}
+                        <i class="fas fa-envelope"></i> {{ paciente.email }}
+                    {% else %}
+                        <span class="text-muted">Não informado</span>
+                    {% endif %}
+                </p>
+                <p><strong>Endereço:</strong><br>
+                    {% if paciente.endereco %}
+                        {{ paciente.endereco }}
+                    {% else %}
+                        <span class="text-muted">Não informado</span>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        
+        {% if paciente.observacoes %}
+        <hr>
+        <p><strong>Observações:</strong></p>
+        <div class="alert alert-info">
+            <i class="fas fa-sticky-note"></i>
+            {{ paciente.observacoes }}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row">
+    <!-- Bioimpedância -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-chart-line"></i> Bioimpedância Recente</span>
+                <button class="btn btn-sm btn-primary">
+                    <i class="fas fa-plus"></i> Nova
+                </button>
+            </div>
+            <div class="card-body">
+                {% if bioimpedancia %}
+                    {% for bio in bioimpedancia[:3] %}
+                    <div class="border-bottom pb-3 mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <strong>{{ bio.data_medicao.strftime('%d/%m/%Y') if bio.data_medicao else '' }}</strong>
+                            <span class="badge bg-primary">Medição {{ loop.index }}</span>
+                        </div>
+                        
+                        <div class="row">
+                            {% if bio.peso %}
+                            <div class="col-6">
+                                <small class="text-muted">Peso</small><br>
+                                <strong>{{ bio.peso }} kg</strong>
+                            </div>
+                            {% endif %}
+                            {% if bio.imc %}
+                            <div class="col-6">
+                                <small class="text-muted">IMC</small><br>
+                                <strong>{{ bio.imc }}</strong>
+                            </div>
+                            {% endif %}
+                            {% if bio.gordura_corporal %}
+                            <div class="col-6 mt-2">
+                                <small class="text-muted">Gordura</small><br>
+                                <strong>{{ bio.gordura_corporal }}%</strong>
+                            </div>
+                            {% endif %}
+                            {% if bio.massa_muscular %}
+                            <div class="col-6 mt-2">
+                                <small class="text-muted">Músculo</small><br>
+                                <strong>{{ bio.massa_muscular }} kg</strong>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-chart-line"></i> Ver Evolução Completa
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-chart-line fa-3x text-muted mb-3"></i>
+                        <h6 class="text-muted">Nenhuma bioimpedância registrada</h6>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Primeira Medição
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Exames -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-flask"></i> Exames Recentes</span>
+                <button class="btn btn-sm btn-success">
+                    <i class="fas fa-plus"></i> Novo
+                </button>
+            </div>
+            <div class="card-body">
+                {% if exames %}
+                    {% for exame in exames[:5] %}
+                    <div class="border-bottom pb-3 mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <strong>{{ exame.tipo_exame }}</strong>
+                            <small class="text-muted">{{ exame.data_exame.strftime('%d/%m/%Y') if exame.data_exame else '' }}</small>
+                        </div>
+                        
+                        <p class="mb-1">
+                            <i class="fas fa-hospital"></i> {{ exame.laboratorio }}
+                        </p>
+                        
+                        {% if exame.observacoes %}
+                        <small class="text-muted">{{ exame.observacoes }}</small>
+                        {% endif %}
+                        
+                        <div class="mt-2">
+                            <button class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </button>
+                            {% if exame.arquivo_pdf %}
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </button>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-success">
+                            <i class="fas fa-flask"></i> Ver Todos os Exames
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="text-center py-4">
+                        <i class="fas fa-flask fa-3x text-muted mb-3"></i>
+                        <h6 class="text-muted">Nenhum exame registrado</h6>
+                        <button class="btn btn-success">
+                            <i class="fas fa-plus"></i> Primeiro Exame
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Gráficos e Relatórios -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-chart-bar"></i> Análise e Relatórios
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <button class="btn btn-outline-primary btn-lg w-100 mb-2">
+                                <i class="fas fa-chart-line fa-2x"></i><br>
+                                <small>Evolução<br>Bioimpedância</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <button class="btn btn-outline-success btn-lg w-100 mb-2">
+                                <i class="fas fa-flask fa-2x"></i><br>
+                                <small>Comparativo<br>Exames</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <button class="btn btn-outline-info btn-lg w-100 mb-2">
+                                <i class="fas fa-file-medical fa-2x"></i><br>
+                                <small>Dashboard<br>Completo</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <button class="btn btn-outline-warning btn-lg w-100 mb-2">
+                                <i class="fas fa-download fa-2x"></i><br>
+                                <small>Exportar<br>Dados</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Carrega gráfico de bioimpedância via API
+function carregarGraficoBio() {
+    fetch(`/api/paciente/{{ paciente.id }}/bioimpedancia`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success && data.data.length > 0) {
+                // Renderizar gráfico
+                console.log('Dados de bioimpedância:', data.data);
+            }
+        });
+}
+
+// Carrega na inicialização
+document.addEventListener('DOMContentLoaded', carregarGraficoBio);
+</script>
+{% endblock %}

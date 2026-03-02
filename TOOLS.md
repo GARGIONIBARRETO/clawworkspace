@@ -39,6 +39,63 @@ send_email("dest@email.com", "Assunto", "Corpo do email", attachments=["/path/fi
 
 ---
 
+## 🏥 Sistema de Gestão de Pacientes
+
+**Base de dados:** Supabase PostgreSQL
+**Credenciais:** `/root/.secrets/supabase_credentials.json`
+
+### Scripts disponíveis:
+
+**Sistema principal:**
+```bash
+python3 /root/clawd/scripts/clinica_manager.py
+# Interface completa com menus interativos
+```
+
+**Gestão de dados:**
+```bash
+# Conectar e criar tabelas
+python3 /root/clawd/scripts/db_manager.py
+
+# Gerenciar pacientes, exames e bioimpedância
+python3 /root/clawd/scripts/pacientes_manager.py
+
+# Gerar relatórios e gráficos
+python3 /root/clawd/scripts/relatorios_clinicos.py
+
+# Importar dados de CSV
+python3 /root/clawd/scripts/import_dados.py
+```
+
+### Estrutura do banco:
+
+**Tabelas principais:**
+- `pacientes` - dados pessoais e contato
+- `consultas` - histórico de consultas
+- `exames_laboratoriais` - exames com parâmetros em JSON
+- `bioimpedancia` - medições de composição corporal
+
+### Funcionalidades:
+
+- ✅ **Busca rápida** por nome/CPF
+- ✅ **Exames comparativos** - evolução temporal
+- ✅ **Gráficos de bioimpedância** - peso, IMC, gordura, músculo
+- ✅ **Dashboards HTML** - relatórios visuais
+- ✅ **Importação CSV** - templates para entrada em massa
+- ✅ **Backup automático** (quando conexão ativa)
+
+### Templates CSV:
+- `/root/clawd/templates/pacientes_template.csv`
+- `/root/clawd/templates/bioimpedancia_template.csv`
+- `/root/clawd/templates/exames_template.csv`
+
+### Relatórios:
+- `/root/clawd/relatorios/` - gráficos PNG e dashboards HTML
+
+**🚨 Status atual:** Sistema pronto, aguardando conectividade com Supabase para ativação completa.
+
+---
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.

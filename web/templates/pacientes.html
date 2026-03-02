@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}Pacientes - Sistema de Pacientes{% endblock %}
+
+{% block page_title %}Gestão de Pacientes{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <!-- Busca -->
+        <form action="{{ url_for('buscar') }}" method="GET">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control search-box" 
+                       placeholder="Buscar por nome ou CPF...">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4 text-end">
+        <button class="btn btn-success">
+            <i class="fas fa-user-plus"></i> Novo Paciente
+        </button>
+        <button class="btn btn-outline-primary">
+            <i class="fas fa-download"></i> Exportar
+        </button>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <span><i class="fas fa-users"></i> Lista de Pacientes</span>
+        <span class="badge bg-primary">{{ total }} pacientes</span>
+    </div>
+    <div class="card-body">
+        {% if pacientes %}
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Cadastro</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for paciente in pacientes %}
+                    <tr>
+                        <td>
+                            <strong>{{ paciente.nome }}</strong>
+                        </td>
+                        <td>
+                            {% if paciente.cpf %}
+                                <code>{{ paciente.cpf }}</code>
+                            {% else %}
+                                <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if paciente.telefone %}
+                                <i class="fas fa-phone"></i> {{ paciente.telefone }}
+                            {% else %}
+                                <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if paciente.email %}
+                                <i class="fas fa-envelope"></i> {{ paciente.email }}
+                            {% else %}
+                                <span class="text-muted">-</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <small class="text-muted">{{ paciente.created_at }}</small>
+                        </td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="{{ url_for('detalhes_paciente', paciente_id=paciente.id) }}" 
+                                   class="btn btn-sm btn-outline-primary" title="Ver Detalhes">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <button class="btn btn-sm btn-outline-success" title="Editar">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="btn btn-sm btn-outline-info" title="Relatório">
+                                    <i class="fas fa-chart-bar"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Paginação -->
+        {% if total > per_page %}
+        <nav aria-label="Navegação de páginas">
+            <ul class="pagination justify-content-center">
+                {% set total_pages = ((total - 1) // per_page) + 1 %}
+                
+                {% if page > 1 %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('listar_pacientes', page=page-1) }}">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                </li>
+                {% endif %}
+                
+                {% for p in range(1, total_pages + 1) %}
+                    {% if p <= 3 or p > total_pages - 3 or (p >= page - 1 and p <= page + 1) %}
+                    <li class="page-item {% if p == page %}active{% endif %}">
+                        <a class="page-link" href="{{ url_for('listar_pacientes', page=p) }}">{{ p }}</a>
+                    </li>
+                    {% elif p == 4 and page > 5 %}
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                    {% elif p == total_pages - 3 and page < total_pages - 4 %}
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                
+                {% if page < total_pages %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('listar_pacientes', page=page+1) }}">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+        
+        {% else %}
+        <div class="text-center py-5">
+            <i class="fas fa-users fa-4x text-muted mb-3"></i>
+            <h5 class="text-muted">Nenhum paciente encontrado</h5>
+            <p class="text-muted">Comece cadastrando seu primeiro paciente</p>
+            <button class="btn btn-primary">
+                <i class="fas fa-user-plus"></i> Cadastrar Primeiro Paciente
+            </button>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Cards de Resumo -->
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="fas fa-user-check fa-2x text-success mb-2"></i>
+                <h6>Pacientes Ativos</h6>
+                <h4 class="text-success">{{ total }}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="fas fa-calendar-day fa-2x text-primary mb-2"></i>
+                <h6>Consultas Hoje</h6>
+                <h4 class="text-primary">-</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <i class="fas fa-chart-line fa-2x text-warning mb-2"></i>
+                <h6>Exames Pendentes</h6>
+                <h4 class="text-warning">-</h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Confirma exclusão
+function confirmarExclusao(id, nome) {
+    if (confirm(`Tem certeza que deseja excluir o paciente ${nome}?`)) {
+        // Implementar exclusão
+        console.log(`Excluir paciente ID: ${id}`);
+    }
+}
+
+// Busca em tempo real
+document.querySelector('input[name="q"]').addEventListener('input', function(e) {
+    if (e.target.value.length >= 3) {
+        // Implementar busca dinâmica
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,4 @@
+nome,cpf,data_nascimento,telefone,email,endereco,observacoes
+João Silva Santos,12345678901,1980-05-15,(11) 99999-9999,joao@email.com,"Rua das Flores, 123 - Vila Madalena",Paciente regular - histórico de lombalgia
+Maria Oliveira Costa,98765432100,1975-12-03,(11) 88888-8888,maria@email.com,"Av Paulista, 456 - Bela Vista",Primeira consulta - dor cervical
+Pedro Ferreira Lima,45612378945,1990-08-22,(11) 77777-7777,pedro@email.com,"Rua Oscar Freire, 789 - Jardins",Retorno pós-operatório

@@ -1,0 +1,4 @@
+cpf_paciente,data_exame,tipo_exame,laboratorio,parametros_json,observacoes
+123.456.789-00,2023-01-15,Hemograma Completo,Lab Fleury,"{""hemoglobina"": 14.2, ""hematocrito"": 42.1, ""leucocitos"": 7200, ""plaquetas"": 280000}",Valores dentro da normalidade
+987.654.321-00,2023-01-20,Glicemia + HbA1c,Dasa,"{""glicose"": 95, ""hba1c"": 5.8}",Controle glicêmico adequado
+456.789.123-00,2023-02-01,Perfil Lipídico,Einstein,"{""colesterol_total"": 180, ""hdl"": 55, ""ldl"": 110, ""triglicerides"": 85}",Perfil lipídico normal

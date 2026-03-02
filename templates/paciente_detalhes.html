@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+
+{% block title %}{{ paciente[1] }} - Clínica Dr. Felipe{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1><i class="fas fa-user"></i> {{ paciente[1] }}</h1>
+            <a href="/pacientes" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-id-card"></i> Dados Pessoais</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-borderless">
+                    <tr>
+                        <td><strong>Nome:</strong></td>
+                        <td>{{ paciente[1] }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CPF:</strong></td>
+                        <td class="font-monospace">{{ paciente[2] }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RG:</strong></td>
+                        <td>{{ paciente[3] or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Telefone:</strong></td>
+                        <td>{{ paciente[4] or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-mail:</strong></td>
+                        <td>{{ paciente[5] or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Nasc.:</strong></td>
+                        <td>{{ paciente[7] or '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Convênio:</strong></td>
+                        <td><span class="badge bg-secondary">{{ paciente[8] or 'Particular' }}</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        {% if paciente[6] %}
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-map-marker-alt"></i> Endereço</h5>
+            </div>
+            <div class="card-body">
+                <p>{{ paciente[6] }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    
+    <div class="col-md-8">
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="pacienteTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="consultas-tab" data-bs-toggle="tab" data-bs-target="#consultas" type="button" role="tab">
+                    <i class="fas fa-stethoscope"></i> Consultas
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bioimpedancia-tab" data-bs-toggle="tab" data-bs-target="#bioimpedancia" type="button" role="tab">
+                    <i class="fas fa-weight-scale"></i> Bioimpedância
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="exames-tab" data-bs-toggle="tab" data-bs-target="#exames" type="button" role="tab">
+                    <i class="fas fa-vial"></i> Exames
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="anexos-tab" data-bs-toggle="tab" data-bs-target="#anexos" type="button" role="tab">
+                    <i class="fas fa-paperclip"></i> Anexos
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="pacienteTabsContent">
+            <!-- Consultas Tab -->
+            <div class="tab-pane fade show active" id="consultas" role="tabpanel">
+                <div class="card border-top-0">
+                    <div class="card-body">
+                        {% if consultas %}
+                        <div class="timeline">
+                            {% for consulta in consultas %}
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <h6 class="card-title mb-0">
+                                            <i class="fas fa-calendar"></i> {{ consulta[0] }}
+                                        </h6>
+                                        <span class="badge bg-primary">{{ consulta[1] }}</span>
+                                    </div>
+                                    
+                                    {% if consulta[2] %}
+                                    <p class="card-text">
+                                        <strong>Motivo:</strong> {{ consulta[2] }}
+                                    </p>
+                                    {% endif %}
+                                    
+                                    {% if consulta[3] %}
+                                    <div class="card-text">
+                                        <strong>Observações:</strong>
+                                        <div class="mt-1 p-2 bg-light rounded">
+                                            {{ consulta[3]|replace('\n', '<br>')|safe }}
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-stethoscope fa-3x text-muted mb-3"></i>
+                            <h5>Nenhuma consulta registrada</h5>
+                            <p class="text-muted">Este paciente ainda não possui consultas no sistema.</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bioimpedância Tab -->
+            <div class="tab-pane fade" id="bioimpedancia" role="tabpanel">
+                <div class="card border-top-0">
+                    <div class="card-body">
+                        {% if bioimpedancia %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Data</th>
+                                        <th>Peso (kg)</th>
+                                        <th>Altura (m)</th>
+                                        <th>IMC</th>
+                                        <th>Gordura (%)</th>
+                                        <th>Músculo (kg)</th>
+                                        <th>Água (%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for bio in bioimpedancia %}
+                                    <tr>
+                                        <td>{{ bio[0] }}</td>
+                                        <td>{{ bio[1] or '-' }}</td>
+                                        <td>{{ bio[2] or '-' }}</td>
+                                        <td>{{ bio[3] or '-' }}</td>
+                                        <td>{{ bio[4] or '-' }}</td>
+                                        <td>{{ bio[5] or '-' }}</td>
+                                        <td>{{ bio[6] or '-' }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-weight-scale fa-3x text-muted mb-3"></i>
+                            <h5>Nenhuma bioimpedância registrada</h5>
+                            <p class="text-muted">Este paciente ainda não possui medições de bioimpedância.</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exames Tab -->
+            <div class="tab-pane fade" id="exames" role="tabpanel">
+                <div class="card border-top-0">
+                    <div class="card-body">
+                        {% if exames %}
+                        {% for exame in exames %}
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <h6 class="card-title mb-0">
+                                        <i class="fas fa-vial"></i> {{ exame[1] }}
+                                    </h6>
+                                    <span class="badge bg-info">{{ exame[0] }}</span>
+                                </div>
+                                
+                                {% if exame[2] %}
+                                <p class="card-text">
+                                    <strong>Laboratório:</strong> {{ exame[2] }}
+                                </p>
+                                {% endif %}
+                                
+                                {% if exame[3] and exame[3] != '{}' %}
+                                <div class="card-text">
+                                    <strong>Parâmetros:</strong>
+                                    <div class="mt-1 p-2 bg-light rounded">
+                                        <pre>{{ exame[3] }}</pre>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                
+                                {% if exame[4] %}
+                                <div class="card-text mt-2">
+                                    <strong>Observações:</strong> {{ exame[4] }}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-vial fa-3x text-muted mb-3"></i>
+                            <h5>Nenhum exame registrado</h5>
+                            <p class="text-muted">Este paciente ainda não possui exames laboratoriais.</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anexos Tab -->
+            <div class="tab-pane fade" id="anexos" role="tabpanel">
+                <div class="card border-top-0">
+                    <div class="card-body">
+                        {% if anexos %}
+                        <div class="row">
+                            {% for anexo in anexos %}
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            {% if anexo.lower().endswith(('.jpg', '.jpeg', '.png')) %}
+                                            <i class="fas fa-image text-info"></i>
+                                            {% elif anexo.lower().endswith('.pdf') %}
+                                            <i class="fas fa-file-pdf text-danger"></i>
+                                            {% else %}
+                                            <i class="fas fa-file text-secondary"></i>
+                                            {% endif %}
+                                            {{ anexo }}
+                                        </h6>
+                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <a href="/anexos/{{ paciente[0] }}/{{ anexo }}" class="btn btn-sm btn-primary" target="_blank">
+                                                <i class="fas fa-eye"></i> Visualizar
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        <div class="text-center py-4">
+                            <i class="fas fa-paperclip fa-3x text-muted mb-3"></i>
+                            <h5>Nenhum anexo encontrado</h5>
+                            <p class="text-muted">Este paciente ainda não possui anexos (imagens de exames).</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{
+  "source": "whatsapp_evolution",
+  "phone": "554191788972",
+  "timestamp": "2026-02-23T22:14:58.998Z",
+  "data": {
+    "nome": "jão neves pinto",
+    "dataNascimento": "18 do 9,74.",
+    "sexo": "masculino",
+    "profissao": "engenheiro!",
+    "queixaPrincipal": "tocou muita droga nas costas.",
+    "tempoProblema": "3_6_meses",
+    "temDor": "sim",
+    "dorLocal": [],
+    "dorIntensidade": "9",
+    "redFlags": [
+      "dif_fezes"
+    ],
+    "sonoQualidade": "cansado",
+    "condicoes": [
+      "nenhuma"
+    ],
+    "medicamentos": "nenhum",
+    "alergias": "nenhuma",
+    "expectativas": "melhorar da dor"
+  }
+}

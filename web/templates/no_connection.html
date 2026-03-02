@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+
+{% block title %}Sistema Indisponível - Sistema de Pacientes{% endblock %}
+
+{% block page_title %}Sistema Temporariamente Indisponível{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body text-center py-5">
+                <i class="fas fa-database fa-4x text-warning mb-4"></i>
+                <h3 class="text-warning mb-3">Banco de Dados Indisponível</h3>
+                <p class="lead mb-4">
+                    O sistema está temporariamente sem conectividade com o banco de dados.
+                    Isso é normal durante a configuração inicial.
+                </p>
+                
+                <div class="alert alert-info">
+                    <h5><i class="fas fa-info-circle"></i> Status da Configuração</h5>
+                    <div class="row text-left">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Backend Web - OK</li>
+                                <li><i class="fas fa-check text-success"></i> Interface - OK</li>
+                                <li><i class="fas fa-check text-success"></i> Autenticação - OK</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-clock text-warning"></i> Supabase - Conectando</li>
+                                <li><i class="fas fa-check text-success"></i> Scripts - OK</li>
+                                <li><i class="fas fa-check text-success"></i> Templates - OK</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning">
+                    <h6><i class="fas fa-tools"></i> Possíveis Causas</h6>
+                    <ul class="text-left mb-0">
+                        <li>Conectividade de rede temporariamente indisponível</li>
+                        <li>Configurações de firewall do servidor</li>
+                        <li>Manutenção programada do Supabase</li>
+                    </ul>
+                </div>
+                
+                <div class="mt-4">
+                    <button onclick="window.location.reload()" class="btn btn-primary me-3">
+                        <i class="fas fa-redo"></i> Tentar Novamente
+                    </button>
+                    
+                    <a href="#" onclick="testarConectividade()" class="btn btn-outline-secondary">
+                        <i class="fas fa-network-wired"></i> Testar Conectividade
+                    </a>
+                </div>
+                
+                <div class="mt-4 text-muted">
+                    <small>
+                        <i class="fas fa-clock"></i>
+                        O sistema verifica automaticamente a conectividade a cada 30 minutos.
+                        Você será notificado assim que estiver operacional.
+                    </small>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sistema Offline - Funcionalidades Disponíveis -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <i class="fas fa-cogs"></i> Funcionalidades Offline Disponíveis
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-file-alt"></i> Documentação</h6>
+                        <ul>
+                            <li>Manual do sistema</li>
+                            <li>Exemplos práticos</li>
+                            <li>Templates CSV</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-download"></i> Preparação</h6>
+                        <ul>
+                            <li>Baixar templates de importação</li>
+                            <li>Preparar dados históricos</li>
+                            <li>Planejamento da migração</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-3">
+                    <a href="/static/templates.zip" class="btn btn-outline-primary" download>
+                        <i class="fas fa-download"></i> Download Templates CSV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Status em Tempo Real -->
+<div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-heartbeat"></i> Status em Tempo Real
+            </div>
+            <div class="card-body">
+                <div id="status-check">
+                    <div class="text-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Verificando...</span>
+                        </div>
+                        <p class="mt-2">Verificando conectividade...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+let checkInterval;
+
+function testarConectividade() {
+    const statusDiv = document.getElementById('status-check');
+    statusDiv.innerHTML = `
+        <div class="text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Testando...</span>
+            </div>
+            <p class="mt-2">Testando conectividade com banco de dados...</p>
+        </div>
+    `;
+    
+    fetch('/api/status')
+        .then(response => response.json())
+        .then(data => {
+            if (data.database_available) {
+                statusDiv.innerHTML = `
+                    <div class="alert alert-success text-center">
+                        <i class="fas fa-check-circle fa-2x mb-2"></i><br>
+                        <strong>Banco Conectado!</strong><br>
+                        <small>Recarregando página...</small>
+                    </div>
+                `;
+                setTimeout(() => window.location.reload(), 2000);
+            } else {
+                statusDiv.innerHTML = `
+                    <div class="alert alert-warning text-center">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Ainda indisponível. Tentando novamente em 30 segundos...
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            statusDiv.innerHTML = `
+                <div class="alert alert-danger text-center">
+                    <i class="fas fa-times-circle"></i>
+                    Erro na verificação: ${error.message}
+                </div>
+            `;
+        });
+}
+
+// Verifica automaticamente a cada 30 segundos
+checkInterval = setInterval(testarConectividade, 30000);
+
+// Teste inicial
+setTimeout(testarConectividade, 1000);
+
+// Para o intervalo quando sair da página
+window.addEventListener('beforeunload', () => {
+    if (checkInterval) {
+        clearInterval(checkInterval);
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,4 @@
+nome_paciente,data_consulta,queixa_principal,historia_doenca,exame_fisico,hipotese_diagnostica,conduta,retorno,observacoes
+João Silva,2024-06-15,"Dor lombar há 6 meses","Iniciou após carregar peso. Piora ao sentar. Melhora deitado.","Lasègue negativo. Contratura paravertebral L4-L5","Lombalgia mecânica","Fisioterapia + Meloxicam 15mg/dia","30 dias","Orientado exercícios posturais"
+Maria Santos,2024-08-22,"Cervicalgia + parestesia MSD","Formigamento em polegar e indicador há 3 meses","Spurling positivo à direita. Força grau IV em bíceps","Radiculopatia C6","Pregabalina 75mg 12/12h + colar cervical","15 dias","Solicitar RNM cervical"
+Pedro Costa,2025-01-10,"Ciatalgia esquerda","Dor irradiada até o pé. Piora ao caminhar.","Lasègue positivo 30°. Reflexo aquileu diminuído","Hérnia discal L5-S1?","Tramadol 50mg SOS + Gabapentina 300mg 3x/dia","7 dias","RNM lombar urgente"

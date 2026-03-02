@@ -1,0 +1,4 @@
+nome_paciente,diagnosticos_previos,cirurgias_anteriores,medicacoes_cronicas,alergias,exames_importantes,observacoes_gerais
+João Silva,"Hérnia L4-L5 (2020), Osteoartrose facetária","Microdiscectomia L4-L5 (2023)","Pregabalina 150mg/dia",,"RNM 2023: Fibrose pós-operatória","Bom resultado pós-cirúrgico"
+Maria Santos,"Estenose canal cervical, Fibromialgia","Nenhuma","Duloxetina 60mg, Ciclobenzaprina 10mg","Penicilina","RNM 2024: Estenose C4-C5-C6","Refratária ao tratamento conservador"
+Ana Oliveira,"Espondilolistese L5-S1 grau II","Artrodese L5-S1 (2022)","Tramadol 100mg 2x/dia","Codeína","RX 2024: Consolidação completa","Dor residual controlada"
