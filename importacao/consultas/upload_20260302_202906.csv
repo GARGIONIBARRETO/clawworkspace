@@ -1,0 +1,1064 @@
+﻿patientId;first name;last name;agenda;service;start time;end time;created;lastmodified;comments;appointment status;recurrency type;schedule id;eventId
+7632813;Felipe;barreto;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-11 09:00;2020-06-11 09:30;2020-06-10;2020-06-10;;CanceledByUser;;95845;37773922
+7902010;teste 2;teste;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-18 17:45;2020-06-18 18:15;2020-06-17;2020-06-17;;CanceledByUser;;95845;38073661
+7910970;DANIELA DE MEDEIROS;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-23 10:00;2020-06-23 10:30;2020-06-18;2020-06-23;;ConfirmedByPatient;;95845;38131714
+7970192;Carmen Lucia;Da Silva Mota;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-24 11:00;2020-06-24 11:30;2020-06-23;2020-06-24;;ConfirmedByPatient;;95845;38368957
+8005553;FRANCISCO WELLINGTON;LEAL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-29 11:30;2020-06-29 12:00;2020-06-25;2020-06-29;;ConfirmedByPatient;;95845;38502221
+8009279;FERNANDA LEITE;SENA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-30 10:00;2020-06-30 10:30;2020-06-25;2020-06-30;;WaitingForConfirmation;;95845;38524333
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-29 10:00;2020-06-29 10:30;2020-06-26;2020-06-29;;ConfirmedByPatient;;95845;38559947
+7910970;DANIELA DE MEDEIROS;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-01 10:00;2020-07-01 10:30;2020-06-26;2020-07-01;;ConfirmedByPatient;;95845;38560225
+8118165;CLAUDINEI;ALESSI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-06-30 11:00;2020-06-30 11:30;2020-06-26;2020-06-30;;ConfirmedByPatient;;95845;38580769
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-08 11:00;2020-07-08 11:30;2020-07-06;2020-07-08;;WaitingForConfirmation;;95845;39035568
+8303984;GABRIEL;MORALES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-08 11:30;2020-07-08 12:00;2020-07-06;2020-07-08;;ConfirmedByPatient;;95845;39106320
+8336325;ROSANGELA DE SOUZA SANTOS;RAIMUNDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-09 09:30;2020-07-09 10:00;2020-07-07;2020-07-09;;WaitingForConfirmation;;95845;39162114
+7910970;DANIELA DE MEDEIROS;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-23 10:00;2020-07-23 10:30;2020-07-13;2020-07-23;;ConfirmedByPatient;;95845;39500239
+8431923;ANNA BEATRIZ;SANTOS DE ALMEIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-16 11:30;2020-07-16 12:00;2020-07-14;2020-07-15;;ConfirmedByPatient;;95845;39580305
+8303984;GABRIEL;MORALES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-16 09:30;2020-07-16 10:00;2020-07-14;2020-07-16;;WaitingForConfirmation;;95845;39596074
+8436269;EDILENE;FRANCISCA DA SILVA BARROS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-16 10:00;2020-07-16 10:30;2020-07-14;2020-07-16;;WaitingForConfirmation;;95845;39596209
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-20 12:00;2020-07-20 12:30;2020-07-16;2020-09-29;;WaitingForConfirmation;;95845;39739142
+8540425;FABIA;DOS SANTOS DE OLIVEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-22 10:00;2020-07-22 10:30;2020-07-20;2020-07-22;;WaitingForConfirmation;;95845;39883641
+8545621;DENISE;APARECIDA FIEL CADEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-22 10:30;2020-07-22 11:00;2020-07-20;2020-07-22;;ConfirmedByPatient;;95845;39906895
+8553638;ANA MARIA;BARBOSA HOLANDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-22 11:00;2020-07-22 11:30;2020-07-20;2020-07-22;;WaitingForConfirmation;;95845;39942212
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-23 10:30;2020-07-23 11:00;2020-07-21;2020-07-23;;ConfirmedByPatient;;95845;39984127
+8616095;THATIANA CASSIA;DE AGUIAR SARAIVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-27 11:00;2020-07-27 11:30;2020-07-23;2020-07-27;;ConfirmedByPatient;;95845;40182667
+8620048;ALINE;DE OLIVEIRA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-29 11:00;2020-07-29 11:30;2020-07-23;2020-07-29;;WaitingForConfirmation;;95845;40185794
+8303984;GABRIEL;MORALES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-27 10:30;2020-07-27 11:00;2020-07-23;2020-07-27;;WaitingForConfirmation;;95845;40186758
+8627052;SANDRA REGINA;OZORIO DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-29 10:00;2020-07-29 10:30;2020-07-23;2020-07-27;;CanceledByUser;;95845;40200418
+8644642;MANOELLA;COSTA DE AGUIAR SARAIVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-27 11:30;2020-07-27 12:00;2020-07-24;2020-07-27;;ConfirmedByPatient;;95845;40252826
+8005553;FRANCISCO WELLINGTON;LEAL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-07-29 10:00;2020-07-29 10:30;2020-07-27;2020-07-29;;CanceledByUser;;95845;40366160
+8735673;Sara Rosa;Figueira;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-15 09:30;2020-09-15 10:00;2020-07-29;2020-09-15;;WaitingForConfirmation;;95845;40527869
+8788313;ANTONIO;RODRIGUES DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-05 09:30;2020-08-05 10:00;2020-07-30;2020-08-04;;CanceledByUser;;95845;40672657
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-10 10:00;2020-08-10 10:30;2020-07-30;2020-08-10;;ConfirmedByPatient;;95845;40680554
+8789821;ANTONIO;DARCI DE MARIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-10 10:30;2020-08-10 11:00;2020-07-30;2020-08-10;;ConfirmedByPatient;;95845;40681024
+8801755;DENER;DOS SANTOS CALDEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-05 10:30;2020-08-05 11:00;2020-07-31;2020-08-05;;CanceledByUser;;95845;40747773
+7910970;DANIELA DE MEDEIROS;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-17 10:00;2020-08-17 10:30;2020-08-07;2020-08-17;;WaitingForConfirmation;;95845;41302035
+9077797;DANIEL;TICHONENKO GUIMARAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-17 10:30;2020-08-17 11:00;2020-08-14;2020-08-17;;ConfirmedByPatient;;95845;41960572
+8431923;ANNA BEATRIZ;SANTOS DE ALMEIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-19 11:00;2020-08-19 11:30;2020-08-17;2020-08-19;;ConfirmedByPatient;;95845;42215238
+9139452;MARIA NEIDE;CORDEIRO COVAK;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-08-19 15:00;2020-08-19 15:30;2020-08-18;2020-08-19;"dor em quadril a direita com irradiação até tornozelo por porção posterior, pior há 1 meses
+S1 a direita?
+história de artrose de joelhos e quadril
+fez 2 infiltrações de quadril a direita sem melhora
+
+HAS
+DM
+SD. DO PANICO
+GALUCOMA
+ARTROSE DE JOELHOS E QUADRIL
+CALCULOSE RENAL
+FIBROMIALGIA
+
+LOSARTANA 50MG 2X DIA
+HCTZ 25MG
+OMEPRAZOL 20MG
+GLIFAGE 500MG 2X DIA
+ESCITALOPRAM 10MG 1X DIA
+FORXIGA 10MG 1X DIA
+GLICAZIDA 5MG 2CP MANHÁ
+PROTENA
+
+TC: ESCOLIOSE, ALTERACOES DEGENERATIVAS E ESTENOSE DE CANAL L3-S1
+RM: ESTENOSE DE CANAL L3-S1 (2019)
+
+DENSITOMETRIA: SEM OSTEOPOROSE
+
+CD: RX QUADRIL, PRÉ OPERATORIO, RX PANORAMICO, DINAMICO E NOVA RM";Scheduled;;96277;42305256
+9179665;NABI;MAGALHAES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-27 10:00;2020-08-27 10:30;2020-08-19;2020-08-27;;ConfirmedByPatient;;95845;42394237
+9300980;KAREN JENNIFER;ALVES FERREIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-25 10:00;2020-08-25 10:30;2020-08-21;2020-08-25;;ConfirmedByPatient;;95845;42612201
+9373944;LUIZ ROBERTO;SILVINO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-25 11:30;2020-08-25 12:00;2020-08-25;2020-08-25;;ConfirmedByPatient;;95845;42866879
+9379170;EDENILTON;FERREIRA DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-08-27 09:30;2020-08-27 10:00;2020-08-25;2020-08-27;;ConfirmedByPatient;;95845;42880810
+9500295;MAURICEIA;SALES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-01 11:30;2020-09-01 12:00;2020-08-27;2020-09-01;;CanceledByUser;;95845;43104991
+9544486;LAIS;DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-01 11:00;2020-09-01 11:30;2020-08-31;2020-09-01;;ConfirmedByPatient;;95845;43340716
+9544486;LAIS;DOS SANTOS;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-09-08 11:00;2020-09-08 11:30;2020-09-04;2020-09-08;;ConfirmedByPatient;;96277;43751540
+9813025;CARLOS;COLOMBO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-15 10:00;2020-09-15 10:30;2020-09-10;2020-09-15;;ConfirmedByPatient;;95845;44133057
+9858775;Sônia;Ostrovcky;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-16 11:00;2020-09-16 11:30;2020-09-14;2020-09-16;;ConfirmedByPatient;;95845;44378860
+9877788;GENEOMARA;HERMINA ALVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-16 10:30;2020-09-16 11:00;2020-09-15;2020-09-16;;Scheduled;;95845;44510461
+8616095;THATIANA CASSIA;DE AGUIAR SARAIVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-28 11:00;2020-09-28 11:30;2020-09-18;2020-09-28;;WaitingForConfirmation;;95845;44837582
+10063331;VITOR HUGO;KLUPPELL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-23 10:30;2020-09-23 11:00;2020-09-21;2020-09-22;;ConfirmedByPatient;;95845;44993555
+9544486;LAIS;DOS SANTOS;Consultório Dr. Felipe Barreto;Teleconsulta;2020-09-22 15:00;2020-09-22 15:30;2020-09-21;2020-09-21;;CanceledByPatient;;95845;45034058
+9544486;LAIS;DOS SANTOS;Consultório Dr. Felipe Barreto;Teleconsulta;2020-09-22 15:00;2020-09-22 15:30;2020-09-21;2020-09-21;;CanceledByPatient;;95845;45034169
+9544486;LAIS;DOS SANTOS;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-09-22 15:00;2020-09-22 15:30;2020-09-21;2020-09-22;;Scheduled;;96277;45035541
+9179665;NABI;MAGALHAES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-24 11:00;2020-09-24 11:30;2020-09-21;2020-09-24;;ConfirmedByPatient;;95845;45056223
+10083689;LETICIA PARREIRA;MINELI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-24 11:30;2020-09-24 12:00;2020-09-21;2020-09-24;;ConfirmedByPatient;;95845;45079627
+10098451;JOANA DOS SANTOS;BOCALINI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-28 10:30;2020-09-28 11:00;2020-09-22;2020-09-28;;ConfirmedByPatient;;95845;45172328
+10101454;ROSINELIA;DA SILVA MACEDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-29 10:00;2020-09-29 10:30;2020-09-22;2020-09-22;;CanceledByUser;;95845;45197757
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-07 10:00;2020-10-07 10:30;2020-09-23;2020-10-07;;ConfirmedByPatient;;95845;45246930
+9379170;EDENILTON;FERREIRA DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-24 09:30;2020-09-24 10:00;2020-09-23;2020-09-24;;Scheduled;;95845;45259666
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-29 14:30;2020-09-29 15:00;2020-09-23;2020-09-27;;WaitingForConfirmation;;95845;45265063
+10127150;ERICA PEREIRA;DE SOUSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-29 10:00;2020-09-29 10:30;2020-09-23;2020-09-29;;WaitingForConfirmation;;95845;45333147
+8431923;ANNA BEATRIZ;SANTOS DE ALMEIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-09-29 11:00;2020-09-29 11:30;2020-09-25;2020-09-29;;WaitingForConfirmation;;95845;45474086
+9077797;DANIEL;TICHONENKO GUIMARAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-01 10:00;2020-10-01 10:30;2020-09-29;2020-09-30;;ConfirmedByPatient;;95845;45785553
+10127150;ERICA PEREIRA;DE SOUSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-08 11:00;2020-10-08 11:30;2020-09-29;2020-10-08;;CanceledByUser;;95845;45844408
+8336325;ROSANGELA DE SOUZA SANTOS;RAIMUNDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-06 11:00;2020-10-06 11:30;2020-09-30;2020-10-06;;WaitingForConfirmation;;95845;45941578
+10298513;FERNANDO - REPRESENTANTE MAXSURGICAL;MAXSURGICAL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-07 10:30;2020-10-07 11:00;2020-09-30;2020-09-30;;Scheduled;;95845;45946469
+10298546;ELIANE - BIOIMPORTS;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-06 11:30;2020-10-06 12:00;2020-09-30;2020-10-06;;CanceledByUser;;95845;45946886
+9813025;CARLOS;COLOMBO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-05 11:00;2020-10-05 11:30;2020-10-02;2020-10-05;;ConfirmedByPatient;;95845;46140226
+8017740;RAQUEL DANTAS;ARRUDA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-10-02 18:30;2020-10-02 19:00;2020-10-02;2020-10-02;;Scheduled;;96277;46177965
+9877788;GENEOMARA;HERMINA ALVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-13 10:30;2020-10-13 11:00;2020-10-05;2020-10-13;;WaitingForConfirmation;;95845;46341972
+10424256;LUIZ EDUARDO;PUPO RIBEIRO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-08 10:00;2020-10-08 10:30;2020-10-06;2020-10-07;;CanceledByPatient;;95845;46434258
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-14 14:00;2020-10-14 14:30;2020-10-07;2020-10-14;;WaitingForConfirmation;;95845;46589770
+10298546;ELIANE - BIOIMPORTS;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-08 10:30;2020-10-08 11:00;2020-10-07;2020-10-08;;CanceledByUser;;95845;46592206
+10083689;LETICIA PARREIRA;MINELI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-15 11:00;2020-10-15 11:30;2020-10-08;2020-10-15;;ConfirmedByPatient;;95845;46682426
+10498992;LAZARA;ALVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-14 11:00;2020-10-14 11:30;2020-10-09;2020-10-14;;ConfirmedByPatient;;95845;46735401
+10083689;LETICIA PARREIRA;MINELI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-20 11:00;2020-10-20 11:30;2020-10-16;2020-10-20;;ConfirmedByPatient;;95845;47260655
+9077797;DANIEL;TICHONENKO GUIMARAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-19 10:00;2020-11-19 10:30;2020-10-19;2020-11-17;;ConfirmedByPatient;;95845;47423790
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-28 11:00;2020-10-28 11:30;2020-10-22;2020-10-28;paciente esta ciente que pagará  o valor de 50,00;ConfirmedByPatient;;95845;47809650
+9139452;MARIA NEIDE;CORDEIRO COVAK;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-10-29 11:30;2020-10-29 12:00;2020-10-22;2020-10-29;;ConfirmedByPatient;;95845;47813356
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-10 12:00;2020-11-10 12:30;2020-10-26;2020-11-26;;WaitingForConfirmation;;95845;48017453
+9179665;NABI;MAGALHAES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-17 10:00;2020-11-17 10:30;2020-11-05;2020-11-26;;WaitingForConfirmation;;95845;48885903
+8005553;FRANCISCO WELLINGTON;LEAL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-19 10:30;2020-11-19 11:00;2020-11-12;2020-11-26;;ConfirmedByPatient;;95845;49519780
+10298513;FERNANDO - REPRESENTANTE MAXSURGICAL;MAXSURGICAL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-19 11:00;2020-11-19 11:30;2020-11-12;2020-11-26;;Scheduled;;95845;49540625
+11376556;ROSE STEFANI;ANJOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-26 10:00;2020-11-26 10:30;2020-11-24;2020-11-26;;ConfirmedByPatient;;95845;50380000
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-12-03 10:30;2020-12-03 11:00;2020-11-24;2020-12-03;CIENTE QUE A CONSULTA SERÁ NO VALOR DE $50,00;ConfirmedByPatient;;95845;50383092
+11432103;LUAN MEDICAL EURO;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-11-26 10:45;2020-11-26 11:15;2020-11-26;2020-11-26;;Scheduled;;95845;50604403
+9379170;EDENILTON;FERREIRA DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-12-03 09:30;2020-12-03 10:00;2020-12-01;2020-12-03;;WaitingForConfirmation;;95845;50978559
+11548834;REPRESENTANTE AMANDA ORTHONEURO;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-12-03 11:00;2020-12-03 11:30;2020-12-02;2020-12-02;;Scheduled;;95845;51042149
+11677140;ELZA KIMIE;HASHIMOTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-12-11 11:00;2020-12-11 11:30;2020-12-10;2020-12-11;CONSULTA PARTICULAR $ 400,00;Scheduled;;95845;51310966
+9813025;CARLOS;COLOMBO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2020-12-15 11:00;2020-12-15 11:30;2020-12-14;2020-12-14;VAI PAGAR 50,00 .;Scheduled;;95845;51398847
+11770410;CAROLINA SEREM;PEREIRA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-12-17 10:00;2020-12-17 10:30;2020-12-16;2020-12-17;VAI PAGAR 300,00 POR T.B            - CONSULTA TELEMEDICINA;Scheduled;;96277;51495064
+11826629;Fernanda;Gonçalves da Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2020-12-17 19:30;2020-12-17 20:00;2020-12-17;2020-12-17;Estou em crise de Hernia de disco lombar, porém o remedio que ja utilizo ha alguns anos quando tenho crise nao esta fazendo muito efeito.;Scheduled;;96277;51532230
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-01-06 14:00;2021-01-06 14:30;2021-01-04;2021-01-06;;CanceledByUser;;95845;51843843
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-01-12 11:00;2021-01-12 11:30;2021-01-06;2021-01-10;;WaitingForConfirmation;;95845;51943069
+11677140;ELZA KIMIE;HASHIMOTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-01-12 10:00;2021-01-12 10:30;2021-01-07;2021-01-12;RETORNO;WaitingForConfirmation;;95845;52000343
+12230263;SIMONE BARROS WANDERLEY;BORGES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-01-19 11:30;2021-01-19 12:00;2021-01-14;2021-01-19;CIENTE DO VALOR DA CONSULTA $ 100,00;ConfirmedByPatient;;95845;52268456
+8303984;GABRIEL;MORALES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-04 11:00;2021-02-04 11:30;2021-02-01;2021-02-04;CIENTE DO VALOR DA CONSULTA $ 100.00;WaitingForConfirmation;;95845;52906851
+9813025;CARLOS;COLOMBO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-04 11:30;2021-02-04 12:00;2021-02-01;2021-02-04;CIENTE DO VALOR DA CONSULTA 100.00;WaitingForConfirmation;;95845;52916740
+11432103;LUAN MEDICAL EURO;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-04 12:00;2021-02-04 12:30;2021-02-03;2021-02-04;;Scheduled;;95845;53016960
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-17 10:00;2021-02-17 10:30;2021-02-04;2021-02-17;CIENTE DO VALOR DA CONSULTA $ 100,00;ConfirmedByPatient;;95845;53035707
+12782148;JANE CLEZIA;LIMA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-10 11:00;2021-02-10 11:30;2021-02-08;2021-02-10;CIENTE DO VALOR 100,00;CanceledByUser;;95845;53159583
+12819570;DAVI SIMÕES;BERNARDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-11 11:30;2021-02-11 12:00;2021-02-10;2021-02-11;CONSULTA PARTICULAR $ 400,00;Scheduled;;95845;53251221
+12230263;SIMONE BARROS WANDERLEY;BORGES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-17 10:30;2021-02-17 11:00;2021-02-16;2021-02-17;RETORNO DE CONSULTA.;Scheduled;;95845;53421856
+9139452;MARIA NEIDE;CORDEIRO COVAK;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-23 11:00;2021-02-23 11:30;2021-02-16;2021-02-23;CIENTE DO VALOR DE 100,00;ConfirmedByPatient;;95845;53432992
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-02-23 12:00;2021-02-23 12:30;2021-02-18;2021-02-23;;WaitingForConfirmation;;95845;53507273
+13126970;MARIA APARECIDA;LOPES DA SILVA DICIERI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-03-03 10:00;2021-03-03 10:30;2021-03-01;2021-03-03;CIENTE DO VALOR DE 100,00;WaitingForConfirmation;;95845;53916247
+13154050;NELSON KIMIO;OGASAWARA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2021-03-04 18:00;2021-03-04 18:30;2021-03-03;2021-03-04;CIENTE DO VALOR $ 100,00;Scheduled;;96277;53980959
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-03-09 10:00;2021-03-09 10:30;2021-03-04;2021-03-09;;WaitingForConfirmation;;95845;54062735
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-03-11 11:30;2021-03-11 12:00;2021-03-09;2021-03-11;CIENTE DO VALOR 100,00 TEM NOTREDAME;WaitingForConfirmation;;95845;54193289
+13520861;LUCIANO;DUCCINI;Telemedicina Dr. Felipe Barreto;Teleconsulta;2021-03-22 17:00;2021-03-22 17:30;2021-03-23;2021-03-23;;Scheduled;;96277;54698813
+13520861;LUCIANO;DUCCINI;Telemedicina Dr. Felipe Barreto;Teleconsulta;2021-03-24 17:00;2021-03-24 17:30;2021-03-23;2021-03-24;;CanceledByUser;;96277;54699115
+13126970;MARIA APARECIDA;LOPES DA SILVA DICIERI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-03-30 10:00;2021-03-30 10:30;2021-03-24;2021-03-30;;ConfirmedByPatient;;95845;54744608
+8017740;RAQUEL DANTAS;ARRUDA;Consultório Dr. Felipe Barreto;Teleconsulta;2021-04-28 11:30;2021-04-28 12:00;2021-04-22;2021-04-28;;ConfirmedByPatient;;95845;55771522
+8559560;"Rosana Maria ";"Dos Santos ";Consultório Dr. Felipe Barreto;Teleconsulta;2021-05-05 11:30;2021-05-05 12:00;2021-05-04;2021-05-04;;Scheduled;;95845;56460882
+14802917;JOSUE ROCHA SAMPAIO DE;ALENCAR;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-05-26 11:00;2021-05-26 11:30;2021-05-10;2021-05-25;COBRADO O VALOR DE 400,00;CanceledByUser;;95845;56747165
+14855611;representante TATI DA SPI;SPI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-05-26 10:00;2021-05-26 10:30;2021-05-11;2021-05-11;;Scheduled;;95845;56841365
+14866784;VITOR BRITO;GOMES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-05-26 10:30;2021-05-26 11:00;2021-05-12;2021-05-26;CONVENIO SÃO FRANCISCO , COBREI $ 100,00 A CONSULTA;ConfirmedByPatient;;95845;56869598
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Teleconsulta;2021-05-14 11:00;2021-05-14 11:30;2021-05-13;2021-05-14;VALOR $100,00;Scheduled;;95845;56958597
+15186063;BRUNO - SPI;REPRESENTANTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-05-26 09:45;2021-05-26 10:15;2021-05-25;2021-05-25;;Scheduled;;95845;57676415
+15359053;ROGERIO INACIO;DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-06-02 09:30;2021-06-02 10:00;2021-05-28;2021-06-02;VALOR DA CONSULTA 400,00;ConfirmedByPatient;;95845;57837665
+15877531;CLAUDIA FRANCISCA DE PAULA;NASCIMENTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-06-16 11:00;2021-06-16 11:30;2021-06-15;2021-06-16;DR DISSE PARA NÃO COBRAR CONSULTA;Scheduled;;95845;58758278
+15957061;TEREZINHA APARECIDA;RAMOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-06-25 10:00;2021-06-25 10:30;2021-06-18;2021-06-25;valor da  consulta 400,00;ConfirmedByPatient;;95845;58970901
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-07-14 11:00;2021-07-14 11:30;2021-07-05;2021-07-14;VALOR DA CONSULTA $250,00;WaitingForConfirmation;;95845;59778812
+16596855;GENESIO;SADOCCO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-07-14 10:00;2021-07-14 10:30;2021-07-08;2021-07-08;400,00;CanceledByUser;;95845;60008131
+16698328;OTILIA DEMETRIO;MARIANO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-07-13 12:45;2021-07-13 13:15;2021-07-13;2021-07-13;VALOR 250,00;Scheduled;;95845;60230303
+17188442;JOSE FERNANDES;DOS SANTOS FILHO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-04 09:30;2021-08-04 10:00;2021-07-30;2021-08-04;TEM ALLIANZ SAUDE;WaitingForConfirmation;;95845;61001998
+17298852;SILVIA HELENA;DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-11 09:30;2021-08-11 10:00;2021-08-04;2021-08-10;valor $400,00;CanceledByUser;;95845;61265263
+17499536;DOUGLAS MORETTI;DE CASTRO SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-18 10:00;2021-08-18 10:30;2021-08-09;2021-08-18;400,00;ConfirmedByPatient;;95845;61438984
+17761590;"José dos Santos ";Aguiar;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-18 11:30;2021-08-18 12:00;2021-08-16;2021-08-18;Paciente quer laudo para INSS,  valor da consulta $400,00;ConfirmedByPatient;;95845;61831645
+17762284;"Flávia Rodrigues ";Cristino;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-25 10:00;2021-08-25 10:30;2021-08-16;2021-08-24;Tem Amil, cobrei valor com desconto $250,00;CanceledByUser;;95845;61833234
+16698328;OTILIA DEMETRIO;MARIANO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-08-25 10:30;2021-08-25 11:00;2021-08-17;2021-08-24;valor da consulta 250,00;CanceledByUser;;95845;61941176
+18221555;Angélica Felix;Amancio;Telemedicina Dr. Felipe Barreto;Teleconsulta;2021-08-30 13:00;2021-08-30 13:30;2021-08-30;2021-08-30;Estou com muita dor na lombar;CanceledByPatient;;96277;62603657
+18296562;CLAUDIANE DE CASSIA;COSTA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-09-01 10:00;2021-09-01 10:30;2021-08-31;2021-09-01;VALOR DA CONSULTA $ 250,00 TEM CONVENIO;Scheduled;;95845;62693771
+19249687;"Andrea Custodio ";dos Santos;Personal Ortopedia;Consulta neurocirurgia;2021-09-28 16:30;2021-09-28 17:00;2021-09-28;2021-09-28;;Scheduled;;146896;64404318
+19333290;"Vanessa de Almeida ";"Rodrigues ";Personal Ortopedia;Consulta neurocirurgia;2021-10-05 16:30;2021-10-05 17:00;2021-09-30;2021-10-05;;Scheduled;;146896;64507570
+19335259;"Lucineite Carvalho ";Sousa;Personal Ortopedia;Consulta neurocirurgia;2021-10-05 16:00;2021-10-05 16:30;2021-09-30;2021-10-05;;Scheduled;;146896;64512893
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-10-06 10:00;2021-10-06 10:30;2021-10-01;2021-10-06;;ConfirmedByPatient;;95845;64535770
+19391139;"Clezio Alves de Oliveira ";"Júnior ";Personal Ortopedia;Consulta neurocirurgia;2021-10-05 17:00;2021-10-05 17:30;2021-10-04;2021-10-05;;Scheduled;;146896;64652562
+19696784;Graziele;Mendes Lipari;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-03 11:30;2021-11-03 12:00;2021-10-18;2021-11-03;"Rodrigo Santos 
+ ";ConfirmedByPatient;;95845;65203318
+19722379;"Samuel Do Amaral ";Andrade;Personal Ortopedia;Consulta neurocirurgia;2021-10-19 15:00;2021-10-19 15:30;2021-10-18;2021-10-18;;Scheduled;;146896;65263540
+19722702;"Marta Carvalho ";Souza;Personal Ortopedia;Consulta neurocirurgia;2021-10-19 15:30;2021-10-19 16:00;2021-10-18;2021-10-19;;Scheduled;;146896;65264311
+19723020;Sandra Lídia da Silva;Souza;Personal Ortopedia;Consulta neurocirurgia;2021-10-19 16:00;2021-10-19 16:30;2021-10-18;2021-10-18;;CanceledByUser;;146896;65264729
+19723231;"Miriam Monteiro ";"Dongo ";Personal Ortopedia;Consulta neurocirurgia;2021-10-19 16:30;2021-10-19 17:00;2021-10-18;2021-10-19;;Scheduled;;146896;65265141
+19856354;"Flávia ";"Mendes de Carvalho ";Personal Ortopedia;Consulta neurocirurgia;2021-10-27 09:00;2021-10-27 09:30;2021-10-21;2021-10-26;;CanceledByUser;;146896;65480628
+19723020;Sandra Lídia da Silva;Souza;Personal Ortopedia;Consulta neurocirurgia;2021-10-27 11:00;2021-10-27 11:30;2021-10-22;2021-10-27;;Scheduled;;146896;65500543
+19868422;ROSANGELA APARECIDA;MUFAFATO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-10-25 11:00;2021-10-25 11:30;2021-10-22;2021-10-25;;ConfirmedByPatient;;95845;65513057
+19953748;Sandra Maria;Gonçalves Ferreira;Personal Ortopedia;Consulta neurocirurgia;2021-10-27 10:30;2021-10-27 11:00;2021-10-26;2021-10-27;;Scheduled;;146896;65668146
+19856354;"Flávia ";"Mendes de Carvalho ";Personal Ortopedia;Consulta neurocirurgia;2021-10-27 08:30;2021-10-27 09:00;2021-10-26;2021-10-27;;Scheduled;;146896;65699171
+19953748;Sandra Maria;Gonçalves Ferreira;Personal Ortopedia;Consulta neurocirurgia;2021-11-24 10:00;2021-11-24 10:30;2021-10-28;2021-11-24;"Retorno com exames ";Scheduled;;146896;65814803
+20119724;WLADIMIR OLIVEIRA;FAVERO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-11 10:00;2021-11-11 10:30;2021-11-03;2021-11-09;;WaitingForConfirmation;;95845;66018676
+20222877;CLAUDIA FRANCISCA;DE PAULA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-29 11:00;2021-11-29 11:30;2021-11-04;2021-11-29;;ConfirmedByPatient;;95845;66202070
+20301218;LUCINEIDE RODRIGUES DOS;SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-18 11:30;2021-11-18 12:00;2021-11-08;2021-11-16;;CanceledByUser;;95845;66374212
+20360539;"Gabriela Marques Matheus ";Araujo;Personal Ortopedia;Consulta neurocirurgia;2021-11-17 09:00;2021-11-17 09:30;2021-11-09;2021-11-16;;CanceledByUser;;146896;66462188
+20451762;"Romildo André Calazans ";"Pacífico ";Personal Ortopedia;Consulta neurocirurgia;2021-11-17 09:30;2021-11-17 10:00;2021-11-11;2021-11-17;;Scheduled;;146896;66646253
+20451778;"Mariana ";Forrer;Personal Ortopedia;Consulta neurocirurgia;2021-11-17 10:30;2021-11-17 11:00;2021-11-11;2021-11-11;;Scheduled;;146896;66646302
+20457815;FERNANDO RODRIGUES;NASCIMENTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-18 10:30;2021-11-18 11:00;2021-11-12;2021-11-16;Consulta para avaliação, ressonância magnética com apontando de hernia extrusa entre L4-L5.;ConfirmedByPatient;;95845;66660583
+20470864;RICARDO;HOLLER;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-22 11:30;2021-11-22 12:00;2021-11-12;2021-11-22;;ConfirmedByPatient;;95845;66700271
+19723020;Sandra Lídia da Silva;Souza;Personal Ortopedia;Consulta neurocirurgia;2021-11-24 11:00;2021-11-24 11:30;2021-11-22;2021-11-24;;Scheduled;;146896;67366138
+20451762;"Romildo André Calazans ";"Pacífico ";Personal Ortopedia;Consulta neurocirurgia;2021-12-01 09:30;2021-12-01 10:00;2021-11-22;2021-12-01;;Scheduled;;146896;67382441
+21081584;"Márcia Helena Torrentes ";"Silva Dallan ";Personal Ortopedia;Consulta neurocirurgia;2021-11-24 10:30;2021-11-24 11:00;2021-11-23;2021-11-24;;Scheduled;;146896;67532428
+19335259;"Lucineite Carvalho ";Sousa;Personal Ortopedia;Consulta neurocirurgia;2021-12-01 09:00;2021-12-01 09:30;2021-11-24;2021-12-01;;Scheduled;;146896;67733395
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-29 10:00;2021-11-29 10:30;2021-11-29;2021-11-29;;Scheduled;;95845;67913866
+21307342;Norma;Gomes de Lima;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-11-29 10:30;2021-11-29 11:00;2021-11-29;2021-11-29;"Aline Lima 
+ ";Scheduled;;95845;67915155
+21314344;NEUZA;DE SOUZA BRASIL;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-12-03 15:00;2021-12-03 15:30;2021-11-29;2021-12-02;NÃO SERÁ COBRADO A CONSULTA;ConfirmedByPatient;;95845;67938185
+21371298;WAGNER;DE MORAES ELESBAO;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 17:00;2021-12-02 17:15;2021-11-30;2021-12-02;;WaitingForConfirmation;;157506;68108998
+21371396;MARIA;DE FATIMA CORREIA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 16:30;2021-12-02 16:35;2021-11-30;2021-12-02;;WaitingForConfirmation;;157506;68109175
+21371634;LUCIA;FERREIRA DE ANDRADE;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 16:00;2021-12-02 16:15;2021-11-30;2021-12-02;;ConfirmedByPatient;;157506;68109774
+21371664;MIROLEIDES;MARIA RIBEIRO SATO;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 15:45;2021-12-02 16:00;2021-11-30;2021-12-01;;WaitingForConfirmation;;157506;68109994
+21371692;MARIZETE;ALVES DE OLIVEIRA MONTEIRO;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 15:15;2021-12-02 15:30;2021-11-30;2021-12-01;;WaitingForConfirmation;;157506;68110075
+21371737;NELMA;LUCIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 14:30;2021-12-02 14:45;2021-11-30;2021-12-02;;WaitingForConfirmation;;157506;68110196
+21371777;SAMANDA;CALDAS SOUZA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 14:15;2021-12-02 14:30;2021-11-30;2021-11-30;;CanceledByPatient;;157506;68110273
+21371838;PEDRO;FERNANDES PEREIRA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 14:00;2021-12-02 14:15;2021-11-30;2021-12-02;;WaitingForConfirmation;;157506;68110390
+21371881;LUIZ;GONÇALVES FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 13:45;2021-12-02 14:00;2021-11-30;2021-12-02;;WaitingForConfirmation;;157506;68110480
+21384365;"Marcos José ";Mantoan;Personal Ortopedia;Consulta neurocirurgia;2021-12-01 08:30;2021-12-01 09:00;2021-12-01;2021-12-01;;Scheduled;;146896;68137338
+21516514;SAMANDA;CALDAS SOUZA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 14:15;2021-12-02 14:20;2021-12-02;2021-12-02;;WaitingForConfirmation;;157506;68217239
+21516546;CLAUDIA;DE LUREDES APARECIDA ZONTA;CLINIDA DIA;Consulta neurocirurgia;2021-12-02 14:45;2021-12-02 14:50;2021-12-02;2021-12-02;;WaitingForConfirmation;;157506;68217458
+21601886;Celina Aguiar de;"Brito do Nascimento ";Personal Ortopedia;Consulta neurocirurgia;2021-12-08 11:00;2021-12-08 11:30;2021-12-06;2021-12-06;;WaitingForConfirmation;;146896;68406912
+21662482;CLARA LUCIA;MATOS SOUZA;CLINIDA DIA;Consulta neurocirurgia;2021-12-09 13:30;2021-12-09 13:35;2021-12-07;2021-12-08;;WaitingForConfirmation;;157506;68559046
+21666112;"Carlos Roberto ";Lopes;Personal Ortopedia;Consulta neurocirurgia;2021-12-08 10:30;2021-12-08 11:00;2021-12-07;2021-12-08;;WaitingForConfirmation;;146896;68568456
+20470864;RICARDO;HOLLER;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-12-09 11:00;2021-12-09 11:30;2021-12-08;2021-12-09;;WaitingForConfirmation;;95845;68590640
+21081584;"Márcia Helena Torrentes ";"Silva Dallan ";Personal Ortopedia;Consulta neurocirurgia;2021-12-15 11:00;2021-12-15 11:30;2021-12-09;2021-12-09;;WaitingForConfirmation;;146896;68929321
+22028221;JOÃO FRANCISCO;DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2021-12-13 11:00;2021-12-13 11:30;2021-12-13;2021-12-13;;WaitingForConfirmation;;95845;69066433
+22076595;TAMIRES;SANTANA SOUSA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 13:30;2021-12-16 13:35;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184103
+22076621;SIRLEI;POMPILIO OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 13:45;2021-12-16 13:50;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184176
+22076633;THIAGO;PEREIRA DUARTE;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 13:40;2021-12-16 13:45;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184196
+22076656;NEUSA;INACIO;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 14:15;2021-12-16 14:20;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184238
+22076667;ZILDIR;GOMES DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 14:45;2021-12-16 14:50;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184265
+22076683;ANTONIO;EDSON DE LIMA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 14:00;2021-12-16 14:05;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184291
+22076697;MARCELO;RODRIGUES SANTOS;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 14:30;2021-12-16 14:35;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184323
+22076717;VANDA;FERREIRA NUNES;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 15:00;2021-12-16 15:05;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184356
+22076728;MARIA;APARECIDA DE SOUZA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 15:15;2021-12-16 15:20;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184386
+22076758;ANTONIO;LAZARO DE JESUS;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 15:45;2021-12-16 15:50;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184437
+22076770;ANILZA;LIMA FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 16:15;2021-12-16 16:20;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184459
+22076793;MILTON;DA SILVA GOMES;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 14:55;2021-12-16 15:00;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184507
+22076843;ADRIANO;GODOI DOS SANTOS;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 16:30;2021-12-16 16:35;2021-12-15;2021-12-16;;CanceledByUser;;157506;69184582
+22076860;ALEXANDRE;MAXIMIANO DO AMARAL;CLINIDA DIA;Consulta neurocirurgia;2021-12-16 15:05;2021-12-16 15:10;2021-12-15;2021-12-16;;WaitingForConfirmation;;157506;69184646
+21081584;"Márcia Helena Torrentes ";"Silva Dallan ";Personal Ortopedia;Consulta neurocirurgia;2022-01-12 11:00;2022-01-12 11:30;2021-12-15;2022-01-12;;Scheduled;;146896;69221095
+19722702;"Marta Carvalho ";Souza;Personal Ortopedia;Consulta neurocirurgia;2022-01-12 10:00;2022-01-12 10:30;2022-01-05;2022-01-05;;CanceledByUser;;146896;70187007
+19722702;"Marta Carvalho ";Souza;Personal Ortopedia;Consulta neurocirurgia;2022-01-12 10:30;2022-01-12 11:00;2022-01-05;2022-01-12;;CanceledByUser;;146896;70187386
+22727342;"Talita Campos ";"De Oliveira ";Personal Ortopedia;Consulta neurocirurgia;2022-01-19 10:00;2022-01-19 10:30;2022-01-07;2022-01-17;;WaitingForConfirmation;;146896;70342837
+19723231;"Miriam Monteiro ";"Dongo ";Personal Ortopedia;Consulta neurocirurgia;2022-01-12 09:30;2022-01-12 10:00;2022-01-10;2022-01-10;;Scheduled;;146896;70506832
+22808151;Julia;Bernardes Ribeiro;Personal Ortopedia;Consulta neurocirurgia;2022-01-12 08:30;2022-01-12 09:00;2022-01-10;2022-01-12;;ConfirmedByPatient;;146896;70533680
+22808221;"Maria Helena ";N G Cabral;Personal Ortopedia;Consulta neurocirurgia;2022-01-12 09:00;2022-01-12 09:30;2022-01-10;2022-01-11;;CanceledByUser;;146896;70533934
+23061848;"Fernando ";Bitencourt;Personal Ortopedia;Consulta neurocirurgia;2022-01-12 09:00;2022-01-12 09:30;2022-01-11;2022-01-12;;Scheduled;;146896;70635682
+23084937;CIRURGIA IRMA FERRO;HOSPITAL SANTANA EM MOGI (1 KIT DISSECTOMIA + 6 CANULAS BRI);Consultório Dr. Felipe Barreto;Tratamento Cirurgico De Hernia Discal Cervical;2022-01-26 16:00;2022-01-26 16:30;2022-01-12;2022-01-12;;Scheduled;;95845;70657815
+15877531;CLAUDIA FRANCISCA DE PAULA;NASCIMENTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-01-20 11:00;2022-01-20 11:30;2022-01-12;2022-01-18;;ConfirmedByPatient;;95845;70700355
+23142754;Maria de Fátima Pires de;Campos;Personal Ortopedia;Consulta neurocirurgia;2022-01-19 11:00;2022-01-19 11:30;2022-01-13;2022-01-13;;Scheduled;;146896;70788813
+22076683;ANTONIO;EDSON DE LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:00;2022-01-20 13:05;2022-01-19;2022-01-20;;Scheduled;;157506;71317350
+22076697;MARCELO;RODRIGUES SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:10;2022-01-20 13:15;2022-01-19;2022-01-20;;Scheduled;;157506;71317486
+23850284;ANTONIO;CARLOS ERCHENBERGER;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:30;2022-01-20 13:35;2022-01-19;2022-01-20;;Scheduled;;157506;71317697
+23850321;MARCOS;ROBERTO DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:25;2022-01-20 13:30;2022-01-19;2022-01-20;;Scheduled;;157506;71317769
+21371737;NELMA;LUCIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:40;2022-01-20 13:45;2022-01-19;2022-01-19;;Scheduled;;157506;71317828
+23850377;IRACEMA;MORAES DA GAMA;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 13:35;2022-01-20 13:40;2022-01-19;2022-01-19;;Scheduled;;157506;71317882
+23850403;ADILSON;VIEIRA DIAS;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 14:00;2022-01-20 14:05;2022-01-19;2022-01-19;;Scheduled;;157506;71317988
+23850430;IZAIAS;PEREIRA CARDOSO;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 14:10;2022-01-20 14:15;2022-01-19;2022-01-20;;Scheduled;;157506;71318053
+23850488;LEONI;AP FERREIRA SOARES;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 15:15;2022-01-20 15:20;2022-01-19;2022-01-20;;Scheduled;;157506;71318176
+23850516;ANTONIO;CARLOS GOMES;CLINIDA DIA;Consulta neurocirurgia;2022-01-20 16:00;2022-01-20 16:05;2022-01-19;2022-01-20;;Scheduled;;157506;71318286
+24051701;EPITLANIA;LINS SALOMÃO MELO;CLINIDA DIA;Consulta neurocirurgia;2022-01-27 13:00;2022-01-27 13:05;2022-01-26;2022-01-27;;Scheduled;;157506;71674554
+24051750;LINA MARIA;VENCESLAU DA SILVA BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-01-27 13:05;2022-01-27 13:10;2022-01-26;2022-01-26;;Scheduled;;157506;71674642
+24194047;VERA LUCIA;VIEIRA DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-02-03 11:00;2022-02-03 11:30;2022-01-31;2022-02-01;;CanceledByUser;;95845;71924461
+24209217;REPRESENTANTE VANESSA ARTROIMPLAN;ARTROIMPLAN;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-02-03 11:30;2022-02-03 12:00;2022-02-01;2022-02-01;;CanceledByUser;;95845;71957922
+24641055;MARIZETE;ALVES DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 13:25;2022-02-03 13:30;2022-02-03;2022-02-03;;Scheduled;;157506;72088446
+22076656;NEUSA;INACIO;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 13:35;2022-02-03 13:40;2022-02-03;2022-02-03;;Scheduled;;157506;72088471
+24642494;LAURA;BALEEIRO G MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 13:45;2022-02-03 13:50;2022-02-03;2022-02-03;;Scheduled;;157506;72088517
+24643068;JESSICA;BRANQUINHO DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 13:55;2022-02-03 14:00;2022-02-03;2022-02-03;;Scheduled;;157506;72088558
+21371881;LUIZ;GONÇALVES FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:05;2022-02-03 14:10;2022-02-03;2022-02-03;;Scheduled;;157506;72088651
+24643504;ADILSON;VIEIRA DIAS;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:15;2022-02-03 14:20;2022-02-03;2022-02-03;;Scheduled;;157506;72088709
+24644221;MARIA;HELIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:25;2022-02-03 14:30;2022-02-03;2022-02-03;;Scheduled;;157506;72088796
+24645152;KETLEEN;NAIR DOS SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:45;2022-02-03 14:50;2022-02-03;2022-02-03;;Scheduled;;157506;72088852
+24646074;PEDRO;MARCELINO ROCHA;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:55;2022-02-03 15:00;2022-02-03;2022-02-03;;Scheduled;;157506;72088900
+24733889;JULIANA;LEMEZ PEREIRA RANDI BENTO;CLINIDA DIA;Consulta neurocirurgia;2022-02-03 14:35;2022-02-03 14:40;2022-02-03;2022-02-03;;Scheduled;;157506;72102145
+25344506;Paulo Leandro;Fernandes Soares;Personal Ortopedia;Consulta neurocirurgia;2022-02-09 09:00;2022-02-09 09:30;2022-02-08;2022-02-09;;Scheduled;;146896;72449143
+25520321;NEUSA;DE SOUZA BRASIL;CLINIDA DIA;Consulta neurocirurgia;2022-02-10 13:00;2022-02-10 13:10;2022-02-09;2022-02-10;;Scheduled;;157506;72480158
+25520353;CARMILENE;ARAUJO DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-02-10 13:10;2022-02-10 13:20;2022-02-09;2022-02-09;;Scheduled;;157506;72480238
+19722702;"Marta Carvalho ";Souza;Personal Ortopedia;Consulta neurocirurgia;2022-02-16 10:00;2022-02-16 10:30;2022-02-16;2022-02-16;Retorno com exames;Scheduled;;146896;73317603
+25974296;CRISTANE;SOARES MASCARENHAS;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 13:00;2022-02-17 13:15;2022-02-16;2022-02-16;;Scheduled;;157506;73368371
+23850488;LEONI;AP FERREIRA SOARES;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 13:15;2022-02-17 13:30;2022-02-16;2022-02-17;;Scheduled;;157506;73368522
+25974396;CLEONICE;LOPES MAGALHAES;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 13:30;2022-02-17 13:45;2022-02-16;2022-02-17;;Scheduled;;157506;73368609
+25974433;IVANEIDE;FARIA DE REZENDE;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 13:45;2022-02-17 14:00;2022-02-16;2022-02-17;;Scheduled;;157506;73368677
+25974461;ANTONIA;JANUARIO TESTAI;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 14:00;2022-02-17 14:15;2022-02-16;2022-02-16;;Scheduled;;157506;73368744
+25974486;ROBERTO;LUIZ SIQUEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 14:15;2022-02-17 14:30;2022-02-16;2022-02-16;;Scheduled;;157506;73368785
+25974523;CRECENCIO;COLALILLO FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 14:30;2022-02-17 14:45;2022-02-16;2022-02-17;;Scheduled;;157506;73368849
+25975692;EDIGLEI;DOS SANTOS MAGALHÃES;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 14:45;2022-02-17 15:00;2022-02-16;2022-02-17;;Scheduled;;157506;73368958
+25975753;SARA;BARROSO;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 15:00;2022-02-17 15:15;2022-02-16;2022-02-17;;Scheduled;;157506;73369111
+25975785;ELISANDRA;AGNOLETTO;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 15:15;2022-02-17 15:30;2022-02-16;2022-02-17;"nodulo em S3 - osteoma? RM com nódulo pequeno s3
+
+solicito TC para avaliar - osteoma?";Scheduled;;157506;73369205
+25975982;DANIELE;SIMETTE MARTORANO;CLINIDA DIA;Consulta neurocirurgia;2022-02-17 15:30;2022-02-17 15:45;2022-02-16;2022-02-17;;Scheduled;;157506;73369302
+26369858;SONIA;MARIA DOS SANTOS COSTA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-02-24 12:00;2022-02-24 12:30;2022-02-23;2022-02-24;;Scheduled;;95845;74116583
+26468545;REUNIAO TAKARA E JULIANO;.;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-03-16 19:30;2022-03-16 20:00;2022-02-25;2022-03-15;;CanceledByUser;;95845;74364709
+24642494;LAURA;BALEEIRO G MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:00;2022-03-10 13:10;2022-03-09;2022-03-10;;Scheduled;;157506;75062004
+26828757;KATHLEEN NAIR DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:10;2022-03-10 13:20;2022-03-09;2022-03-10;;Scheduled;;157506;75062156
+26828809;EDGLEI DOS SANTOS;MAGALHÃES;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:20;2022-03-10 13:30;2022-03-09;2022-03-10;;Scheduled;;157506;75062308
+26828859;ELISANDRA;AGNOLETO;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:30;2022-03-10 13:40;2022-03-09;2022-03-09;;CanceledByUser;;157506;75062463
+26828880;CARLOS DOS SANTOS;MACHADO;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:40;2022-03-10 13:50;2022-03-09;2022-03-09;;CanceledByUser;;157506;75062534
+26828906;ERINALDA;MENDES;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:50;2022-03-10 14:00;2022-03-09;2022-03-09;;CanceledByUser;;157506;75062602
+26828859;ELISANDRA;AGNOLETO;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:45;2022-03-10 13:55;2022-03-09;2022-03-10;;Scheduled;;157506;75063092
+26828880;CARLOS DOS SANTOS;MACHADO;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 13:55;2022-03-10 14:05;2022-03-09;2022-03-10;;Scheduled;;157506;75063181
+26828906;ERINALDA;MENDES;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 14:20;2022-03-10 14:30;2022-03-09;2022-03-10;;Scheduled;;157506;75063246
+26829149;EDILSA;GABRIEL;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 14:30;2022-03-10 14:40;2022-03-09;2022-03-10;;Scheduled;;157506;75063334
+26829181;BRUNA DOMICINIANO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 14:40;2022-03-10 14:50;2022-03-09;2022-03-09;;Scheduled;;157506;75063418
+26829409;DILMA NASCIMENTO;GUIMARÃES;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 14:50;2022-03-10 15:00;2022-03-09;2022-03-10;;Scheduled;;157506;75063988
+26829448;ANA PAULA MATA RODRIGUES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:00;2022-03-10 15:10;2022-03-09;2022-03-10;;Scheduled;;157506;75064124
+26829486;VALMOR ANGELO;PEGONARO;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:10;2022-03-10 15:20;2022-03-09;2022-03-09;;Scheduled;;157506;75064231
+26829610;DENIVALDO RODRIGUES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:35;2022-03-10 15:45;2022-03-09;2022-03-09;;CanceledByUser;;157506;75064555
+26829610;DENIVALDO RODRIGUES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:20;2022-03-10 15:30;2022-03-09;2022-03-09;;Scheduled;;157506;75064802
+26829872;ANGELINA CASTOR DOS;SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-03-10 16:00;2022-03-10 16:10;2022-03-09;2022-03-09;;Scheduled;;95845;75065299
+26829941;DANIELA MENDES;PUGLIA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 16:10;2022-03-10 16:20;2022-03-09;2022-03-10;;Scheduled;;157506;75065402
+26830436;CRISTIANE;PEREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:30;2022-03-10 15:40;2022-03-09;2022-03-10;;Scheduled;;157506;75066339
+26830461;VERA LUCIA B;CAMPOS;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 15:40;2022-03-10 15:50;2022-03-09;2022-03-10;;Scheduled;;157506;75066388
+26829872;ANGELINA CASTOR DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-03-10 14:05;2022-03-10 14:15;2022-03-09;2022-03-09;;CanceledByUser;;157506;75066420
+27036807;NAIR ARRUDA;DE MORAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-04-07 12:00;2022-04-07 12:30;2022-03-14;2022-04-07;TEM CONVENIO, COBREI 250,00;ConfirmedByPatient;;95845;75317380
+27126036;NELCI MONTEIRO DOS SANTOS;BERTOLAZO;CLINIDA DIA;Consulta neurocirurgia;2022-03-17 15:00;2022-03-17 15:10;2022-03-16;2022-03-16;;Scheduled;;157506;75478186
+27126057;JOSIANE MARTINS DE;OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-17 15:10;2022-03-17 15:20;2022-03-16;2022-03-16;;Scheduled;;157506;75478243
+24051750;LINA MARIA;VENCESLAU DA SILVA BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-03-17 15:20;2022-03-17 15:30;2022-03-16;2022-03-16;;Scheduled;;157506;75478295
+27126124;LUCIA MARIA DO;AMARAL;CLINIDA DIA;Consulta neurocirurgia;2022-03-17 15:30;2022-03-17 15:40;2022-03-16;2022-03-16;;Scheduled;;157506;75478375
+27126154;ADILSON DA SILVA;BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-03-17 15:55;2022-03-17 16:05;2022-03-16;2022-03-16;;Scheduled;;157506;75478444
+27462673;GISLENE FERREIRA;SANTIAGO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:00;2022-03-24 13:05;2022-03-23;2022-03-24;;Scheduled;;157506;75853144
+27462711;JEFERSON ALEXANDRE;ROCHA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:10;2022-03-24 13:15;2022-03-23;2022-03-28;;Scheduled;;157506;75853211
+25975753;SARA;BARROSO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:20;2022-03-24 13:25;2022-03-23;2022-03-24;;Scheduled;;157506;75853260
+27462778;GIANE BARROS DE;OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:30;2022-03-24 13:40;2022-03-23;2022-03-23;;Scheduled;;157506;75853384
+21371634;LUCIA;FERREIRA DE ANDRADE;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:40;2022-03-24 13:50;2022-03-23;2022-03-24;;Scheduled;;157506;75853422
+27462872;JOSENILDO JOÃO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:05;2022-03-24 14:15;2022-03-23;2022-03-24;"dor lombar
+
+solicito RM";Scheduled;;157506;75853556
+27462965;ARTHUR ALMEIDA DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:15;2022-03-24 14:25;2022-03-23;2022-03-24;;Scheduled;;157506;75853758
+27463025;ELTON GOLÇALO;LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:25;2022-03-24 14:35;2022-03-23;2022-03-24;;Scheduled;;157506;75853927
+27463057;FRANCISCO ALVES DE;CARVALHO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:35;2022-03-24 14:45;2022-03-23;2022-03-23;;Scheduled;;157506;75853992
+27463078;MARIA APARECIDA SOUZA BORJA;ARAÚJO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:45;2022-03-24 14:55;2022-03-23;2022-03-24;;Scheduled;;157506;75854063
+27463099;JOSE FELIX DE SOUZA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 14:55;2022-03-24 15:05;2022-03-23;2022-03-24;;Scheduled;;157506;75854125
+27463142;ADRIA;SERAFIM;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:05;2022-03-24 15:10;2022-03-23;2022-03-24;;Scheduled;;157506;75854243
+27463258;JOÃO MENDES;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:15;2022-03-24 15:20;2022-03-23;2022-03-24;;Scheduled;;157506;75854451
+27463289;MANOEL JOSÉ DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:25;2022-03-24 15:30;2022-03-23;2022-03-24;;Scheduled;;157506;75854507
+27463335;MIRIM MARIA DA;SILVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:35;2022-03-24 15:40;2022-03-23;2022-03-24;;Scheduled;;157506;75854642
+27463371;EDIVALDO DO REGO;BALDIA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:45;2022-03-24 15:50;2022-03-23;2022-03-24;;Scheduled;;157506;75854778
+27463409;JULIO CEZAR;ARAGÃO;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:55;2022-03-24 16:05;2022-03-23;2022-03-25;;Scheduled;;157506;75854857
+27463424;SIMONE ALVES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 16:05;2022-03-24 16:10;2022-03-23;2022-03-24;;ConfirmedByPatient;;157506;75854900
+25974396;CLEONICE;LOPES MAGALHAES;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 16:15;2022-03-24 16:25;2022-03-23;2022-03-24;;Scheduled;;157506;75854980
+22076860;ALEXANDRE;MAXIMIANO DO AMARAL;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 13:50;2022-03-24 14:00;2022-03-23;2022-03-23;;Scheduled;;157506;75855149
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-03-23 11:30;2022-03-23 12:00;2022-03-23;2022-03-23;;Scheduled;;95845;75855999
+27536204;ANTONIO;JUCIENE RODRIGUES DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-24 15:40;2022-03-24 15:55;2022-03-24;2022-03-24;;Scheduled;;157506;76006199
+27589356;LEONARDO;DE POLLI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-04-07 11:00;2022-04-07 11:30;2022-03-25;2022-04-05;;WaitingForConfirmation;;95845;76056629
+27940527;EDIVALDO MIRANDA DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:00;2022-03-31 15:05;2022-03-30;2022-03-30;;Scheduled;;157506;76379293
+27940550;ELZA MARIA NUNES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:05;2022-03-31 15:10;2022-03-30;2022-03-31;;Scheduled;;157506;76379363
+27940878;LEANDRA RODRIGUES;VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:10;2022-03-31 15:15;2022-03-30;2022-03-31;;Scheduled;;157506;76380262
+27126154;ADILSON DA SILVA;BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:15;2022-03-31 15:20;2022-03-30;2022-03-30;;Scheduled;;157506;76380344
+27940911;ANTONIO FERNANDES;GARCIA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:20;2022-03-31 15:25;2022-03-30;2022-03-30;;Scheduled;;157506;76380391
+27940946;MIRIÃ RODRIGUES DE SOUZA;SIVA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:25;2022-03-31 15:30;2022-03-30;2022-03-31;;Scheduled;;157506;76380461
+24051750;LINA MARIA;VENCESLAU DA SILVA BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:30;2022-03-31 15:35;2022-03-30;2022-03-31;;Scheduled;;157506;76380491
+27126057;JOSIANE MARTINS DE;OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:35;2022-03-31 15:40;2022-03-30;2022-03-31;;Scheduled;;157506;76380543
+27941053;OLGA JURACI CORREIA DE;FREITAS;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:40;2022-03-31 15:45;2022-03-30;2022-03-30;;Scheduled;;157506;76380753
+27941074;LESCIA PEREIRA;JATOBA;CLINIDA DIA;Consulta neurocirurgia;2022-03-31 15:45;2022-03-31 15:50;2022-03-30;2022-03-30;;Scheduled;;157506;76380795
+28069166;NATHALIA FIGUEIREDO;AVILA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-04-07 10:30;2022-04-07 11:00;2022-04-04;2022-04-06;;ConfirmedByPatient;;95845;76622981
+28150318;ELISABETE APARECIDA;GARGARELLI;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:00;2022-04-07 13:10;2022-04-07;2022-04-07;;Scheduled;;157506;76810958
+28150335;MARCIA MARTINS DE;ULRICK;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:10;2022-04-07 13:20;2022-04-07;2022-04-07;;Scheduled;;157506;76811006
+28150418;LUZINETE BENÍCIO DA SILVA;MENDES;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:35;2022-04-07 13:45;2022-04-07;2022-04-07;;Scheduled;;157506;76811084
+27940911;ANTONIO FERNANDES;GARCIA;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:45;2022-04-07 13:55;2022-04-07;2022-04-07;;Scheduled;;157506;76811107
+28150451;LUCAS MARQUES DIAS DE;ALENCAR;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:55;2022-04-07 14:05;2022-04-07;2022-04-07;;Scheduled;;157506;76811170
+25520321;NEUSA;DE SOUZA BRASIL;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 13:20;2022-04-07 13:30;2022-04-07;2022-04-07;;Scheduled;;157506;76811204
+28150485;ZILMA MARINHO;PAVAO;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 14:20;2022-04-07 14:30;2022-04-07;2022-04-07;;Scheduled;;157506;76811240
+27941053;OLGA JURACI CORREIA DE;FREITAS;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 14:05;2022-04-07 14:20;2022-04-07;2022-04-07;;Scheduled;;157506;76811281
+27126036;NELCI MONTEIRO DOS SANTOS;BERTOLAZO;CLINIDA DIA;Consulta neurocirurgia;2022-04-07 14:30;2022-04-07 14:40;2022-04-07;2022-04-07;;Scheduled;;157506;76811361
+26829448;ANA PAULA MATA RODRIGUES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:00;2022-04-28 13:10;2022-04-27;2022-04-27;;Scheduled;;157506;77753334
+27462673;GISLENE FERREIRA;SANTIAGO;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:10;2022-04-28 13:20;2022-04-27;2022-04-28;;ConfirmedByPatient;;157506;77753457
+27536204;ANTONIO;JUCIENE RODRIGUES DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:20;2022-04-28 13:30;2022-04-27;2022-04-28;;Scheduled;;157506;77754458
+28877955;EUNICE;MARIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:35;2022-04-28 13:45;2022-04-27;2022-04-27;;CanceledByUser;;157506;77755977
+28877955;EUNICE;MARIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:30;2022-04-28 13:40;2022-04-27;2022-04-27;;Scheduled;;157506;77758770
+28880242;FRANCINALDO;BARRETO DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:40;2022-04-28 13:50;2022-04-27;2022-04-28;;Scheduled;;157506;77761626
+28880964;ALEX;DELFINO DE SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 13:50;2022-04-28 14:00;2022-04-27;2022-04-28;;Scheduled;;157506;77763481
+23850430;IZAIAS;PEREIRA CARDOSO;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 14:00;2022-04-28 14:10;2022-04-27;2022-04-28;;Scheduled;;157506;77764083
+24646074;PEDRO;MARCELINO ROCHA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 14:10;2022-04-28 14:20;2022-04-27;2022-04-28;;Scheduled;;157506;77764195
+26828757;KATHLEEN NAIR DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 14:20;2022-04-28 14:30;2022-04-27;2022-04-27;;Scheduled;;157506;77764830
+26828880;CARLOS DOS SANTOS;MACHADO;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 14:30;2022-04-28 14:40;2022-04-27;2022-04-28;;Scheduled;;157506;77765177
+26829409;DILMA NASCIMENTO;GUIMARÃES;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 14:40;2022-04-28 14:50;2022-04-27;2022-04-28;;Scheduled;;157506;77766193
+28882457;IVANIA;FRANÇA DE SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:05;2022-04-28 15:15;2022-04-27;2022-04-28;;Scheduled;;157506;77766594
+28882598;ALINE;APARECIDA TAVARES SIQUEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:15;2022-04-28 15:25;2022-04-27;2022-04-28;;Scheduled;;157506;77767019
+28882931;PATRICIA;MANDU DE IMBERIO;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:25;2022-04-28 15:35;2022-04-27;2022-04-27;;Scheduled;;157506;77767892
+28883255;JULIANA;LEMES PEREIRA RANDI;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:35;2022-04-28 15:45;2022-04-27;2022-04-28;;Scheduled;;157506;77768453
+22076860;ALEXANDRE;MAXIMIANO DO AMARAL;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:45;2022-04-28 15:55;2022-04-27;2022-04-27;;Scheduled;;157506;77768679
+27462965;ARTHUR ALMEIDA DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 15:55;2022-04-28 16:05;2022-04-27;2022-04-27;;Scheduled;;157506;77768756
+27462872;JOSENILDO JOÃO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-04-28 16:05;2022-04-28 16:15;2022-04-27;2022-04-27;;Scheduled;;157506;77768836
+29392581;EDMILSON BORGES;FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 13:00;2022-05-05 13:10;2022-05-05;2022-05-05;;Scheduled;;157506;78413974
+29392598;CLAUDIO PAIM DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 13:10;2022-05-05 13:20;2022-05-05;2022-05-05;;Scheduled;;157506;78414007
+29392619;PATRICIA VITORINO DE;SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 13:20;2022-05-05 13:30;2022-05-05;2022-05-05;;CanceledByUser;;157506;78414049
+29392619;PATRICIA VITORINO DE;SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 13:35;2022-05-05 13:45;2022-05-05;2022-05-05;;Scheduled;;157506;78414095
+29392660;JOSÉ CALADO DA SILVA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 14:00;2022-05-05 14:10;2022-05-05;2022-05-05;;Scheduled;;157506;78414149
+27941053;OLGA JURACI CORREIA DE;FREITAS;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 14:10;2022-05-05 14:20;2022-05-05;2022-05-05;;Scheduled;;157506;78414185
+29392718;MARIA APARECIDA CORDEIRO DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 14:20;2022-05-05 14:30;2022-05-05;2022-05-05;;Scheduled;;157506;78414228
+29392758;CINTHIA MARIA DUARTE;LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-05-05 14:45;2022-05-05 14:55;2022-05-05;2022-05-05;;Scheduled;;157506;78414293
+29764390;DIRK EGON;REGETT;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-05-16 14:00;2022-05-16 14:30;2022-05-12;2022-05-16;HORARIO CONFIRMADO PARA AS 14H00;ConfirmedByPatient;;95845;78966290
+29765925;SANDRA MASSAKO;SAKAUE;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:00;2022-05-12 13:10;2022-05-12;2022-05-12;;CanceledByPatient;;157506;78969998
+29765945;CARLOS CESAR;LATINE;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:10;2022-05-12 13:20;2022-05-12;2022-05-12;;Scheduled;;157506;78970047
+29765961;MARIA DE FATIMA DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:20;2022-05-12 13:30;2022-05-12;2022-05-13;"DOR CERVICAL REFRATÁRIA
+
+HÁ 2 ANOS
+
+SOLICITO RM CERVICAL";Scheduled;;157506;78970092
+29765979;MARIA DE LOURDES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:30;2022-05-12 13:40;2022-05-12;2022-05-12;;Scheduled;;157506;78970138
+29766003;JOSE AFONSO RIBEIRO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:40;2022-05-12 13:50;2022-05-12;2022-05-12;;Scheduled;;157506;78970200
+29766025;SEVERINO DOS RAMOS JOÃO DE;LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 14:05;2022-05-12 14:15;2022-05-12;2022-05-12;;Scheduled;;157506;78970246
+29766057;ROBERTO HENRIQUE FLORES;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 14:15;2022-05-12 14:30;2022-05-12;2022-05-12;;Scheduled;;157506;78970365
+29766086;RODRIGO DE SOUZA;BRASIL;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 14:30;2022-05-12 14:45;2022-05-12;2022-05-13;;Scheduled;;157506;78970412
+29765925;SANDRA MASSAKO;SAKAUE;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 13:50;2022-05-12 14:00;2022-05-12;2022-05-13;;Scheduled;;157506;78979926
+29770975;ISABEL CRISTINA ROMERO;CLAUDIO;CLINIDA DIA;Consulta neurocirurgia;2022-05-12 14:45;2022-05-12 14:55;2022-05-12;2022-05-12;;Scheduled;;157506;78983130
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-05-16 13:30;2022-05-16 14:00;2022-05-12;2022-05-16;;WaitingForConfirmation;;95845;78983187
+30008386;RICARDO SOUZA DE;ALCANTARA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:00;2022-05-19 13:10;2022-05-18;2022-05-18;;Scheduled;;157506;79351953
+29392581;EDMILSON BORGES;FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:10;2022-05-19 13:20;2022-05-18;2022-05-19;;Scheduled;;157506;79351979
+30008425;RAUFIMAN DOS REIS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:20;2022-05-19 13:30;2022-05-18;2022-05-19;;Scheduled;;157506;79352062
+30008453;ANDREI RICHARD AZEVEDO;PINTO;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:30;2022-05-19 13:40;2022-05-18;2022-05-19;;Scheduled;;157506;79352111
+30008526;LARISSA BRITO DE;ARAUJO;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:40;2022-05-19 13:50;2022-05-18;2022-05-19;;Scheduled;;157506;79352270
+30008538;MIRIÃ RODRIGUES DE SOUZA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 13:50;2022-05-19 14:00;2022-05-18;2022-05-19;aguarda cirurgia;Scheduled;;157506;79352313
+30008561;GENILSON RODRIGUES DE;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:00;2022-05-19 14:10;2022-05-18;2022-05-19;;Scheduled;;157506;79352350
+30008662;BENEDITA MATHIAS FERREIRA;ALVEZ;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:10;2022-05-19 14:20;2022-05-18;2022-05-19;;Scheduled;;157506;79352591
+25520321;NEUSA;DE SOUZA BRASIL;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:20;2022-05-19 14:30;2022-05-18;2022-05-18;;Scheduled;;157506;79352625
+30009589;ALDENIR VILAR DE;ARAÚJO;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:30;2022-05-19 14:40;2022-05-18;2022-05-19;;Scheduled;;157506;79352658
+30010515;LUZIA;MIQUELINO;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:40;2022-05-19 14:50;2022-05-18;2022-05-19;;Scheduled;;157506;79352697
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 14:50;2022-05-19 15:00;2022-05-18;2022-05-19;"lombalgia refrataria, há 10 anos
+artrodese previa em MIE
+
+RM sem compressoes
+
+indico bloqueio lombar
+
+indico bloqueio";Scheduled;;157506;79353015
+30010665;ROSANA ALINA DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:00;2022-05-19 15:10;2022-05-18;2022-05-19;;Scheduled;;157506;79353282
+30010684;IRACI TORRES OLIVEIRA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:10;2022-05-19 15:20;2022-05-18;2022-05-18;;Scheduled;;157506;79353334
+30010700;RAFAELA MENDEZ;BARBOSA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:20;2022-05-19 15:30;2022-05-18;2022-05-18;;Scheduled;;157506;79353376
+30011068;SOLANGE DA;CUNHA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:45;2022-05-19 15:55;2022-05-18;2022-05-19;;Scheduled;;157506;79353436
+30011095;SUZANA MARIA;BEZERRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:55;2022-05-19 16:05;2022-05-18;2022-05-19;;Scheduled;;157506;79353538
+30011108;ELISIO DOS SANTOS;AMARAL;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 16:05;2022-05-19 16:15;2022-05-18;2022-05-19;;Scheduled;;157506;79353575
+30011137;JOAO;ZILIOTI;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 16:15;2022-05-19 16:25;2022-05-18;2022-05-19;;Scheduled;;157506;79353686
+30011153;ARLENE NASCIMENTO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-19 15:30;2022-05-19 15:40;2022-05-18;2022-05-18;;Scheduled;;157506;79353732
+21371881;LUIZ;GONÇALVES FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 13:00;2022-05-26 13:10;2022-05-26;2022-05-26;;Scheduled;;157506;79843373
+30292430;IDALIA DE CARVALHO;RIBEIRO;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 13:10;2022-05-26 13:20;2022-05-26;2022-05-26;;Scheduled;;157506;79843477
+26830436;CRISTIANE;PEREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 13:20;2022-05-26 13:30;2022-05-26;2022-05-26;;Scheduled;;157506;79843499
+30292469;LAURA BALEIRO G;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 13:35;2022-05-26 13:45;2022-05-26;2022-05-26;;Scheduled;;157506;79843559
+27462711;JEFERSON ALEXANDRE;ROCHA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 13:55;2022-05-26 14:05;2022-05-26;2022-05-26;;Scheduled;;157506;79843581
+27463371;EDIVALDO DO REGO;BALDIA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:05;2022-05-26 14:15;2022-05-26;2022-05-26;;Scheduled;;157506;79843606
+30292508;NAILAN;GALAFF;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:15;2022-05-26 14:25;2022-05-26;2022-05-26;;Scheduled;;157506;79843654
+27463289;MANOEL JOSÉ DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:25;2022-05-26 14:35;2022-05-26;2022-05-26;;Scheduled;;157506;79843666
+28877955;EUNICE;MARIA DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:35;2022-05-26 14:45;2022-05-26;2022-05-26;;Scheduled;;157506;79843698
+22076860;ALEXANDRE;MAXIMIANO DO AMARAL;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:45;2022-05-26 14:55;2022-05-26;2022-05-26;;Scheduled;;157506;79843721
+26829448;ANA PAULA MATA RODRIGUES DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 14:55;2022-05-26 15:05;2022-05-26;2022-05-26;;Scheduled;;157506;79843746
+30292577;EDILENE VIEIRA CAMPOS;CAMINHA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 15:05;2022-05-26 15:15;2022-05-26;2022-05-26;;Scheduled;;157506;79843829
+30292607;IRACEMA MORAIS DA;GAMA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 15:15;2022-05-26 15:25;2022-05-26;2022-05-26;;Scheduled;;157506;79843896
+30292641;CLAUDIO BOTELHO;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 15:25;2022-05-26 15:35;2022-05-26;2022-05-26;;Scheduled;;157506;79843963
+28882931;PATRICIA;MANDU DE IMBERIO;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 15:35;2022-05-26 15:45;2022-05-26;2022-05-26;;Scheduled;;157506;79843980
+30292691;MARIA APARECIDA DE SOUZA BORJA;ARAUJO;CLINIDA DIA;Consulta neurocirurgia;2022-05-26 15:45;2022-05-26 15:55;2022-05-26;2022-05-26;;Scheduled;;157506;79844038
+30008538;MIRIÃ RODRIGUES DE SOUZA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-05 19:00;2022-06-05 19:15;2022-06-01;2022-06-01;;CanceledByUser;;157506;80693285
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-06-07 11:00;2022-06-07 11:30;2022-06-01;2022-06-07;;WaitingForConfirmation;;95845;80699275
+31029968;ROSANA;GATTORE;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 13:45;2022-06-09 13:55;2022-06-09;2022-06-09;;Scheduled;;157506;81219255
+28150485;ZILMA MARINHO;PAVAO;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 13:15;2022-06-09 13:25;2022-06-09;2022-06-09;;Scheduled;;157506;81219266
+28150451;LUCAS MARQUES DIAS DE;ALENCAR;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 13:55;2022-06-09 14:00;2022-06-09;2022-06-09;;Scheduled;;157506;81219286
+31030004;ANDRÉ DIAS;ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 14:15;2022-06-09 14:25;2022-06-09;2022-06-09;;Scheduled;;157506;81219328
+25520321;NEUSA;DE SOUZA BRASIL;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 13:00;2022-06-09 13:10;2022-06-09;2022-06-09;;Scheduled;;157506;81219343
+31030021;VANESSA NOVAIS;ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 13:25;2022-06-09 13:35;2022-06-09;2022-06-09;;Scheduled;;157506;81219364
+31030031;FLAVIO DA SILVA;PITOMBEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 14:00;2022-06-09 14:10;2022-06-09;2022-06-09;;Scheduled;;157506;81219390
+31030046;JANAINA ALMEIDA;NASCIMENTO;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 14:25;2022-06-09 14:35;2022-06-09;2022-06-09;;Scheduled;;157506;81219454
+31030046;JANAINA ALMEIDA;NASCIMENTO;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 14:35;2022-06-09 14:45;2022-06-09;2022-06-09;;Scheduled;;157506;81219483
+31030070;PRISCILLA DOMINGUES;ZANELLI;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 15:00;2022-06-09 15:10;2022-06-09;2022-06-09;;Scheduled;;157506;81219579
+31030086;EUSILENE MARIA DE JESUS;OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 15:10;2022-06-09 15:20;2022-06-09;2022-06-09;;Scheduled;;157506;81219628
+31030095;JOSENILTON LVES;LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 15:20;2022-06-09 15:30;2022-06-09;2022-06-09;;Scheduled;;157506;81219720
+31030107;ANA PAULA DANTAS SOUSA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-09 16:00;2022-06-09 16:10;2022-06-09;2022-06-09;;Scheduled;;157506;81219756
+27463025;ELTON GOLÇALO;LIMA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:00;2022-06-30 13:10;2022-06-30;2022-06-30;;Scheduled;;157506;82416683
+27462673;GISLENE FERREIRA;SANTIAGO;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:10;2022-06-30 13:20;2022-06-30;2022-06-30;;Scheduled;;157506;82416704
+26828880;CARLOS DOS SANTOS;MACHADO;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:20;2022-06-30 13:30;2022-06-30;2022-06-30;;Scheduled;;157506;82416711
+31899285;AMARA CICERA;CARDOSO;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:30;2022-06-30 13:40;2022-06-30;2022-06-30;;Scheduled;;157506;82416741
+31899301;ANNY JAQUELINE;VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:40;2022-06-30 13:50;2022-06-30;2022-06-30;;Scheduled;;157506;82416772
+31899309;QUELI MORAIS DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 13:50;2022-06-30 14:00;2022-06-30;2022-06-30;;Scheduled;;157506;82416816
+31899325;ELZA NASCIMENTO DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:00;2022-06-30 14:10;2022-06-30;2022-06-30;;Scheduled;;157506;82416854
+23850321;MARCOS;ROBERTO DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:10;2022-06-30 14:20;2022-06-30;2022-06-30;;Scheduled;;157506;82416867
+21371396;MARIA;DE FATIMA CORREIA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:20;2022-06-30 14:30;2022-06-30;2022-06-30;;Scheduled;;157506;82416890
+30010684;IRACI TORRES OLIVEIRA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:30;2022-06-30 14:40;2022-06-30;2022-06-30;;Scheduled;;157506;82416905
+31899356;HELENA QUITERIA DE;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:40;2022-06-30 14:50;2022-06-30;2022-06-30;;Scheduled;;157506;82416932
+25975785;ELISANDRA;AGNOLETTO;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 14:50;2022-06-30 15:00;2022-06-30;2022-06-30;;Scheduled;;157506;82417036
+31899416;IRENE ZANETI DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:00;2022-06-30 15:10;2022-06-30;2022-06-30;;Scheduled;;157506;82417065
+31899429;EDA SINARA ANDRADE;RIBEIRO;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:10;2022-06-30 15:20;2022-06-30;2022-06-30;;Scheduled;;157506;82417103
+31899448;KELLY ITIUBA;TOY;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:20;2022-06-30 15:30;2022-06-30;2022-06-30;;CanceledByUser;;157506;82417141
+28883255;JULIANA;LEMES PEREIRA RANDI;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:30;2022-06-30 15:40;2022-06-30;2022-06-30;"retorno com melhora das dores em MIE
+ainda em uso de pregabalina
+inicio fisioterapia
+
+solicito RM cervical por parestesias em maos";Scheduled;;157506;82417735
+31900787;CLAYTON CHUENG MAN;TOY;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:40;2022-06-30 15:50;2022-06-30;2022-06-30;;Scheduled;;157506;82417794
+27462965;ARTHUR ALMEIDA DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 15:50;2022-06-30 16:00;2022-06-30;2022-06-30;;Scheduled;;157506;82417810
+27462872;JOSENILDO JOÃO DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 16:00;2022-06-30 16:10;2022-06-30;2022-06-30;;Scheduled;;157506;82417827
+31899448;KELLY ITIUBA;TOY;CLINIDA DIA;Consulta neurocirurgia;2022-06-30 16:05;2022-06-30 16:20;2022-06-30;2022-06-30;;Scheduled;;157506;82432574
+32176150;FLAVIA CAMPOS;COELHO;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:00;2022-07-07 13:10;2022-07-07;2022-07-07;;Scheduled;;157506;82831084
+30292691;MARIA APARECIDA DE SOUZA BORJA;ARAUJO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-07 09:30;2022-07-07 09:40;2022-07-07;2022-07-07;;CanceledByUser;;95845;82831136
+31030004;ANDRÉ DIAS;ALMEIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-07 09:40;2022-07-07 09:50;2022-07-07;2022-07-07;;CanceledByUser;;95845;82831176
+27940911;ANTONIO FERNANDES;GARCIA;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:10;2022-07-07 13:20;2022-07-07;2022-07-07;;Scheduled;;157506;82831377
+32176281;MARISA MEIRE DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:20;2022-07-07 13:30;2022-07-07;2022-07-07;;Scheduled;;157506;82831494
+31030004;ANDRÉ DIAS;ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:30;2022-07-07 13:40;2022-07-07;2022-07-07;;Scheduled;;157506;82831685
+28882931;PATRICIA;MANDU DE IMBERIO;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:40;2022-07-07 13:50;2022-07-07;2022-07-07;;Scheduled;;157506;82831719
+29392581;EDMILSON BORGES;FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 13:50;2022-07-07 14:00;2022-07-07;2022-07-07;;Scheduled;;157506;82831737
+32176380;ANDRE LUIZ SILVA DE CASTRO;CRUZ;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 14:00;2022-07-07 14:10;2022-07-07;2022-07-07;;Scheduled;;157506;82831788
+30008538;MIRIÃ RODRIGUES DE SOUZA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-07-07 14:10;2022-07-07 14:20;2022-07-07;2022-07-07;;Scheduled;;157506;82831817
+27536204;ANTONIO;JUCIENE RODRIGUES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-18 13:00;2022-07-18 16:00;2022-07-13;2022-07-17;"Cirurgia carlos chagas
+";ConfirmedByPatient;;95845;83133757
+28880964;ALEX;DELFINO DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:00;2022-07-21 12:05;2022-07-21;2022-07-21;;Scheduled;;95845;83575924
+32600806;SONIA MARIA;LOURENCO DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:05;2022-07-21 12:10;2022-07-21;2022-07-21;;Scheduled;;95845;83576167
+32600896;PAULO;DE JESUS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:10;2022-07-21 12:15;2022-07-21;2022-07-21;;Scheduled;;95845;83576301
+32601007;ROSENI;SOUZA MOREIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:15;2022-07-21 12:20;2022-07-21;2022-07-21;;Scheduled;;95845;83576409
+32601074;ADILSON;DA SILVA CAMILO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:20;2022-07-21 12:25;2022-07-21;2022-07-21;;Scheduled;;95845;83576497
+32601097;JOSE MOURA;RIBEIRO DE CARVALHO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:25;2022-07-21 12:30;2022-07-21;2022-07-21;;Scheduled;;95845;83576546
+32601117;CLAUDIA CRISTIANE;GAMAS ABRAU DE CARVALHO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-07-21 12:30;2022-07-21 12:35;2022-07-21;2022-07-21;;Scheduled;;95845;83576598
+30010559;RICARDO ANTONIO;MARTINS;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-07-28 13:00;2022-07-28 13:30;2022-07-27;2022-07-28;;Scheduled;;96277;84027161
+27536204;ANTONIO;JUCIENE RODRIGUES DA SILVA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-08-04 14:15;2022-08-04 14:45;2022-07-29;2022-08-04;;WaitingForConfirmation;;96277;84218514
+27463409;JULIO CEZAR;ARAGÃO;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-09-01 13:15;2022-09-01 13:30;2022-08-04;2022-09-01;"melhora de 80% da dor
+encaminho a fisioterapia e relaxante muscular";WaitingForConfirmation;;96277;84562073
+27463289;MANOEL JOSÉ DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 15:00;2022-08-04 15:15;2022-08-04;2022-08-04;;Scheduled;;157506;84566924
+33169659;ELAINE;CRISTINA RIBEIRO;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 15:15;2022-08-04 15:30;2022-08-04;2022-08-04;;Scheduled;;157506;84567005
+32601007;ROSENI;SOUZA MOREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 15:30;2022-08-04 15:45;2022-08-04;2022-08-04;;Scheduled;;157506;84567021
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 14:00;2022-08-04 14:15;2022-08-04;2022-08-05;;Scheduled;;157506;84567411
+27536204;ANTONIO;JUCIENE RODRIGUES DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 15:30;2022-08-04 15:45;2022-08-04;2022-08-04;;Scheduled;;157506;84567463
+30008561;GENILSON RODRIGUES DE;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 15:45;2022-08-04 16:00;2022-08-04;2022-08-04;;Scheduled;;157506;84567502
+33169899;MARTA;REGINA DEVECHI;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 16:00;2022-08-04 16:15;2022-08-04;2022-08-04;;Scheduled;;157506;84567692
+30008538;MIRIÃ RODRIGUES DE SOUZA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 16:15;2022-08-04 16:30;2022-08-04;2022-08-04;;Scheduled;;157506;84567733
+32601007;ROSENI;SOUZA MOREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-08-04 16:30;2022-08-04 16:45;2022-08-04;2022-08-04;;Scheduled;;157506;84568923
+33508402;José Tito;Lins goi;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-08-11 09:00;2022-08-11 09:30;2022-08-10;2022-08-10;"Elison Brito goi 
+ Meu filho tem uma mês  de vida ,sofreu  uma queda de mais ou menos 30 cm  dia 9.08 as 19:00 . Fizemos os exames na participar e no público . Mas não tinha  neurocirurgião disponível para avaliar , aparentemente ele está bem , porém teve";Scheduled;;95845;85061080
+30010515;LUZIA;MIQUELINO;CLINIDA DIA;Consulta neurocirurgia;2022-09-15 14:00;2022-09-15 14:15;2022-08-12;2022-09-15;;ConfirmedByPatient;;157506;85336725
+27462673;GISLENE FERREIRA;SANTIAGO;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-09-15 13:30;2022-09-15 14:00;2022-08-12;2022-09-15;;ConfirmedByPatient;;96277;85337327
+33757695;Antônio;Rodrigues da Silva;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 15:30;2022-09-01 15:45;2022-08-12;2022-08-30;;WaitingForConfirmation;;157506;85339612
+31899448;KELLY ITIUBA;TOY;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-09-15 13:00;2022-09-15 13:15;2022-08-15;2022-09-15;;ConfirmedByPatient;;96277;85439175
+31900787;CLAYTON CHUENG MAN;TOY;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-09-15 13:15;2022-09-15 13:45;2022-08-15;2022-09-15;;ConfirmedByPatient;;96277;85439899
+33169899;MARTA;REGINA DEVECHI;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 15:15;2022-09-01 15:30;2022-08-16;2022-08-30;;WaitingForConfirmation;;157506;85495612
+30011068;SOLANGE DA;CUNHA;CLINIDA DIA;Consulta neurocirurgia;2022-08-18 13:00;2022-08-18 13:15;2022-08-16;2022-08-18;;ConfirmedByPatient;;157506;85517559
+29392598;CLAUDIO PAIM DA;SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-08-18 13:15;2022-08-18 13:30;2022-08-18;2022-08-18;;Scheduled;;157506;85665329
+29392660;JOSÉ CALADO DA SILVA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-08-18 13:30;2022-08-18 13:45;2022-08-18;2022-08-18;;Scheduled;;157506;85665400
+33996809;ALTAIR;PRUDENTE SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-08-18 13:45;2022-08-18 14:00;2022-08-18;2022-08-18;;Scheduled;;157506;85665592
+24051750;LINA MARIA;VENCESLAU DA SILVA BARROS;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 15:00;2022-09-01 15:15;2022-08-22;2022-09-01;;WaitingForConfirmation;;157506;85897788
+34196637;Celeodiva;Viana de Lima Vieira;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 14:45;2022-09-01 15:00;2022-08-22;2022-08-22;;Scheduled;;157506;85903231
+34449539;Fernanda;Dias do Carmo;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 15:45;2022-09-01 16:00;2022-08-26;2022-09-01;;Scheduled;;157506;86314622
+27126057;JOSIANE MARTINS DE;OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-09-01 15:45;2022-09-01 16:00;2022-08-29;2022-09-01;;WaitingForConfirmation;;157506;86490510
+35288664;Maria do Carmo;Barbosa de Souza;CLINIDA DIA;Consulta neurocirurgia;2022-09-15 13:00;2022-09-15 13:15;2022-09-09;2022-09-15;;ConfirmedByPatient;;157506;87374266
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-09-15 13:15;2022-09-15 13:30;2022-09-15;2022-09-15;;Scheduled;;157506;87878989
+30011068;SOLANGE DA;CUNHA;CLINIDA DIA;Consulta neurocirurgia;2022-09-15 13:45;2022-09-15 14:00;2022-09-15;2022-09-15;;Scheduled;;157506;87879110
+35702587;MARIZA;LOUREIRO RODRIGUES;CLINIDA DIA;Consulta neurocirurgia;2022-09-15 14:00;2022-09-15 14:15;2022-09-15;2022-09-15;;Scheduled;;157506;87879300
+27462673;GISLENE FERREIRA;SANTIAGO;CLINIDA DIA;Consulta neurocirurgia;2022-10-06 13:15;2022-10-06 13:30;2022-09-15;2022-10-04;;WaitingForConfirmation;;157506;87905528
+36104404;Thomas Vinhaes Araújo;Guarese;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-09-23 10:00;2022-09-23 10:30;2022-09-22;2022-09-23;;Scheduled;;95845;88555537
+36383718;ALZIRA;DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-09-29 12:45;2022-09-29 13:15;2022-09-28;2022-09-28;;Scheduled;;95845;88971914
+36384037;SONIA MARIA;DE JESUS IZIDORO;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 13:15;2022-09-29 13:30;2022-09-28;2022-09-29;;Scheduled;;157506;88971978
+36384440;JOSÉ;IRENILDO DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 13:30;2022-09-29 13:45;2022-09-28;2022-09-29;;Scheduled;;157506;88972294
+36384842;JANE MICHELE;DIOGO AZARIAS;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 13:45;2022-09-29 14:00;2022-09-28;2022-09-29;;Scheduled;;157506;88972490
+36384859;THAIS DE;SOUSA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 14:00;2022-09-29 14:15;2022-09-28;2022-09-29;;Scheduled;;157506;88972514
+36385178;IVONE;ZARA PINTO;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 14:15;2022-09-29 14:30;2022-09-28;2022-09-29;;Scheduled;;157506;88972564
+35288664;Maria do Carmo;Barbosa de Souza;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 14:30;2022-09-29 14:45;2022-09-28;2022-09-28;;Scheduled;;157506;88972583
+36385497;JOEMERES ARAUJO;LEITE XAVIER;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 14:45;2022-09-29 15:00;2022-09-28;2022-09-28;;Scheduled;;157506;88972610
+33169899;MARTA;REGINA DEVECHI;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 15:00;2022-09-29 15:15;2022-09-28;2022-09-29;;Scheduled;;157506;88972623
+36385815;ROBERTA;PRISCILA VITOR;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 15:15;2022-09-29 15:30;2022-09-28;2022-09-29;;Scheduled;;157506;88972647
+36385831;CINTHYA;GOMES BARRETO;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 15:30;2022-09-29 15:45;2022-09-28;2022-09-29;;Scheduled;;157506;88972683
+36384037;SONIA MARIA;DE JESUS IZIDORO;CLINIDA DIA;Consulta neurocirurgia;2022-09-29 13:39;2022-09-29 13:54;2022-09-29;2022-09-29;;Scheduled;;157506;89052409
+36572255;Anderson;Mendes;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-09-29 16:30;2022-09-29 17:00;2022-09-29;2022-09-30;;Scheduled;;96277;89078046
+36843809;Marlene;Rodrigues dos Santos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-10-07 12:30;2022-10-07 13:00;2022-10-07;2022-10-07;"Andreia Carvalho 
+ ";CanceledByPatient;;95845;89585947
+36973461;Vigoberto;Da Silva Barbosa;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-10-10 14:00;2022-10-10 14:30;2022-10-10;2022-10-10;;Scheduled;;95845;89709521
+37074801;Alexandre;Bernasconi Albarici;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-10-20 11:00;2022-10-20 11:30;2022-10-11;2022-10-20;;ConfirmedByPatient;;95845;89798451
+37204440;MARIANA;MATEUS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-10-13 12:45;2022-10-13 13:15;2022-10-13;2022-10-13;;Scheduled;;95845;89901659
+29392660;JOSÉ CALADO DA SILVA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 13:15;2022-10-13 13:30;2022-10-13;2022-10-13;;Scheduled;;157506;89901704
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 13:30;2022-10-13 13:45;2022-10-13;2022-10-13;;Scheduled;;157506;89901956
+37204587;STEPHANIY;MAX VALDEVINO;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 13:45;2022-10-13 14:00;2022-10-13;2022-10-13;;Scheduled;;157506;89902114
+37204596;LAURENICE MARIA;DE BRITO CRUZ;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 14:00;2022-10-13 14:15;2022-10-13;2022-10-13;;Scheduled;;157506;89902142
+37204631;PRISCILA;DE AMORIM SCAQUETTI;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 14:15;2022-10-13 14:30;2022-10-13;2022-10-13;;Scheduled;;157506;89902197
+37204654;LUCAS;LAERTE DE ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 14:30;2022-10-13 14:45;2022-10-13;2022-10-13;;Scheduled;;157506;89902248
+37204654;LUCAS;LAERTE DE ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 14:45;2022-10-13 15:00;2022-10-13;2022-10-13;;Scheduled;;157506;89902296
+37212549;MARISE;PEREIRA DA CONCEIÇÃO;CLINIDA DIA;Consulta neurocirurgia;2022-10-13 15:00;2022-10-13 15:15;2022-10-13;2022-10-13;;Scheduled;;157506;89922617
+23850321;MARCOS;ROBERTO DE SOUSA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-10-17 11:00;2022-10-17 11:30;2022-10-14;2022-10-17;;Scheduled;;96277;89976200
+37306881;cirurgia;aacd;Consultório Dr. Felipe Barreto;Tratamento Cirurgico De Hernia Discal Cervical;2022-10-25 07:00;2022-10-25 10:00;2022-10-17;2022-10-23;aacd;WaitingForConfirmation;;95845;90096014
+29392660;JOSÉ CALADO DA SILVA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2022-10-28 09:15;2022-10-28 09:30;2022-10-28;2022-10-28;;Scheduled;;157506;91039978
+37812669;RAFAEL;DA SILVA MOÇO;CLINIDA DIA;Consulta neurocirurgia;2022-10-28 09:30;2022-10-28 09:45;2022-10-28;2022-10-28;;Scheduled;;157506;91040192
+37812704;GISLENE;ASSUNÇAO SENA - TELEMEDICINA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-10-28 09:45;2022-10-28 10:15;2022-10-28;2022-10-28;;Scheduled;;96277;91040306
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-10-28 10:00;2022-10-28 10:15;2022-10-28;2022-10-28;;Scheduled;;157506;91040376
+21371881;LUIZ;GONÇALVES FERREIRA;CLINIDA DIA;Consulta neurocirurgia;2022-10-28 10:15;2022-10-28 10:30;2022-10-28;2022-10-28;;Scheduled;;157506;91040538
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-10-28 10:30;2022-10-28 10:45;2022-10-28;2022-10-28;;Scheduled;;157506;91040607
+38035008;Raquel;Fontana;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-11-04 11:00;2022-11-04 11:30;2022-11-03;2022-11-04;;Scheduled;;96277;91410336
+38211777;ALINE;LUTZ GARCIA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-11-09 10:00;2022-11-09 10:30;2022-11-07;2022-11-09;;ConfirmedByPatient;;96277;91781240
+38545069;MARIA;INES RODRIGUES;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 13:45;2022-11-10 14:00;2022-11-09;2022-11-09;;Scheduled;;157506;91946136
+38545092;SANDRA;OLIVEIRA AMORIM;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 14:00;2022-11-10 14:15;2022-11-09;2022-11-10;;Scheduled;;157506;91946212
+38545116;AMANDA MARIA;LEANDRO DE ANDRADE;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 14:15;2022-11-10 14:30;2022-11-09;2022-11-10;;Scheduled;;157506;91946337
+38545141;THAIS GOMES;DOS SANTOS MENDES;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 14:30;2022-11-10 14:45;2022-11-09;2022-11-10;;Scheduled;;157506;91946400
+38545181;GABRIEL DA;CUNHA ALCANTARA;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 14:45;2022-11-10 15:00;2022-11-09;2022-11-09;;Scheduled;;157506;91946495
+38545203;GILVAN;HERCULANO DE SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 15:00;2022-11-10 15:15;2022-11-09;2022-11-10;;Scheduled;;157506;91946547
+38545241;SILVANA DA;SILVA DE SOUZA;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 15:15;2022-11-10 15:30;2022-11-09;2022-11-10;;Scheduled;;157506;91946642
+38545273;MANUELA DE;JESUS DE OLIVEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 15:30;2022-11-10 15:45;2022-11-09;2022-11-09;;Scheduled;;157506;91946741
+30008561;GENILSON RODRIGUES DE;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2022-11-10 15:45;2022-11-10 16:00;2022-11-09;2022-11-10;;Scheduled;;157506;91946776
+38681365;Jean;Bortolato;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-11-16 09:00;2022-11-16 09:30;2022-11-14;2022-11-16;;CanceledByPatient;;96277;92168879
+38734552;Joy;Marie de Sordi Gabriel;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-11-15 09:30;2022-11-15 10:00;2022-11-14;2022-11-15;;Scheduled;;96277;92218204
+38987252;MARISA;SORRENTINO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-11-29 11:30;2022-11-29 12:00;2022-11-22;2022-11-28;;ConfirmedByPatient;;95845;92775698
+39049768;Carla Urizzi;Lessa;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-12-06 13:00;2022-12-06 13:30;2022-11-23;2022-12-06;;ConfirmedByPatient;;96277;92880950
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 14:30;2022-12-08 14:45;2022-12-07;2022-12-08;;Scheduled;;157506;94194390
+36384037;SONIA MARIA;DE JESUS IZIDORO;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 14:45;2022-12-08 15:00;2022-12-07;2022-12-08;;Scheduled;;157506;94194404
+39807255;SANDRA APARECIDA;PAES RODRIGUES;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 15:00;2022-12-08 15:15;2022-12-07;2022-12-08;;ConfirmedByPatient;;157506;94194480
+36384842;JANE MICHELE;DIOGO AZARIAS;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 15:15;2022-12-08 15:30;2022-12-07;2022-12-08;;ConfirmedByPatient;;157506;94194560
+37204631;PRISCILA;DE AMORIM SCAQUETTI;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 15:30;2022-12-08 15:45;2022-12-07;2022-12-08;;Scheduled;;157506;94194577
+37212549;MARISE;PEREIRA DA CONCEIÇÃO;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 15:45;2022-12-08 16:00;2022-12-07;2022-12-08;;Scheduled;;157506;94194589
+39807321;JOSEFA MAIORINI;DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 16:00;2022-12-08 16:15;2022-12-07;2022-12-08;;Scheduled;;157506;94194639
+35702587;MARIZA;LOUREIRO RODRIGUES;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 16:15;2022-12-08 16:30;2022-12-07;2022-12-08;;Scheduled;;157506;94194680
+39807351;ANA DENISE;DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 16:30;2022-12-08 16:45;2022-12-07;2022-12-08;;Scheduled;;157506;94194716
+39807371;CHARLEZ S;NISZ LOURENÇO;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 16:45;2022-12-08 17:00;2022-12-07;2022-12-08;;Scheduled;;157506;94194766
+39851440;ROSITANIA;RIBEIRO DOS SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-12-08 17:00;2022-12-08 17:15;2022-12-08;2022-12-08;;ConfirmedByPatient;;157506;94229534
+39911442;Sonia Maria de Souza;Carvalho;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2022-12-13 11:00;2022-12-13 11:30;2022-12-12;2022-12-13;;Scheduled;;95845;94358461
+40218716;Rafaela de Andrade;Pereira;Telemedicina Dr. Felipe Barreto;Teleconsulta;2022-12-20 10:00;2022-12-20 10:30;2022-12-19;2022-12-20;;Scheduled;;96277;94793173
+40272948;Maria Tatiane Alves Ruescas;Varges;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-17 10:00;2023-01-17 10:30;2022-12-20;2023-01-17;;WaitingForConfirmation;;95845;94885856
+40282203;Josefa;Ruescas;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-17 10:30;2023-01-17 11:00;2022-12-20;2023-01-17;;WaitingForConfirmation;;95845;94887351
+37812669;RAFAEL;DA SILVA MOÇO;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 13:30;2022-12-22 13:45;2022-12-22;2022-12-22;;Scheduled;;157506;94976350
+40401786;MARLEI;APARECIDA SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 13:45;2022-12-22 14:00;2022-12-22;2022-12-22;;Scheduled;;157506;94976453
+40401802;ANNALY;ALVES LIMA FONTE;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 14:00;2022-12-22 14:15;2022-12-22;2022-12-22;;Scheduled;;157506;94976497
+40401826;ELISEU;NUNES VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 14:15;2022-12-22 14:30;2022-12-22;2022-12-22;;Scheduled;;157506;94976544
+28880242;FRANCINALDO;BARRETO DA SILVA;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 14:30;2022-12-22 14:45;2022-12-22;2022-12-22;;Scheduled;;157506;94976559
+40401856;THIAGO;PEREIRA DIAS;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 14:45;2022-12-22 15:00;2022-12-22;2022-12-22;;Scheduled;;157506;94976600
+40401863;BRUNA;ESPOSITO RIBEIRO;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 15:00;2022-12-22 15:15;2022-12-22;2022-12-22;;Scheduled;;157506;94976654
+40401895;ADEMIR;DE ANDRADE VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 15:15;2022-12-22 15:30;2022-12-22;2022-12-22;;Scheduled;;157506;94976721
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 15:30;2022-12-22 15:45;2022-12-22;2022-12-22;;Scheduled;;157506;94976754
+34196637;Celeodiva;Viana de Lima Vieira;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 15:45;2022-12-22 16:00;2022-12-22;2022-12-22;;Scheduled;;157506;94976766
+40401786;MARLEI;APARECIDA SANTOS;CLINIDA DIA;Consulta neurocirurgia;2022-12-22 13:14;2022-12-22 13:29;2022-12-22;2022-12-22;;Scheduled;;157506;94987925
+13126970;MARIA APARECIDA;LOPES DA SILVA DICIERI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-10 11:05;2023-01-10 11:35;2023-01-09;2023-01-10;;Scheduled;;95845;95845602
+41384108;Márcia Regina;Miniello;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-11 11:25;2023-01-11 11:55;2023-01-10;2023-01-10;"Gislaine Toreli 
+ Eu irei na consulta com os exames da minha mãe, visto que ela está incapacitada de sair. Está acamada por conta da coluna.";CanceledByUser;;95845;95983013
+27463289;MANOEL JOSÉ DA;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-12 12:45;2023-01-12 13:15;2023-01-11;2023-01-12;;Scheduled;;95845;96127855
+31899325;ELZA NASCIMENTO DOS;SANTOS;CLINIDA DIA;Consulta neurocirurgia;2023-01-12 13:15;2023-01-12 13:30;2023-01-11;2023-01-12;;Scheduled;;157506;96127919
+40401895;ADEMIR;DE ANDRADE VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2023-01-12 13:30;2023-01-12 13:45;2023-01-11;2023-01-12;;Scheduled;;157506;96127972
+30011108;ELISIO DOS SANTOS;AMARAL;CLINIDA DIA;Consulta neurocirurgia;2023-01-12 13:45;2023-01-12 14:00;2023-01-11;2023-01-12;;Scheduled;;157506;96128025
+36384842;JANE MICHELE;DIOGO AZARIAS;CLINIDA DIA;Consulta neurocirurgia;2023-01-12 14:00;2023-01-12 14:15;2023-01-11;2023-01-12;;Scheduled;;157506;96128047
+38545116;AMANDA MARIA;LEANDRO DE ANDRADE;CLINIDA DIA;Consulta neurocirurgia;2023-01-12 14:15;2023-01-12 14:30;2023-01-11;2023-01-12;;Scheduled;;157506;96128067
+41459720;DIRCE CONCEIÇÃO;ROMÃO BRASILIO;Consultório Dr. Felipe Barreto;Teleconsulta;2023-01-17 13:00;2023-01-17 13:30;2023-01-11;2023-01-17;;WaitingForConfirmation;;95845;96142130
+41459867;DEBORA;SANTANA DE ARAUJO;Consultório Dr. Felipe Barreto;Teleconsulta;2023-01-17 13:30;2023-01-17 14:00;2023-01-11;2023-01-17;;ConfirmedByPatient;;95845;96142646
+40218716;Rafaela de Andrade;Pereira;Consultório Dr. Felipe Barreto;Teleconsulta;2023-01-17 14:00;2023-01-17 14:30;2023-01-16;2023-01-17;RETORNO DE CONSULTA;Scheduled;;95845;96553235
+41459867;DEBORA;SANTANA DE ARAUJO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-01-24 11:00;2023-01-24 11:30;2023-01-17;2023-01-24;;CanceledByUser;;95845;96696110
+41459720;DIRCE CONCEIÇÃO;ROMÃO BRASILIO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-01-24 11:30;2023-01-24 12:00;2023-01-17;2023-01-24;;CanceledByUser;;95845;96696182
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-24 10:30;2023-01-24 11:00;2023-01-19;2023-01-24;;ConfirmedByPatient;;95845;96859556
+38545141;THAIS GOMES;DOS SANTOS MENDES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-19 13:00;2023-01-19 13:30;2023-01-19;2023-01-19;;Scheduled;;95845;96882720
+30010515;LUZIA;MIQUELINO;CLINIDA DIA;Consulta neurocirurgia;2023-01-19 13:30;2023-01-19 13:45;2023-01-19;2023-01-19;;Scheduled;;157506;96883236
+36385178;IVONE;ZARA PINTO;CLINIDA DIA;Consulta neurocirurgia;2023-01-19 13:45;2023-01-19 14:00;2023-01-19;2023-01-19;;Scheduled;;157506;96883588
+42011917;RODRIGO;LOPES DE ALMEIDA;CLINIDA DIA;Consulta neurocirurgia;2023-01-19 14:00;2023-01-19 14:15;2023-01-19;2023-01-19;;Scheduled;;157506;96918424
+42118903;ELAINE;COSTA GARCIA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-01-24 12:00;2023-01-24 12:30;2023-01-23;2023-01-24;;ConfirmedByAdmin;;95845;97081705
+42136199;Vitor;Aronchi;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-01-26 18:30;2023-01-26 19:00;2023-01-23;2023-01-26;"37a, bancario
+dor lombar caracteristica facetaria 1 ano
+bloqueio lombar";WaitingForConfirmation;;96277;97109909
+42099734;Maisa Coelho;Araújo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-24 10:00;2023-01-24 10:30;2023-01-24;2023-01-24;;CanceledByUser;;95845;97190033
+42099734;Maisa Coelho;Araújo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-01-24 12:30;2023-01-24 13:00;2023-01-24;2023-01-24;;Scheduled;;95845;97190222
+42118903;ELAINE;COSTA GARCIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-02-02 11:00;2023-02-02 11:30;2023-01-30;2023-01-31;;WaitingForConfirmation;;95845;97580730
+42561739;SUSANA;KASUMI MIYA HOPE;Consultório Dr. Felipe Barreto;Teleconsulta;2023-02-02 16:00;2023-02-02 16:30;2023-02-02;2023-02-02;;Scheduled;;95845;97943929
+40282203;Josefa;Ruescas;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-02-09 10:30;2023-02-09 11:00;2023-02-03;2023-02-09;TELEMEDICINA;ConfirmedByPatient;;95845;97999960
+42099734;Maisa Coelho;Araújo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-02-15 11:30;2023-02-15 12:00;2023-02-08;2023-02-15;;WaitingForConfirmation;;95845;98395010
+40282203;Josefa;Ruescas;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-02-09 11:00;2023-02-09 11:30;2023-02-09;2023-02-09;;Scheduled;;96277;98459651
+42915355;SONIA YARA;SENIZE CAVALOTTI VELOSO DOMINGOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-02-16 11:00;2023-02-16 11:30;2023-02-13;2023-02-14;;CanceledByUser;;95845;98634642
+43063718;MEIRE;APARECIDA SILVA;Consultório Dr. Felipe Barreto;Teleconsulta;2023-02-16 13:30;2023-02-16 14:00;2023-02-16;2023-02-16;TELEMEDICINA;Scheduled;;95845;98943345
+30008561;GENILSON RODRIGUES DE;SANTANA;CLINIDA DIA;Consulta neurocirurgia;2023-02-16 14:00;2023-02-16 14:15;2023-02-16;2023-02-16;;Scheduled;;157506;98952800
+36385178;IVONE;ZARA PINTO;CLINIDA DIA;Consulta neurocirurgia;2023-02-16 14:15;2023-02-16 14:30;2023-02-16;2023-02-16;;Scheduled;;157506;98952816
+27940878;LEANDRA RODRIGUES;VIEIRA;CLINIDA DIA;Consulta neurocirurgia;2023-02-16 14:30;2023-02-16 14:45;2023-02-16;2023-02-16;;Scheduled;;157506;98952828
+43069239;MARIA ISABEL;CARVALHO SILVA;CLINIDA DIA;Consulta neurocirurgia;2023-02-16 14:45;2023-02-16 15:00;2023-02-16;2023-02-16;;Scheduled;;157506;98952873
+43162043;Roseli Aparecida;Guerrero;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-02-27 11:00;2023-02-27 11:30;2023-02-22;2023-02-25;;WaitingForConfirmation;;95845;99116006
+43303597;Selma Gamba Carvalho;Longo;Consultório Dr. Felipe Barreto;Teleconsulta;2023-03-01 14:00;2023-03-01 14:30;2023-02-25;2023-03-01;;WaitingForConfirmation;;95845;99358151
+43430032;Ana Lucia;Valença;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-07 16:00;2023-03-07 16:30;2023-02-28;2023-03-06;;ConfirmedByPatient;;95845;99625453
+43430032;Ana Lucia;Valença;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-04-06 15:00;2023-04-06 15:30;2023-03-07;2023-04-06;;CanceledByUser;;95845;100289366
+43778903;SANDRA REGINA;CARBO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-03-16 10:00;2023-03-16 10:30;2023-03-08;2023-03-13;;CanceledByUser;;95845;100338087
+43785851;GIULIANA;LIMA DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-10 11:00;2023-03-10 11:30;2023-03-08;2023-03-09;;CanceledByUser;;95845;100361852
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-23 11:30;2023-03-23 12:00;2023-03-13;2023-03-24;;CanceledByUser;;95845;100694624
+30010559;RICARDO ANTONIO;MARTINS;CLINIDA DIA;Consulta neurocirurgia;2023-03-16 14:00;2023-03-16 14:15;2023-03-16;2023-03-16;;Scheduled;;157506;100918694
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;CLINIDA DIA;Consulta neurocirurgia;2023-03-16 14:15;2023-03-16 14:30;2023-03-16;2023-03-16;;Scheduled;;157506;100918724
+29392660;JOSÉ CALADO DA SILVA;FILHO;CLINIDA DIA;Consulta neurocirurgia;2023-03-16 14:30;2023-03-16 14:45;2023-03-16;2023-03-16;;Scheduled;;157506;100918760
+33169899;MARTA;REGINA DEVECHI;CLINIDA DIA;Consulta neurocirurgia;2023-03-16 14:45;2023-03-16 15:00;2023-03-16;2023-03-16;;Scheduled;;157506;100918814
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-17 11:00;2023-03-17 11:30;2023-03-16;2023-03-18;Tem prevent senior;Scheduled;;95845;100989235
+44126405;EDNA MARA;AMORIM ROSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-17 11:45;2023-03-17 12:15;2023-03-17;2023-03-17;"56 ANOS, ENFERMEIRA
+TONTURA DIA 15/03 POR 2 DIAS, HÁ 1 DIA APRESENTOU NOVO EPISÓDIO DE TONTURA";Scheduled;;95845;101081017
+44126405;EDNA MARA;AMORIM ROSA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-03-17 11:30;2023-03-17 12:00;2023-03-17;2023-03-17;;Scheduled;;96277;101081369
+44190111;Sueli;Fodra;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-03-20 13:30;2023-03-20 14:00;2023-03-20;2023-03-20;"Lucas Fodra 
+ Após tomografia, foi feito um laudo por um neurologista solicitando intervenção cirúrgica urgente para remoção de cisto aracnóide na cabeça. Posteriomente foi feita ressonância magnética com contraste para confirmação do caso, temos os resul";Scheduled;;96277;101210717
+44462799;VERONICA;DE OLIVEIRA DAVILA PINTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-03-24 16:00;2023-03-24 16:30;2023-03-23;2023-03-25;;Scheduled;;95845;101547733
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Teleconsulta;2023-04-10 14:00;2023-04-10 14:30;2023-03-27;2023-04-11;consulta com desconto;ConfirmedByPatient;;95845;101763703
+33169659;ELAINE;CRISTINA RIBEIRO;Consultório Dr. Felipe Barreto;Microcirurgia Da Hernia Discal Lombar;2023-03-30 07:00;2023-03-30 08:30;2023-03-29;2023-03-29;;Scheduled;;95845;101940864
+21371881;LUIZ;GONÇALVES FERREIRA;Personal Ortopedia;Consulta neurocirurgia;2023-04-11 19:00;2023-04-11 19:30;2023-03-31;2023-04-11;;CanceledByUser;;146896;102183646
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;Consultório Dr. Felipe Barreto;Tratamento Cirurgico De Hernia Discal Cervical;2023-05-02 19:00;2023-05-02 19:30;2023-04-04;2023-05-03;;CanceledByUser;;95845;102433880
+45341328;Marcelo;Dias Rodrigues;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-04-06 14:00;2023-04-06 14:30;2023-04-05;2023-04-06;;Scheduled;;95845;102536948
+44462799;VERONICA;DE OLIVEIRA DAVILA PINTO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-04-10 15:00;2023-04-10 15:30;2023-04-06;2023-04-11;;WaitingForConfirmation;;95845;102652082
+45431623;Adriana Cristina;Dias;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-04-10 16:00;2023-04-10 16:30;2023-04-10;2023-04-11;;Scheduled;;95845;102722182
+45462029;RAFAEL;VESPASIANO DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-04-10 15:30;2023-04-10 16:00;2023-04-10;2023-04-11;;Scheduled;;95845;102777395
+33169659;ELAINE;CRISTINA RIBEIRO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-05-02 10:00;2023-05-02 10:30;2023-04-18;2023-05-02;;WaitingForConfirmation;;95845;103494759
+45998415;ILZA;SILVA DOS REIS;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-05-02 11:00;2023-05-02 11:30;2023-04-20;2023-05-02;CONVENIO PREVENT;WaitingForConfirmation;;95845;103645579
+46121516;JESSIKA;VELLASCO MONTEIRO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-05-02 10:30;2023-05-02 11:00;2023-04-24;2023-05-03;TEM NOTREDAME;WaitingForConfirmation;;95845;103856455
+46508165;CARLOS VELLOSO;DE LIMA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-05-04 10:00;2023-05-04 10:30;2023-04-28;2023-05-05;;WaitingForConfirmation;;95845;104291504
+46589280;MARCIA;NEVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-05-04 12:00;2023-05-04 12:30;2023-05-02;2023-05-03;"Hérnia de disco, bico de papagaio.
+Necessito de um laudo normal com o CID para contratação em novo trabalho.";CanceledByPatient;;95845;104463175
+10733680;RODRIGO PIRES;DIAS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-05-09 11:00;2023-05-09 11:30;2023-05-03;2023-05-10;;ConfirmedByPatient;;95845;104517504
+46933334;JUCICLEA;LIMA FREIRE DE SÁ;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-05-18 10:00;2023-05-18 10:30;2023-05-10;2023-05-19;;WaitingForConfirmation;;95845;105097856
+47002821;JULIETA;BATISTA MAKIUTI;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-05-23 11:30;2023-05-23 12:00;2023-05-11;2023-05-24;;WaitingForConfirmation;;95845;105231912
+47006486;ELIANA;REGINA BEZERRA DE SANTANA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-05-18 11:00;2023-05-18 11:30;2023-05-11;2023-05-19;;WaitingForConfirmation;;95845;105241623
+25974396;CLEONICE;LOPES MAGALHAES;Consultório Dr. Felipe Barreto;Tratamento Cirurgico De Hernia Discal Cervical;2023-06-06 16:30;2023-06-06 17:30;2023-05-22;2023-06-04;;WaitingForConfirmation;;95845;106015339
+45998415;ILZA;SILVA DOS REIS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-06-02 10:30;2023-06-02 11:00;2023-05-26;2023-06-03;;WaitingForConfirmation;;95845;106441770
+48366555;JOSE RUBENS DIAS;FREITAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-06-19 11:00;2023-06-19 11:30;2023-06-05;2023-06-16;;CanceledByUser;;95845;107067733
+49712549;Eduardo;Gonçalves de Azevedo;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-06-26 14:30;2023-06-26 15:00;2023-06-26;2023-06-26;"Eduardo Gonçalves de Azevedo 
+ Hérnia de disco cervical, muita dor nos últimos 7 dias com dificuldade em ficar sentado";Scheduled;;96277;108647410
+49716833;Eduardo;Azevedo;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-06-26 15:30;2023-06-26 16:00;2023-06-26;2023-06-26;Hérnia de disco cervical;CanceledByPatient;;96277;108658406
+50247582;MARCOS JOSE DA;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-07-06 11:00;2023-07-06 11:30;2023-07-04;2023-07-06;;ConfirmedByAdmin;;95845;109381713
+50282636;Mariana de Oliveira;Muffato Rodriguess;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-07-04 12:15;2023-07-04 12:45;2023-07-04;2023-07-04;;Scheduled;;95845;109406958
+50773087;ZENAIDE;DA COSTA ALMEIDA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-07-12 10:30;2023-07-12 11:00;2023-07-10;2023-07-13;;WaitingForConfirmation;;95845;109934571
+30011068;SOLANGE DA;CUNHA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-07-12 10:00;2023-07-12 10:30;2023-07-12;2023-07-13;;Scheduled;;95845;110093148
+50921635;HAROLDO;TOMAZ;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-07-24 14:00;2023-07-24 14:30;2023-07-13;2023-07-20;;CanceledByUser;;95845;110205649
+51616139;GUILHERME PIMENTA;GAIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-01 10:00;2023-08-01 10:45;2023-07-24;2023-07-31;TEM SULAMERICA NÃO COBRADO CONSULTA;CanceledByUser;;95845;110957774
+51897241;CAMILA;SCHENFERT MACEDO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-08-02 10:30;2023-08-02 11:00;2023-07-31;2023-08-01;;CanceledByUser;;95845;111500682
+52153043;Walter;Viggiano Junior;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-03 11:00;2023-08-03 11:30;2023-08-02;2023-08-03;"Rose Mary Viggiano 
+ Temos em mãos ressonância feitas semana passada eletromiografia, gostaríamos de um parecer do Doutor.Meu telefone de contato é whatsapp";Scheduled;;95845;111753135
+52248217;Carlos Henrique;Paulo Da Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-08-08 14:00;2023-08-08 14:30;2023-08-03;2023-08-08;;WaitingForConfirmation;;96277;111937418
+51616139;GUILHERME PIMENTA;GAIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-08 15:00;2023-08-08 15:30;2023-08-07;2023-08-08;;Scheduled;;95845;112156585
+52552200;MARGARETE;MEIRELES LUIZ;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-15 15:00;2023-08-15 15:30;2023-08-09;2023-08-15;;WaitingForConfirmation;;95845;112422801
+52665755;SAMUEL;BARBOSA SEVERINO;Consultório Dr. Felipe Barreto;Teleconsulta;2023-08-15 14:30;2023-08-15 15:00;2023-08-11;2023-08-15;;ConfirmedByPatient;;95845;112634570
+45431623;Adriana Cristina;Dias;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-21 11:30;2023-08-21 12:00;2023-08-16;2023-08-22;;WaitingForConfirmation;;95845;113035449
+53020537;VALDEMIR;MENDES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-21 11:00;2023-08-21 11:30;2023-08-16;2023-08-21;TEM PLANO DE SAUDE INTERMÉDICA;CanceledByUser;;95845;113040746
+53071316;COSME;DAMIÃO DE SOUSA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-08-21 12:00;2023-08-21 12:30;2023-08-17;2023-08-22;UNIMED;WaitingForConfirmation;;95845;113124041
+53020537;VALDEMIR;MENDES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-08-23 12:00;2023-08-23 12:30;2023-08-21;2023-08-24;;WaitingForConfirmation;;95845;113334287
+52665755;SAMUEL;BARBOSA SEVERINO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-08-31 11:00;2023-08-31 11:30;2023-08-28;2023-09-01;;ConfirmedByPatient;;95845;114018312
+54019353;IRIS;ALVES DA PAZ BERNARDES;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-09-05 11:30;2023-09-05 12:00;2023-08-29;2023-09-06;UNIMED;CanceledByUser;;95845;114192636
+54614952;FATIMA RODRIGUES;SILVÉRIO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-09-06 10:00;2023-09-06 10:30;2023-09-05;2023-09-07;TEM PLANO BLUE MED;Scheduled;;95845;115012667
+54735620;CRISTIANE;CARRARO LOURENÇO GADELHA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-09-11 16:00;2023-09-11 16:30;2023-09-07;2023-09-11;;ConfirmedByPatient;;95845;115192615
+52248217;Carlos Henrique;Paulo Da Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-09-12 11:00;2023-09-12 11:30;2023-09-11;2023-09-13;TEM BRADESCO NÃO COBRADO A CONSULTA;Scheduled;;96277;115295469
+54873421;ANDERSON;GRIECCO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-09-14 14:00;2023-09-14 14:30;2023-09-12;2023-09-14;TEM UNIMED;WaitingForConfirmation;;95845;115493550
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-09-14 14:30;2023-09-14 15:00;2023-09-13;2023-09-15;;Scheduled;;96277;115609428
+52248217;Carlos Henrique;Paulo Da Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-09-20 13:00;2023-09-20 13:30;2023-09-15;2023-09-20;TEM BRADESCO;WaitingForConfirmation;;96277;115836493
+54873421;ANDERSON;GRIECCO;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-09-27 14:00;2023-09-27 14:30;2023-09-22;2023-09-27;RETORNO DE EXAMES;Scheduled;;96277;116533707
+55817584;Mariza;Gil Paranhos da Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-05 14:00;2023-10-05 14:30;2023-09-27;2023-10-05;;ConfirmedByPatient;;95845;116936006
+55822765;SIMONE REGINA TRISTÃO;SARTORI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-09-28 10:30;2023-09-28 11:00;2023-09-27;2023-09-29;TEM UNIMED;Scheduled;;95845;116948343
+55828288;LUZIA DE FATIMA;MACEDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-09-28 11:00;2023-09-28 11:30;2023-09-27;2023-09-28;;Scheduled;;95845;116959802
+55879539;Simone;Gazola;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-09-28 11:30;2023-09-28 12:00;2023-09-27;2023-09-28;;Scheduled;;96277;117055315
+55927046;LUCIO;FABIO AMARAL PAES;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-10-02 12:00;2023-10-02 12:30;2023-09-28;2023-10-03;PLANO AMIL - MEDIAL EXECUTIVO;CanceledByUser;;95845;117103532
+54873421;ANDERSON;GRIECCO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-10-02 11:30;2023-10-02 12:00;2023-09-28;2023-10-02;;WaitingForConfirmation;;95845;117157544
+56009802;MARIA;FERNANDA ESCALFONI;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-10-02 11:00;2023-10-02 11:30;2023-09-28;2023-09-28;;Scheduled;;95845;117160109
+56218044;MARIA;FILOMENA MORAES;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-10-05 15:00;2023-10-05 15:30;2023-09-29;2023-10-06;INTERMEDICA SMART 300;ConfirmedByPatient;;95845;117306133
+53071316;COSME;DAMIÃO DE SOUSA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-10-05 14:30;2023-10-05 15:00;2023-10-03;2023-10-06;UNIMED;WaitingForConfirmation;;95845;117574694
+46508165;CARLOS VELLOSO;DE LIMA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-10-10 10:30;2023-10-10 11:00;2023-10-03;2023-10-10;;ConfirmedByPatient;;95845;117577654
+56625389;CARLOS;JOSE DUARTE;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-10-17 12:00;2023-10-17 12:30;2023-10-04;2023-10-18;PLANO AMIL;CanceledByUser;;95845;117671129
+55927046;LUCIO;FABIO AMARAL PAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-10 11:30;2023-10-10 12:00;2023-10-05;2023-10-09;tem AMIL;CanceledByUser;;95845;117771433
+30011068;SOLANGE DA;CUNHA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-10-10 10:00;2023-10-10 10:30;2023-10-09;2023-10-11;p.o;Scheduled;;95845;118426439
+56945904;ELSON ALVES;MENDES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-17 10:00;2023-10-17 10:30;2023-10-09;2023-10-18;TEM PLANO AMIL;CanceledByPatient;;95845;118427799
+57019918;JOÃO RODRIGO DA SILVA;LOURENÇO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-17 11:30;2023-10-17 12:00;2023-10-10;2023-10-18;;CanceledByUser;;95845;118564966
+57150328;Lupiciano Costa;Teixeira;Consultório Dr. Felipe Barreto;Teleconsulta;2023-10-17 10:30;2023-10-17 11:00;2023-10-13;2023-10-18;"Convênio Unimed ";CanceledByPatient;;95845;118778172
+57161057;Giovanna Cassu;Frasneli;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-17 16:00;2023-10-17 16:30;2023-10-13;2023-10-18;Convênio Amil;ConfirmedByPatient;;95845;118797718
+57397507;DIVANI;ROCHA SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-24 10:00;2023-10-24 10:30;2023-10-18;2023-10-23;;CanceledByUser;;95845;119163575
+57466882;LUIZ EDUARDO;BARRETO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-10-24 11:00;2023-10-24 11:30;2023-10-19;2023-10-25;TEM BRADESCO;CanceledByUser;;95845;119310542
+57656060;Douglas;Martins da Silva;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2023-10-24 11:30;2023-10-24 12:00;2023-10-23;2023-10-24;;Scheduled;;95845;119610956
+57779490;CLAUDIA APARECIDA DOS SANTOS;JESUS;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-10-25 10:30;2023-10-25 11:00;2023-10-24;2023-10-26;SULAMERICA;Scheduled;;96277;119802978
+58096769;LILIAN;CILSE DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-01 11:00;2023-11-01 11:30;2023-10-27;2023-11-02;BRADESCO SAUDE;ConfirmedByPatient;;95845;120126457
+57397507;DIVANI;ROCHA SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-06 10:30;2023-11-06 11:00;2023-11-01;2023-11-07;;CanceledByUser;;95845;120517136
+58567538;WANDER MARCELO;MORATELLI;Telemedicina Dr. Felipe Barreto;Teleconsulta;2023-11-06 13:30;2023-11-06 14:00;2023-11-06;2023-11-06;;Scheduled;;96277;120755829
+58574412;Isis Fabiana Costa Silva;Santos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-09 16:00;2023-11-09 16:15;2023-11-06;2023-11-10;TEM BRADESCO;ConfirmedByPatient;;95845;120767329
+57397507;DIVANI;ROCHA SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-07 11:00;2023-11-07 11:30;2023-11-06;2023-11-08;;Scheduled;;95845;120809094
+58598528;WANDERLEY;DA ROCHA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 09:00;2023-11-08 09:30;2023-11-06;2023-11-06;;CanceledByUser;;95845;120819142
+58623957;Karina Franco;Cardoso;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-09 15:00;2023-11-09 15:30;2023-11-07;2023-11-10;;ConfirmedByPatient;;95845;120889841
+58638337;JOEL;ROQUE VERICIMO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 14:00;2023-11-08 14:15;2023-11-07;2023-11-08;;Scheduled;;95845;120928823
+58643215;LUCIANA;DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 13:15;2023-11-08 13:30;2023-11-07;2023-11-08;;Scheduled;;95845;120931009
+58648256;EDSON;LOPES GENNARI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 16:00;2023-11-08 16:30;2023-11-07;2023-11-07;;Scheduled;;95845;120933786
+58649795;PRICILA;CAMPOS SANTIAGO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 16:30;2023-11-08 17:00;2023-11-07;2023-11-07;;Scheduled;;95845;120938315
+58655078;EMERSON;MIRANDA DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 13:00;2023-11-08 13:15;2023-11-07;2023-11-07;;Scheduled;;95845;120944094
+58655321;TANIA;GOMES DA CUNHA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 13:30;2023-11-08 13:45;2023-11-07;2023-11-07;;Scheduled;;95845;120944751
+58655448;CAROLINE;ALVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 13:45;2023-11-08 14:00;2023-11-07;2023-11-07;;Scheduled;;95845;120945072
+58655594;NIVALDO;CARDIM;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 14:15;2023-11-08 14:30;2023-11-07;2023-11-08;;Scheduled;;95845;120945395
+58655895;GABRIELA;APARECIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 14:30;2023-11-08 15:00;2023-11-07;2023-11-08;;Scheduled;;95845;120946154
+58655965;GABRIEL;RICARDO  DE MORAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 15:00;2023-11-08 15:30;2023-11-07;2023-11-07;;Scheduled;;95845;120946327
+58655965;GABRIEL;RICARDO  DE MORAES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-08 15:00;2023-11-08 15:30;2023-11-07;2023-11-07;;CanceledByUser;;95845;120946351
+58665974;WAGNER;GUIMARAES CALDERONI;Consultório Dr. Felipe Barreto;Teleconsulta;2023-11-09 11:00;2023-11-09 11:30;2023-11-07;2023-11-09;;CanceledByUser;;95845;120963886
+58700480;Divani;Rocha de Souza;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-16 11:30;2023-11-16 12:00;2023-11-08;2023-11-16;Mostrar o laudo da ressonância da lombar esquerda;WaitingForConfirmation;;95845;121027426
+58712877;RICARDO;Habib Chahade;Consultório Dr. Felipe Barreto;Teleconsulta;2023-11-09 14:00;2023-11-09 14:30;2023-11-08;2023-11-10;;Scheduled;;95845;121056229
+58757145;GUILHERME;CALCE DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-09 14:30;2023-11-09 15:00;2023-11-08;2023-11-10;TEM BRADESCO;CanceledByUser;;95845;121098460
+58810716;FERNANDA CORREA PIVA;TAKEDA;Consultório Dr. Felipe Barreto;Teleconsulta;2023-11-09 11:00;2023-11-09 11:30;2023-11-09;2023-11-10;TEM AMIL;Scheduled;;95845;121176488
+58665974;WAGNER;GUIMARAES CALDERONI;Consultório Dr. Felipe Barreto;Teleconsulta;2023-11-13 11:00;2023-11-13 11:30;2023-11-10;2023-11-13;;ConfirmedByPatient;;95845;121319673
+58574412;Isis Fabiana Costa Silva;Santos;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-11-30 12:30;2023-11-30 13:00;2023-11-10;2023-12-01;;ConfirmedByPatient;;95845;121362290
+58567538;WANDER MARCELO;MORATELLI;Consultório Dr. Felipe Barreto;Teleconsulta;2023-11-13 12:00;2023-11-13 12:30;2023-11-13;2023-11-14;;Scheduled;;95845;121445859
+30011068;SOLANGE DA;CUNHA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-11-16 11:00;2023-11-16 11:30;2023-11-14;2023-11-17;;WaitingForConfirmation;;95845;121645657
+58096769;LILIAN;CILSE DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-11-21 10:30;2023-11-21 11:00;2023-11-16;2023-11-30;;ConfirmedByPatient;;95845;121846681
+57656060;Douglas;Martins da Silva;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2023-11-30 11:30;2023-11-30 12:00;2023-11-27;2023-12-01;;ConfirmedByPatient;;95845;122850651
+60686282;Ivani de Carvalho Tavares;De Oliveira;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2023-12-07 11:00;2023-12-07 11:30;2023-12-05;2023-12-08;;ConfirmedByPatient;;95845;123756019
+61706647;silvia;regina ferreira palmeira;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-01-05 15:00;2024-01-05 15:30;2023-12-15;2024-01-06;;CanceledByUser;;95845;124775463
+35702491;NEUSA;HELENA VIEIRA DE SOUSA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-01-03 10:30;2024-01-03 11:00;2023-12-18;2024-01-04;;WaitingForConfirmation;;95845;124892414
+62075855;Lucas Gabriel;Soares Sebastião;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-03 11:00;2024-01-03 11:30;2023-12-26;2024-01-02;"Jamili Freitas 
+ ";CanceledByUser;;95845;125339780
+60686282;Ivani de Carvalho Tavares;De Oliveira;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-03 11:30;2024-01-03 12:00;2023-12-27;2024-01-03;;WaitingForConfirmation;;95845;125424970
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-03 12:00;2024-01-03 12:30;2024-01-03;2024-01-03;CPF 291.854828-62 / PLANO AMIL FACIL S60 SP / 077859405;Scheduled;;95845;125694193
+62345969;EDGAR;SHIZUO YOSHIOKA;Consultório Dr. Felipe Barreto;Biopsia;2024-01-04 14:00;2024-01-04 14:30;2024-01-03;2024-01-04;"EDGAR SHIZUO YOSHIOKA
+CARE PLUS MASTER I
+214770011801
+CPF 056.364.948-82
+DN: 01/10/66";Scheduled;;95845;125764791
+62431368;EVELYN;CRISTINA BARRETO SIMOES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-09 14:00;2024-01-09 14:30;2024-01-05;2024-01-10;;CanceledByUser;;95845;125942542
+38211777;ALINE;LUTZ GARCIA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-01-17 14:00;2024-01-17 14:30;2024-01-09;2024-01-18;TEM SULAMERICA;Scheduled;;96277;126256412
+62589112;AZARIAS;ANDRE DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-10 16:30;2024-01-10 17:00;2024-01-09;2024-01-11;;Scheduled;;95845;126273767
+62634726;RENATA;ZARIELE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-10 16:00;2024-01-10 16:30;2024-01-10;2024-01-11;;Scheduled;;95845;126388662
+62721719;AMAURY;JOSE TEIXEIRA NIGRO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-01-24 15:30;2024-01-24 16:00;2024-01-11;2024-01-25;RETIRAR PONTOS 2 SEMANAS P.O;ConfirmedByPatient;;95845;126582806
+57779490;CLAUDIA APARECIDA DOS SANTOS;JESUS;Consultório Dr. Felipe Barreto;Teleconsulta;2024-01-17 15:30;2024-01-17 16:00;2024-01-15;2024-01-18;RETORNO DE EXAMES, TEM SULAMERICA;ConfirmedByPatient;;95845;126771705
+62810807;Camila;Rossi;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-01-15 12:00;2024-01-15 12:30;2024-01-15;2024-01-15;"Olá! Confirmado hoje?
+OK PAGO POR PIX";Scheduled;;96277;126782039
+62832633;Irene;Coimbra Jacintho;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-17 14:30;2024-01-17 15:00;2024-01-15;2024-01-18;;WaitingForConfirmation;;95845;126838235
+58096769;LILIAN;CILSE DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-30 14:00;2024-01-30 14:30;2024-01-16;2024-01-31;RETORNON POS OPERATÓRIO;ConfirmedByPatient;;95845;126982986
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-22 11:00;2024-01-22 11:30;2024-01-19;2024-01-23;"Tem Unimed indicação instrumentador Rubens
+RG 596011787
+MÃE ANA PAULA";WaitingForConfirmation;;95845;127378342
+63466078;FAUSTO;KIYOSHI MORIKAWA;Consultório Dr. Felipe Barreto;Teleconsulta;2024-01-24 11:00;2024-01-24 11:30;2024-01-22;2024-01-25;;ConfirmedByPatient;;95845;127518830
+63487156;MARCELO;MARTINS DE SOUZA NUNES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-01-24 16:00;2024-01-24 16:30;2024-01-22;2024-01-25;TEM PLANO INTERMEDICA , INDICAÇÃO RUBENS;ConfirmedByPatient;;95845;127567490
+64947128;SANDRA;LOPRETO AVELAR;Consultório Dr. Felipe Barreto;Teleconsulta;2024-02-02 16:00;2024-02-02 16:30;2024-02-02;2024-02-03;;Scheduled;;95845;129074409
+65247869;MARIA ISABEL;MENDONÇA DE ALMEIDA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-02-08 14:00;2024-02-08 14:30;2024-02-05;2024-02-08;TEM SULAMERICA E PASSOU NA CLINICA STIVANIN;WaitingForConfirmation;;95845;129324311
+64947128;SANDRA;LOPRETO AVELAR;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-02-08 10:30;2024-02-08 11:00;2024-02-06;2024-02-08;;ConfirmedByPatient;;95845;129466924
+65315473;HUGO;DE BARROS SOARES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-02-08 15:00;2024-02-08 15:30;2024-02-06;2024-02-09;TEM PLANO NOTREDAME PREMIUM 800;CanceledByUser;;95845;129484667
+62810807;Camila;Rossi;Consultório Dr. Felipe Barreto;Teleconsulta;2024-02-07 17:30;2024-02-07 18:00;2024-02-07;2024-02-07;;Scheduled;;95845;129591102
+65396676;MARLENE MARIA;DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-02-08 15:30;2024-02-08 16:00;2024-02-07;2024-02-08;"TEM BRADESCO 
+CPF 144.766.298-90
+";Scheduled;;95845;129616869
+65397933;MARIA ODETE;MARTINS DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-02-08 16:00;2024-02-08 16:30;2024-02-07;2024-02-08;"TEM SULAMERICA 
+CPF 306.446.288-12";Scheduled;;95845;129620185
+65737789;LUZIA;NORBERTA DE SOUZA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-05 11:00;2024-03-05 11:30;2024-02-16;2024-03-06;;CanceledByUser;;95845;130326301
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-05 10:00;2024-03-05 10:30;2024-02-20;2024-03-06;;ConfirmedByPatient;;95845;130613244
+58096769;LILIAN;CILSE DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-05 10:30;2024-03-05 11:00;2024-02-21;2024-03-06;;WaitingForConfirmation;;95845;130740604
+65315473;HUGO;DE BARROS SOARES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-05 11:30;2024-03-05 12:00;2024-02-21;2024-03-04;;CanceledByUser;;95845;130741619
+66275347;LENITA;BORGES MACHADO DE SANTANA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-05 12:00;2024-03-05 12:30;2024-02-26;2024-03-06;"AMIL FACIL 60
+DATA DE NASCIMENTO 01/06/66
+CPF 463841546
+CARTERINHA 083791292
+ ";WaitingForConfirmation;;95845;131259702
+62345969;EDGAR;SHIZUO YOSHIOKA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-03-06 10:00;2024-03-06 10:30;2024-02-27;2024-03-07;;WaitingForConfirmation;;95845;131351020
+55828288;LUZIA DE FATIMA;MACEDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-06 11:00;2024-03-06 11:30;2024-02-29;2024-03-06;;WaitingForConfirmation;;95845;131733692
+66862653;WALTER JOSE;GOLÇALVES FILHO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-14 10:30;2024-03-14 11:00;2024-03-05;2024-03-15;"PLANO BRADESCO ";CanceledByUser;;95845;132260907
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-19 11:00;2024-03-19 11:30;2024-03-18;2024-03-20;;Scheduled;;95845;133656384
+67856641;DIVA;MARIA DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-21 10:00;2024-03-21 10:30;2024-03-20;2024-03-22;;Scheduled;;95845;133926252
+67860725;DACIO;MAGALHAES FARIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-21 11:00;2024-03-21 11:30;2024-03-20;2024-03-22;;CanceledByUser;;95845;133936603
+67861966;DACIO;MAGALHÃES DE FARIA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-03-26 11:00;2024-03-26 11:30;2024-03-20;2024-03-27;;CanceledByUser;;95845;133939817
+67867185;JANAINA;DE BARROS MENDES;Consultório Dr. Felipe Barreto;Teleconsulta;2024-03-21 10:30;2024-03-21 11:00;2024-03-20;2024-03-21;TEM BRADESCO EFETIVO IV;Scheduled;;95845;133953155
+68240038;MANUELA;CANDIDO MARCONDES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-03-26 11:00;2024-03-26 11:30;2024-03-25;2024-03-27;ATENDIMENTO PARA ACOMPANHAMENTO P.O;Scheduled;;95845;134297257
+68575705;CLAUDIA;LUTZ;Consultório Dr. Felipe Barreto;Teleconsulta;2024-04-02 15:00;2024-04-02 15:30;2024-03-28;2024-04-03;;ConfirmedByPatient;;95845;134739352
+38211777;ALINE;LUTZ GARCIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-02 15:30;2024-04-02 16:00;2024-04-02;2024-04-03;;Scheduled;;95845;135010122
+69339387;ERICK;BORGES ARAUJO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-04 14:00;2024-04-04 14:30;2024-04-04;2024-04-04;;Scheduled;;95845;135453233
+62589112;AZARIAS;ANDRE DE SOUZA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-04-11 14:00;2024-04-11 14:30;2024-04-04;2024-04-05;;CanceledByUser;;95845;135496289
+69446996;Benedita;Oliveira Da Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-09 11:00;2024-04-09 11:30;2024-04-05;2024-04-10;;ConfirmedByPatient;;95845;135585150
+69484115;Andre;Luis Cassemiro;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-10 10:00;2024-04-10 10:30;2024-04-07;2024-04-10;"Alex Cassemiro 
+ Paciente apresenta dores fortes de cabeça na região atrás dos olhos. Na ressonância foi identificado excesso de líquido na região esquerda do encéfalo. Segundo a neurologista é  preciso avaliar drenagem ou cirurgia mais invasiva.";ConfirmedByPatient;;95845;135671570
+69800824;ANDRE;DE AGUIAR TERTULIANO DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-11 11:00;2024-04-11 11:30;2024-04-10;2024-04-12;"PLANO BRADESCO ";Scheduled;;95845;136059397
+69946113;JOANA;D'ARC DA SILVA FREIRE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-23 11:00;2024-04-23 11:30;2024-04-11;2024-04-24;;ConfirmedByPatient;;95845;136201785
+69484115;Andre;Luis Cassemiro;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-05-08 10:30;2024-05-08 11:00;2024-04-12;2024-05-08;"Alex Cassemiro 
+ ";ConfirmedByPatient;;95845;136227948
+67856641;DIVA;MARIA DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-04-18 14:00;2024-04-18 14:30;2024-04-15;2024-04-19;;ConfirmedByPatient;;95845;136407468
+70237617;FRANCISCO JOSE;PEREIRA DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-18 14:30;2024-04-18 15:00;2024-04-16;2024-04-19;TEM PLANO NOTREDAME EXECUTIVO, NÃO COBRADO CONSULTA;WaitingForConfirmation;;95845;136562546
+70257041;JOSE;CARLOS DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-17 10:30;2024-04-17 11:00;2024-04-16;2024-04-18;;Scheduled;;95845;136606883
+70429947;MARCELO;RUIZ LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-23 10:30;2024-04-23 11:00;2024-04-19;2024-04-24;;ConfirmedByPatient;;95845;136931465
+70523532;GESSICA;SANTANA PARDIM NUNES;Consultório Dr. Felipe Barreto;Teleconsulta;2024-04-23 11:30;2024-04-23 12:00;2024-04-22;2024-04-24;"TEM PORTO SEGURO
+BRONZE IX EMPRESARIAL COLET";CanceledByUser;;95845;137150893
+70524984;Lucas;Barros;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-23 10:00;2024-04-23 10:30;2024-04-22;2024-04-22;;CanceledByUser;;95845;137154414
+70555607;DIEGO;SERRES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-04-25 11:00;2024-04-25 11:30;2024-04-23;2024-04-25;TEM AMIL S60;ConfirmedByPatient;;95845;137224815
+55828288;LUZIA DE FATIMA;MACEDO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-05-02 11:00;2024-05-02 11:30;2024-04-29;2024-05-01;;WaitingForConfirmation;;95845;138143929
+71653108;MARIA APARECIDA;MARTINI BAGAROLLO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-05-07 14:00;2024-05-07 14:30;2024-05-02;2024-05-08;TEM PREVENT SENIOR;CanceledByUser;;95845;138474339
+71753171;Ricardo Alexandre;da Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-05-16 10:30;2024-05-16 11:00;2024-05-03;2024-05-16;;ConfirmedByPatient;;95845;138655337
+68575705;CLAUDIA;LUTZ;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-05-14 11:00;2024-05-14 11:30;2024-05-07;2024-05-15;;WaitingForConfirmation;;95845;138913976
+71879062;Raimundo;Jackson Reis Cirino;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-05-13 13:00;2024-05-13 13:30;2024-05-07;2024-05-13;"Andreza Cirino 
+ ";WaitingForConfirmation;;96277;138947256
+69946113;JOANA;D'ARC DA SILVA FREIRE;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-05-16 11:00;2024-05-16 11:30;2024-05-14;2024-05-16;;WaitingForConfirmation;;95845;139911793
+42099734;Maisa Coelho;Araújo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-05-28 11:00;2024-05-28 11:30;2024-05-15;2024-05-29;;ConfirmedByPatient;;95845;139992063
+73068365;JOICE;PONTES CASTILHEIRO;Consultório Dr. Felipe Barreto;Teleconsulta;2024-05-15 17:00;2024-05-15 17:30;2024-05-15;2024-05-16;TEM NOTREDAME;Scheduled;;95845;140112956
+73159815;SUELI;DE MENEZES GARCIA MELCHIORI;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-06-06 11:00;2024-06-06 11:30;2024-05-16;2024-06-07;"RETORNO P.O PARA RETIRADA DE PONTOS ";ConfirmedByPatient;;95845;140166567
+70555607;DIEGO;SERRES;Consultório Dr. Felipe Barreto;Teleconsulta;2024-05-22 11:00;2024-05-22 11:30;2024-05-17;2024-05-23;retorno de exames;WaitingForConfirmation;;95845;140332506
+73295687;AURELINA;BARRETO DA CRUZ;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-06-11 11:00;2024-06-11 11:30;2024-05-17;2024-06-12;;CanceledByPatient;;95845;140379121
+71879062;Raimundo;Jackson Reis Cirino;Consultório Dr. Felipe Barreto;Teleconsulta;2024-05-23 11:00;2024-05-23 11:30;2024-05-22;2024-05-24;;Scheduled;;95845;140846749
+73574901;CLAUDIA;REGINA MODA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-05-28 10:30;2024-05-28 11:00;2024-05-23;2024-05-29;TEM PLANOS BRADESCO;ConfirmedByPatient;;95845;140901997
+69446996;Benedita;Oliveira Da Silva;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-05-29 11:00;2024-05-29 11:30;2024-05-24;2024-05-30;;ConfirmedByPatient;;95845;141169380
+70555607;DIEGO;SERRES;Consultório Dr. Felipe Barreto;Teleconsulta;2024-06-06 11:30;2024-06-06 12:00;2024-06-04;2024-06-06;TEM AMIL;ConfirmedByPatient;;95845;142131392
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-06-11 10:30;2024-06-11 11:00;2024-06-05;2024-06-12;;ConfirmedByPatient;;95845;142251397
+74440097;Lucas;Thadeu Mamprim Galimbertti;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-06-06 10:00;2024-06-06 10:30;2024-06-05;2024-06-07;;Scheduled;;96277;142280338
+69946113;JOANA;D'ARC DA SILVA FREIRE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-06-21 11:00;2024-06-21 11:30;2024-06-11;2024-06-21;;WaitingForConfirmation;;95845;142832713
+74440097;Lucas;Thadeu Mamprim Galimbertti;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-06-18 10:00;2024-06-18 10:30;2024-06-12;2024-06-18;;ConfirmedByPatient;;95845;143068180
+75116784;DOUGLAS;OLIVEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-06-14 14:30;2024-06-14 15:00;2024-06-14;2024-06-14;"Mery Deise Santos 
+ ";CanceledByUser;;95845;143269814
+13154050;NELSON KIMIO;OGASAWARA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-06-26 11:00;2024-06-26 11:30;2024-06-17;2024-06-27;;ConfirmedByPatient;;95845;143551285
+75344148;Roger;Duarte da Silva;Consultório Dr. Felipe Barreto;Teleconsulta;2024-06-19 11:30;2024-06-19 12:00;2024-06-17;2024-06-19;;Scheduled;;95845;143603885
+75344148;Roger;Duarte da Silva;Consultório Dr. Felipe Barreto;Teleconsulta;2024-06-25 11:00;2024-06-25 11:30;2024-06-21;2024-06-24;;WaitingForConfirmation;;95845;144158978
+75795494;Bernardo;Inacio;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-04 14:00;2024-07-04 14:30;2024-06-22;2024-06-24;"Marcela  Amorim 
+ ";CanceledByPatient;;95845;144192798
+75855386;LUCAS;DUTRA SOUZA STOPATO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-16 11:00;2024-07-16 11:40;2024-06-24;2024-07-17;Paciente do DR Vinicius, como ele estará viajando e a mãe (Sra Evelyn) não consegue remarcar as passagens fará o primeiro atendimento com o DR Felipe para tirar duvodas sobre a cirurgia e depois dará seguimento com a cirurgia com o Dr Vinicius e o DR Sergio.;WaitingForConfirmation;;95845;144269581
+75904258;Ryland Cole;Tews;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-06-26 08:00;2024-06-26 08:30;2024-06-24;2024-06-25;Paciente com possível cisto reincidente;CanceledByPatient;;96277;144338829
+75904258;Ryland Cole;Tews;Consultório Dr. Felipe Barreto;Teleconsulta;2024-06-25 11:30;2024-06-25 12:00;2024-06-25;2024-06-25;;Scheduled;;95845;144362172
+76081136;Luca;PIRAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-02 11:00;2024-07-02 11:30;2024-06-26;2024-06-27;"THAMIRES ISSA CASTELLO FILETTO 
+ ";CanceledByPatient;;95845;144611264
+70555607;DIEGO;SERRES;Consultório Dr. Felipe Barreto;Teleconsulta;2024-06-27 14:00;2024-06-27 14:30;2024-06-27;2024-06-27;;Scheduled;;95845;144696730
+76507598;EMILIANA;MARCIA SOARES COIMBRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-03 14:00;2024-07-03 14:30;2024-07-01;2024-07-04;;WaitingForConfirmation;;95845;145009413
+76562031;GABRIELA;DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-03 14:30;2024-07-03 15:00;2024-07-02;2024-07-04;;CanceledByUser;;95845;145142157
+76631246;AMABILE;LEALDINI MARIANO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-18 14:00;2024-07-18 14:30;2024-07-03;2024-07-19;PLANO AMIL ONE S2500;ConfirmedByPatient;;95845;145302227
+76631324;MARIA;EDUARDA LEALDINI SILVA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-18 14:30;2024-07-18 15:00;2024-07-03;2024-07-18;AMIL ONE S2500;ConfirmedByPatient;;95845;145302412
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-10 10:30;2024-07-10 11:00;2024-07-04;2024-07-11;;CanceledByUser;;95845;145415579
+70237617;FRANCISCO JOSE;PEREIRA DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-07-10 11:00;2024-07-10 11:30;2024-07-04;2024-07-11;;WaitingForConfirmation;;95845;145459362
+76972227;Henrique;Ruiz Lucas;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-10 10:30;2024-07-10 11:00;2024-07-10;2024-07-10;TEM AMIL FACIL S60;Scheduled;;95845;145904455
+76992867;MARIA;DA SOLEDADE DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-18 15:00;2024-07-18 15:30;2024-07-10;2024-07-19;TEM NOTREDAME EXECUTIVO NÃO COBRAR;WaitingForConfirmation;;95845;145939031
+77020306;CONCEIÇÃO;APARECIDA DE MELLO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-22 11:00;2024-07-22 11:30;2024-07-10;2024-07-23;;CanceledByUser;;95845;145992549
+77179250;Karine;Tvecchio Sales;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-07-15 14:00;2024-07-15 14:30;2024-07-15;2024-07-15;;Scheduled;;96277;146327827
+77304267;JOSE LUIZ;CORREIA FILHO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-08-07 10:30;2024-08-07 11:00;2024-07-15;2024-08-08;;WaitingForConfirmation;;95845;146397599
+77179250;Karine;Tvecchio Sales;Consultório Dr. Felipe Barreto;Teleconsulta;2024-07-15 14:00;2024-07-15 14:30;2024-07-15;2024-07-16;TEM BRADESCO SAUDE;Scheduled;;95845;146407782
+77932930;DAVI;SESSIM;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-07-18 15:30;2024-07-18 16:00;2024-07-16;2024-07-19;RETORNO P.O;CanceledByUser;;95845;146576784
+78021657;JOÃO;ADALBERTO DE ALMEIDA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-19 10:30;2024-07-19 11:00;2024-07-17;2024-07-20;;WaitingForConfirmation;;95845;146652170
+69800824;ANDRE;DE AGUIAR TERTULIANO DOS SANTOS;Consultório Dr. Felipe Barreto;Teleconsulta;2024-07-23 11:00;2024-07-23 11:30;2024-07-18;2024-07-23;"tem bradesco ";ConfirmedByPatient;;95845;146845966
+78224766;LUNA;MALDONADO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-23 11:30;2024-07-23 12:00;2024-07-18;2024-07-23;BRADESCO NACIONAL;ConfirmedByPatient;;95845;146847342
+78224876;ENZO;MALDONADO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-23 12:00;2024-07-23 12:30;2024-07-18;2024-07-23;BRADESCO;Scheduled;;95845;146847493
+77932930;DAVI;SESSIM;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-07-25 10:00;2024-07-25 10:30;2024-07-23;2024-07-24;;ConfirmedByPatient;;95845;147338700
+78736640;SIMONE;PIMENTELJAKOBI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-07-24 15:00;2024-07-24 15:30;2024-07-24;2024-07-25;;Scheduled;;95845;147527069
+46508165;CARLOS VELLOSO;DE LIMA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-07-30 11:00;2024-07-30 11:30;2024-07-26;2024-07-30;;WaitingForConfirmation;;95845;147800649
+79027104;Thamires;MOREIRA RODRIGUES;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-07-30 10:30;2024-07-30 11:00;2024-07-28;2024-07-31;;WaitingForConfirmation;;95845;147885003
+79057285;IEDA;DAMASCENO;Consultório Dr. Felipe Barreto;Teleconsulta;2024-07-30 11:30;2024-07-30 12:00;2024-07-29;2024-07-31;;Scheduled;;95845;147935114
+79425120;Laurita Alves;Araújo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-08-06 10:30;2024-08-06 11:00;2024-08-03;2024-08-06;"Kevenn Araújo Silva 
+ Essa consulta seria para mostrar alguns exames. Ela fez uns exames e o neurologista que ela passou sugeriu que ela procurasse especificamente um neurocirurgião para uma melhor interpretação e diagnóstico em cima dos exames.";CanceledByUser;;95845;148710789
+65396676;MARLENE MARIA;DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-08-20 14:00;2024-08-20 14:30;2024-08-08;2024-08-21;;CanceledByUser;;95845;149433537
+55828288;LUZIA DE FATIMA;MACEDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-08-14 14:30;2024-08-14 15:00;2024-08-09;2024-08-14;;CanceledByUser;;95845;149570319
+45431623;Adriana Cristina;Dias;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-08-21 14:30;2024-08-21 15:00;2024-08-13;2024-08-22;;WaitingForConfirmation;;95845;149903153
+80776013;KELLY;DA SILVA NOGUEIRA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-08-23 10:00;2024-08-23 10:30;2024-08-19;2024-08-24;"TEM NOTRE DAME ";WaitingForConfirmation;;95845;150596525
+80860175;ALESSANDRA;DE PAIVA CONDE CANCELLA;Consultório Dr. Felipe Barreto;Teleconsulta;2024-08-21 14:00;2024-08-21 14:30;2024-08-20;2024-08-22;TEM AMIL S750;Scheduled;;95845;150875203
+78224876;ENZO;MALDONADO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-08-20 14:00;2024-08-20 14:30;2024-08-20;2024-08-20;;Scheduled;;95845;150926678
+78224766;LUNA;MALDONADO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-08-20 14:30;2024-08-20 15:00;2024-08-20;2024-08-20;;Scheduled;;95845;150926759
+80860175;ALESSANDRA;DE PAIVA CONDE CANCELLA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-08-22 14:00;2024-08-22 14:30;2024-08-21;2024-08-22;tem amil;Scheduled;;95845;151109411
+80860175;ALESSANDRA;DE PAIVA CONDE CANCELLA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-08-21 15:00;2024-08-21 15:30;2024-08-21;2024-08-21;;Scheduled;;95845;151109661
+81097204;ANTONIO;CARLOS DOS SANTOS SOUZA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-08-22 14:30;2024-08-22 15:00;2024-08-21;2024-08-23;TEM AMIL S60;Scheduled;;95845;151128409
+81419418;ANDREIA;FERREIRA DE ANDRADE;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-09-03 11:00;2024-09-03 11:30;2024-08-26;2024-09-04;TEM SULAMERICA DIRETO SP II;ConfirmedByPatient;;95845;151555064
+45431623;Adriana Cristina;Dias;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-09-03 11:30;2024-09-03 12:00;2024-08-28;2024-09-04;;WaitingForConfirmation;;95845;152038176
+81714774;Ana Carolina;Freitas;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-09-02 14:30;2024-09-02 15:00;2024-08-29;2024-09-02;Realizei cirurgia de coluna lombar  , permaneço com limitações e muitas dores, fiz exames onde consta alterações, protrusão. Gostaria de avaliação dos exames, orientação e relatório para apresentar na perícia.;WaitingForConfirmation;;96277;152070470
+75344148;Roger;Duarte da Silva;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-09-24 10:30;2024-09-24 11:00;2024-09-10;2024-09-24;;WaitingForConfirmation;;95845;153496321
+80776013;KELLY;DA SILVA NOGUEIRA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-09-24 11:00;2024-09-24 11:30;2024-09-11;2024-09-25;;WaitingForConfirmation;;95845;153695631
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-09-13 11:00;2024-09-13 11:30;2024-09-12;2024-09-14;;Scheduled;;95845;153902478
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-10-29 11:00;2024-10-29 11:30;2024-09-23;2024-10-28;;CanceledByUser;;95845;154977976
+84690809;MURILLO;RUIZ LUCAS;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-10-16 14:00;2024-10-16 14:30;2024-09-24;2024-10-16;;Scheduled;;95845;155440748
+85821417;M Rachel Gomes Julião;Juliao;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-10 11:30;2024-10-10 12:00;2024-10-08;2024-10-09;Tenho hérnia de disco . Já fiz duas infiltrações . Fui em 4 médicos , e quatro opiniões diferentes .;CanceledByUser;;95845;157159124
+86056197;Otavio;Brasil de Andrade Figueira;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-22 11:30;2024-10-22 12:00;2024-10-11;2024-10-23;;CanceledByUser;;95845;157701543
+86056197;Otavio;Brasil de Andrade Figueira;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-10-22 11:30;2024-10-22 12:00;2024-10-11;2024-10-23;;WaitingForConfirmation;;96277;157701864
+75344148;Roger;Duarte da Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-15 11:00;2024-10-15 11:30;2024-10-14;2024-10-15;;Scheduled;;95845;157880698
+87734593;Leticia;Barcellos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-29 11:30;2024-10-29 12:00;2024-10-27;2024-10-30;;ConfirmedByPatient;;95845;159499319
+87754379;Bernadete;kiyoko tokumoto;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-29 10:30;2024-10-29 11:00;2024-10-28;2024-10-30;;Scheduled;;95845;159550471
+87994725;CRISTIANE;MARIA DE OLIVEIRA BRANTES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-10-31 14:30;2024-10-31 15:00;2024-10-29;2024-11-01;"TEM BRADESCO
+893980700019013 
+SAUDE TOP NACIONAL";WaitingForConfirmation;;95845;159894920
+88030029;CLAUDINEI;APARECIDO DA SILVA;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2024-10-31 14:00;2024-10-31 14:30;2024-10-30;2024-11-01;;Scheduled;;95845;159972753
+88252128;ANDRIELE;FIORI MAIER NARDI;Consultório Dr. Felipe Barreto;Teleconsulta;2024-10-31 15:30;2024-10-31 16:00;2024-10-31;2024-11-01;;Scheduled;;95845;160255082
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-11-06 10:29;2024-11-06 10:59;2024-11-02;2024-11-27;"Ferritina e Colesterol altos
+
+Iniciar
+
+R Lipoic Acid ------- 250 mg
+- Manipular xx doses em cápsulas gastrorresistentes.
+- Ingerir 01 cápsula ao dia, de manhã,
+em jejum, 20 minutos antes da primeira refeição.
+";WaitingForConfirmation;;95845;160467618
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-11-13 10:30;2024-11-13 11:00;2024-11-06;2024-11-11;;WaitingForConfirmation;;95845;161001148
+87754379;Bernadete;kiyoko tokumoto;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2024-11-27 10:30;2024-11-27 11:00;2024-11-06;2024-11-27;;WaitingForConfirmation;;95845;161060936
+88631676;Carolina;Ramos da Silva Bobadilha;Consultório Dr. Felipe Barreto;Teleconsulta;2024-11-08 10:00;2024-11-08 10:30;2024-11-07;2024-11-09;;Scheduled;;95845;161203446
+88656537;Iuri;Saldanha;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-11-11 13:00;2024-11-11 13:30;2024-11-08;2024-11-11;"Laysla Ramos 
+ ";ConfirmedByPatient;;96277;161295478
+89386139;Jairo Vieira;da silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-11-18 11:00;2024-11-18 11:45;2024-11-17;2024-11-18;;ConfirmedByPatient;;95845;162309342
+89965870;Flavia;Alessandra;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-11-27 11:45;2024-11-27 12:30;2024-11-26;2024-11-26;;WaitingForConfirmation;;95845;163312675
+90065587;MAURO;AYRES DE CASTRO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-11-28 14:00;2024-11-28 14:45;2024-11-27;2024-11-29;;Scheduled;;95845;163561981
+75344148;Roger;Duarte da Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-12-03 11:00;2024-12-03 11:45;2024-11-29;2024-12-01;;WaitingForConfirmation;;95845;163840074
+90457920;Regina Célia;Garcia Matulja;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-12-04 10:15;2024-12-04 11:00;2024-12-03;2024-12-03;;Scheduled;;95845;164268037
+88252128;ANDRIELE;FIORI MAIER NARDI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-12-17 16:00;2024-12-17 16:45;2024-12-13;2024-12-15;;WaitingForConfirmation;;95845;165717581
+91674620;Andreia;Bartholomeu;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-12-13 14:45;2024-12-13 15:30;2024-12-13;2024-12-13;;CanceledByPatient;;95845;165787304
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2024-12-19 10:00;2024-12-19 10:45;2024-12-16;2024-12-18;;WaitingForConfirmation;;95845;165939527
+88252128;ANDRIELE;FIORI MAIER NARDI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-14 11:00;2025-01-14 11:45;2024-12-16;2025-01-15;;ConfirmedByPatient;;95845;165978175
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-03-18 11:00;2025-03-18 11:45;2024-12-19;2025-03-18;;WaitingForConfirmation;;95845;166538146
+80776013;KELLY;DA SILVA NOGUEIRA;Telemedicina Dr. Felipe Barreto;Teleconsulta;2024-12-24 11:00;2024-12-24 11:45;2024-12-21;2024-12-25;;WaitingForConfirmation;;96277;166797656
+93037009;Érick;Sena;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-07 14:00;2025-01-07 14:45;2025-01-02;2025-01-08;;Scheduled;;95845;167324387
+93055551;Moisés;Ferreira de Sousa;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-03 09:00;2025-01-03 09:45;2025-01-02;2025-01-03;"Marcia Sousa 
+ O paciente com dores de cabeça, pontadas parecendo agulhas, forte pressão na parte do tronco encefálico, visao embaçada, e batimentos cardíacos acelerados. Em emergência, médico disse que tem algo na região do pescoço, comprimindo as vias r";ConfirmedByPatient;;95845;167370756
+93037009;Érick;Sena;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-21 10:00;2025-01-21 10:45;2025-01-08;2025-01-22;;CanceledByUser;;95845;168248719
+93037009;Érick;Sena;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-01-21 10:00;2025-01-21 10:45;2025-01-08;2025-01-22;;WaitingForConfirmation;;96277;168249558
+93498266;CARLOS EDUARDO FONSECA AFFONSO;AFFONSO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-21 11:00;2025-01-21 11:45;2025-01-09;2025-01-13;;CanceledByPatient;;95845;168525292
+93550041;Giuliano Mitteroheffer;Morelli;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-01-14 16:30;2025-01-14 17:15;2025-01-10;2025-01-15;;CanceledByUser;;96277;168634896
+93561895;MAILY GONÇALVES;STANKEVICIUS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-14 10:00;2025-01-14 10:45;2025-01-10;2025-01-15;;ConfirmedByPatient;;95845;168672772
+87754379;Bernadete;kiyoko tokumoto;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-02-05 14:30;2025-02-05 15:15;2025-01-13;2025-01-27;;CanceledByUser;;95845;168901784
+93940427;ELIO;GOMES DE SA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-21 09:30;2025-01-21 10:15;2025-01-16;2025-01-21;;ConfirmedByPatient;;95845;169712552
+94139270;Selma;Aparecida Rosman Balsamo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-21 10:45;2025-01-21 11:30;2025-01-20;2025-01-21;"Luigi Rosman Balsamo 
+ Minha mãe que passará na consulta tem hérnias de disco na coluna cervical e atualmente está sofrendo com dores que vão desde o ombro até a mão.";ConfirmedByPatient;;95845;170264255
+94271290;JANDIR;VILSON MAIER;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-01-22 16:00;2025-01-22 16:45;2025-01-22;2025-01-30;TELEMEDICINA;Scheduled;;95845;170613903
+95160676;Marcelo Gomes de;Oliveira;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-02-04 10:00;2025-02-04 10:45;2025-01-30;2025-02-05;;WaitingForConfirmation;;95845;172472684
+95164765;Moisés;Ferreira de Sousa;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-02-04 10:30;2025-02-04 11:00;2025-01-31;2025-02-04;"Márcia Sousa 
+ ";ConfirmedByPatient;;95845;172486213
+95457226;ELIANA;APARECIDA GONÇALVES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-02-06 11:00;2025-02-06 11:45;2025-02-04;2025-02-06;;ConfirmedByPatient;;95845;173118661
+93940427;ELIO;GOMES DE SA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-02-13 10:30;2025-02-13 11:00;2025-02-06;2025-02-10;;CanceledByUser;;95845;173477420
+95723817;FELIPE;SALES DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-02-11 11:30;2025-02-11 12:10;2025-02-08;2025-02-11;Data foi alterada para 11/02 as 11h30!;ConfirmedByPatient;;95845;173853915
+93940427;ELIO;GOMES DE SA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-02-18 11:00;2025-02-18 11:30;2025-02-10;2025-02-19;;ConfirmedByPatient;;95845;173935058
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-03-12 11:00;2025-03-12 11:45;2025-03-10;2025-03-12;;WaitingForConfirmation;;95845;178367148
+98222646;Neusa;Helena;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-03-24 12:25;2025-03-24 13:10;2025-03-15;2025-03-24;Retorno pós artrodese de coluna lombar em 08/12/2023.;CanceledByUser;;95845;179403336
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-04-15 11:00;2025-04-15 11:30;2025-03-18;2025-04-15;;WaitingForConfirmation;;95845;179829167
+98222646;Neusa;Helena;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-03-26 11:00;2025-03-26 11:45;2025-03-24;2025-03-25;;CanceledByUser;;95845;180690808
+98926490;ROSIMEIRE;RIBEIRO DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-03-27 10:00;2025-03-27 10:45;2025-03-25;2025-03-27;;CanceledByUser;;95845;180977790
+69800824;ANDRE;DE AGUIAR TERTULIANO DOS SANTOS;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-04-02 11:00;2025-04-02 11:45;2025-04-01;2025-04-02;;ConfirmedByPatient;;96277;182168375
+76972227;Henrique;Ruiz Lucas;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-04-08 11:30;2025-04-08 12:15;2025-04-02;2025-04-09;;WaitingForConfirmation;;95845;182431564
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-04-10 11:00;2025-04-10 11:30;2025-04-04;2025-04-07;;CanceledByUser;;95845;183057781
+78224876;ENZO;MALDONADO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-04-23 15:00;2025-04-23 15:45;2025-04-14;2025-04-21;;WaitingForConfirmation;;95845;184398350
+78224766;LUNA;MALDONADO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-04-23 15:45;2025-04-23 16:30;2025-04-14;2025-04-21;;WaitingForConfirmation;;95845;184398466
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-23 11:00;2025-07-23 11:45;2025-04-15;2025-07-08;;CanceledByUser;;95845;184561348
+100607436;Maria Severina;De Amorim;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-04-16 11:00;2025-04-16 11:45;2025-04-15;2025-04-16;;Scheduled;;96277;184585800
+102022513;Mauro;Pizzo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-13 11:00;2025-05-13 11:45;2025-05-08;2025-05-13;;WaitingForConfirmation;;95845;187861998
+102057388;José Antônio Mizael;Alves;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-09 16:00;2025-05-09 16:45;2025-05-08;2025-05-09;;ConfirmedByPatient;;95845;187952431
+102267230;IVANILDA PAULA;DE ARAUJO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-13 15:00;2025-05-13 15:45;2025-05-13;2025-05-13;Encaixe paciente do DR Vinicius;Scheduled;;95845;188420245
+102022513;Mauro;Pizzo;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-06-03 11:00;2025-06-03 11:30;2025-05-13;2025-06-03;;ConfirmedByPatient;;95845;188429681
+102335523;Johnson;Luis Silva;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2025-05-14 11:00;2025-05-14 11:30;2025-05-14;2025-05-14;;Scheduled;;95845;188566708
+102750068;Arthur barretto do;nascimento;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-05-21 11:00;2025-05-21 11:45;2025-05-19;2025-05-27;;ConfirmedByPatient;;96277;189302710
+102982064;RICARDO;AGUIAR;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-27 11:00;2025-05-27 11:45;2025-05-22;2025-05-27;;ConfirmedByPatient;;95845;189826014
+103169806;MARIA TERESA;AGUIAR;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-27 10:30;2025-05-27 11:15;2025-05-26;2025-05-27;;CanceledByUser;;95845;190186633
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-05-27 11:45;2025-05-27 12:30;2025-05-27;2025-05-27;;Scheduled;;95845;190380923
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-07-08 11:00;2025-07-08 11:30;2025-05-27;2025-07-08;;ConfirmedByPatient;;95845;190464342
+102022513;Mauro;Pizzo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-05 10:30;2025-08-05 11:15;2025-06-03;2025-08-03;;CanceledByPatient;;95845;191615617
+102982064;RICARDO;AGUIAR;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-06-10 15:00;2025-06-10 15:30;2025-06-06;2025-06-08;;ConfirmedByPatient;;95845;192213434
+26829181;BRUNA DOMICINIANO DA;SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-03 14:00;2025-07-03 14:45;2025-06-13;2025-06-13;;CanceledByUser;;95845;193282679
+78224876;ENZO;MALDONADO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-06-17 11:30;2025-06-17 12:15;2025-06-16;2025-06-17;;Scheduled;;95845;193563968
+78224766;LUNA;MALDONADO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-06-17 11:45;2025-06-17 12:30;2025-06-16;2025-06-17;;Scheduled;;95845;193564046
+104996371;Clea Magnani;Pimenta;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-06-25 11:00;2025-06-25 11:45;2025-06-18;2025-06-20;;CanceledByUser;;95845;193879425
+106063040;Arthur Lopes de;Lima;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-01 11:00;2025-07-01 11:45;2025-06-27;2025-07-01;;WaitingForConfirmation;;95845;195646801
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-01 15:00;2025-08-01 15:45;2025-07-07;2025-08-01;;ConfirmedByPatient;;95845;197283144
+84690809;MURILLO;RUIZ LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-08 11:45;2025-07-08 12:30;2025-07-08;2025-07-08;;Scheduled;;95845;197375744
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-09-09 11:00;2025-09-09 11:45;2025-07-08;2025-09-08;;CanceledByUser;;95845;197390349
+107620252;Edison Cavalcanti de Andrade e;Paula;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-15 11:00;2025-07-15 11:45;2025-07-13;2025-07-15;;WaitingForConfirmation;;95845;198001246
+107620252;Edison Cavalcanti de Andrade e;Paula;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-08-14 10:30;2025-08-14 11:00;2025-07-15;2025-08-14;;ConfirmedByPatient;;95845;198284462
+105920763;Maria Silvia;Porto;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-07-16 17:00;2025-07-16 17:45;2025-07-16;2025-07-21;;Scheduled;;95845;198465291
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-22 16:00;2026-01-22 16:45;2025-08-01;2026-01-21;;CanceledByUser;;95845;201308810
+110579023;Gilvana;Gomes;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-08-14 09:30;2025-08-14 10:15;2025-08-10;2025-08-14;;ConfirmedByPatient;;96277;203324907
+110985483;GILVANIA;GOMES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-14 10:00;2025-08-14 10:45;2025-08-14;2025-08-14;;Scheduled;;95845;206829279
+110986167;PEDRO HENRIQUE;SANTIS;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-08-14 11:00;2025-08-14 11:30;2025-08-14;2025-08-14;TELEMEDICINA AVALIÇÃO P.O POR WHATSAPP;Scheduled;;95845;206831609
+110988361;PAULA;PETRATI TEIXEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-14 14:00;2025-08-14 14:45;2025-08-14;2025-08-14;TELEMEDICINA ENCAIXE;ConfirmedByPatient;;95845;206838726
+111138842;THAIS VITORIA;AP DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-08-19 12:30;2025-08-19 13:00;2025-08-15;2025-08-19;RETORNO P.O AVALIÇÃO PONTOS;WaitingForConfirmation;;95845;207110465
+111212395;Maria Clara;Duarte Silva Zahra;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-21 11:00;2025-08-21 11:45;2025-08-17;2025-08-21;mariaclarazahra@gmail.com;WaitingForConfirmation;;95845;207406296
+111352641;HUMBERTO ELIAS;SOUSA DE JESUS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-20 11:00;2025-08-20 11:45;2025-08-19;2025-08-20;;ConfirmedByPatient;;95845;207845026
+111138842;THAIS VITORIA;AP DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-08-25 10:30;2025-08-25 11:00;2025-08-19;2025-08-23;AVALIAÇÃO DOS PONTOS;WaitingForConfirmation;;95845;207885489
+111378476;Álvaro;André Detogne;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-20 11:40;2025-08-20 12:25;2025-08-19;2025-08-20;;Scheduled;;95845;207893049
+111416563;Gema Beé;Brambatti;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-08-20 10:00;2025-08-20 10:45;2025-08-19;2025-08-20;;ConfirmedByPatient;;95845;208020973
+111479339;Elisangela Domingos da;Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-08-20 17:00;2025-08-20 17:45;2025-08-20;2025-08-20;;CanceledByUser;;96277;208184345
+111886055;MARCELO;MARCELO DA COSTA NOGUEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-09-04 11:00;2025-09-04 11:45;2025-08-25;2025-08-27;Paciente do Dr Vinicius, vai vir de viagem e o DR Vinicius não poderá atender .;CanceledByUser;;95845;209203970
+102022513;Mauro;Pizzo;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-09-10 11:00;2025-09-10 11:45;2025-08-27;2025-09-10;;ConfirmedByPatient;;95845;209844650
+110985483;GILVANIA;GOMES;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-09-09 10:00;2025-09-09 10:30;2025-09-03;2025-09-08;;CanceledByUser;;95845;211458788
+110579023;Gilvana;Gomes;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-09-08 09:30;2025-09-08 10:15;2025-09-03;2025-09-03;;CanceledByUser;;95845;211458792
+111138842;THAIS VITORIA;AP DA SILVA;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-09-18 11:30;2025-09-18 12:00;2025-09-04;2025-09-16;RETORNO PÓS OPERATÓRIO;WaitingForConfirmation;;95845;211794310
+113601617;Mizael;Vieira Mota;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-09-18 11:00;2025-09-18 11:45;2025-09-10;2025-09-14;;CanceledByUser;;95845;213270008
+110985483;GILVANIA;GOMES;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-09-18 10:00;2025-09-18 10:30;2025-09-11;2025-09-18;;WaitingForConfirmation;;95845;213566821
+111138842;THAIS VITORIA;AP DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-01 11:30;2025-10-01 12:15;2025-09-18;2025-09-29;;ConfirmedByPatient;;95845;215248804
+111378476;Álvaro;André Detogne;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-10-16 13:00;2025-10-16 13:30;2025-09-23;2025-10-17;"P.o Bloqueio ";WaitingForConfirmation;;95845;216877262
+115680127;Isabella Fernanda;Munhoz Soares;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-09 10:00;2025-10-09 10:45;2025-10-03;2025-10-07;;ConfirmedByPatient;;95845;219249735
+116248666;Edson Carvalho;Machado;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-14 13:00;2025-10-14 13:45;2025-10-10;2025-10-14;;WaitingForConfirmation;;95845;220303445
+116417697;Rafaela Nascimento de;Luna;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-14 11:00;2025-10-14 11:45;2025-10-12;2025-10-14;;WaitingForConfirmation;;95845;220875182
+115680127;Isabella Fernanda;Munhoz Soares;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-10-14 12:30;2025-10-14 13:15;2025-10-13;2025-10-14;;Scheduled;;96277;221211580
+116547388;ISABELLA FERNANDA;MUNHOZ SOARES;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-14 12:30;2025-10-14 13:15;2025-10-14;2025-10-14;"TEM PORTO SEGURO ESPECIAL I
+TELEMEDICINA";Scheduled;;95845;221264677
+111138842;THAIS VITORIA;AP DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-22 11:00;2025-10-22 11:45;2025-10-17;2025-10-17;;CanceledByUser;;95845;221863841
+116248666;Edson Carvalho;Machado;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-10-22 11:00;2025-10-22 11:30;2025-10-24;2025-10-24;;Scheduled;;95845;222935737
+116248666;Edson Carvalho;Machado;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2025-10-30 11:30;2025-10-30 12:00;2025-10-27;2025-11-12;;ConfirmedByPatient;;95845;223123542
+117391207;Elisa;Lazzarini Gonçalves;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-10-29 09:30;2025-10-29 10:15;2025-10-27;2025-10-28;;WaitingForConfirmation;;95845;223146713
+117622920;ISABELLA LOPES;ESQUERDO;Consultório Dr. Felipe Barreto;Primeira consulta neurocirurgia;2025-10-30 17:00;2025-10-30 17:30;2025-10-30;2025-10-30;TELEMEDICINA;ConfirmedByPatient;;95845;223666783
+117622920;ISABELLA LOPES;ESQUERDO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-11-04 15:00;2025-11-04 15:45;2025-10-30;2025-11-03;;CanceledByPatient;;95845;223737478
+111416563;Gema Beé;Brambatti;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-11-12 11:00;2025-11-12 11:45;2025-11-10;2025-11-11;;WaitingForConfirmation;;95845;225397710
+88252128;ANDRIELE;FIORI MAIER NARDI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-11-18 16:00;2025-11-18 16:45;2025-11-12;2025-11-18;;ConfirmedByPatient;;95845;225702874
+118808149;Pedro;Walacy Braga da Silva;Telemedicina Dr. Felipe Barreto;Teleconsulta;2025-12-06 09:00;2025-12-06 09:45;2025-11-17;2025-12-06;;WaitingForConfirmation;;96277;226260966
+119133806;RAQUEL;ALVARENGA RODARTE;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-11-26 10:00;2025-11-26 10:45;2025-11-24;2025-11-26;"plano careplus ";ConfirmedByPatient;;95845;227036485
+119241814;VALDIR;FERREIRA DOS SANTOS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-10 10:00;2025-12-10 10:45;2025-11-25;2025-12-10;"whatsaap +44 7956 556662
+12 997391125";WaitingForConfirmation;;95845;227180121
+119295662;GUSTAVO;MEDRI PEDROSO;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-11-27 14:00;2025-11-27 14:45;2025-11-26;2025-11-30;;Scheduled;;95845;227328837
+119452154;MARCIA;DAIBERT DE SOUZA MOTTA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-02 10:00;2025-12-02 10:45;2025-11-28;2025-12-02;;WaitingForConfirmation;;95845;227706297
+119528493;JULIO;CESAR CONDI LESSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-02 11:00;2025-12-02 11:45;2025-12-01;2025-12-01;;CanceledByUser;;95845;227914794
+119529568;JULIO;CESAR CONDI LESSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-02 11:00;2025-12-02 11:45;2025-12-01;2025-12-02;;Scheduled;;95845;227917976
+119740976;VITORIA;LIMA DE SOUSA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-11 11:00;2025-12-11 11:45;2025-12-03;2025-12-10;;CanceledByPatient;;95845;228462917
+120070293;MURILLO;AUGUSTO NEVES LAROCCA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-10 11:00;2025-12-10 11:45;2025-12-10;2025-12-10;;Scheduled;;95845;229239845
+120134714;CATARINA;DEBONI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-11 11:00;2025-12-11 11:45;2025-12-11;2025-12-11;;Scheduled;;95845;229398913
+120423192;MARIAH;ALBERGARIA EVANGELISTA MOREIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-18 13:00;2025-12-18 13:45;2025-12-17;2025-12-17;;Scheduled;;95845;230237003
+58665974;WAGNER;GUIMARAES CALDERONI;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2025-12-18 14:00;2025-12-18 14:45;2025-12-17;2025-12-21;;Scheduled;;95845;230241876
+116417697;Rafaela Nascimento de;Luna;Telemedicina Dr. Felipe Barreto;Teleconsulta;2026-01-09 16:00;2026-01-09 16:45;2026-01-06;2026-01-09;;WaitingForConfirmation;;96277;231707323
+116547388;ISABELLA FERNANDA;MUNHOZ SOARES;Telemedicina Dr. Felipe Barreto;Teleconsulta;2026-01-09 14:00;2026-01-09 14:45;2026-01-08;2026-01-09;;Scheduled;;96277;232084416
+121098697;Gabrielli;Gonçalves Carl;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-15 10:00;2026-01-15 10:45;2026-01-08;2026-01-15;;Scheduled;;95845;232119171
+88030029;CLAUDINEI;APARECIDO DA SILVA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-22 15:00;2026-01-22 15:45;2026-01-13;2026-01-22;;ConfirmedByPatient;;95845;232832991
+111378476;Álvaro;André Detogne;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-05 11:00;2026-02-05 11:45;2026-01-15;2026-02-05;;ConfirmedByPatient;;95845;233149506
+121612684;Katia;Zanchetta;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-16 11:00;2026-01-16 11:45;2026-01-15;2026-01-16;;CanceledByUser;;95845;233273761
+116248666;Edson Carvalho;Machado;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2026-02-11 11:00;2026-02-11 11:30;2026-01-21;2026-02-11;;ConfirmedByPatient;;95845;234119585
+121933555;Edvaldo;Lopes Silva;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-22 14:00;2026-01-22 14:45;2026-01-21;2026-01-22;;Scheduled;;95845;234180666
+122227240;LORENZO DOS SANTOS;MANSTRAGELO;Consultório Dr. Felipe Barreto;Retorno de consultas Neurocirurgia;2026-02-11 10:00;2026-02-11 10:30;2026-01-26;2026-02-11;;ConfirmedByPatient;;95845;235859085
+122242290;ELIZABETE FERREIRA;GARCIA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-29 10:00;2026-01-29 10:45;2026-01-26;2026-01-28;;WaitingForConfirmation;;95845;235918788
+122504749;Edlaine;Quirino;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-01-29 14:00;2026-01-29 14:45;2026-01-29;2026-02-04;;Scheduled;;95845;236617139
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-11 09:30;2026-02-11 10:15;2026-02-03;2026-02-04;;CanceledByPatient;;95845;237510030
+122992400;Everton;x safe;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-05 11:45;2026-02-05 12:30;2026-02-04;2026-02-05;;CanceledByUser;;95845;237748269
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-11 09:30;2026-02-11 10:15;2026-02-05;2026-02-06;;CanceledByPatient;;95845;237915493
+122992400;Everton;x safe;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-11 11:30;2026-02-11 12:15;2026-02-05;2026-02-05;;Scheduled;;95845;237915697
+62306728;SANDRA;CERBONCINI LUCAS;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-19 11:00;2026-02-19 11:45;2026-02-06;2026-02-19;;WaitingForConfirmation;;95845;238103575
+63265157;Vitória;Vidal Martos;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-11 09:30;2026-02-11 10:15;2026-02-09;2026-02-11;;WaitingForConfirmation;;95845;238270879
+123973856;ELISA;DE FREITAS VIEIRA;Consultório Dr. Felipe Barreto;Consulta neurocirurgia;2026-02-26 15:30;2026-02-26 16:15;2026-02-23;2026-02-23;;CanceledByUser;;95845;239828095

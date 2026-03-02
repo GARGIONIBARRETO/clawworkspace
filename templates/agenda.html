@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Agenda - Clínica Dr. Felipe{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1><i class="fas fa-calendar-alt"></i> Agenda de Consultas</h1>
+    </div>
+</div>
+
+<!-- Consultas de Hoje -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card border-primary">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0"><i class="fas fa-calendar-day"></i> Consultas de Hoje</h4>
+            </div>
+            <div class="card-body">
+                {% if consultas_hoje %}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Horário</th>
+                                <th>Paciente</th>
+                                <th>Telefone</th>
+                                <th>Motivo</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for consulta in consultas_hoje %}
+                            <tr>
+                                <td>
+                                    <i class="fas fa-clock"></i> 
+                                    {{ consulta[2].strftime('%H:%M') if consulta[2] else '-' }}
+                                </td>
+                                <td><strong>{{ consulta[1] }}</strong></td>
+                                <td>{{ consulta[4] or '-' }}</td>
+                                <td>{{ consulta[3] or 'Consulta' }}</td>
+                                <td>
+                                    <a href="/paciente/{{ consulta[5] }}" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-user"></i> Ver Paciente
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted text-center py-3">
+                    <i class="fas fa-calendar-times"></i> Nenhuma consulta agendada para hoje
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Próximas Consultas -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-calendar-week"></i> Próximas Consultas</h4>
+            </div>
+            <div class="card-body">
+                {% if consultas_futuras %}
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Paciente</th>
+                                <th>Telefone</th>
+                                <th>Motivo</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for consulta in consultas_futuras %}
+                            <tr>
+                                <td>
+                                    <i class="fas fa-calendar"></i> 
+                                    {{ consulta[2].strftime('%d/%m/%Y %H:%M') if consulta[2] else '-' }}
+                                </td>
+                                <td><strong>{{ consulta[1] }}</strong></td>
+                                <td>{{ consulta[4] or '-' }}</td>
+                                <td>{{ consulta[3] or 'Consulta' }}</td>
+                                <td>
+                                    <a href="/paciente/{{ consulta[5] }}" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-user"></i> Ver Paciente
+                                    </a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted text-center py-3">
+                    <i class="fas fa-calendar-times"></i> Nenhuma consulta futura agendada
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
