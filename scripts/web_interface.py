@@ -619,6 +619,89 @@ def agenda():
         return redirect(url_for('index'))
 
 
+
+@app.route('/paciente/<int:paciente_id>/gravar')
+def gravar_consulta(paciente_id):
+    """Página de gravação de consulta"""
+    try:
+        db = clinica_app.get_db()
+        db.cursor.execute("""
+        SELECT id, nome, cpf FROM pacientes WHERE id = %s
+        """, (paciente_id,))
+        paciente = db.cursor.fetchone()
+        
+        if not paciente:
+            flash('Paciente não encontrado!')
+            return redirect(url_for('pacientes'))
+        
+        # Buscar gravações anteriores
+        # TODO: Implementar tabela de gravações
+        gravacoes = []
+        
+        return render_template('gravar_consulta.html', 
+                             paciente=paciente,
+                             gravacoes=gravacoes)
+    except Exception as e:
+        flash(f'Erro: {str(e)}')
+        return redirect(url_for('pacientes'))
+
+@app.route('/paciente/<int:paciente_id>/upload_audio', methods=['POST'])
+def upload_audio(paciente_id):
+    """Upload e processamento de áudio"""
+    try:
+        if 'audio' not in request.files:
+            flash('Nenhum arquivo de áudio!')
+            return redirect(url_for('gravar_consulta', paciente_id=paciente_id))
+        
+        audio = request.files['audio']
+        data_consulta = request.form.get('data_consulta')
+        notas = request.form.get('notas', '')
+        
+        if audio.filename == '':
+            flash('Nenhum arquivo selecionado!')
+            return redirect(url_for('gravar_consulta', paciente_id=paciente_id))
+        
+        # Criar pasta para gravações
+        pasta_gravacoes = f'/root/clawd/gravacoes/paciente_{paciente_id}'
+        os.makedirs(pasta_gravacoes, exist_ok=True)
+        
+        # Salvar arquivo
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        ext = os.path.splitext(audio.filename)[1] or '.webm'
+        nome_arquivo = f'consulta_{timestamp}{ext}'
+        caminho_audio = os.path.join(pasta_gravacoes, nome_arquivo)
+        
+        audio.save(caminho_audio)
+        
+        # Transcrever usando Whisper
+        flash('Áudio salvo! Iniciando transcrição...', 'info')
+        
+        # Criar job de transcrição assíncrono
+        # TODO: Implementar fila de transcrição com Whisper
+        
+        return redirect(url_for('gravar_consulta', paciente_id=paciente_id))
+        
+    except Exception as e:
+        flash(f'Erro no upload: {str(e)}', 'danger')
+        return redirect(url_for('gravar_consulta', paciente_id=paciente_id))
+
+@app.route('/gravacao/<int:gravacao_id>/processar_ia')
+def processar_gravacao_ia(gravacao_id):
+    """Processa transcrição com IA para extrair informações estruturadas"""
+    try:
+        # TODO: Implementar processamento com LLM
+        # 1. Pegar transcrição
+        # 2. Enviar para LLM com prompt médico
+        # 3. Extrair: QP, HDA, Exame, HD, Conduta
+        # 4. Salvar análise estruturada
+        
+        flash('Processamento com IA iniciado!', 'info')
+        return redirect(url_for('pacientes'))
+        
+    except Exception as e:
+        flash(f'Erro: {str(e)}', 'danger')
+        return redirect(url_for('pacientes'))
+
 @app.route('/paciente/<int:paciente_id>/novo_episodio')
 def novo_episodio(paciente_id):
     """Formulário para novo episódio clínico"""

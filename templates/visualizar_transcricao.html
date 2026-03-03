@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Transcrição - {{ gravacao.paciente_nome }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/pacientes">Pacientes</a></li>
+                <li class="breadcrumb-item"><a href="/paciente/{{ gravacao.paciente_id }}">{{ gravacao.paciente_nome }}</a></li>
+                <li class="breadcrumb-item active">Transcrição</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <h1><i class="fas fa-file-alt"></i> Transcrição da Consulta</h1>
+        <p class="text-muted">
+            <i class="fas fa-calendar"></i> {{ gravacao.data.strftime('%d/%m/%Y %H:%M') }} | 
+            <i class="fas fa-clock"></i> {{ gravacao.duracao }}
+        </p>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4>Texto Transcrito</h4>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <audio controls class="w-100 mb-3">
+                        <source src="/gravacao/{{ gravacao.id }}/audio" type="audio/webm">
+                    </audio>
+                </div>
+                
+                <form action="/gravacao/{{ gravacao.id }}/salvar_transcricao" method="post">
+                    <div class="mb-3">
+                        <textarea class="form-control" name="transcricao" rows="20">{{ gravacao.transcricao }}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Salvar Alterações
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>Ações</h4>
+            </div>
+            <div class="card-body">
+                <a href="/gravacao/{{ gravacao.id }}/processar_ia" class="btn btn-success w-100 mb-2">
+                    <i class="fas fa-magic"></i> Processar com IA
+                </a>
+                <a href="/gravacao/{{ gravacao.id }}/criar_episodio" class="btn btn-primary w-100 mb-2">
+                    <i class="fas fa-file-medical"></i> Criar Episódio Clínico
+                </a>
+                <hr>
+                <a href="/gravacao/{{ gravacao.id }}/download" class="btn btn-secondary w-100">
+                    <i class="fas fa-download"></i> Baixar Áudio
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sugestões da IA -->
+        {% if gravacao.analise_ia %}
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-robot"></i> Análise IA</h5>
+            </div>
+            <div class="card-body small">
+                <h6>Queixa Principal:</h6>
+                <p>{{ gravacao.analise_ia.queixa_principal }}</p>
+                
+                <h6>Principais Pontos:</h6>
+                <ul>
+                {% for ponto in gravacao.analise_ia.pontos_principais %}
+                    <li>{{ ponto }}</li>
+                {% endfor %}
+                </ul>
+                
+                <h6>Sugestão de Conduta:</h6>
+                <p>{{ gravacao.analise_ia.conduta_sugerida }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
