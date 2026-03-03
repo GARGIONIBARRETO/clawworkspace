@@ -7,6 +7,11 @@
     <div class="col-12">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h1><i class="fas fa-user"></i> {{ paciente[1] }}</h1>
+            </div>
+            <div>
+                <a href="/paciente/{{ paciente[0] }}/editar" class="btn btn-warning btn-sm">
+                    <i class="fas fa-edit"></i> Editar
+                </a>
             <a href="/pacientes" class="btn btn-secondary">
                 <i class="fas fa-arrow-left"></i> Voltar
             </a>
@@ -97,6 +102,17 @@
             <div class="tab-pane fade show active" id="consultas" role="tabpanel">
                 <div class="card border-top-0">
                     <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3>Histórico de Consultas</h3>
+                            <div>
+                                <a href="/paciente/{{ paciente[0] }}/novo_episodio" class="btn btn-success btn-sm">
+                                    <i class="fas fa-file-medical"></i> Novo Episódio Clínico
+                                </a>
+                                <a href="/paciente/{{ paciente[0] }}/gravar" class="btn btn-warning btn-sm">
+                                    <i class="fas fa-microphone"></i> Gravar Consulta
+                                </a>
+                            </div>
+                        </div>
                         {% if consultas %}
                         <div class="timeline">
                             {% for consulta in consultas %}
