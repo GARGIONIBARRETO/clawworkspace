@@ -9,7 +9,6 @@ import sys
 import os
 import pandas as pd
 from datetime import datetime
-import ssl
 import json
 
 sys.path.append('/root/clawd/scripts')
@@ -860,20 +859,4 @@ if __name__ == '__main__':
     print("🌐 Acesse: http://YOUR_SERVER_IP:5000")
     print("💡 Para parar: Ctrl+C")
     
-    # Configuração HTTPS
-    cert_file = '/root/clawd/certificates/clinica.crt'
-    key_file = '/root/clawd/certificates/clinica.key'
-    
-    if os.path.exists(cert_file) and os.path.exists(key_file):
-        # Executar com HTTPS
-        context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-        context.load_cert_chain(cert_file, key_file)
-        
-        print("🔒 Executando com HTTPS")
-        print("🌐 Acesse: https://YOUR_SERVER_IP:5443")
-        
-        app.run(host='0.0.0.0', port=5443, debug=True, ssl_context=context)
-    else:
-        # Fallback para HTTP
-        print("⚠️  Certificados não encontrados, executando em HTTP")
-        app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
