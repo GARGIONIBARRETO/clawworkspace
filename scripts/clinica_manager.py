@@ -492,12 +492,19 @@ class ClinicaManager:
         """Gera pedido usando template"""
         
         print("\n📋 Templates disponíveis:")
+        print("\n--- CIRURGIAS ABERTAS ---")
         print("1. Hérnia Discal Lombar - Microdiscectomia")
         print("2. Estenose de Canal - Laminectomia")
         print("3. Artrodese Posterior com Instrumentação")
         print("4. Artrodese Anterior (ALIF)")
         print("5. Artrodese 360° (Anterior + Posterior)")
         print("6. Artrodese com Extensão ao Ilíaco")
+        print("\n--- PROCEDIMENTOS PERCUTÂNEOS/ENDOSCÓPICOS ---")
+        print("7. Endoscopia Percutânea - Hérnia Discal")
+        print("8. Rizotomia por Radiofrequência")
+        print("9. Nucleoplastia - Descompressão Discal")
+        print("10. Bloqueio Epidural")
+        print("11. Vertebroplastia Percutânea")
         
         template = input("Escolha o template: ").strip()
         
@@ -511,7 +518,12 @@ class ClinicaManager:
                 "3": "artrodese_posterior",
                 "4": "artrodese_anterior",
                 "5": "artrodese_360",
-                "6": "artrodese_iliaco"
+                "6": "artrodese_iliaco",
+                "7": "endoscopia_percutanea",
+                "8": "rizotomia_percutanea",
+                "9": "nucleoplastia",
+                "10": "bloqueio_epidural",
+                "11": "vertebroplastia"
             }
             
             if template not in template_map:

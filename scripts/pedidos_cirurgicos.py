@@ -727,6 +727,113 @@ POSTERIOR:
         "necessita_uti": True,
         "dias_internacao_previstos": 4,
         "observacoes_padrao": "Monitorização neurofisiológica obrigatória. Reservar 4 CH. Radioscopia. Cell saver recomendado."
+    },
+    
+    "endoscopia_percutanea": {
+        "nome": "Tratamento Endoscópico Percutâneo - Hérnia Discal",
+        "tipo_cirurgia": "Endoscopia percutânea",
+        "diagnostico_padrao": "Hérnia discal com radiculopatia refratária",
+        "procedimento_padrao": "Discectomia endoscópica percutânea transforaminal",
+        "justificativa_padrao": "Paciente com hérnia discal sintomática, radiculopatia persistente apesar do tratamento conservador adequado. Indicado procedimento minimamente invasivo para preservação da anatomia e recuperação precoce.",
+        "materiais_padrao": """01 Kit endoscopia de coluna
+01 Pinça endoscópica
+01 Probe de radiofrequência
+01 Cânula de trabalho
+01 Agulha de punção
+Material de hemostasia""",
+        "codigos_procedimento": [
+            {"codigo": "31403063", "descricao": "Discectomia percutânea (qualquer técnica)", "tabela": "TUSS"},
+            {"codigo": "40811026", "descricao": "Radioscopia para acompanhamento", "tabela": "TUSS"}
+        ],
+        "tempo_cirurgico_estimado": "2 horas",
+        "tipo_anestesia": "Local com sedação",
+        "dias_internacao_previstos": 1,
+        "observacoes_padrao": "Radioscopia obrigatória. Antibioticoprofilaxia. Day hospital possível em casos selecionados."
+    },
+    
+    "rizotomia_percutanea": {
+        "nome": "Rizotomia Percutânea por Radiofrequência",
+        "tipo_cirurgia": "Procedimento percutâneo",
+        "diagnostico_padrao": "Síndrome facetária lombar",
+        "procedimento_padrao": "Rizotomia percutânea por radiofrequência dos ramos mediais",
+        "justificativa_padrao": "Paciente com dor facetária confirmada por bloqueio diagnóstico prévio com melhora > 50%. Indicada denervação por radiofrequência para alívio prolongado.",
+        "materiais_padrao": """01 Kit de radiofrequência
+02-04 Eletrodos de RF
+01 Gerador de radiofrequência
+Agulhas especiais RF""",
+        "codigos_procedimento": [
+            {"codigo": "31401058", "descricao": "Rizotomia percutânea por radiofrequência", "tabela": "TUSS"},
+            {"codigo": "40811026", "descricao": "Radioscopia", "tabela": "TUSS"}
+        ],
+        "tempo_cirurgico_estimado": "1-2 horas",
+        "tipo_anestesia": "Local com sedação",
+        "dias_internacao_previstos": 0,
+        "observacoes_padrao": "Procedimento ambulatorial/day hospital. Radioscopia. Monitorização durante procedimento."
+    },
+    
+    "nucleoplastia": {
+        "nome": "Nucleoplastia - Descompressão Discal Percutânea",
+        "tipo_cirurgia": "Procedimento percutâneo",
+        "diagnostico_padrao": "Hérnia discal contida com dor discogênica",
+        "procedimento_padrao": "Nucleoplastia por radiofrequência (coblation)",
+        "justificativa_padrao": "Paciente com hérnia discal contida, dor discogênica confirmada, sem déficit neurológico significativo. Candidato a descompressão percutânea.",
+        "materiais_padrao": """01 Kit nucleoplastia
+01 Wand de coblation
+01 Gerador específico
+Agulha introdutora""",
+        "codigos_procedimento": [
+            {"codigo": "31403063", "descricao": "Discectomia percutânea", "tabela": "TUSS"},
+            {"codigo": "40811026", "descricao": "Radioscopia", "tabela": "TUSS"}
+        ],
+        "tempo_cirurgico_estimado": "1 hora",
+        "tipo_anestesia": "Local com sedação",
+        "dias_internacao_previstos": 0,
+        "observacoes_padrao": "Day hospital. Radioscopia obrigatória. Contraindicado em hérnias extrusas."
+    },
+    
+    "bloqueio_epidural": {
+        "nome": "Bloqueio Epidural Interlaminar/Transforaminal",
+        "tipo_cirurgia": "Procedimento percutâneo",
+        "diagnostico_padrao": "Radiculopatia por hérnia discal ou estenose",
+        "procedimento_padrao": "Infiltração epidural com corticoide e anestésico",
+        "justificativa_padrao": "Paciente com radiculopatia aguda/subaguda, para alívio da dor e redução do processo inflamatório radicular.",
+        "materiais_padrao": """01 Kit para bloqueio epidural
+01 Agulha epidural/Tuohy
+Corticoide depot
+Anestésico local
+Contraste (se fluoroscopia)""",
+        "codigos_procedimento": [
+            {"codigo": "31401074", "descricao": "Bloqueio anestésico de nervo periférico", "tabela": "TUSS"},
+            {"codigo": "40811026", "descricao": "Radioscopia", "tabela": "TUSS", "opcional": True}
+        ],
+        "tempo_cirurgico_estimado": "30 minutos",
+        "tipo_anestesia": "Local",
+        "dias_internacao_previstos": 0,
+        "observacoes_padrao": "Procedimento ambulatorial. Observação pós-procedimento 1-2h. Fluoroscopia recomendada."
+    },
+    
+    "vertebroplastia": {
+        "nome": "Vertebroplastia Percutânea",
+        "tipo_cirurgia": "Procedimento percutâneo",
+        "diagnostico_padrao": "Fratura vertebral osteoporótica dolorosa",
+        "procedimento_padrao": "Vertebroplastia percutânea com cimento ósseo (PMMA)",
+        "justificativa_padrao": "Paciente com fratura vertebral por compressão, dor refratária ao tratamento conservador, sem sinais de instabilidade.",
+        "materiais_padrao": """02 Kits vertebroplastia
+02-04 Ampolas cimento PMMA
+02 Agulhas vertebroplastia
+Sistema de mistura/injeção""",
+        "codigos_procedimento": [
+            {"codigo": "31403071", "descricao": "Vertebroplastia percutânea", "tabela": "TUSS"},
+            {"codigo": "40811026", "descricao": "Radioscopia", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07021496", "descricao": "Kit vertebroplastia", "quantidade": 2},
+            {"codigo": "07021500", "descricao": "Cimento ósseo PMMA", "quantidade": 4}
+        ],
+        "tempo_cirurgico_estimado": "1-2 horas",
+        "tipo_anestesia": "Local com sedação",
+        "dias_internacao_previstos": 1,
+        "observacoes_padrao": "Radioscopia biplanar obrigatória. Monitorização contínua. Observar extravasamento de cimento."
     }
 }
 
