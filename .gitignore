@@ -1,27 +1,27 @@
-# Secrets and credentials
-*.secret
-*.key
-*credentials*.json
-.env
-
-# Cache and temp
-__pycache__/
-*.pyc
-.cache/
-test-results/
-
-# Node modules
-node_modules/
-
-# System files
-.DS_Store
-Thumbs.db
+# Arquivos de backup (muito grandes para Git)
+backups/*.sql.gz
+backups/*.sql
+*.bak
 
 # Logs
+logs/*.log
 *.log
 
-# WhatsApp bridge data (has auth tokens)
-whatsapp-bridge/
-# Auth files
-clinica/.auth_config.json
-clinica/.2fa_setup*.png
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Credenciais e secrets
+.secrets/
+*.key
+*.pem
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dados sensíveis dos pacientes (não versionar)
+dados_pacientes/
+exportacoes/
+relatorios_individuais/
