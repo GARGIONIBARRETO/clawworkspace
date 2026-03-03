@@ -1,0 +1,83 @@
+﻿PROCEDIMENTOS COBRADOS POR SEGMENTO:
+3.07.15.01-6 Artrodese da coluna com instrumenta..o por segmento ................................................................... 12C
+3.07.15.02-4 Artrodese de coluna via anterior ou p.stero-lateral ........................................................................... 12C
+3.07.15.11-3 Espondilolistese - tratamento cir.rgico ............................................................................................. 10A
+3.07.15.09-1 Descompress.o medular e/ou cauda equina ........................................................................................ 9C
+3.07.15.36-9 Trat. microcir.rgico do canal vertebral estreito por segmento ...........................................................10B
+3.07.15.39-3 H.rnia de disco cervical - tratamento cir.rgico ................................................................................. 12B
+3.07.15.18-0 H.rnia de disco t.raco-lombar - tratamento cir.rgico ........................................................................10A
+3.07.15.59-8 Artroplastia discal de coluna vertebral ...............................................................................................12C
+3.14.03.33-6 Rizotomia percut.neo por segmento – qualquer m.todo....................................................................10C
+3.14.03.03-4 Denerva..o percut.nea de faceta articular – por segmento .................................................................9C
+PROCEDIMENTOS COBRADOS POR CADA V.RTEBRA OPERADA:
+3.07.15.03-2 Bi.psia da coluna ................................................................................................................................ 7C
+3.07.15.19-9 Laminectomia ou laminotomia ........................................................................................................... 9C
+3.07.15.22-9 Osteotomia de coluna vertebral - tratamento cir.rgico ....................................................................... 8C
+3.07.15.28-8 Substitui..o de corpo vertebral ......................................................................................................... 10B
+3.07.15.38-5 Tumor .sseo vertebral - tratamento cir.rgico ................................................................................... 13C
+3.07.15.17-2 Hemivertebra – ressec..o via anterior ou posterior – tratamento cir.rgico .......................................11C
+4.08.14.09-2 Osteoplastia ou discectomia percut.nea (vertebroplastia e outras).......................................................8C
+PROCEDIMENTOS COBRADOS POR CADA ESTRUTURA ABORDADA (FORAME, FACETA, COSTELA):
+4.08.13.36-3 Coluna vertebral: infiltra..o foraminal ou facet.ria ou articular.........................................................5A
+3.06.01.02-9 Costectomia ..........................................................................................................................................8B
+2.01.03.30-1 Infiltra..o de ponto-gatilho (por regi.o muscular) ...............................................................................3A
+PROCEDIMENTOS COBRADOS APENAS UMA VEZ CADA CIRURGIA:
+3.07.15.05-9 Cirurgia de coluna por via endosc.pica ............................................................................................ 11A
+3.07.15.12-1 Fratura de coluna - tratamento conservador ........................................................................................ 2C
+3.07.15.16-4 Fraturas ou fratura-luxa..o de coluna - tratamento cir.rgico ........................................................... 12B
+3.07.15.21-0 Osteomielite de coluna - tratamento cir.rgico .................................................................................... 8B
+3.07.15.24-5 Pseudartrose de coluna - tratamento cir.rgico .................................................................................... 9C
+3.07.15.26-1 Retirada de corpo estranho - tratamento cir.rgico .............................................................................. 8B
+3.07.15.27-0 Retirada de material de s.ntese - tratamento cir.rgico ........................................................................ 8A
+3.07.15.31-8 Tratamento cir.rgico da les.o traum.tica raquimedular ................................................................... 14B
+3.07.15.32-6 Tratamento cir.rgico das malforma..es craniovertebrais ................................................................ 11B
+3.07.15.35-0 Tratamento microcir.rgico das les.es intramedulares....................................................................... 13B
+(tumor, malforma..es arteriovenosas, siringomielia, parasitoses)
+3.07.32.02-6 Enxerto .sseo ...................................................................................................................................... 9B
+3.07.15.10-5 Dorso curvo/escoliose/giba costal – tratamento cir.rgico..................................................................14B
+3.02.15.02-1 Craniotomia descompressiva................................................................................................................9C
+3.16.0216-9 Bloqueio peridural ou subaracn.ideo com corticoide............................................................................3C
+3.14.01.10-4 Implante de eletrodo para neuroestimula..o.......................................................................................13C
+3.14.03.14-0 Implante de gerador para neuroestimula..o........................................................................................10C
+Manual de Diretrizes de Codificação em Cirurgia da Coluna Vertebral – SBC/SBOT & SBN
+10
+II - DESCRIÇÃO DAS CODIFICAÇÕES EM COLUNA VERTEBRAL
+Artrodese da coluna com instrumentação por segmento – 3.07.15.01-6: Trata-se da fusão de um segmento
+vertebral instável por qualquer via de acesso, com fixação/instrumentação associada (cages, parafusos, hastes) para
+possibilitar a fusão do segmento instável. Para efeito de cobrança junto às fontes pagadoras, esse procedimento é
+multiplicado pelo número de segmentos artrodesados, por exemplo: Artrodese envolvendo artrodese de três
+segmentos e é descrita como 3.07.15.01-6 (x 3). Não há indicação de via de acesso específica, podendo ser utilizado
+em qualquer via, tanto aberta como percutânea.
+Artrodese de coluna via anterior ou póstero lateral – 3.07.15.02-4: Trata-se da fusão vertebral realizada
+especificamente por via anterior ou póstero-lateral sem instrumentação específica, indicada para tratamento cirúrgico
+de instabilidade vertebral com acesso direcionado conforme a anatomia e patologia apresentada. Para efeito de
+cobrança junto às fontes pagadoras, esse procedimento é multiplicado pelo número de segmentos artrodesados, por
+exemplo: Artrodese envolvendo artrodese de três segmentos e é descrita como 3.07.15.02-4 (x 3).
+Descompressão da medula ou de cauda equina – 3.07.15.09-1: Trata-se da liberação da medula espinhal e/ou de
+raiz(es) espinhal(is) de compressões tumorais ou císticas (intra/extra medulares), lesões inflamatórias/infecciosas,
+fragmentos ósseos, osteófitos, ligamento amarelo hipertrofiado, fragmentos discais, hematoma ou de corpo estranho.
+O procedimento é multiplicado para cada nível operado, não havendo indicação de via de acesso específica, podendo
+ser utilizado em qualquer via, tanto aberta como endoscópica.
+Tratamento microcirúrgico do canal vertebral estreito por segmento – 3.07.15.36-9: Trata-se do tratamento da
+estenose do canal vertebral primária (congênita) ou secundária (degenerativa), seja no compartimento central ou no
+compartimento foraminal. Na prática, consiste na realização de foraminotomia(s), flavectomia e/ou osteofitectomias.
+Este procedimento é multiplicado pelo número de segmentos operados, não havendo indicação de via de acesso
+específica, podendo ser utilizado em qualquer via, tanto aberta como endoscópica.
+Hérnia de disco tóraco-lombar – tratamento cirúrgico – 3.07.15.18-0: Trata-se da discectomia para tratamento
+da hérnia discal lombar por qualquer via ou qualquer técnica. O procedimento é multiplicado por cada disco operado,
+não havendo indicação de via de acesso específica, podendo ser utilizado em qualquer via, tanto aberta como
+endoscópica.
+Hérnia discal cervical – tratamento cirúrgico – 3.07.15.39-3: Trata-se da discectomia específica para tratamento
+da hérnia discal na região cervical por qualquer via ou qualquer técnica, com particularidades anatômicas e técnicas
+próprias da região cervical.
+Cirurgia da coluna por via endoscópica – 3.07.15.05-9: Trata-se da via de acesso, ou seja, da utilização de
+conhecimento e treinamento prévios para realizar acesso à coluna por via endoscópica, associada com radioscopia
+intraoperatória e equipamentos de visualização e iluminação profunda com irrigação contínua para o tratamento de
+diversas doenças da coluna (hérnias de disco, estenoses, discites, compressões osteofitárias e outras),
+independentemente da região a ser realizada (cervical, torácica ou lombar), com instrumental apropriado,
+independentemente do número de portais realizados.
+Osteoplastia ou discectomia percutânea (vertebroplastia e outras) – 4.08.14.09-2: Trata-se de procedimento
+cirúrgico minimamente invasivo que inclui múltiplos procedimentos: discectomia percutânea para remoção de parte
+do disco que está pressionando um nervo, e osteoplastia/vertebroplastia para tratamento de fraturas vertebrais através
+da injeção de cimento ósseo especial na área fraturada da coluna vertebral, proporcionando estabilização e suporte
+às vértebras afetadas.
