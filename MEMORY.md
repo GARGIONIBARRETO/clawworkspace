@@ -19,7 +19,8 @@
   - Agenda de consultas (hoje/futuras)
   - **Prontuário Eletrônico Completo** com anamnese, exame físico, diagnóstico e conduta
   - Auto-save de rascunhos
-- **Tabelas criadas:** episodios_clinicos para prontuários detalhados - Memória de Longo Prazo
+- **Tabelas criadas:** episodios_clinicos para prontuários detalhados
+- **HTTPS ativado:** Porta 5443 com certificado SSL - Memória de Longo Prazo
 
 ## Sistema de Anamnese da Clínica
 
