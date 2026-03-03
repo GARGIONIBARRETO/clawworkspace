@@ -494,20 +494,31 @@ class ClinicaManager:
         print("\n📋 Templates disponíveis:")
         print("1. Hérnia Discal Lombar - Microdiscectomia")
         print("2. Estenose de Canal - Laminectomia")
+        print("3. Artrodese Posterior com Instrumentação")
+        print("4. Artrodese Anterior (ALIF)")
+        print("5. Artrodese 360° (Anterior + Posterior)")
+        print("6. Artrodese com Extensão ao Ilíaco")
         
         template = input("Escolha o template: ").strip()
         
         try:
             paciente_id = int(input("ID do paciente: "))
             
-            # Primeiro precisa criar o template no banco
-            if template == "1":
-                template_data = TEMPLATES_PADRAO["hernia_discal_lombar"]
-            elif template == "2":
-                template_data = TEMPLATES_PADRAO["estenose_canal"]
-            else:
+            # Mapeia escolha para template
+            template_map = {
+                "1": "hernia_discal_lombar",
+                "2": "estenose_canal",
+                "3": "artrodese_posterior",
+                "4": "artrodese_anterior",
+                "5": "artrodese_360",
+                "6": "artrodese_iliaco"
+            }
+            
+            if template not in template_map:
                 print("❌ Template inválido")
                 return
+                
+            template_data = TEMPLATES_PADRAO[template_map[template]]
             
             # Adiciona template se não existir
             template_id = self.pedidos.adicionar_template(

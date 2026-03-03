@@ -1,0 +1,131 @@
+{
+  "tipo_questionario": "anamnese_coluna",
+  "queixa_principal": "Dor lombar com irradiação para membro inferior",
+  "historia_doenca_atual": "Detalhar início, evolução, características da dor, fatores de melhora/piora",
+  "tempo_sintomas": "6 meses",
+  
+  "sintomas_especificos_coluna": {
+    "localizacao_dor": {
+      "lombar": true,
+      "cervical": false,
+      "toracica": false,
+      "sacral": true
+    },
+    "irradiacao": {
+      "presente": true,
+      "lado": "direito",
+      "territorio": "L5",
+      "caracteristica": "choque/queimação"
+    },
+    "sintomas_neurologicos": {
+      "parestesias": "Sim - pé direito",
+      "fraqueza": "Sim - dorsiflexão hálux",
+      "alteracao_esficteres": "Nega"
+    },
+    "claudicacao_neurogenica": false,
+    "sindrome_cauda_equina": false
+  },
+  
+  "escala_funcional": {
+    "vas_lombar": 7,
+    "vas_membro": 8,
+    "oswestry": 42,
+    "limitacoes": [
+      "Sentar > 30min",
+      "Caminhar > 500m",
+      "Subir escadas",
+      "Trabalho"
+    ]
+  },
+  
+  "tratamentos_previos": {
+    "fisioterapia": {
+      "realizado": true,
+      "sessoes": 30,
+      "resultado": "Melhora parcial temporária"
+    },
+    "medicacoes": [
+      "Anti-inflamatórios - pouca melhora",
+      "Relaxantes musculares - melhora parcial",
+      "Gabapentina 300mg 3x/dia - em uso",
+      "Tramadol 50mg se dor forte"
+    ],
+    "infiltracoes": {
+      "realizado": true,
+      "tipo": "Bloqueio peridural",
+      "numero": 2,
+      "resultado": "Alívio por 2 semanas"
+    },
+    "cirurgias_previas": false
+  },
+  
+  "exames_realizados": [
+    {
+      "tipo": "RX coluna lombar",
+      "data": "2026-01-15",
+      "achados": "Redução espaço L4-L5, osteófitos"
+    },
+    {
+      "tipo": "RNM coluna lombar",
+      "data": "2026-02-10",
+      "achados": "Hérnia discal L4-L5 paracentral direita, compressão radicular"
+    }
+  ],
+  
+  "sintomas": {
+    "gerais": "Nega febre, perda peso",
+    "neurologicos": "Parestesias MMII D, fraqueza distal",
+    "cardiovasculares": "Nega",
+    "respiratorios": "Nega",
+    "gastrointestinais": "Constipação por medicações",
+    "genitourinarios": "Nega alterações",
+    "musculoesqueleticos": "Dor lombar + irradiação descrita"
+  },
+  
+  "antecedentes": {
+    "pessoais": "HAS, DM2, Obesidade grau I",
+    "familiares": "Pai - hérnia discal operada",
+    "cirurgicos": "Colecistectomia 2020"
+  },
+  
+  "medicacoes": [
+    "Losartana 50mg 1x/dia",
+    "Metformina 850mg 2x/dia", 
+    "Gabapentina 300mg 3x/dia",
+    "Ciclobenzaprina 10mg à noite",
+    "Tramadol 50mg se dor"
+  ],
+  
+  "alergias": "Dipirona - urticária",
+  
+  "habitos": {
+    "tabagismo": "Ex-tabagista há 5 anos",
+    "etilismo": "Nega",
+    "atividade_fisica": "Suspenso por dor",
+    "sono_qualidade": "Ruim - acorda com dor",
+    "profissao": "Trabalho sentado 8h/dia",
+    "imc": 28.5
+  },
+  
+  "red_flags": {
+    "perda_peso_inexplicada": false,
+    "febre": false,
+    "cancer_previo": false,
+    "trauma_recente": false,
+    "deficit_neurologico_progressivo": true,
+    "sindrome_cauda_equina": false,
+    "idade_maior_70": false,
+    "uso_corticoide_cronico": false,
+    "osteoporose": false,
+    "imunosupressao": false
+  },
+  
+  "expectativas_tratamento": "Alívio da dor para voltar a trabalhar e atividades diárias",
+  
+  "dados_extras": {
+    "preferencia_tratamento": "Tentaria mais conservador se houvesse opção",
+    "medo_cirurgia": "Sim - preocupado com riscos",
+    "suporte_familiar": "Boa rede de apoio",
+    "afastamento_trabalho": "Sim - há 2 meses"
+  }
+}

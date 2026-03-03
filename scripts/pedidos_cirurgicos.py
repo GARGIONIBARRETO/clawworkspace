@@ -603,6 +603,130 @@ TEMPLATES_PADRAO = {
         "tempo_cirurgico_estimado": "3 horas",
         "tipo_anestesia": "Geral",
         "dias_internacao_previstos": 2
+    },
+    
+    "artrodese_posterior": {
+        "nome": "Artrodese Lombar Posterior com Instrumentação",
+        "tipo_cirurgia": "Artrodese posterior",
+        "diagnostico_padrao": "Espondilolistese com instabilidade segmentar",
+        "procedimento_padrao": "Artrodese lombar posterior com instrumentação pedicular",
+        "justificativa_padrao": "Paciente com espondilolistese e instabilidade segmentar documentada, com falha do tratamento conservador, apresentando dor incapacitante e/ou déficit neurológico progressivo.",
+        "materiais_padrao": """06 Parafusos pediculares poliaxiais
+04 Barras de titânio
+06 Bloqueadores
+01 Enxerto ósseo sintético
+01 Hemostático absorvível
+01 Kit de brocas""",
+        "codigos_procedimento": [
+            {"codigo": "30712114", "descricao": "Espondilolistese - tratamento cirúrgico", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30715016", "descricao": "Artrodese da coluna com instrumentação por segmento", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS", "quantidade": 1},
+            {"codigo": "40811026", "descricao": "Radioscopia para acompanhamento de procedimento cirúrgico", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07020902", "descricao": "Parafuso pedicular", "quantidade": 6},
+            {"codigo": "07020910", "descricao": "Barra de conexão", "quantidade": 4},
+            {"codigo": "07020929", "descricao": "Bloqueador", "quantidade": 6},
+            {"codigo": "07010478", "descricao": "Agente hemostático absorvível", "quantidade": 1}
+        ],
+        "tempo_cirurgico_estimado": "4 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 3,
+        "observacoes_padrao": "Monitorização eletrofisiológica intraoperatória. Reservar hemoderivados (2 CH). Radioscopia disponível."
+    },
+    
+    "artrodese_anterior": {
+        "nome": "Artrodese Lombar Anterior (ALIF)",
+        "tipo_cirurgia": "Artrodese anterior",
+        "diagnostico_padrao": "Discopatia degenerativa com colapso do espaço discal",
+        "procedimento_padrao": "Artrodese lombar via anterior (ALIF) com cage intersomático",
+        "justificativa_padrao": "Paciente com discopatia degenerativa severa, colapso do espaço discal e instabilidade segmentar, com falha do tratamento conservador.",
+        "materiais_padrao": """01 Cage intersomático ALIF
+01 Placa anterior de fixação
+04 Parafusos de fixação
+01 Enxerto ósseo/substituto ósseo
+01 Hemostático
+Material de acesso vascular""",
+        "codigos_procedimento": [
+            {"codigo": "30714024", "descricao": "Artrodese de coluna via anterior ou póstero-lateral", "tabela": "TUSS", "quantidade": 1},
+            {"codigo": "30715016", "descricao": "Artrodese da coluna com instrumentação por segmento", "tabela": "TUSS"},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07020937", "descricao": "Cage intersomático", "quantidade": 1},
+            {"codigo": "07020945", "descricao": "Placa anterior", "quantidade": 1},
+            {"codigo": "07020953", "descricao": "Parafuso de placa", "quantidade": 4}
+        ],
+        "tempo_cirurgico_estimado": "3 horas",
+        "tipo_anestesia": "Geral",
+        "dias_internacao_previstos": 2,
+        "observacoes_padrao": "Cirurgião vascular de apoio. Radioscopia em duas incidências."
+    },
+    
+    "artrodese_360": {
+        "nome": "Artrodese 360° (Anterior + Posterior)",
+        "tipo_cirurgia": "Artrodese combinada",
+        "diagnostico_padrao": "Espondilolistese de alto grau com instabilidade severa",
+        "procedimento_padrao": "Artrodese lombar 360 graus - via anterior (ALIF) + posterior com instrumentação",
+        "justificativa_padrao": "Paciente com instabilidade severa, espondilolistese de alto grau ou pseudoartrose, necessitando fusão circunferencial para adequada estabilização.",
+        "materiais_padrao": """ANTERIOR:
+01 Cage intersomático ALIF
+01 Placa anterior
+04 Parafusos de placa
+
+POSTERIOR:
+06-08 Parafusos pediculares
+04 Barras
+06-08 Bloqueadores
+02 Cross-links
+01 Enxerto ósseo
+02 Hemostáticos""",
+        "codigos_procedimento": [
+            {"codigo": "30714024", "descricao": "Artrodese via anterior", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação por segmento", "tabela": "TUSS", "quantidade": 4},
+            {"codigo": "30712114", "descricao": "Espondilolistese - tratamento cirúrgico", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS", "quantidade": 2}
+        ],
+        "tempo_cirurgico_estimado": "6-8 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 4,
+        "observacoes_padrao": "Procedimento em dois tempos cirúrgicos. Monitorização neurofisiológica. Reservar 4 CH. Equipe vascular para acesso anterior."
+    },
+    
+    "artrodese_iliaco": {
+        "nome": "Artrodese com Extensão ao Ilíaco",
+        "tipo_cirurgia": "Artrodese lombo-pélvica",
+        "diagnostico_padrao": "Instabilidade lombo-sacra com falha de artrodese prévia",
+        "procedimento_padrao": "Artrodese lombar com extensão ao ilíaco bilateral",
+        "justificativa_padrao": "Paciente com falha de fusão L5-S1, instabilidade lombo-sacra ou necessidade de construção longa com ancoragem pélvica para adequada distribuição de cargas.",
+        "materiais_padrao": """06 Parafusos pediculares
+02 Parafusos ilíacos
+08 Bloqueadores
+04 Barras
+02 Conectores/Offset
+02 Cross-links
+01 Enxerto ósseo volumoso
+02 Hemostáticos
+01 Substituto dural (se necessário)""",
+        "codigos_procedimento": [
+            {"codigo": "30712114", "descricao": "Espondilolistese - tratamento cirúrgico", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação por segmento", "tabela": "TUSS", "quantidade": 3},
+            {"codigo": "30715091", "descricao": "Descompressão medular e/ou cauda equina", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07020902", "descricao": "Parafuso pedicular", "quantidade": 6},
+            {"codigo": "07020961", "descricao": "Parafuso ilíaco", "quantidade": 2},
+            {"codigo": "07020970", "descricao": "Conector/Offset", "quantidade": 2},
+            {"codigo": "07020988", "descricao": "Cross-link", "quantidade": 2}
+        ],
+        "tempo_cirurgico_estimado": "5-6 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 4,
+        "observacoes_padrao": "Monitorização neurofisiológica obrigatória. Reservar 4 CH. Radioscopia. Cell saver recomendado."
     }
 }
 
