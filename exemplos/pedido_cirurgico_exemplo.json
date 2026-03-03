@@ -1,0 +1,63 @@
+{
+  "convenio": "Unimed",
+  "matricula": "123456789",
+  "cid_principal": "M51.1",
+  "cid_secundario": "M54.4",
+  "diagnostico": "Hérnia de disco lombar L4-L5 com radiculopatia. Transtornos de discos lombares com radiculopatia. Paciente com sintomas neurológicos progressivos, déficit motor incipiente, refratário ao tratamento conservador.",
+  "procedimento_principal": "Microdiscectomia lombar L4-L5 com descompressão radicular por acesso minimamente invasivo",
+  "procedimentos_adicionais": "Neurólise de raiz nervosa L5. Eventual foraminotomia se necessário intraoperatoriamente",
+  "justificativa": "Paciente apresenta hérnia discal L4-L5 volumosa com compressão radicular importante documentada em RNM de coluna lombar realizada em 15/01/2026. Apresenta radiculopatia L5 à direita com déficit motor grau 4/5 para dorsiflexão do hálux. Realizou tratamento conservador com fisioterapia (30 sessões), medicações (anti-inflamatórios, relaxantes musculares, gabapentina) e bloqueio peridural (2 sessões) sem melhora significativa. Mantém dor incapacitante EVA 8/10 com limitação importante das atividades diárias e laborais. A cirurgia está indicada devido à falha do tratamento conservador e progressão do déficit neurológico.",
+  "materiais_especiais": "Sistema de afastamento tubular para acesso minimamente invasivo. Microscópio cirúrgico. Material de hemostasia (Surgiflo, Gelfoam). Eventual substituto dural se necessário.",
+  "opme_detalhada": {
+    "afastador_tubular": {
+      "descricao": "Sistema de afastamento tubular MIS",
+      "quantidade": 1,
+      "justificativa": "Necessário para acesso minimamente invasivo"
+    },
+    "hemostaticos": {
+      "descricao": "Agentes hemostáticos (Surgiflo/Gelfoam)",
+      "quantidade": 2,
+      "justificativa": "Controle de sangramento epidural"
+    }
+  },
+  "cirurgiao_principal": "Dr. Felipe G Barreto",
+  "crm_cirurgiao": "CRM-XX 123456",
+  "auxiliares": "1 auxiliar cirúrgico",
+  "anestesista": "A definir pelo hospital",
+  "tempo_cirurgico_estimado": "2 horas",
+  "tipo_anestesia": "Geral balanceada",
+  "necessita_uti": false,
+  "dias_internacao_previstos": 1,
+  "observacoes": "Paciente com alergia a Diclofenaco. Solicito disponibilidade de microscópio cirúrgico. Antibioticoprofilaxia com Cefazolina 2g EV na indução anestésica.",
+  "exames_pre_operatorios": "Hemograma completo, Coagulograma, Glicemia, Ureia, Creatinina, Sódio, Potássio, RX tórax, ECG. RNM coluna lombar (já realizada). Risco cirúrgico cardiológico.",
+  "codigos_procedimento": [
+    {
+      "codigo": "31403047",
+      "descricao": "Tratamento cirúrgico de hérnia discal lombar via posterior - unilateral",
+      "tabela": "TUSS"
+    },
+    {
+      "codigo": "31401066",
+      "descricao": "Microcirurgia (uso de microscópio)",
+      "tabela": "TUSS"
+    },
+    {
+      "codigo": "31403136",
+      "descricao": "Descompressão medular e/ou radicular",
+      "tabela": "TUSS"
+    }
+  ],
+  "codigos_material": [
+    {
+      "codigo": "07020902",
+      "descricao": "Sistema afastamento minimamente invasivo",
+      "quantidade": 1
+    },
+    {
+      "codigo": "07010478",
+      "descricao": "Agente hemostático absorvível",
+      "quantidade": 2
+    }
+  ],
+  "data_cirurgia": "2026-03-15"
+}

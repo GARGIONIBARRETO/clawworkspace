@@ -1,0 +1,42 @@
+{
+  "queixa_principal": "Dor lombar há 6 meses com irradiação para membro inferior direito",
+  "historia_doenca_atual": "Paciente refere início de dor lombar há aproximadamente 6 meses, de início insidioso, com piora progressiva. A dor irradia para face posterior da coxa e lateral da perna direita, chegando até o hálux. Piora com movimentos de flexão do tronco e ao permanecer muito tempo em pé. Melhora parcial com repouso. Nega trauma. Já realizou fisioterapia por 3 meses com melhora parcial. Fez uso de anti-inflamatórios e relaxantes musculares com alívio temporário.",
+  "tempo_sintomas": "6 meses",
+  "sintomas": {
+    "gerais": "Nega febre, perda de peso ou sudorese noturna",
+    "neurologicos": "Refere parestesias em território de L5 à direita. Nega perda de força significativa",
+    "cardiovasculares": "Nega precordialgia, dispneia ou edema",
+    "respiratorios": "Nega tosse, expectoração ou dispneia",
+    "gastrointestinais": "Hábito intestinal regular. Nega alterações",
+    "genitourinarios": "Nega disúria ou alterações miccionais. Nega disfunção sexual",
+    "musculoesqueleticos": "Dor lombar com irradiação descrita. Rigidez matinal de cerca de 30 minutos"
+  },
+  "antecedentes": {
+    "pessoais": "HAS em uso de Losartana 50mg 1x/dia. Dislipidemia em uso de Sinvastatina 20mg 1x/dia",
+    "familiares": "Pai com DM2. Mãe com HAS. Nega neoplasias na família",
+    "cirurgicos": "Colecistectomia há 5 anos sem intercorrências"
+  },
+  "medicacoes": [
+    "Losartana 50mg 1x/dia",
+    "Sinvastatina 20mg 1x/dia",
+    "Dipirona 500mg se dor",
+    "Ciclobenzaprina 10mg à noite"
+  ],
+  "alergias": "Alergia a Diclofenaco (urticária)",
+  "habitos": {
+    "tabagismo": "Ex-tabagista há 10 anos (20 anos/maço)",
+    "etilismo": "Social (finais de semana)",
+    "atividade_fisica": "Sedentário devido à dor",
+    "sono_qualidade": "Ruim - acorda várias vezes devido à dor"
+  },
+  "dados_extras": {
+    "profissao": "Motorista de caminhão",
+    "dominancia": "Destro",
+    "imc": 28.5,
+    "escala_dor": "7/10",
+    "exames_previos": [
+      "RX coluna lombar - redução espaço L4-L5",
+      "RNM lombar - protrusão discal L4-L5 com compressão radicular"
+    ]
+  }
+}

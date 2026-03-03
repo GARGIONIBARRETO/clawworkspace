@@ -872,8 +872,8 @@ if __name__ == '__main__':
         print("🔒 Executando com HTTPS")
         print("🌐 Acesse: https://YOUR_SERVER_IP:5443")
         
-        app.run(host='0.0.0.0', port=8443, debug=True, ssl_context=context)
+        app.run(host='0.0.0.0', port=5443, debug=True, ssl_context=context)
     else:
         # Fallback para HTTP
         print("⚠️  Certificados não encontrados, executando em HTTP")
-        app.run(host='0.0.0.0', port=8080, debug=True)
+        app.run(host='0.0.0.0', port=5000, debug=True)

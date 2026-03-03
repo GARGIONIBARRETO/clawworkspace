@@ -10,12 +10,16 @@ from datetime import datetime, date
 from pacientes_manager import PacientesManager
 from relatorios_clinicos import RelatoriosClinico
 from import_dados import ImportadorDados
+from questionario_anamnese import QuestionarioAnamnese
+from pedidos_cirurgicos import PedidosCirurgicos, TEMPLATES_PADRAO
 
 class ClinicaManager:
     def __init__(self):
         self.manager = PacientesManager()
         self.relatorios = RelatoriosClinico()
         self.importador = ImportadorDados()
+        self.anamnese = QuestionarioAnamnese()
+        self.pedidos = PedidosCirurgicos()
     
     def menu_principal(self):
         """Menu principal do sistema"""
@@ -29,7 +33,9 @@ class ClinicaManager:
             print("3. 📊 Bioimpedância")
             print("4. 📈 Relatórios")
             print("5. 📥 Importação de Dados")
-            print("6. 🔧 Utilitários")
+            print("6. 📋 Questionários de Anamnese")
+            print("7. 🏥 Pedidos Cirúrgicos")
+            print("8. 🔧 Utilitários")
             print("0. ❌ Sair")
             print("-" * 50)
             
@@ -47,6 +53,10 @@ class ClinicaManager:
                 elif opcao == "5":
                     self.menu_importacao()
                 elif opcao == "6":
+                    self.menu_anamnese()
+                elif opcao == "7":
+                    self.menu_pedidos_cirurgicos()
+                elif opcao == "8":
                     self.menu_utilitarios()
                 elif opcao == "0":
                     print("👋 Até logo!")
@@ -333,6 +343,260 @@ class ClinicaManager:
         self.importador.gerar_template_exames_csv()
         print("✅ Templates gerados em /root/clawd/templates/")
     
+    def menu_anamnese(self):
+        """Menu de questionários de anamnese"""
+        
+        while True:
+            print("\n📋 QUESTIONÁRIOS DE ANAMNESE")
+            print("1. Importar questionário JSON")
+            print("2. Processar formulário web")
+            print("3. Ver anamneses pendentes")
+            print("4. Integrar ao prontuário")
+            print("5. Criar tabela de anamnese")
+            print("0. Voltar")
+            
+            opcao = input("Opção: ").strip()
+            
+            if opcao == "1":
+                self.importar_anamnese_json()
+            elif opcao == "2":
+                print("📝 Processamento de formulário web")
+                print("Integração com TypeForm/Google Forms será configurada")
+            elif opcao == "3":
+                self.listar_anamneses_pendentes()
+            elif opcao == "4":
+                self.integrar_anamnese()
+            elif opcao == "5":
+                if self.anamnese.criar_tabela_anamnese():
+                    print("✅ Tabela de anamnese criada!")
+            elif opcao == "0":
+                break
+    
+    def importar_anamnese_json(self):
+        """Importa anamnese de arquivo JSON"""
+        
+        try:
+            paciente_id = int(input("ID do paciente: "))
+            arquivo = input("Caminho do arquivo JSON: ").strip()
+            
+            import json
+            with open(arquivo, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
+            
+            anamnese_id = self.anamnese.importar_questionario_json(dados, paciente_id)
+            if anamnese_id:
+                print(f"✅ Anamnese importada com ID: {anamnese_id}")
+                integrar = input("Deseja integrar ao prontuário agora? (s/n): ").lower()
+                if integrar == 's':
+                    if self.anamnese.integrar_ao_prontuario(anamnese_id):
+                        print("✅ Integrado ao prontuário!")
+        except Exception as e:
+            print(f"❌ Erro: {e}")
+    
+    def listar_anamneses_pendentes(self):
+        """Lista anamneses pendentes de integração"""
+        
+        pendentes = self.anamnese.listar_anamneses_pendentes()
+        
+        if not pendentes:
+            print("✅ Nenhuma anamnese pendente")
+            return
+        
+        print(f"\n📋 {len(pendentes)} anamnese(s) pendente(s):")
+        for a in pendentes:
+            print(f"ID: {a['id']} | Data: {a['data']} | Paciente: {a['paciente']} | Queixa: {a['queixa'][:50]}...")
+    
+    def integrar_anamnese(self):
+        """Integra anamnese pendente ao prontuário"""
+        
+        try:
+            anamnese_id = int(input("ID da anamnese para integrar: "))
+            if self.anamnese.integrar_ao_prontuario(anamnese_id):
+                print("✅ Anamnese integrada ao prontuário!")
+            else:
+                print("❌ Erro ao integrar anamnese")
+        except ValueError:
+            print("❌ ID inválido")
+    
+    def menu_pedidos_cirurgicos(self):
+        """Menu de pedidos cirúrgicos"""
+        
+        while True:
+            print("\n🏥 PEDIDOS CIRÚRGICOS")
+            print("1. Gerar novo pedido")
+            print("2. Usar template")
+            print("3. Buscar código procedimento")
+            print("4. Ver pedidos do paciente")
+            print("5. Exportar pedido (HTML)")
+            print("6. Criar templates padrão")
+            print("7. Criar tabelas")
+            print("0. Voltar")
+            
+            opcao = input("Opção: ").strip()
+            
+            if opcao == "1":
+                self.gerar_pedido_customizado()
+            elif opcao == "2":
+                self.gerar_pedido_com_template()
+            elif opcao == "3":
+                self.buscar_codigo_proc()
+            elif opcao == "4":
+                self.ver_pedidos_paciente()
+            elif opcao == "5":
+                self.exportar_pedido()
+            elif opcao == "6":
+                self.criar_templates_padrao()
+            elif opcao == "7":
+                if self.pedidos.criar_tabelas():
+                    print("✅ Tabelas criadas!")
+            elif opcao == "0":
+                break
+    
+    def gerar_pedido_customizado(self):
+        """Gera pedido cirúrgico customizado"""
+        
+        try:
+            paciente_id = int(input("ID do paciente: "))
+            
+            dados = {}
+            dados['convenio'] = input("Convênio: ").strip() or None
+            dados['matricula'] = input("Matrícula: ").strip() or None
+            dados['cid_principal'] = input("CID principal: ").strip() or None
+            dados['diagnostico'] = input("Diagnóstico: ").strip()
+            dados['procedimento_principal'] = input("Procedimento principal: ").strip()
+            dados['justificativa'] = input("Justificativa: ").strip()
+            dados['tempo_cirurgico_estimado'] = input("Tempo estimado (ex: 2 horas): ").strip() or None
+            dados['tipo_anestesia'] = input("Tipo anestesia: ").strip() or None
+            
+            uti = input("Necessita UTI? (s/n): ").lower()
+            dados['necessita_uti'] = uti == 's'
+            
+            dias = input("Dias de internação previstos: ").strip()
+            if dias:
+                dados['dias_internacao_previstos'] = int(dias)
+            
+            pedido_id = self.pedidos.gerar_pedido_cirurgico(paciente_id, dados_customizados=dados)
+            if pedido_id:
+                print(f"✅ Pedido gerado com ID: {pedido_id}")
+                
+                exportar = input("Deseja exportar para HTML agora? (s/n): ").lower()
+                if exportar == 's':
+                    arquivo = self.pedidos.gerar_pdf_pedido(pedido_id)
+                    if arquivo:
+                        print(f"📄 Arquivo gerado: {arquivo}")
+        
+        except Exception as e:
+            print(f"❌ Erro: {e}")
+    
+    def gerar_pedido_com_template(self):
+        """Gera pedido usando template"""
+        
+        print("\n📋 Templates disponíveis:")
+        print("1. Hérnia Discal Lombar - Microdiscectomia")
+        print("2. Estenose de Canal - Laminectomia")
+        
+        template = input("Escolha o template: ").strip()
+        
+        try:
+            paciente_id = int(input("ID do paciente: "))
+            
+            # Primeiro precisa criar o template no banco
+            if template == "1":
+                template_data = TEMPLATES_PADRAO["hernia_discal_lombar"]
+            elif template == "2":
+                template_data = TEMPLATES_PADRAO["estenose_canal"]
+            else:
+                print("❌ Template inválido")
+                return
+            
+            # Adiciona template se não existir
+            template_id = self.pedidos.adicionar_template(
+                template_data["nome"],
+                template_data
+            )
+            
+            if template_id:
+                # Permite customizar alguns campos
+                dados_custom = {}
+                dados_custom['convenio'] = input("Convênio: ").strip() or None
+                dados_custom['matricula'] = input("Matrícula: ").strip() or None
+                
+                pedido_id = self.pedidos.gerar_pedido_cirurgico(
+                    paciente_id, 
+                    template_id=template_id,
+                    dados_customizados=dados_custom
+                )
+                
+                if pedido_id:
+                    print(f"✅ Pedido gerado com ID: {pedido_id}")
+        
+        except Exception as e:
+            print(f"❌ Erro: {e}")
+    
+    def buscar_codigo_proc(self):
+        """Busca código de procedimento"""
+        
+        termo = input("🔍 Digite parte do nome ou código: ").strip()
+        if not termo:
+            return
+        
+        resultados = self.pedidos.buscar_codigo_procedimento(termo)
+        
+        if not resultados:
+            print("❌ Nenhum código encontrado")
+            return
+        
+        print(f"\n📋 Encontrados {len(resultados)} código(s):")
+        for r in resultados:
+            print(f"Código: {r['codigo']} | {r['descricao']} | Tabela: {r['tabela']}")
+    
+    def ver_pedidos_paciente(self):
+        """Lista pedidos de um paciente"""
+        
+        try:
+            paciente_id = int(input("ID do paciente: "))
+            
+            sql = """
+            SELECT id, numero_pedido, data_pedido, procedimento_principal, status
+            FROM pedidos_cirurgicos
+            WHERE paciente_id = %s
+            ORDER BY data_pedido DESC;
+            """
+            
+            self.pedidos.db.cursor.execute(sql, (paciente_id,))
+            pedidos = self.pedidos.db.cursor.fetchall()
+            
+            if not pedidos:
+                print("❌ Nenhum pedido encontrado")
+                return
+            
+            print(f"\n📋 {len(pedidos)} pedido(s) encontrado(s):")
+            for p in pedidos:
+                print(f"ID: {p[0]} | Número: {p[1]} | Data: {p[2]} | Status: {p[4]}")
+                print(f"   Procedimento: {p[3][:60]}...")
+        
+        except Exception as e:
+            print(f"❌ Erro: {e}")
+    
+    def exportar_pedido(self):
+        """Exporta pedido para HTML/PDF"""
+        
+        try:
+            pedido_id = int(input("ID do pedido: "))
+            arquivo = self.pedidos.gerar_pdf_pedido(pedido_id)
+            if arquivo:
+                print(f"📄 Arquivo gerado: {arquivo}")
+        except ValueError:
+            print("❌ ID inválido")
+    
+    def criar_templates_padrao(self):
+        """Cria templates padrão de cirurgias"""
+        
+        for key, template in TEMPLATES_PADRAO.items():
+            template_id = self.pedidos.adicionar_template(template["nome"], template)
+            if template_id:
+                print(f"✅ Template '{template['nome']}' criado")
+
     def menu_utilitarios(self):
         """Menu de utilitários"""
         
