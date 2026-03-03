@@ -834,6 +834,178 @@ Sistema de mistura/injeção""",
         "tipo_anestesia": "Local com sedação",
         "dias_internacao_previstos": 1,
         "observacoes_padrao": "Radioscopia biplanar obrigatória. Monitorização contínua. Observar extravasamento de cimento."
+    },
+    
+    "artrodese_cervical_anterior": {
+        "nome": "Artrodese Cervical Anterior (ACDF)",
+        "tipo_cirurgia": "Artrodese cervical anterior",
+        "diagnostico_padrao": "Hérnia discal cervical com radiculopatia/mielopatia",
+        "procedimento_padrao": "Artrodese cervical anterior com discectomia e fusão (ACDF)",
+        "justificativa_padrao": "Paciente com hérnia discal cervical e compressão radicular/medular, com sintomas neurológicos refratários ao tratamento conservador. Indicada descompressão e estabilização via anterior.",
+        "materiais_padrao": """01 Cage cervical (PEEK ou titânio)
+01 Placa cervical anterior
+04-06 Parafusos de placa
+01 Substituto ósseo/enxerto
+01 Hemostático
+Material microcirúrgico""",
+        "codigos_procedimento": [
+            {"codigo": "30711018", "descricao": "Artrodese cervical anterior", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação", "tabela": "TUSS"},
+            {"codigo": "30711034", "descricao": "Discectomia cervical anterior", "tabela": "TUSS"},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07020996", "descricao": "Cage cervical", "quantidade": 1},
+            {"codigo": "07021003", "descricao": "Placa cervical anterior", "quantidade": 1},
+            {"codigo": "07021011", "descricao": "Parafuso placa cervical", "quantidade": 4}
+        ],
+        "tempo_cirurgico_estimado": "2-3 horas",
+        "tipo_anestesia": "Geral",
+        "dias_internacao_previstos": 2,
+        "observacoes_padrao": "Radioscopia obrigatória. Microscópio disponível. Monitorização neurofisiológica recomendada."
+    },
+    
+    "artrodese_cervical_posterior": {
+        "nome": "Artrodese Cervical Posterior",
+        "tipo_cirurgia": "Artrodese cervical posterior",
+        "diagnostico_padrao": "Instabilidade cervical / Mielopatia espondilótica",
+        "procedimento_padrao": "Artrodese cervical posterior com parafusos de massa lateral",
+        "justificativa_padrao": "Paciente com instabilidade cervical ou compressão posterior, necessitando estabilização via posterior para descompressão indireta e fusão.",
+        "materiais_padrao": """04-08 Parafusos massa lateral
+02-04 Barras cervicais
+04-08 Bloqueadores
+01 Enxerto ósseo
+02 Hemostáticos
+Cross-links (opcional)""",
+        "codigos_procedimento": [
+            {"codigo": "30711026", "descricao": "Artrodese cervical posterior", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação/segmento", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30711042", "descricao": "Laminectomia cervical", "tabela": "TUSS", "opcional": True}
+        ],
+        "codigos_material": [
+            {"codigo": "07021020", "descricao": "Parafuso massa lateral", "quantidade": 6},
+            {"codigo": "07021038", "descricao": "Barra cervical posterior", "quantidade": 2},
+            {"codigo": "07020929", "descricao": "Bloqueador", "quantidade": 6}
+        ],
+        "tempo_cirurgico_estimado": "3-4 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 3,
+        "observacoes_padrao": "Monitorização neurofisiológica obrigatória. Posicionamento prone com cuidados especiais. Radioscopia."
+    },
+    
+    "corpectomia_cervical": {
+        "nome": "Corpectomia Cervical com Artrodese",
+        "tipo_cirurgia": "Corpectomia cervical",
+        "diagnostico_padrao": "Estenose cervical severa / Fratura-luxação cervical",
+        "procedimento_padrao": "Corpectomia cervical com cage expansível e placa anterior",
+        "justificativa_padrao": "Paciente com compressão cervical multinível ou fratura com comprometimento do corpo vertebral, necessitando corpectomia para adequada descompressão.",
+        "materiais_padrao": """01 Cage expansível corpectomia
+01 Placa cervical longa
+06-08 Parafusos placa
+02 Enxerto ósseo/substituto
+02 Hemostáticos
+Material microcirúrgico
+Drill de alta rotação""",
+        "codigos_procedimento": [
+            {"codigo": "30711050", "descricao": "Corpectomia cervical", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação", "tabela": "TUSS", "quantidade": 2},
+            {"codigo": "30711018", "descricao": "Artrodese cervical anterior", "tabela": "TUSS"},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07021046", "descricao": "Cage corpectomia expansível", "quantidade": 1},
+            {"codigo": "07021054", "descricao": "Placa cervical longa", "quantidade": 1},
+            {"codigo": "07021011", "descricao": "Parafuso placa", "quantidade": 8}
+        ],
+        "tempo_cirurgico_estimado": "4-5 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 4,
+        "observacoes_padrao": "Monitorização neurofisiológica obrigatória. Microscópio essencial. Considerar fixação posterior complementar."
+    },
+    
+    "artrodese_occipto_cervical": {
+        "nome": "Artrodese Occipito-Cervical",
+        "tipo_cirurgia": "Fixação occipito-cervical",
+        "diagnostico_padrao": "Instabilidade atlanto-occipital / Invaginação basilar",
+        "procedimento_padrao": "Artrodese occipito-cervical com placa occipital e parafusos cervicais",
+        "justificativa_padrao": "Paciente com instabilidade da junção crânio-cervical, necessitando fixação occipito-cervical para estabilização e prevenção de lesão neurológica.",
+        "materiais_padrao": """01 Placa occipital
+06-10 Parafusos occipitais
+04-06 Parafusos cervicais
+02 Barras de conexão
+08-12 Bloqueadores
+02 Cross-links
+Enxerto ósseo abundante
+02 Hemostáticos""",
+        "codigos_procedimento": [
+            {"codigo": "30711069", "descricao": "Artrodese occipito-cervical", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação", "tabela": "TUSS", "quantidade": 3},
+            {"codigo": "30732026", "descricao": "Enxerto ósseo", "tabela": "TUSS", "quantidade": 2}
+        ],
+        "codigos_material": [
+            {"codigo": "07021062", "descricao": "Placa occipital", "quantidade": 1},
+            {"codigo": "07021070", "descricao": "Parafuso occipital", "quantidade": 8},
+            {"codigo": "07021089", "descricao": "Conector occipito-cervical", "quantidade": 2}
+        ],
+        "tempo_cirurgico_estimado": "4-6 horas",
+        "tipo_anestesia": "Geral",
+        "necessita_uti": True,
+        "dias_internacao_previstos": 5,
+        "observacoes_padrao": "Navegação/fluoroscopia 3D recomendada. Monitorização obrigatória. Intubação com fibroscopia. Alto risco."
+    },
+    
+    "laminoplastia_cervical": {
+        "nome": "Laminoplastia Cervical",
+        "tipo_cirurgia": "Laminoplastia",
+        "diagnostico_padrao": "Mielopatia cervical espondilótica multinível",
+        "procedimento_padrao": "Laminoplastia cervical expansiva com miniplacas",
+        "justificativa_padrao": "Paciente com estenose cervical multinível e mielopatia, candidato a descompressão posterior preservando movimento.",
+        "materiais_padrao": """04-06 Miniplacas laminoplastia
+08-12 Parafusos miniplacas
+01 Enxerto ósseo local
+01 Hemostático
+Material microcirúrgico""",
+        "codigos_procedimento": [
+            {"codigo": "30711077", "descricao": "Laminoplastia cervical", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação", "tabela": "TUSS", "opcional": True}
+        ],
+        "codigos_material": [
+            {"codigo": "07021097", "descricao": "Miniplaca laminoplastia", "quantidade": 5},
+            {"codigo": "07021100", "descricao": "Parafuso miniplaca", "quantidade": 10}
+        ],
+        "tempo_cirurgico_estimado": "3-4 horas",
+        "tipo_anestesia": "Geral",
+        "dias_internacao_previstos": 3,
+        "observacoes_padrao": "Monitorização neurofisiológica. Preservação da musculatura paraespinhal. Técnica open-door ou french-door."
+    },
+    
+    "artrodese_cervical_hibrida": {
+        "nome": "Artrodese Cervical Híbrida (ACDF + Artroplastia)",
+        "tipo_cirurgia": "Cirurgia híbrida cervical",
+        "diagnostico_padrao": "Doença degenerativa discal multinível cervical",
+        "procedimento_padrao": "ACDF em nível sintomático + Artroplastia discal em nível adjacente",
+        "justificativa_padrao": "Paciente jovem com doença discal multinível, candidato a preservação de movimento em níveis selecionados para reduzir degeneração adjacente.",
+        "materiais_padrao": """01 Cage cervical ACDF
+01 Prótese discal cervical
+01 Placa cervical curta
+04 Parafusos placa
+01 Substituto ósseo""",
+        "codigos_procedimento": [
+            {"codigo": "30711018", "descricao": "Artrodese cervical anterior", "tabela": "TUSS"},
+            {"codigo": "30711085", "descricao": "Artroplastia cervical", "tabela": "TUSS"},
+            {"codigo": "30715016", "descricao": "Artrodese com instrumentação", "tabela": "TUSS"}
+        ],
+        "codigos_material": [
+            {"codigo": "07020996", "descricao": "Cage cervical", "quantidade": 1},
+            {"codigo": "07021119", "descricao": "Prótese discal cervical", "quantidade": 1},
+            {"codigo": "07021003", "descricao": "Placa cervical", "quantidade": 1}
+        ],
+        "tempo_cirurgico_estimado": "3-4 horas",
+        "tipo_anestesia": "Geral",
+        "dias_internacao_previstos": 2,
+        "observacoes_padrao": "Radioscopia. Seleção cuidadosa dos níveis. Contraindicada se osteoporose ou instabilidade."
     }
 }
 

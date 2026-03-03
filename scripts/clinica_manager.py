@@ -492,19 +492,26 @@ class ClinicaManager:
         """Gera pedido usando template"""
         
         print("\n📋 Templates disponíveis:")
-        print("\n--- CIRURGIAS ABERTAS ---")
+        print("\n--- CIRURGIAS LOMBARES ---")
         print("1. Hérnia Discal Lombar - Microdiscectomia")
         print("2. Estenose de Canal - Laminectomia")
         print("3. Artrodese Posterior com Instrumentação")
         print("4. Artrodese Anterior (ALIF)")
         print("5. Artrodese 360° (Anterior + Posterior)")
         print("6. Artrodese com Extensão ao Ilíaco")
-        print("\n--- PROCEDIMENTOS PERCUTÂNEOS/ENDOSCÓPICOS ---")
-        print("7. Endoscopia Percutânea - Hérnia Discal")
-        print("8. Rizotomia por Radiofrequência")
-        print("9. Nucleoplastia - Descompressão Discal")
-        print("10. Bloqueio Epidural")
-        print("11. Vertebroplastia Percutânea")
+        print("\n--- CIRURGIAS CERVICAIS ---")
+        print("7. Artrodese Cervical Anterior (ACDF)")
+        print("8. Artrodese Cervical Posterior")
+        print("9. Corpectomia Cervical")
+        print("10. Artrodese Occipito-Cervical")
+        print("11. Laminoplastia Cervical")
+        print("12. Artrodese Cervical Híbrida")
+        print("\n--- PROCEDIMENTOS PERCUTÂNEOS ---")
+        print("13. Endoscopia Percutânea")
+        print("14. Rizotomia por Radiofrequência")
+        print("15. Nucleoplastia")
+        print("16. Bloqueio Epidural")
+        print("17. Vertebroplastia")
         
         template = input("Escolha o template: ").strip()
         
@@ -519,11 +526,17 @@ class ClinicaManager:
                 "4": "artrodese_anterior",
                 "5": "artrodese_360",
                 "6": "artrodese_iliaco",
-                "7": "endoscopia_percutanea",
-                "8": "rizotomia_percutanea",
-                "9": "nucleoplastia",
-                "10": "bloqueio_epidural",
-                "11": "vertebroplastia"
+                "7": "artrodese_cervical_anterior",
+                "8": "artrodese_cervical_posterior",
+                "9": "corpectomia_cervical",
+                "10": "artrodese_occipto_cervical",
+                "11": "laminoplastia_cervical",
+                "12": "artrodese_cervical_hibrida",
+                "13": "endoscopia_percutanea",
+                "14": "rizotomia_percutanea",
+                "15": "nucleoplastia",
+                "16": "bloqueio_epidural",
+                "17": "vertebroplastia"
             }
             
             if template not in template_map:
