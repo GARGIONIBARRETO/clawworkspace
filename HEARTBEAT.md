@@ -13,4 +13,4 @@
 - Sistema 100% local - PostgreSQL 13.23
 - 654 pacientes cadastrados
 - 1480 consultas registradas
-- Último backup: 03/03/2026 17:05
+- Último backup: 04/03/2026 01:31
