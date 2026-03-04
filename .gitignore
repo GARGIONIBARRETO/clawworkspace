@@ -25,3 +25,10 @@ __pycache__/
 dados_pacientes/
 exportacoes/
 relatorios_individuais/
+
+# WhatsApp Web.js session files (runtime, não versionar)
+**/wwebjs_auth/session/Singleton*
+**/wwebjs_auth/session/DevToolsActivePort
+**/wwebjs_auth/session/Default/
+**/wwebjs_auth/session/*.db
+**/wwebjs_auth/session/*.db-journal
