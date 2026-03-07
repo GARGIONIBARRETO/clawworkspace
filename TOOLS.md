@@ -102,4 +102,22 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## 📋 Análise de Exames Laboratoriais
+
+### Protocolo Obrigatório:
+1. **🚨 VALORES ALTERADOS PRIMEIRO** - sempre listar primeiro
+2. **Usar tabela de referência** (PDF anexado) para determinar normalidade
+3. **📊 Demais exames organizados por grupos:**
+   - Sanguíneo, Hormonal, Eletrólitos, Virais, Metabólico, Renal, Vitaminas/Minerais
+
+### 🔄 Análise Temporal:
+4. **Anexar ao prontuário** - salvar no banco PostgreSQL do paciente
+5. **Checar exames anteriores** - buscar histórico para comparação
+6. **Destacar evolução** - marcar **📈 MELHORAS** e **📉 PIORAS** em relação aos anteriores
+7. **Atualizar tabela** - manter registro temporal organizado
+
+**Arquivo de referência:** `/root/clawd/referencias/tabela_valores_referencia.pdf`
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

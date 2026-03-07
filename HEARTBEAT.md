@@ -15,8 +15,12 @@
 - Logs: `/tmp/wa-transcriber.log`
 - **Status**: ✅ OPERACIONAL (reiniciado 05/03/2026 13:44)
 
+### ⏱️ Frequência do Heartbeat
+- **2x ao dia** - manhã (~9h) e noite (~21h)
+- Evitar checks excessivos durante o dia
+
 ### 🔄 Status Atual
 - Sistema 100% local - PostgreSQL 13.23
 - 654 pacientes cadastrados
 - 1480 consultas registradas
-- Último backup: 06/03/2026 01:14
+- Último backup: 06/03/2026 22:52
