@@ -21,6 +21,6 @@
 
 ### 🔄 Status Atual
 - Sistema 100% local - PostgreSQL 13.23
-- 654 pacientes cadastrados
-- 1480 consultas registradas
-- Último backup: 06/03/2026 22:52
+- 655 pacientes cadastrados
+- 1481 consultas registradas
+- Último backup: 08/03/2026 04:36
