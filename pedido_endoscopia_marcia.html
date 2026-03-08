@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Cirurgia - Marcia Maria Brito Carvalho</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+        }
+        h1 { color: #2c3e50; margin: 10px 0; }
+        h2 { color: #34495e; margin-top: 25px; }
+        h3 { color: #555; margin-top: 20px; }
+        .info-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .alert-box {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .section { margin: 25px 0; }
+        .signature {
+            margin-top: 50px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        td, th {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .print-button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Imprimir Pedido</button>
+    
+    <div class="header">
+        <h1>INSTITUTO ARC</h1>
+        <h2>Pedido de Procedimento Cirúrgico</h2>
+        <p>São Paulo, 04 de março de 2026</p>
+    </div>
+
+    <div class="section">
+        <h3>IDENTIFICAÇÃO DO PACIENTE</h3>
+        <div class="info-box">
+            <table>
+                <tr><td><strong>Nome:</strong></td><td>MARCIA MARIA BRITO CARVALHO</td></tr>
+                <tr><td><strong>Idade:</strong></td><td>51 anos</td></tr>
+                <tr><td><strong>Profissão:</strong></td><td>Professora</td></tr>
+                <tr><td><strong>Convênio:</strong></td><td>Instituto ARC</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="alert-box">
+        <h3>⚠️ ALERTAS IMPORTANTES</h3>
+        <ul>
+            <li><strong>ANTICOAGULADA:</strong> Em uso de Xarelto - suspender 48h antes</li>
+            <li><strong>TEP prévio (2023):</strong> Atenção aos cuidados com tromboprofilaxia</li>
+            <li><strong>Fibromialgia:</strong> Considerar no manejo da dor pós-operatória</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>PROCEDIMENTO SOLICITADO</h3>
+        <div class="info-box">
+            <h2>DISCECTOMIA ENDOSCÓPICA L5-S1</h2>
+            <p><strong>CID-10:</strong> M51.1 - Transtornos de discos lombares com radiculopatia</p>
+            <p><strong>Código TUSS:</strong> 31402046 - Microdiscectomia via endoscópica</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>INDICAÇÃO CLÍNICA</h3>
+        <p>Paciente com quadro de lombociatalgia direita há 3 meses, caracterizada por:</p>
+        <ul>
+            <li>Dor lombar com irradiação para membro inferior direito (trajeto L5)</li>
+            <li>Dormência em território de L5 direito</li>
+            <li>Refratariedade ao tratamento conservador</li>
+        </ul>
+        
+        <h4>Exame Físico:</h4>
+        <ul>
+            <li>Hipoestesia em L5 direito</li>
+            <li>Força muscular preservada</li>
+            <li>Lasègue negativo</li>
+            <li>Reflexos simétricos</li>
+        </ul>
+        
+        <h4>Imagem:</h4>
+        <p>RM lombar: Hérnia discal posterolateral direita L5-S1 com compressão radicular</p>
+    </div>
+
+    <div class="section">
+        <h3>TÉCNICA CIRÚRGICA</h3>
+        <div class="info-box">
+            <ul>
+                <li>Acesso transforaminal endoscópico</li>
+                <li>Anestesia local com sedação</li>
+                <li>Tempo estimado: 60-90 minutos</li>
+                <li>Internação: 12-24 horas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>CUIDADOS PERIOPERATÓRIOS</h3>
+        <table>
+            <tr><th>PRÉ-OPERATÓRIO</th><th>PÓS-OPERATÓRIO</th></tr>
+            <tr>
+                <td>
+                    • Suspender Xarelto 48h antes<br>
+                    • Jejum 8 horas<br>
+                    • Coagulograma<br>
+                    • Avaliação cardiológica<br>
+                    • Antibiótico profilático
+                </td>
+                <td>
+                    • Mobilização precoce (6h)<br>
+                    • Analgesia multimodal<br>
+                    • Reiniciar Xarelto em 24-48h<br>
+                    • Alta em 12-24h<br>
+                    • Retorno em 7 dias
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="signature">
+        <p>_______________________________________</p>
+        <p><strong>Dr. Felipe G. Barreto</strong></p>
+        <p>CRM-SP: [número] | RQE: [número]</p>
+        <p>Neurocirurgião - Especialista em Coluna Vertebral</p>
+        <p>📧 clinicadacolunadrfelipebarreto@gmail.com</p>
+    </div>
+</body>
+</html>

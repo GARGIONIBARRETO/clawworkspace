@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Felipe Barreto - Neurocirurgia de Coluna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: -2px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .btn {
+            background: white;
+            color: #0066cc;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .btn.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .btn.secondary:hover {
+            background: white;
+            color: #0066cc;
+        }
+        .logo {
+            font-size: 5em;
+            margin-bottom: 30px;
+        }
+        .contact {
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+        .contact p {
+            margin: 10px 0;
+        }
+        .redirect-notice {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🧠</div>
+        
+        <h1>Dr. Felipe Barreto</h1>
+        <h2>Neurocirurgia de Coluna | Medicina Funcional Integrativa</h2>
+        
+        <div class="redirect-notice">
+            <p>⚠️ Nosso site está em manutenção temporária</p>
+            <p>Utilize os links abaixo para acessar nossos serviços:</p>
+        </div>
+        
+        <div class="buttons">
+            <a href="/anamnese" class="btn">📋 Preencher Anamnese Online</a>
+            <a href="https://wa.me/5511999999999" class="btn secondary">💬 WhatsApp</a>
+            <a href="https://doctoralia.com.br/felipe-barreto" class="btn secondary">📅 Agendar Consulta</a>
+        </div>
+        
+        <div class="contact">
+            <p>📧 clinicadacolunadrfelipebarreto@gmail.com</p>
+            <p>📱 (11) 99999-9999</p>
+            <p>📍 São Paulo, SP</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -340,6 +340,11 @@ def generate_pdf(data: dict) -> str:
 # API ENDPOINTS
 # ============================================
 
+@app.route('/', methods=['GET'])
+def index():
+    """Serve the main page."""
+    return send_file('index.html')
+
 @app.route('/api/health', methods=['GET'])
 def health():
     """Health check endpoint."""

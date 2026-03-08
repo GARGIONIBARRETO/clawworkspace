@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Felipe Barreto - Neurocirurgião especialista em coluna vertebral. Cirurgia endoscópica, tratamento de hérnias discais e dor crônica em São Paulo.">
+    <title>Dr. Felipe Barreto - Neurocirurgia de Coluna | São Paulo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #1e3c72;
+            --secondary: #2a5298;
+            --accent: #00d4ff;
+            --text: #333;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(30,60,114,0.8), rgba(42,82,152,0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f8f9fa" width="1200" height="800"/><path fill="%23e8e9ea" d="M0 400L50 383.3C100 366.7 200 333.3 300 316.7C400 300 500 300 600 316.7C700 333.3 800 366.7 900 383.3C1000 400 1100 400 1150 400L1200 400L1200 800L1150 800C1100 800 1000 800 900 800C800 800 700 800 600 800C500 800 400 800 300 800C200 800 100 800 50 800L0 800Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 100px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.4s;
+            animation-fill-mode: both;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+        
+        /* About */
+        .about {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about h2 {
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .doctor-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        
+        .doctor-card .icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+        }
+        
+        .credentials {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .credentials ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .credentials li:before {
+            content: "✓ ";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        /* Services */
+        .services {
+            padding: 80px 0;
+            background: var(--light);
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 50px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        /* Specialties */
+        .specialties {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .specialties h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--primary);
+            margin-bottom: 50px;
+        }
+        
+        .specialty-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .specialty-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: var(--light);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .specialty-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .specialty-icon {
+            font-size: 2em;
+            color: var(--secondary);
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .contact-icon {
+            font-size: 3em;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            font-size: 1.1em;
+        }
+        
+        .map-container {
+            margin-top: 40px;
+            background: white;
+            padding: 5px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            z-index: 999;
+            text-decoration: none;
+        }
+        
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Menu Mobile */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: all 0.3s;
+                pointer-events: none;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: all;
+            }
+            
+            nav ul {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>🧠</span>
+                    <span>Dr. Felipe Barreto</span>
+                </div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="/anamnese" style="background: white; color: var(--primary); padding: 8px 20px; border-radius: 20px;">📋 Anamnese</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Excelência em Neurocirurgia de Coluna</h1>
+            <p>Tratamentos modernos e minimamente invasivos para sua qualidade de vida</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5511999999999" class="btn btn-primary">
+                    <span>💬</span>
+                    <span>Agendar via WhatsApp</span>
+                </a>
+                <a href="https://doctoralia.com.br/felipe-barreto" class="btn btn-secondary">
+                    <span>📅</span>
+                    <span>Agendar Consulta</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Dr. Felipe Barreto</h2>
+                    <p>Neurocirurgião especializado em coluna vertebral com anos de experiência em cirurgias minimamente invasivas e tratamento da dor crônica.</p>
+                    <p>Formado em medicina com residência em neurocirurgia e especialização em cirurgia de coluna, o Dr. Felipe Barreto une conhecimento técnico avançado com uma abordagem humanizada, sempre buscando as melhores soluções para cada paciente.</p>
+                    <div class="credentials">
+                        <h4>Formação e Especialização</h4>
+                        <ul>
+                            <li>Neurocirurgia - Hospital das Clínicas</li>
+                            <li>Especialização em Cirurgia de Coluna</li>
+                            <li>Fellowship em Cirurgia Minimamente Invasiva</li>
+                            <li>Medicina Funcional Integrativa</li>
+                            <li>Membro da Sociedade Brasileira de Neurocirurgia</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="doctor-card">
+                        <div class="icon">👨‍⚕️</div>
+                        <h3>Dr. Felipe Barreto</h3>
+                        <p><strong>CRM-SP:</strong> 202824</p>
+                        <p><strong>RQE:</strong> Neurocirurgia</p>
+                        <p>Mais de 1000 cirurgias realizadas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Cirurgia Endoscópica</h3>
+                    <p>Técnica minimamente invasiva para tratamento de hérnias discais com recuperação mais rápida e menos dor pós-operatória.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💉</div>
+                    <h3>Bloqueios e Infiltrações</h3>
+                    <p>Procedimentos guiados por imagem para alívio imediato da dor e diagnóstico preciso das causas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Cirurgia de Coluna</h3>
+                    <p>Procedimentos avançados para correção de deformidades, estabilização e descompressão neural.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧬</div>
+                    <h3>Medicina Regenerativa</h3>
+                    <p>Tratamentos inovadores com terapias biológicas para regeneração tecidual e controle da dor crônica.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Consulta Especializada</h3>
+                    <p>Avaliação completa com exame físico detalhado e análise de exames para diagnóstico preciso.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Tratamento da Dor</h3>
+                    <p>Abordagem multidisciplinar para controle efetivo da dor crônica com técnicas modernas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specialties -->
+    <section id="especialidades" class="specialties">
+        <div class="container">
+            <h2>Patologias Tratadas</h2>
+            <div class="specialty-list">
+                <div class="specialty-item">
+                    <span class="specialty-icon">💢</span>
+                    <div>
+                        <h4>Hérnia de Disco</h4>
+                        <p>Cervical, torácica e lombar</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">🦴</span>
+                    <div>
+                        <h4>Estenose de Canal</h4>
+                        <p>Estreitamento do canal vertebral</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">⚡</span>
+                    <div>
+                        <h4>Ciatalgia</h4>
+                        <p>Dor irradiada pelo nervo ciático</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">🔍</span>
+                    <div>
+                        <h4>Cervicalgia</h4>
+                        <p>Dor no pescoço e região cervical</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">🎯</span>
+                    <div>
+                        <h4>Lombalgia</h4>
+                        <p>Dor na região lombar</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">🏗️</span>
+                    <div>
+                        <h4>Instabilidade Vertebral</h4>
+                        <p>Movimentação anormal entre vértebras</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">📐</span>
+                    <div>
+                        <h4>Escoliose</h4>
+                        <p>Desvios da coluna vertebral</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">💥</span>
+                    <div>
+                        <h4>Fraturas Vertebrais</h4>
+                        <p>Traumáticas e por osteoporose</p>
+                    </div>
+                </div>
+                <div class="specialty-item">
+                    <span class="specialty-icon">🧩</span>
+                    <div>
+                        <h4>Espondilolistese</h4>
+                        <p>Deslizamento vertebral</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p style="font-size: 1.2em; opacity: 0.9; margin-bottom: 40px;">Agende sua consulta e inicie seu tratamento para uma vida sem dor</p>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <h4>Telefone</h4>
+                        <p>(11) 2362-6051</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <h4>WhatsApp</h4>
+                        <p>(11) 99999-9999</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <h4>E-mail</h4>
+                        <p>clinicadacolunadrfelipebarreto@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons" style="margin-top: 40px;">
+                <a href="https://doctoralia.com.br/felipe-barreto" class="btn btn-primary">
+                    <span>📅</span>
+                    <span>Agendar pelo Doctoralia</span>
+                </a>
+                <a href="/anamnese" class="btn btn-secondary">
+                    <span>📋</span>
+                    <span>Preencher Anamnese Online</span>
+                </a>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1075674578813!2d-46.6520337!3d-23.5640265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8d0db5b73%3A0x7e5f3e3e4c5c0e0!2sS%C3%A3o%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 5px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dr. Felipe Barreto</h4>
+                    <p>CRM-SP: 202824<br>
+                    Neurocirurgia e Cirurgia de Coluna</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="/anamnese">Anamnese Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Atendimento</h4>
+                    <p>Segunda a Sexta: 8h às 18h<br>
+                    Sábado: 8h às 12h</p>
+                </div>
+            </div>
+            <hr style="margin: 30px 0; opacity: 0.3;">
+            <p>&copy; 2026 Dr. Felipe Barreto - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-fixed" title="Fale conosco pelo WhatsApp">
+        <span>💬</span>
+    </a>
+    
+    <!-- Scripts -->
+    <script>
+        // Menu mobile toggle
+        function toggleMenu() {
+            document.getElementById('nav').classList.toggle('active');
+        }
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Fechar menu mobile após clicar
+                    document.getElementById('nav').classList.remove('active');
+                }
+            });
+        });
+        
+        // Scroll effect header
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Animações ao aparecer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Aplicar animações
+        document.querySelectorAll('.service-card, .specialty-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

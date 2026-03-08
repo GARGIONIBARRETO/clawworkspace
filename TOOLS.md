@@ -120,4 +120,37 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## 🚀 SISTEMA OTIMIZADO (08/03/2026)
+
+### 📋 Anamneses de Áudio
+**Script:** `python3 /root/clawd/scripts/anamnese_processor.py`
+- ✅ Template médico estruturado 
+- ✅ Extração direta sem elaboração desnecessária
+- ✅ Integração com PostgreSQL
+- ✅ Workflow otimizado para reduzir custos
+
+### 🔬 Análise de Exames Otimizada  
+**Script:** `python3 /root/clawd/scripts/analise_exames_optimized.py`
+- ✅ **SEMPRE** usar nossa tabela de referência
+- ✅ Valores alterados PRIMEIRO (protocolo obrigatório)
+- ✅ Análise agrupada por sistemas
+- ✅ Comparação temporal automática
+- ✅ Interpretação clínica estruturada
+
+### 🎯 Agente de Marketing Médico
+**Sessão:** MarketingMedico (sub-agente especializado)  
+- ✅ Comunicação externa e atendimento
+- ✅ Estratégias de conteúdo médico
+- ✅ Compliance com diretrizes CFM
+- ✅ Foco em educação e crescimento orgânico
+
+### ⚡ Workflow Otimizado
+**Arquivo:** `/root/clawd/WORKFLOW_OPTIMIZED.md`
+- ✅ Respostas mais diretas e eficientes
+- ✅ Context switching inteligente
+- ✅ Heartbeats batching (2x/dia MAX)
+- ✅ Memory management otimizado
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

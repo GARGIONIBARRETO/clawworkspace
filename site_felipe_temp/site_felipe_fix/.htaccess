@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirecionar /anamnese para a pasta anamnese
+RewriteRule ^anamnese/?$ /anamnese/index.html [L]
+
+# Página principal
+DirectoryIndex index.html

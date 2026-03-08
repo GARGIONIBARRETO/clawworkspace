@@ -1,0 +1,27 @@
+1. CRIAR ARQUIVO .htaccess NA RAIZ DO WORDPRESS:
+
+php_value upload_max_filesize 512M
+php_value post_max_size 512M
+php_value memory_limit 512M
+php_value max_execution_time 600
+php_value max_input_time 600
+
+
+2. OU ADICIONAR NO wp-config.php (antes de "That's all, stop editing!"):
+
+@ini_set('upload_max_filesize', '512M');
+@ini_set('post_max_size', '512M');
+@ini_set('memory_limit', '512M');
+@ini_set('max_execution_time', '600');
+@ini_set('max_input_time', '600');
+
+
+3. NO PLESK - CONFIGURAÇÕES PHP:
+
+- Vá em "Configurações PHP" no Plesk
+- Mude para "Personalizado"
+- Ajuste:
+  * upload_max_filesize = 512M
+  * post_max_size = 512M
+  * memory_limit = 512M
+  * max_execution_time = 600

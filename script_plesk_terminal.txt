@@ -1,0 +1,13 @@
+### SE QUISER TENTAR O WORDPRESS AINDA:
+
+Cole isso no Terminal SSH do Plesk:
+
+```bash
+cd /var/www/vhosts/felipebarretoneuro.com.br/httpdocs/
+mkdir -p wp-content/ai1wm-backups
+cd temp
+cp *.wpress ../wp-content/ai1wm-backups/
+chmod -R 755 ../wp-content/ai1wm-backups/
+```
+
+Depois vá em: WordPress Admin → All-in-One → Backups → Restore

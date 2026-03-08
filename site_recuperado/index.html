@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Felipe Barreto é um dos maiores especialistas em Neurocirurgia, Cirurgia da Coluna, Tratamento da Dor, Hérnia de Disco e Atendimento em geral.">
+    <title>Neurocirurgia Cirurgia da Coluna e Tratamento da Dor - Dr. Felipe Barreto</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(to bottom, #f8f9fa 0%, white 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #0066cc, #004499);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+        }
+        
+        .hero h3 {
+            font-size: 2em;
+            color: #555;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #0066cc;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #004499;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            border: 2px solid #0066cc;
+            color: #0066cc;
+        }
+        
+        .btn-secondary:hover {
+            background: #0066cc;
+            color: white;
+        }
+        
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #0066cc;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            color: #0066cc;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .credentials {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        /* Specialties */
+        .specialties {
+            background: #f8f9fa;
+        }
+        
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .specialty-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .specialty-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .specialty-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .specialty-card h3 {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1em;
+        }
+        
+        .contact-icon {
+            font-size: 1.5em;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+            z-index: 999;
+        }
+        
+        .whatsapp-fixed:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .hero h2 {
+                font-size: 2em;
+            }
+            
+            .hero h3 {
+                font-size: 1.5em;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Dr. Felipe Barreto</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#conheca">Conheça</a></li>
+                    <li><a href="#patologias">Patologias</a></li>
+                    <li><a href="#procedimentos">Procedimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <h2>Excelência em tratamento</h2>
+        <h3>em Neurocirurgia e Cirurgia da Coluna</h3>
+        <p>Dr. Felipe Barreto é um dos maiores especialistas em Neurocirurgia, Cirurgia da Coluna, Tratamento da Dor, Hérnia de Disco e Atendimento em geral.</p>
+        
+        <div class="cta-buttons">
+            <a href="https://wa.me/5511999999999" class="btn btn-primary">📞 Agendar Consulta</a>
+            <a href="/anamnese" class="btn btn-secondary">📋 Preencher Anamnese</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="conheca">
+        <h2>Conheça o Dr. Felipe Barreto</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Neurocirurgia e Cirurgia da Coluna</h3>
+                <p>Com anos de experiência e formação especializada, o Dr. Felipe Barreto oferece tratamentos modernos e personalizados para problemas da coluna vertebral, sempre buscando as técnicas menos invasivas e mais eficazes.</p>
+                
+                <div class="credentials">
+                    <p><strong>📋 CRM:</strong> 202824</p>
+                    <p><strong>🎓 Especialidades:</strong></p>
+                    <ul style="list-style: none; padding-left: 20px;">
+                        <li>✓ Neurocirurgia</li>
+                        <li>✓ Cirurgia da Coluna Vertebral</li>
+                        <li>✓ Tratamento da Dor</li>
+                        <li>✓ Medicina Funcional Integrativa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image" style="text-align: center;">
+                <div style="width: 300px; height: 400px; background: #f0f0f0; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <span style="font-size: 5em; color: #ddd;">👨‍⚕️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Specialties Section -->
+    <section id="patologias" class="specialties">
+        <h2>Patologias Atendidas</h2>
+        <div class="specialty-grid">
+            <div class="specialty-card">
+                <div class="specialty-icon">🔍</div>
+                <h3>Cervicalgia</h3>
+                <p>Dor no pescoço que pode irradiar para ombros e braços</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">💢</div>
+                <h3>Cervicobraquialgia</h3>
+                <p>Dor cervical com irradiação para os membros superiores</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">🦴</div>
+                <h3>Hérnia de Disco</h3>
+                <p>Tratamento conservador e cirúrgico minimamente invasivo</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">⚡</div>
+                <h3>Lombalgia</h3>
+                <p>Dor na região lombar com diversas causas e tratamentos</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">🎯</div>
+                <h3>Ciatalgia</h3>
+                <p>Dor irradiada pelo nervo ciático</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">🏥</div>
+                <h3>Estenose de Canal</h3>
+                <p>Estreitamento do canal vertebral com compressão neural</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Procedures Section -->
+    <section id="procedimentos">
+        <h2>Procedimentos Realizados</h2>
+        <div class="specialty-grid">
+            <div class="specialty-card">
+                <div class="specialty-icon">🔬</div>
+                <h3>Cirurgia Endoscópica</h3>
+                <p>Técnica minimamente invasiva com recuperação mais rápida</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">💉</div>
+                <h3>Bloqueios e Infiltrações</h3>
+                <p>Procedimentos guiados por imagem para alívio da dor</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">🏗️</div>
+                <h3>Artrodese de Coluna</h3>
+                <p>Fusão vertebral para estabilização da coluna</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <p style="font-size: 1.2em; margin-bottom: 30px;">Agende sua consulta e inicie seu tratamento</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <span>(11) 2362-6051</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span>(11) 99999-9999</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <span>clinicadacolunadrfelipebarreto@gmail.com</span>
+            </div>
+        </div>
+        
+        <div class="cta-buttons" style="margin-top: 40px;">
+            <a href="https://doctoralia.com.br/felipe-barreto" class="btn btn-primary" style="background: white; color: #0066cc;">📅 Agendar no Doctoralia</a>
+        </div>
+    </section>
+    
+    <!-- WhatsApp Fixed Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-fixed">
+        <span>💬</span>
+        <span>WhatsApp</span>
+    </a>
+    
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

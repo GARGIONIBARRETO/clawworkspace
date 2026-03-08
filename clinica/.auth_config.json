@@ -1,0 +1,17 @@
+{
+  "users": {
+    "drfelipe": {
+      "password_hash": "ca4d02abda71c054bce01bfb028d0d136397b7601ad8b049fef73b7c704335f0",
+      "salt": "e9c7140913aecc16a35aaa759533a292",
+      "totp_secret": "E224F4VYBRW2NEIMHL65Q6VKIGQ7RY6F",
+      "2fa_verified": true,
+      "failed_attempts": 0,
+      "locked_until": null,
+      "created_at": "2026-02-06T23:14:30.148515"
+    }
+  },
+  "2fa_enabled": true,
+  "session_duration_hours": 8,
+  "max_failed_attempts": 5,
+  "lockout_minutes": 30
+}
