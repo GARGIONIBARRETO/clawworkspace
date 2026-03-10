@@ -13,7 +13,7 @@
 - **Monitor automático** - Verificar 2x ao dia
 - Comando monitor: `python3 /root/clawd/scripts/monitor_whatsapp_transcriber.py`
 - Logs: `/tmp/wa-transcriber.log`
-- **Status**: ✅ OPERACIONAL (reiniciado 05/03/2026 13:44)
+- **Status**: ✅ OPERACIONAL (reiniciado via systemctl 09/03/2026 06:22)
 
 ### ⏱️ Frequência do Heartbeat
 - **2x ao dia** - manhã (~9h) e noite (~21h)
@@ -23,4 +23,4 @@
 - Sistema 100% local - PostgreSQL 13.23
 - 655 pacientes cadastrados
 - 1481 consultas registradas
-- Último backup: 09/03/2026 05:05
+- Último backup: 10/03/2026 00:02
