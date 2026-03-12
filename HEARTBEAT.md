@@ -16,11 +16,11 @@
 - **Status**: ✅ OPERACIONAL (reiniciado via systemctl 09/03/2026 06:22)
 
 ### ⏱️ Frequência do Heartbeat
-- **2x ao dia** - manhã (~9h) e noite (~21h)
+- **1x ao dia** - manhã (~9h)
 - Evitar checks excessivos durante o dia
 
 ### 🔄 Status Atual
 - Sistema 100% local - PostgreSQL 13.23
-- 655 pacientes cadastrados
-- 1481 consultas registradas
-- Último backup: 10/03/2026 00:02
+- 657 pacientes cadastrados
+- 1482 consultas registradas
+- Último backup: 12/03/2026 04:10
