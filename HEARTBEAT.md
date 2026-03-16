@@ -1,6 +1,11 @@
 # HEARTBEAT.md
 
-## Tarefas Periódicas
+## ⚠️ HEARTBEAT DESABILITADO (15/03/2026 08:25)
+
+Tarefas automáticas canceladas conforme solicitação do Felipe.
+
+<!--
+## Tarefas Periódicas (COMENTADAS)
 
 ### 🏥 Sistema de Pacientes - PostgreSQL Local
 - ✅ **Sistema OPERACIONAL** - PostgreSQL local funcionando
@@ -23,4 +28,5 @@
 - Sistema 100% local - PostgreSQL 13.23
 - 657 pacientes cadastrados
 - 1482 consultas registradas
-- Último backup: 15/03/2026 01:29
+- Último backup: 15/03/2026 08:13
+-->
